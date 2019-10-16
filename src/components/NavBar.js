@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import SocialIcon from './SocialIcon';
+
 import {
     Collapse,
     Navbar,
@@ -12,6 +14,7 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +24,8 @@ const NavBar = (props) => {
     return (
         <div>
             <Navbar color="dark" dark expand="md">
-                <NavbarBrand href="/">Sveta</NavbarBrand>
+                <NavbarBrand href="/"><SocialIcon icon={faCoffee} /></NavbarBrand>
+
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
