@@ -29,6 +29,22 @@ div.hero-image.jumbotron {
 h1 {
   font-weight: bold;
 }
+.social-icon-item {
+  margin: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+.social-icons-list {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 
 footer {
   background-color: slategray;
