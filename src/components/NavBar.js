@@ -16,7 +16,7 @@ import {
 } from 'reactstrap';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-const NavBar = (props) => {
+export default function NavBar(props) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -58,4 +58,3 @@ const NavBar = (props) => {
     );
 }
 
-export default NavBar;
