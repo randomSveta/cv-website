@@ -5,6 +5,7 @@ import Footer from './Footer';
 import About from './SectionAbout';
 import Skills from './SectionSkills';
 import CurrentProject from './SectionCurrentProject';
+import ParallaxImage from './ParallaxBackground';
 
 export default class Main extends React.Component {
     render() {
@@ -13,9 +14,11 @@ export default class Main extends React.Component {
                 <div className="content-area">
                     <HeroImage />
                     <NavBar />
-                    <About/>
-                    <CurrentProject/>
-                    <Skills/>
+                    <About />
+                    <ParallaxImage classProp="parallax-about" />
+                    <CurrentProject />
+                    <ParallaxImage classProp="parallax-about" />
+                    <Skills />
                 </div>
                 <Footer />
             </React.Fragment>

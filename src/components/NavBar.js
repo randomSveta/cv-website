@@ -22,49 +22,47 @@ export default function NavBar(props) {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div>
-            <Navbar color="dark" dark expand="md">
-                <NavbarBrand href="/"><SocialIcon icon={faCoffee} /></NavbarBrand>
+        <Navbar color="dark" dark expand="md">
+            <NavbarBrand href="/"><SocialIcon icon={faCoffee} /></NavbarBrand>
 
-                <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="ml-auto" navbar>
-                        <NavItem>
-                            <NavLink href="#">About</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#">Current Project</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#">Skills</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#">Contacts</NavLink>
-                        </NavItem>
+            <NavbarToggler onClick={toggle} />
+            <Collapse isOpen={isOpen} navbar>
+                <Nav className="ml-auto" navbar>
+                    <NavItem>
+                        <NavLink href="#">About</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="#">Current Project</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="#">Skills</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="#">Contacts</NavLink>
+                    </NavItem>
 
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Achievements
+                    <UncontrolledDropdown nav inNavbar>
+                        <DropdownToggle nav caret>
+                            Achievements
               </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem>
-                                    Projects
+                        <DropdownMenu right>
+                            <DropdownItem>
+                                Projects
                 </DropdownItem>
-                                <DropdownItem>
-                                    Certificates
+                            <DropdownItem>
+                                Certificates
                 </DropdownItem>
-                                <DropdownItem>
-                                    CV
+                            <DropdownItem>
+                                CV
                 </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
-                        <NavItem>
-                            <NavLink href="#">Blog</NavLink>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
-            </Navbar>
-        </div>
+                        </DropdownMenu>
+                    </UncontrolledDropdown>
+                    <NavItem>
+                        <NavLink href="#">Blog</NavLink>
+                    </NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
     );
 }
 
