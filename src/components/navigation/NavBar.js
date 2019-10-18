@@ -8,13 +8,14 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { NavHashLink } from 'react-router-hash-link';
 
 export default function NavBar(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,36 +30,39 @@ export default function NavBar(props) {
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <NavLink href="#">About</NavLink>
+                        <NavLink to="/">Home</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#">Current Project</NavLink>
+                        <NavHashLink to="#about">About</NavHashLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#">Skills</NavLink>
+                        <NavHashLink to="#current-project">Current Project</NavHashLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#">Contacts</NavLink>
+                        <NavHashLink to="#skills">Skills</NavHashLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink to="/contacts">Contacts</NavLink>
                     </NavItem>
 
                     <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
                             Achievements
-              </DropdownToggle>
+                        </DropdownToggle>
                         <DropdownMenu right>
                             <DropdownItem>
-                                Projects
-                </DropdownItem>
+                                <NavLink to="/projects">Projects</NavLink>
+                            </DropdownItem>
                             <DropdownItem>
-                                Certificates
-                </DropdownItem>
+                                <NavLink to="/certificates">Certificates</NavLink>
+                            </DropdownItem>
                             <DropdownItem>
-                                CV
-                </DropdownItem>
+                                <NavLink to="/cv">CV</NavLink>
+                            </DropdownItem>
                         </DropdownMenu>
                     </UncontrolledDropdown>
                     <NavItem>
-                        <NavLink href="#">Blog</NavLink>
+                        <NavLink to="/blog">Blog</NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
