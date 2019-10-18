@@ -1,6 +1,6 @@
 import React from 'react';
-import SocialIconsDisplay from './SocialIconsDisplay';
-import NavLinks from './NavLinksFooter';
+import SocialIconsDisplay from './social/SocialIconsDisplay';
+import NavLinks from './navigation/NavLinksFooter';
 import { Row, Col } from 'reactstrap';
 
 export default function Footer(props) {

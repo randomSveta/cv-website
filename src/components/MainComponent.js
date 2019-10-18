@@ -1,10 +1,10 @@
 import React from 'react';
-import HeroImage from './HeroImageSection';
-import NavBar from './NavBar';
+import HeroImage from './sections/HeroImageSection';
+import NavBar from './navigation/NavBar';
 import Footer from './Footer';
-import About from './SectionAbout';
-import Skills from './SectionSkills';
-import CurrentProject from './SectionCurrentProject';
+import About from './sections/SectionAbout';
+import Skills from './sections/SectionSkills';
+import CurrentProject from './sections/SectionCurrentProject';
 import ParallaxImage from './ParallaxBackground';
 
 export default class Main extends React.Component {

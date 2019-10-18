@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SocialIcon from './SocialIcon';
+import SocialIcon from '../social/SocialIcon';
 
 import {
     Collapse,
