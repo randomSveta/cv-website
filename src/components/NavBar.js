@@ -33,24 +33,34 @@ export default function NavBar(props) {
                             <NavLink href="#">About</NavLink>
                         </NavItem>
                         <NavItem>
+                            <NavLink href="#">Current Project</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="#">Skills</NavLink>
+                        </NavItem>
+                        <NavItem>
                             <NavLink href="#">Contacts</NavLink>
                         </NavItem>
+
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
                                 Achievements
               </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>
+                                    Projects
+                </DropdownItem>
+                                <DropdownItem>
                                     Certificates
                 </DropdownItem>
                                 <DropdownItem>
                                     CV
                 </DropdownItem>
-                                <DropdownItem>
-                                    Projects
-                </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
+                        <NavItem>
+                            <NavLink href="#">Blog</NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Navbar>

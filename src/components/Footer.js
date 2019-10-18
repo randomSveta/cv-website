@@ -1,11 +1,10 @@
 import React from 'react';
+import SocialIconsDisplay from './SocialIconsDisplay';
 
 export default function Footer(props) {
     return (
         <footer>
-            <ul>
-                <li>aaaa</li>
-            </ul>
+            <SocialIconsDisplay/>
         </footer>
     );
 
