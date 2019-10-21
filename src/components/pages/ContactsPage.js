@@ -1,5 +1,12 @@
 import React from 'react';
+import NavBar from '../navigation/NavBar';
+import Footer from '../Footer';
 
 export default function Contacts(props) {
-    return <div>AAA</div>;
+    return (
+        <React.Fragment>
+            <NavBar/>
+            <Footer/>
+        </React.Fragment>
+    );
 }
