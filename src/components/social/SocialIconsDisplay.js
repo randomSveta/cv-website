@@ -1,50 +1,11 @@
 import React from 'react';
 import SocialIcon from './SocialIcon';
-import { faLinkedin, faGithub, faFreeCodeCamp, faCodepen, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import {SOCIAL_LINKS} from '../links/social-links';
 
-const LINKS = [
-    {
-        id: 1,
-        name: "Linked In",
-        url: "https://www.linkedin.com/in/svetaklimova/",
-        icon: faLinkedin
-    },
-    {
-        id: 2,
-        name: "GitHub",
-        url: "https://www.linkedin.com/in/svetaklimova/",
-        icon: faGithub
-    },
-    {
-        id: 3,
-        name: "FreeCodeCamp",
-        url: "https://www.linkedin.com/in/svetaklimova/",
-        icon: faFreeCodeCamp
-    },
-    {
-        id: 4,
-        name: "CodePen",
-        url: "https://www.linkedin.com/in/svetaklimova/",
-        icon: faCodepen
-    },
-    {
-        id: 5,
-        name: "CodeWars",
-        url: "https://www.linkedin.com/in/svetaklimova/",
-        icon: faCode
-    },
-    {
-        id: 6,
-        name: "WordPress",
-        url: "https://www.linkedin.com/in/svetaklimova/",
-        icon: faWordpress
-    }
 
-]
 
 export default function SocialIconsDisplay(props) {
-    let icons = LINKS.map(link => {
+    let icons = SOCIAL_LINKS.map(link => {
         return (
 
             <li key={link.id.toString()} className='social-icon-item'>

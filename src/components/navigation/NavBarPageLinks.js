@@ -1,26 +1,20 @@
 import React from 'react';
 import { NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { LINKS } from '../links/nav-links';
 
 export default function NavBarPageLinks(props) {
 
+    const navigationItems = LINKS.map(link => {
+        return (
+            <NavItem>
+                <NavLink to={link.url}>{link.name}</NavLink>
+            </NavItem>
+        );
+    });
     return (
         <React.Fragment>
-            <NavItem>
-                <NavLink to="/">Home</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink to="/cv">CV</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink to="/certificates">Certificates</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink to="/projects">Projects</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink to="/blog">Blog</NavLink>
-            </NavItem>
+            {navigationItems}
         </React.Fragment>
 
     );
