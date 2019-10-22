@@ -1,5 +1,18 @@
 import React from 'react';
+import Footer from '../Footer';
+import NavBar from '../navigation/NavBar';
+import NavBarPageLinks from '../navigation/NavBarPageLinks';
+import Breadcrumbs from '../navigation/Breadcrumbs';
 
 export default function CV(props) {
-    return <div>AAA</div>;
+
+    const navPages = <NavBarPageLinks />
+    return (
+        <React.Fragment>
+            <NavBar navigationPages={navPages} />
+            <Breadcrumbs page="CV" />
+            <Footer />
+        </React.Fragment>
+
+    );
 }

@@ -5,7 +5,7 @@ import { Row, Col } from 'reactstrap';
 
 export default function Footer(props) {
     return (
-        <footer>
+        <footer id="footer">
             <Row>
                 <Col xs="6">
                     <NavLinks />
