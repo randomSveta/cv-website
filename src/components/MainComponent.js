@@ -12,13 +12,14 @@ import {
     Redirect
 } from "react-router-dom";
 
+
 export default class Main extends React.Component {
     render() {
         return (
             <React.Fragment>
                 <Router>                  
                     <Switch location={this.props.location}>
-                    <Route exact path="/">
+                    <Route exact path="/home">
                             <Home/>
                         </Route>
                         <Route path="/projects">
@@ -33,7 +34,7 @@ export default class Main extends React.Component {
                         <Route path="/blog">
                             <Blog/>
                         </Route>
-                        <Redirect to="/" />
+                        <Redirect to="/home" />
                     </Switch>
                 </Router>
             </React.Fragment>

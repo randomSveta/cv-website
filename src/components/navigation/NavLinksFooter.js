@@ -6,7 +6,7 @@ export default function NavLinks(props) {
 
   const footerNavLinks = LINKS.map(link => {
     return (
-      <li>
+      <li key={link.id}>
         <Link to={link.url}>{link.name}</Link>
       </li>
     );

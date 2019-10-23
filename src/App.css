@@ -68,3 +68,9 @@ h1 {
   width: 100%;
   height: 30vh;
 }
+.active-item{
+  color:red;
+}
+.active-hash-item {
+  color:green;
+}

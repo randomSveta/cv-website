@@ -13,7 +13,7 @@ export default function NavBarAchievments(props) {
     const dropdownItems = LINKS.map(link => {
         if (link.name !== 'Home') {
             return (
-                <DropdownItem>
+                <DropdownItem key={link.id}>
                     <Link to={link.url}>{link.name}</Link>
                 </DropdownItem>)
         }
