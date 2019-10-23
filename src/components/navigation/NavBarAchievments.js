@@ -7,7 +7,7 @@ import {
     DropdownItem
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { LINKS } from '../links/nav-links';
+import { LINKS } from './links/nav-links';
 
 export default function NavBarAchievments(props) {
     const dropdownItems = LINKS.map(link => {

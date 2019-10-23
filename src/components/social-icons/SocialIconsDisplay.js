@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialIcon from './SocialIcon';
-import {SOCIAL_LINKS} from '../links/social-links';
+import {SOCIAL_LINKS} from './links/social-links';
 
 
 

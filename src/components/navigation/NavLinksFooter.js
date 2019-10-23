@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LINKS } from '../links/nav-links';
+import { LINKS } from './links/nav-links';
 
 export default function NavLinks(props) {
 
@@ -12,7 +12,7 @@ export default function NavLinks(props) {
     );
   });
   return (
-    <ul>
+    <ul className="nav-links-footer">
       {footerNavLinks}
     </ul>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { LINKS } from '../links/nav-links';
+import { LINKS } from './links/nav-links';
 
 export default function NavBarPageLinks(props) {
 

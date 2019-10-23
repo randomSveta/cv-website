@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Button, Row, Col } from 'reactstrap';
-import SocialIconsDisplay from '../social/SocialIconsDisplay';
+import SocialIconsDisplay from '../../../../social-icons/SocialIconsDisplay';
 
 export default function HeroImage(props) {
   return (

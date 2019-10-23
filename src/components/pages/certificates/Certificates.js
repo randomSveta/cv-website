@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from '../Footer';
-import NavBar from '../navigation/NavBar';
-import NavBarPageLinks from '../navigation/NavBarPageLinks';
-import Breadcrumbs from '../navigation/Breadcrumbs';
+import Footer from '../../Footer';
+import NavBar from '../../navigation/NavBar';
+import NavBarPageLinks from '../../navigation/NavBarPageLinks';
+import Breadcrumbs from '../../navigation/Breadcrumbs';
 
 export default function Certificates(props) {
     const navPages = <NavBarPageLinks/>

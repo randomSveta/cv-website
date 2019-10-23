@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialIconsDisplay from './social/SocialIconsDisplay';
+import SocialIconsDisplay from './social-icons/SocialIconsDisplay';
 import NavLinks from './navigation/NavLinksFooter';
 import { Row, Col } from 'reactstrap';
 
@@ -7,7 +7,7 @@ export default function Footer(props) {
     return (
         <footer id="footer">
             <Row>
-                <Col xs="6">
+                <Col xs="6" className="nav-links-col">
                     <NavLinks />
                 </Col>
                 <Col xs="6">

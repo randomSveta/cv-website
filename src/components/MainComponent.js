@@ -1,9 +1,10 @@
 import React from 'react';
-import Projects from './pages/ProjectsPage';
-import Certificates from './pages/CertificatesPage';
-import CV from './pages/CVPage';
-import Blog from './pages/BlogPage';
-import Home from './pages/HomePage';
+
+import Home from './pages/home/Home';
+import CV from './pages/cv/CV';
+import Certificates from './pages/certificates/Certificates';
+import Projects from './pages/projects/Projects';
+import Blog from './pages/blog/Blog';
 
 import {
     BrowserRouter as Router,
@@ -17,24 +18,24 @@ export default class Main extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Router>                  
+                <Router>
                     <Switch location={this.props.location}>
-                    <Route exact path="/home">
-                            <Home/>
-                        </Route>
-                        <Route path="/projects">
-                            <Projects/>
-                        </Route>
-                        <Route path="/certificates">
-                            <Certificates/>
+                        <Route exact path="/">
+                            <Home />
                         </Route>
                         <Route path="/cv">
-                            <CV/>
+                            <CV />
+                        </Route>
+                        <Route path="/certificates">
+                            <Certificates />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects />
                         </Route>
                         <Route path="/blog">
-                            <Blog/>
+                            <Blog />
                         </Route>
-                        <Redirect to="/home" />
+                        <Redirect to="/" />
                     </Switch>
                 </Router>
             </React.Fragment>
