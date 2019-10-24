@@ -12,9 +12,11 @@ export default function HeroImage(props) {
             <p id="hero-p">I am Web Developer</p>
           </Col>
         </Row>
-        <Col xs="12">
-          <SocialIconsDisplay />
-        </Col>
+        <Row>
+          <Col xs="12">
+            <SocialIconsDisplay />
+          </Col>
+        </Row>
       </Jumbotron>
     </React.Fragment>
   );
