@@ -15,7 +15,7 @@ export default function NavBar(props) {
 
     const toggle = () => setIsOpen(!isOpen);
     return (
-        <Navbar color="dark" dark expand="md" sticky="top">
+        <Navbar id="nav-bar" dark expand="md" sticky="top">
             <NavbarBrand href="/"><SocialIcon icon={faCoffee} /></NavbarBrand>
 
             <NavbarToggler onClick={toggle} />

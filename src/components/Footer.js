@@ -7,7 +7,7 @@ export default function Footer(props) {
     return (
         <footer id="footer">
             <Row>
-                <Col xs="6" className="nav-links-col">
+                <Col xs="6" className="nav-links-f-col">
                     <NavLinks />
                 </Col>
                 <Col xs="6">

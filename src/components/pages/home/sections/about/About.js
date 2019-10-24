@@ -1,6 +1,10 @@
 import React from 'react';
 import Section from '../Section';
 import SendEmail from './SendEmail';
+import ParallaxImage from '../../../../ParallaxBackground';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { Button, Row, Col } from 'reactstrap';
 
 export default function About(props) {
     const aboutContent = 
@@ -15,6 +19,12 @@ export default function About(props) {
                     One the social side, I like travelling and socks with funny patterns.
 </p>
                 <SendEmail />
+                <Row className="hero-button-row">
+          <Col xs="12" className="hero-button-col">
+            <Button id="button-cv"><FontAwesomeIcon icon={faDownload} id='download-icon' /> Download CV</Button>
+          </Col>
+        </Row>
+                <ParallaxImage classProp="parallax-about" />
             </React.Fragment>);
 
     return (

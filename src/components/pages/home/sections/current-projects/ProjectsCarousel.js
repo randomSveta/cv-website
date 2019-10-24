@@ -3,7 +3,7 @@ import { UncontrolledCarousel } from 'reactstrap';
 
 const items = [
     {
-        src:  require('../../../../../assets/images/HeroImage_0.jpg'),
+        src:  require('../../../../../assets/images/HeroImage.jpg'),
         altText: 'Slide 1',
         caption: 'Slide 1',
         header: 'Slide 1 Header',

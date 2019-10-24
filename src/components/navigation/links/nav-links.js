@@ -36,7 +36,7 @@ export const HASH_LINKS_HOME = [
     {
         id: 2,
         name: 'Current Project',
-        hashUrl: '#current-project'
+        hashUrl: '#current-projects'
     },
     {
         id: 3,
