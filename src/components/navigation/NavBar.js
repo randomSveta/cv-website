@@ -8,7 +8,7 @@ import {
     NavbarBrand,
     Nav
 } from 'reactstrap';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faIceCream} from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function NavBar(props) {
     const toggle = () => setIsOpen(!isOpen);
     return (
         <Navbar id="nav-bar" expand="md" sticky="top">
-            <NavbarBrand href="/"><SocialIcon icon={faCoffee}/></NavbarBrand>
+            <NavbarBrand href="/"><SocialIcon icon={faIceCream}/></NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>

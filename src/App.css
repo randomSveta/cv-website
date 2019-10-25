@@ -9,11 +9,22 @@ rgb(224, 229, 235) - hover links
 
 /*------ Layout ------*/
 
-body, html, #root {
+body, html {
   height: 100%;
+  width: 100%;
+}
+#root {
+  background-color: rgb(30, 37, 47);
   font-family: 'Montserrat', 'Arial', sans-serif;
   color: rgb(30, 37, 47);
-  width: 100%;
+  
+}
+#home-sections {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url("./assets/images/background_2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 div.col-12, div.row {
@@ -21,7 +32,6 @@ div.col-12, div.row {
   padding: 0;
   width: 100%;
 }
-
 
 /* ------ Main elements ------ */
 
@@ -36,6 +46,16 @@ div.col-12, div.row {
   padding: 5px;
 }
 
+h2 {
+  text-align: center;
+ color: white;
+ padding: 5px 0;
+ 
+}
+h3{
+  text-align: center; 
+}
+
 /*------ Navigation Bar------*/
 
 .active-item {
@@ -47,27 +67,33 @@ div.col-12, div.row {
 }*/
 
 #nav-bar {
-  background-color: rgb(30, 37, 47);
+  background-color: rgba(30, 37, 47, 0.98);
+  padding: 10px 40px;
 }
+
+a.navbar-brand {
+  font-size: 25px;
+}
+
 a.navbar-brand:hover {
   color: rgb(192, 204, 216);
   animation: rotate 1.5s;
   animation-iteration-count: infinite;
 }
-#achievements, a.navbar-link-style, a.navbar-brand{
+
+#achievements, a.navbar-link-style, a.navbar-brand {
   color: rgb(224, 229, 235);
   padding: 5px;
   margin: 5px;
 }
+
 a#achievements:hover {
-color: rgb(192, 204, 216);
-text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+  color: rgb(192, 204, 216);
+  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
 }
 
 li.nav-item {
-  margin: 5px;
   position: relative;
-  height: 100%;
 }
 
 li.dropdown.nav-item {
@@ -76,13 +102,15 @@ li.dropdown.nav-item {
 }
 
 a.navbar-link-style:hover {
- text-decoration: none;
- color: white;
- 
+  text-decoration: none;
+  color: white;
 }
+
 li.navbar-li-hash.nav-item {
   cursor: pointer;
+  /*border-right:2px solid gray;*/
 }
+
 li.navbar-li-hash.nav-item::after {
   content: '';
   background-color: white;
@@ -95,6 +123,7 @@ li.navbar-li-hash.nav-item::after {
   transform: scale(0, 1);
   transition: transform ease-in-out 250ms;
 }
+
 li.navbar-li-hash.nav-item:hover::after {
   transform: scale(1, 1);
 }
@@ -102,12 +131,33 @@ li.navbar-li-hash.nav-item:hover::after {
 ul.ml-auto.navbar-nav {
   align-items: center;
 }
- div.dropdown-menu.dropdown-menu-right.show {
-   background-color: rgb(239, 242, 245);
- }
- button.dropdown-item a {
-   color: rgb(30, 37, 47);
- }
+
+div.dropdown-menu.dropdown-menu-right.show {
+  background-color: rgb(48, 64, 79);
+}
+
+button.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+div.dropdown-menu.dropdown-menu-right:hover {
+  color: rgb(48, 64, 79);
+}
+
+button.dropdown-item a {
+  color: white;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+button.dropdown-item a:hover {
+  text-decoration: none;
+  color: rgb(48, 64, 79);
+}
+
 /*------ Social icons ------ */
 
 .social-icon-item {
@@ -123,6 +173,7 @@ ul.ml-auto.navbar-nav {
   justify-content: center;
   margin: 5px;
 }
+
 .social-icon-item::after {
   content: '';
   background-color: white;
@@ -136,6 +187,7 @@ ul.ml-auto.navbar-nav {
   transform: scale(0, 1);
   transition: transform ease-in-out 250ms;
 }
+
 .social-icon-item:hover::after {
   transform: scale(1, 1);
 }
@@ -198,8 +250,7 @@ ul.ml-auto.navbar-nav {
   90% {
     transform: rotateY(340deg);
   }
-  100% 
-  {
+  100% {
     transform: rotateY(360deg);
   }
 }
@@ -207,23 +258,27 @@ ul.ml-auto.navbar-nav {
 /*------ Section ------*/
 
 .section {
-  margin-top: 10px;
-  padding: 20px;
- 
+  margin: 30px 40px;
+  padding: 40px 60px; 
+  background-color: rgba(30, 37, 47, 0.55);
 }
-.section h2 {
-  text-align: center;
+  
+
+div.section-container.row{
+  color: rgb(30, 37, 47);
+
 }
+
+
+
 /*------ Footer ------*/
 
 #footer {
-  background-color: rgb(30, 37, 47);
+  background-color: rgba(30, 37, 47, 0.98);
   width: 100%;
   height: 200px;
   margin: 0;
-  padding: 20px;
-  position: relative;
-  bottom: -50%;
+  padding: 20px 40px;
 }
 
 .nav-links-footer {
@@ -239,7 +294,7 @@ ul.ml-auto.navbar-nav {
 /*---- Hero Image section ----*/
 
 #hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/HeroImage_5.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/images/HeroImage_5.jpg");
   height: 65vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -263,17 +318,29 @@ div#hero-image.jumbotron {
   background-color: rgb(239, 242, 245);
 }
 
-.hero-button-col {
-  display: flex;
-  justify-content: flex-end;
-}
 /*------ About section ------*/
 
-.parallax-about {
-  background-image: url("./assets/images/HeroImage_0.jpg");
-  height: 300px;
+/*.parallax-about {
+  background-image: url("./assets/images/star81.jpg");
+  height: 100px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} */
+
+div.about-col-6.col-6 {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 10px 10px 1px rgba(255, 255, 255, 0.5);
+}
+
+div#text-about.about-col-6.col-6 {
+  margin: 0;
+  padding: 40px;
+}
+div#send-message-about.about-col-6.col-6 {
+  margin: 50px 0 120px -20px;
+
+  border: 0.5px solid rgba(30, 37, 47, 0.2);
 }

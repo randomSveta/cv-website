@@ -15,6 +15,7 @@ export default function Home(props) {
 
     const achievments = <NavBarAchievments />;
     const hashLinks = <NavBarHomeHash />;
+
     return (
 
         <Row>
@@ -27,7 +28,7 @@ export default function Home(props) {
                             </Col>
                         </Row>
                         <NavBar navigationAchievments={achievments} navigationHash={hashLinks} />
-                        <Row>
+                        <Row  id="home-sections">
                             <Row>
                                 <Col xs="12">
                                     <About />

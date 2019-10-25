@@ -35,13 +35,14 @@ export const HASH_LINKS_HOME = [
     },
     {
         id: 2,
-        name: 'Current Project',
-        hashUrl: '#current-projects'
+        name: 'Skills',
+        hashUrl: '#skills'
     },
     {
         id: 3,
-        name: 'Skills',
-        hashUrl: '#skills'
+        name: 'Current Projects',
+        hashUrl: '#current-projects'
+        
     }
 ];
 
