@@ -24,9 +24,9 @@ export default function NavBarAchievments(props) {
     return (
         <React.Fragment>
             <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle nav caret id="achievements">
                     Achievements
-                        </DropdownToggle>
+                </DropdownToggle>
                 <DropdownMenu right>
                     {dropdownItems}
                 </DropdownMenu>

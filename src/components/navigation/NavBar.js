@@ -15,9 +15,8 @@ export default function NavBar(props) {
 
     const toggle = () => setIsOpen(!isOpen);
     return (
-        <Navbar id="nav-bar" dark expand="md" sticky="top">
-            <NavbarBrand href="/"><SocialIcon icon={faCoffee} /></NavbarBrand>
-
+        <Navbar id="nav-bar" expand="md" sticky="top">
+            <NavbarBrand href="/"><SocialIcon icon={faCoffee}/></NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>

@@ -4,7 +4,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 export default function SendEmail(props) {
     return (
         <div id="form">
-            <Form inline>
+            <Form>
                 <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                     <Label for="name" className="mr-sm-2">Your Name</Label>
                     <Input type="text" name="name" id="name" placeholder="Your Name" />

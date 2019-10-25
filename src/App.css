@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 /* Colors: 
 
-rgb(30, 37, 47) - dark
+rgb(30, 37, 47) - dark,
+rgb(192, 204, 216) - light,
+rgb(224, 229, 235) - hover links
 
 */
 
@@ -11,6 +13,7 @@ body, html, #root {
   height: 100%;
   font-family: 'Montserrat', 'Arial', sans-serif;
   color: rgb(30, 37, 47);
+  width: 100%;
 }
 
 div.col-12, div.row {
@@ -18,6 +21,7 @@ div.col-12, div.row {
   padding: 0;
   width: 100%;
 }
+
 
 /* ------ Main elements ------ */
 
@@ -38,14 +42,72 @@ div.col-12, div.row {
   color: red;
 }
 
-.active-hash-item {
+/*.active-hash-item {
   color: green;
-}
+}*/
 
 #nav-bar {
   background-color: rgb(30, 37, 47);
 }
+a.navbar-brand:hover {
+  color: rgb(192, 204, 216);
+  animation: rotate 1.5s;
+  animation-iteration-count: infinite;
+}
+#achievements, a.navbar-link-style, a.navbar-brand{
+  color: rgb(224, 229, 235);
+  padding: 5px;
+  margin: 5px;
+}
+a#achievements:hover {
+color: rgb(192, 204, 216);
+text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+}
 
+li.nav-item {
+  margin: 5px;
+  position: relative;
+  height: 100%;
+}
+
+li.dropdown.nav-item {
+  margin: 0;
+  padding: 0;
+}
+
+a.navbar-link-style:hover {
+ text-decoration: none;
+ color: white;
+ 
+}
+li.navbar-li-hash.nav-item {
+  cursor: pointer;
+}
+li.navbar-li-hash.nav-item::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  display: block;
+  margin: 2px;
+  padding: 0;
+  width: 100%;
+  height: 2px;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
+}
+li.navbar-li-hash.nav-item:hover::after {
+  transform: scale(1, 1);
+}
+
+ul.ml-auto.navbar-nav {
+  align-items: center;
+}
+ div.dropdown-menu.dropdown-menu-right.show {
+   background-color: rgb(239, 242, 245);
+ }
+ button.dropdown-item a {
+   color: rgb(30, 37, 47);
+ }
 /*------ Social icons ------ */
 
 .social-icon-item {
@@ -55,29 +117,42 @@ div.col-12, div.row {
   font-size: 35px;
   width: 50px;
   height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.social-icon-item::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  display: block;
+  margin: 2px;
+  padding: 0;
+  width: 100%;
+  height: 2px;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
+}
+.social-icon-item:hover::after {
+  transform: scale(1, 1);
 }
 
 .social-icon-item:hover {
   width: 50px;
   height: 50px;
-  box-shadow: 0 2px rgb(224, 229, 235);
 }
 
 .social-icons-list {
   list-style-type: none;
   width: 100%;
-  margin: 0;
+  margin: 50px 0 0 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.social-icons-list li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
 }
 
 .social-icon-item a {
@@ -87,7 +162,7 @@ div.col-12, div.row {
 }
 
 .social-icon-item a:hover {
-  color: rgb(224, 229, 235);
+  color: rgb(192, 204, 216);
   animation: rotate 1.1s;
   animation-iteration-count: infinite;
 }
@@ -134,8 +209,11 @@ div.col-12, div.row {
 .section {
   margin-top: 10px;
   padding: 20px;
+ 
 }
-
+.section h2 {
+  text-align: center;
+}
 /*------ Footer ------*/
 
 #footer {
@@ -173,6 +251,10 @@ div.col-12, div.row {
 
 div#hero-image.jumbotron {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 
 #button-cv {
@@ -185,7 +267,6 @@ div#hero-image.jumbotron {
   display: flex;
   justify-content: flex-end;
 }
-
 /*------ About section ------*/
 
 .parallax-about {

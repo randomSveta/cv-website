@@ -11,8 +11,8 @@ export default function NavBarHomeHash(props) {
 
     const hashLinks = HASH_LINKS_HOME.map(link => {
         return (
-            <NavItem key={link.id}>
-                <NavHashLink smooth activeClassName= 'active-hash-item' to={link.hashUrl} 
+            <NavItem key={link.id} className="navbar-li-hash">
+                <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='navbar-link-style' to={link.hashUrl} 
                >{link.name}</NavHashLink>
             </NavItem>
         );

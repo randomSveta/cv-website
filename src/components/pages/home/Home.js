@@ -7,7 +7,7 @@ import Skills from './sections/skills/Skills';
 
 import Footer from '../../Footer';
 import NavBarAchievments from '../../navigation/NavBarAchievments';
-import NavBarHomeHash from '../../navigation/NevBarHomeHash';
+import NavBarHomeHash from '../../navigation/NavBarHomeHash';
 
 import { Row, Col } from 'reactstrap';
 
