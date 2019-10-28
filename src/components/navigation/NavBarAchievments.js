@@ -14,7 +14,7 @@ export default function NavBarAchievments(props) {
         if (link.name !== 'Home') {
             return (
                 <DropdownItem key={link.id}>
-                    <Link to={link.url}>{link.name}</Link>
+                    <Link to={link.url} className='link-style'>{link.name}</Link>
                 </DropdownItem>)
         }
         else {

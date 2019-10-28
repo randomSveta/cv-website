@@ -9,8 +9,8 @@ export default function SocialIconsDisplay(props) {
         return (
 
             <li key={link.id.toString()} className='social-icon-item'>
-                <a href={link.url}>
-                    <SocialIcon icon={link.icon} iconId={link.id} />
+                <a href={link.url} className='rotate-animation'>
+                    <SocialIcon icon={link.icon} />
                 </a>
             </li>
 
@@ -18,7 +18,7 @@ export default function SocialIconsDisplay(props) {
     });
     return (
         <React.Fragment>
-            <ul className='social-icons-list'>
+            <ul className='social-icons-list' id={props.place}>
                 {icons}
             </ul>
         </React.Fragment>

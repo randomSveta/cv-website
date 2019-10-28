@@ -2,21 +2,23 @@ import React from 'react';
 import SocialIconsDisplay from './social-icons/SocialIconsDisplay';
 import NavLinks from './navigation/NavLinksFooter';
 import { Row, Col } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer(props) {
     return (
         <footer id="footer">
             <Row>
-                <Col xs="6" className="nav-links-f-col">
+                <Col xs="6" className="footer-col-6">
                     <NavLinks />
                 </Col>
-                <Col xs="6">
-                    <SocialIconsDisplay />
+                <Col xs="6" className="footer-col-6">
+                <SocialIconsDisplay place="footer-social"/>
                 </Col>
             </Row>
             <Row>
                 <Col xs="12">
-                    <p>Made with love by SK</p>
+                    <p className="footer-text">Made with love by SK  <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon></p>
                 </Col>
             </Row>
         </footer>
