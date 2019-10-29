@@ -22,19 +22,20 @@ body, html {
 }
 
 #home-sections {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("./assets/images/star49_1.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("./assets/images/star49_1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-div.col-12, div.row {
+div.col-12.container-row-col, div.row.container-row-col {
   margin: 0;
   padding: 0;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-
 /*------ Link styles ------ */
 
 .link-style, #achievements.link-style{
@@ -267,7 +268,13 @@ div#send-message-about.about-col-6.col-6 {
   margin: 50px 0 120px -20px;
   border: 0.5px solid rgba(30, 37, 47, 0.2);
 }
+/*------ Certificates ------*/
 
+.card-container {
+  margin: 10px;
+  padding: 5px;
+  color: rgb(30, 37, 47);
+}
 /*------ Footer ------*/
 
 #footer {
@@ -289,9 +296,3 @@ div#send-message-about.about-col-6.col-6 {
   text-align: center;
 }
 
-div.footer-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0;
-}

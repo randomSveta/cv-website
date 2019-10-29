@@ -4,7 +4,6 @@ import { Row, Col } from 'reactstrap';
 export default function Section(props) {
     return (
         <React.Fragment>
-
             <section id={props.sectionId} className="section">
                 <Row className="section-container">
                     <Col xs="12" className="section-container">

@@ -5,39 +5,32 @@ import CurrentProjects from './sections/current-projects/CurrentProjects';
 import Skills from './sections/skills/Skills';
 import { Row, Col } from 'reactstrap';
 
+const components = [<About />, <Skills />, <CurrentProjects />];
+
 export default function Home(props) {
 
-   
+    const showSection = components.map(component => {
+        return (
+            <React.Fragment>
+                <Row className="container-row-col">
+                    <Col xs="12" className="container-row-col">
+                        {component}
+                    </Col>
+                </Row>
+            </React.Fragment>
+
+        );
+    });
 
     return (
 
-        <Row>
-            <Col xs="12">
-                <Row>
-                    <Col xs="12" >
-                       
-                        <Row  id="home-sections">
-                            <Row>
-                                <Col xs="12">
-                                    <About />
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col xs="12">
-                                    <Skills />
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col xs="12">
-                                    <CurrentProjects />
-                                </Col>
-                            </Row>
-                        </Row>
-                    </Col>
-                </Row>
-               
-            </Col>
-        </Row>
+        <React.Fragment>
+            <Row id="home-sections" className="container-row-col">
+                <Col xs="12" className="container-row-col">
+                    {showSection}
+                </Col>
+            </Row>
+        </React.Fragment>
 
     );
 }

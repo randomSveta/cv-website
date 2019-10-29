@@ -13,17 +13,16 @@ import {
     Redirect
 } from "react-router-dom";
 
-import { Row, Col } from 'reactstrap';
 import Footer from './Footer';
 import NavBar from './navigation/NavBar';
 import HeroImage from '../components/pages/home/sections/hero-image/HeroImage';
 
 import NavBarAchievments from '../components/navigation/NavBarAchievments';
-import NavBarHomeHash from '../components/navigation/NavBarHomeHash';
+import NavBarHash from '../components/navigation/NavBarHash';
 import NavBarPageLinks from '../components/navigation/NavBarPageLinks';
 
 const achievments = <NavBarAchievments />;
-const hashLinks = <NavBarHomeHash />;
+const hashLinks = <NavBarHash />;
 const navPages = <NavBarPageLinks />;
 
 const routes = [
@@ -64,13 +63,6 @@ export default class Main extends React.Component {
                 <Router>
                     <Switch>
                         {routes.map((route, index) => (
-                            // You can render a <Route> in as many places
-                            // as you want in your app. It will render along
-                            // with any other <Route>s that also match the URL.
-                            // So, a sidebar or breadcrumbs or anything else
-                            // that requires you to render multiple things
-                            // in multiple places at the same URL is nothing
-                            // more than multiple <Route>s.
                             <Route
                                 key={index}
                                 path={route.path}
@@ -97,11 +89,9 @@ export default class Main extends React.Component {
                         </Route>
                         <Redirect to="/" />
                     </Switch>
-                    <Row>
-                        <Col xs="12">
-                            <Footer />
-                        </Col>
-                    </Row>
+
+                    <Footer />
+
                 </Router>
             </React.Fragment>
         );

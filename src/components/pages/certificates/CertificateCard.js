@@ -5,22 +5,22 @@ import {
 } from 'reactstrap';
 
 export default function CertificateCard(props) {
-   
- const IMAGE_PATH = props.imgPath;
+
+  const IMAGE_PATH = props.imgPath;
 
   return (
-    <div>
-    <Card>
-      <CardBody>
-        <CardTitle>{props.name}</CardTitle>
-        <CardSubtitle>Card subtitle</CardSubtitle>
-      </CardBody>
-      <CardImg width="100%" src={IMAGE_PATH} alt="Card image cap" />
-      <CardBody>
-        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-        <CardLink href="#">Card Link</CardLink>
-      </CardBody>
-    </Card>
-  </div>
+    <React.Fragment>
+      <Card className="card-container">
+        <CardBody>
+          <CardTitle>{props.name}</CardTitle>
+          <CardSubtitle>{props.year}</CardSubtitle>
+        </CardBody>
+        <CardImg width="100%" src={IMAGE_PATH} alt={props.name} />
+        <CardBody>
+          <CardText>{props.description}</CardText>
+          <CardLink href={props.link}>check certificate</CardLink>
+        </CardBody>
+      </Card>
+    </React.Fragment>
   );
 };

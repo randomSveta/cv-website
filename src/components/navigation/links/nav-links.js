@@ -27,7 +27,7 @@ export const LINKS = [
     }
 ]
 
-export const HASH_LINKS_HOME = [
+export const SECTIONS_HOME = [
     {
         id: 1,
         name: 'About',
@@ -42,6 +42,25 @@ export const HASH_LINKS_HOME = [
         id: 3,
         name: 'Current Projects',
         hashUrl: '#current-projects'
+        
+    }
+];
+
+export const SECTIONS_CERTIFICATES = [
+    {
+        id: 1,
+        name: 'Web Development',
+        hashUrl: '#web-development'
+    },
+    {
+        id: 2,
+        name: 'Testing',
+        hashUrl: '#testing'
+    },
+    {
+        id: 3,
+        name: 'Design',
+        hashUrl: '#design'
         
     }
 ];
