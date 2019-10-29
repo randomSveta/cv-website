@@ -13,7 +13,7 @@ export default function Section(props) {
                                 <h2>{props.name}</h2>
                             </Col>
                         </Row>
-                        <Row>
+                        <Row className="section-content">
                             <Col xs="12">
                                 {props.content}
                             </Col>

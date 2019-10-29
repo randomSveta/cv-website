@@ -13,8 +13,8 @@ export default function NavBarAchievments(props) {
     const dropdownItems = LINKS.map(link => {
         if (link.name !== 'Home') {
             return (
-                <DropdownItem key={link.id}>
-                    <Link to={link.url} className='link-style'>{link.name}</Link>
+                <DropdownItem key={link.id} >
+                    <Link to={link.url} className='link-style nav-link-style-ach'>{link.name}</Link>
                 </DropdownItem>)
         }
         else {
@@ -24,7 +24,7 @@ export default function NavBarAchievments(props) {
     return (
         <React.Fragment>
             <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret id="achievements">
+                <DropdownToggle nav caret id="achievements" className="link-style">
                     Achievements
                 </DropdownToggle>
                 <DropdownMenu right>

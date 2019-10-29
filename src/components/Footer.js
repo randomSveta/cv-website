@@ -9,10 +9,10 @@ export default function Footer(props) {
     return (
         <footer id="footer">
             <Row>
-                <Col xs="6" className="footer-col-6">
+                <Col xs="12" sm="6" className="footer-col">
                     <NavLinks />
                 </Col>
-                <Col xs="6" className="footer-col-6">
+                <Col xs="12" sm="6" className="footer-col">
                 <SocialIconsDisplay place="footer-social"/>
                 </Col>
             </Row>

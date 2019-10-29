@@ -1,22 +1,26 @@
 import React from 'react';
-import Footer from '../../Footer';
-import NavBar from '../../navigation/NavBar';
-import NavBarPageLinks from '../../navigation/NavBarPageLinks';
 import Breadcrumbs from '../../navigation/Breadcrumbs';
 import CertificatesDisplay from './CertificatesDisplay';
-import { Row} from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 export default function Certificates(props) {
 
-    const navPages = <NavBarPageLinks />
     return (
         <React.Fragment>
-            <NavBar navigationPages={navPages} />
             <Breadcrumbs page="Certificates" />
             <Row>
-                    <CertificatesDisplay />
+                <Col xs='12'>
+                    <h1 id='certificates-h1'>Certificates</h1>
+                </Col>
             </Row>
-            <Footer />
+            <Row>
+                <Col xs='12'>
+                    <h2>Web Development</h2>
+                </Col>
+                <Col>
+                    <CertificatesDisplay />
+                </Col>
+            </Row>
         </React.Fragment>
 
     );

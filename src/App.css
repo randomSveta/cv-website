@@ -12,16 +12,17 @@ rgb(224, 229, 235) - hover links
 body, html {
   height: 100%;
   width: 100%;
+
 }
 
 #root {
   background-color: rgb(30, 37, 47);
   font-family: 'Montserrat', 'Arial', sans-serif;
-  color: rgb(30, 37, 47);
+  color: white;
 }
 
 #home-sections {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("./assets/images/background_2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("./assets/images/star49_1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,13 +37,17 @@ div.col-12, div.row {
 
 /*------ Link styles ------ */
 
-
-.link-style{
+.link-style, #achievements.link-style{
   color: white;
 }
-.link-style:hover{
-  color: red;
+
+.link-style:hover, #achievements.link-style:hover {
+  color: coral;
   text-decoration: none;
+}
+
+.rotate-animation {
+  border: none;
 }
 
 .rotate-animation:hover {
@@ -50,52 +55,38 @@ div.col-12, div.row {
   animation-iteration-count: infinite;
 }
 
-
-/*
-
-li.navbar-li-hash.nav-item, ul#nav-links-footer li, li.social-icon-item {
+.underscore {
   position: relative;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a#achievements:hover {
-  color: rgb(192, 204, 216);
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-}
-
-li.navbar-li-hash.nav-item::after, li.social-icon-item::after {
+.underscore::after {
   content: '';
   background-color: white;
   position: absolute;
+  bottom: -5px;
+  left: 0;
   display: block;
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 2px;
   transform: scale(0, 1);
   transition: transform ease-in-out 250ms;
 }
 
-li.navbar-li-hash.nav-item:hover::after, li.social-icon-item:hover::after {
+.underscore:hover::after {
   transform: scale(1, 1);
 }
 
-button.dropdown-item a {
-  color: white;
-  width: 100%;
-  padding: 5px 20px;
+.nav-link-style {
+  margin: 0 10px;
+  padding: 5px 0;
 }
 
-button.dropdown-item a:hover {
-  text-decoration: none;
-  color: rgb(48, 64, 79);
+.nav-link-style-ach {
+  padding: 5px 10px;
 }
-
-
-div.dropdown-menu.dropdown-menu-right:hover {
-  color: rgb(48, 64, 79);
-}
-*/
 
 @keyframes rotate {
   0% {
@@ -133,17 +124,13 @@ div.dropdown-menu.dropdown-menu-right:hover {
   }
 }
 
-/* ------ Main elements ------ */
 
-h2 {
+/* ------ Main elements ------ */
+h1, h2, h3 {
   text-align: center;
-  color: white;
   padding: 5px 0;
 }
 
-h3 {
-  text-align: center;
-}
 
 /*------ Navigation Bar------*/
 
@@ -160,17 +147,17 @@ h3 {
   padding: 10px 40px;
 }
 
-li.dropdown.nav-item {
-  margin: 0;
-  padding: 0;
-}
-
 ul.ml-auto.navbar-nav {
   align-items: center;
 }
 
 div.dropdown-menu.dropdown-menu-right.show {
   background-color: rgb(48, 64, 79);
+}
+
+a#achievements.link-style.dropdown-toggle.nav-link {
+  align-items: center;
+  text-align: center;
 }
 
 button.dropdown-item {
@@ -180,17 +167,18 @@ button.dropdown-item {
   margin: 0;
 }
 
+/*button.navbar-toggler {
+  background-color: white;
+  color: black;
+}
+span.navbar-toggler-icon {
+  color: red;
+} */
+
 /*------ Social icons ------ */
 
-li.social-icon-item {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 5px;
-  margin: 5px;
+.social-icon-item {
   font-size: 35px;
-  width: 50px;
-  height: 50px;
 }
 
 .social-icons-list {
@@ -212,10 +200,10 @@ li.social-icon-item {
 .section {
   margin: 30px 40px;
   padding: 40px 60px;
-  background-color: rgba(30, 37, 47, 0.85);
+  background-color: rgba(30, 37, 47, 0.95);
 }
 
-div.section-container.row {
+.section-content {
   color: rgba(30, 37, 47, 0.9);
 }
 
@@ -285,9 +273,8 @@ div#send-message-about.about-col-6.col-6 {
 #footer {
   background-color: rgba(30, 37, 47, 0.98);
   width: 100%;
-  height: 200px;
   margin: 0;
-  padding: 20px 40px;
+  padding: 20px 40px 5px 40px;
   color: white;
 }
 
@@ -302,8 +289,9 @@ div#send-message-about.about-col-6.col-6 {
   text-align: center;
 }
 
-div.footer-col-6.col-6 {
+div.footer-col {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 0;
 }

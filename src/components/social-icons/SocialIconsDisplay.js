@@ -8,7 +8,7 @@ export default function SocialIconsDisplay(props) {
     let icons = SOCIAL_LINKS.map(link => {
         return (
 
-            <li key={link.id.toString()} className='social-icon-item'>
+            <li key={link.id.toString()} className='social-icon-item nav-link-style underscore'>
                 <a href={link.url} className='rotate-animation'>
                     <SocialIcon icon={link.icon} />
                 </a>
