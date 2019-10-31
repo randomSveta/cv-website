@@ -21,8 +21,9 @@ import NavBarAchievments from '../components/navigation/NavBarAchievments';
 import NavBarHash from '../components/navigation/NavBarHash';
 import NavBarPageLinks from '../components/navigation/NavBarPageLinks';
 
+import { HASH_HOME, HASH_CERTIFICATES } from './navigation/links/nav-links';
+
 const achievments = <NavBarAchievments />;
-const hashLinks = <NavBarHash />;
 const navPages = <NavBarPageLinks />;
 
 const routes = [
@@ -32,25 +33,27 @@ const routes = [
         navbarDispaly: () =>
             <React.Fragment>
                 <HeroImage />
-                <NavBar navigationAchievments={achievments} navigationHash={hashLinks} />
+                <NavBar navigationAchievments={achievments} navigationHash={<NavBarHash links={HASH_HOME}/>}  />
             </React.Fragment>
     },
     {
         path: "/cv",
-        navbarDispaly: () => <NavBar navigationPages={navPages} />
+        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_HOME}/>}/>
+
+
     }
     ,
     {
         path: "/certificates",
-        navbarDispaly: () => <NavBar navigationPages={navPages} />
+        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_CERTIFICATES}/>}/>
     },
     {
         path: "/projects",
-        navbarDispaly: () => <NavBar navigationPages={navPages} />
+        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_CERTIFICATES}/>} />
     },
     {
         path: "/blog",
-        navbarDispaly: () => <NavBar navigationPages={navPages} />
+        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_CERTIFICATES}/>} />
     }
 ];
 
@@ -89,7 +92,6 @@ export default class Main extends React.Component {
                         </Route>
                         <Redirect to="/" />
                     </Switch>
-
                     <Footer />
 
                 </Router>

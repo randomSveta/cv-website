@@ -8,21 +8,22 @@ import {
     NavbarBrand,
     Nav
 } from 'reactstrap';
-import { faIceCream} from '@fortawesome/free-solid-svg-icons';
+import { faIceCream } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar(props) {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggle = () => setIsOpen(!isOpen);
+    console.log(props);
+
     return (
         <Navbar id="nav-bar" dark expand="md" sticky="top">
-            <NavbarBrand href="/" className='rotate-animation'><SocialIcon icon={faIceCream}/></NavbarBrand>
+            <NavbarBrand href="/" className='rotate-animation'><SocialIcon icon={faIceCream} /></NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
-                   {props.navigationHash}
-                   {props.navigationAchievments}
-                   {props.navigationPages}
+                    {props.navigationHash}
+                    {props.navigationAchievments}
+                    {props.navigationPages}
                 </Nav>
             </Collapse>
         </Navbar>

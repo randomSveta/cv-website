@@ -4,16 +4,16 @@ import {
     NavItem
 } from 'reactstrap';
 import { NavHashLink } from 'react-router-hash-link';
-import { SECTIONS_HOME } from './links/nav-links';
 
-export default function NavBarHomeHash(props) {
+export default function NavBarHash(props) {
+    console.log(props);
 
-
-    const hashLinks = SECTIONS_HOME.map(link => {
+const hashLinksList = props.links;
+    const hashLinks = hashLinksList.map(link => {
         return (
             <NavItem key={link.id} className="navbar-li-hash">
-                <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='link-style underscore nav-link-style' to={link.hashUrl} 
-               >{link.name}</NavHashLink>
+                <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='link-style underscore nav-link-style' to={link.hashUrl}
+                >{link.name}</NavHashLink>
             </NavItem>
         );
     });
@@ -21,7 +21,9 @@ export default function NavBarHomeHash(props) {
 
     return (
         <React.Fragment>
-            {hashLinks}
+            <ul id="hash-links-list">
+                {hashLinks}
+            </ul>
         </React.Fragment>
     );
 }

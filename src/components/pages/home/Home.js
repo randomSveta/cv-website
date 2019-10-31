@@ -1,38 +1,26 @@
 import React from 'react';
 
-import About from './sections/about/About';
-import CurrentProjects from './sections/current-projects/CurrentProjects';
-import Skills from './sections/skills/Skills';
+import Section from '../Section';
+import { HASH_HOME } from '../../navigation/links/nav-links';
 import { Row, Col } from 'reactstrap';
 
-const components = [<About />, <Skills />, <CurrentProjects />];
-
 export default function Home(props) {
+ 
 
-    const showSection = components.map(component => {
+    const sectionsDisplay = HASH_HOME.map(section => {
+
         return (
-            <React.Fragment>
-                <Row className="container-row-col">
-                    <Col xs="12" className="container-row-col">
-                        {component}
-                    </Col>
-                </Row>
-            </React.Fragment>
-
+            <Section key={section.id} content={section.jsx} name={section.name} sectionId={section.hashUrl.split('').splice(1).join('')} />
         );
     });
 
     return (
 
-        <React.Fragment>
-            <Row id="home-sections" className="container-row-col">
-                <Col xs="12" className="container-row-col">
-                    {showSection}
-                </Col>
-            </Row>
-        </React.Fragment>
 
+        <Row className="container-row-col">
+            <Col xs='12'>
+                {sectionsDisplay}
+            </Col>
+        </Row>
     );
 }
-
-

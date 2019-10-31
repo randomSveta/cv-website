@@ -1,3 +1,8 @@
+import React from 'react';
+import About from '../.././pages/home/sections/about/About'
+import Skills from '../../pages/home/sections/skills/Skills';
+import CurrentProjects from '../../pages/home/sections/current-projects/CurrentProjects';
+
 export const LINKS = [
     {
         id: 1,
@@ -27,26 +32,29 @@ export const LINKS = [
     }
 ]
 
-export const SECTIONS_HOME = [
+export const HASH_HOME = [
     {
         id: 1,
         name: 'About',
-        hashUrl: '#about'
+        hashUrl: '#about',
+        jsx: <About/>
     },
     {
         id: 2,
         name: 'Skills',
-        hashUrl: '#skills'
+        hashUrl: '#skills',
+        jsx: <Skills/>
     },
     {
         id: 3,
         name: 'Current Projects',
-        hashUrl: '#current-projects'
+        hashUrl: '#current-projects',
+        jsx: <CurrentProjects/>
         
     }
 ];
 
-export const SECTIONS_CERTIFICATES = [
+export const HASH_CERTIFICATES = [
     {
         id: 1,
         name: 'Web Development',
