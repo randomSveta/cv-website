@@ -17,13 +17,13 @@ import Footer from './Footer';
 import NavBar from './navigation/NavBar';
 import HeroImage from '../components/pages/home/sections/hero-image/HeroImage';
 
-import NavBarAchievments from '../components/navigation/NavBarAchievments';
+//import NavBarAchievments from '../components/navigation/NavBarAchievments';
 import NavBarHash from '../components/navigation/NavBarHash';
 import NavBarPageLinks from '../components/navigation/NavBarPageLinks';
 
-import { HASH_HOME, HASH_CERTIFICATES } from './navigation/links/nav-links';
+import { HASH_HOME, HASH_CERTIFICATES, HASH_PROJECTS } from './navigation/links/nav-links';
 
-const achievments = <NavBarAchievments />;
+//const achievments = <NavBarAchievments />;
 const navPages = <NavBarPageLinks />;
 
 const routes = [
@@ -33,7 +33,7 @@ const routes = [
         navbarDispaly: () =>
             <React.Fragment>
                 <HeroImage />
-                <NavBar navigationAchievments={achievments} navigationHash={<NavBarHash links={HASH_HOME}/>}  />
+                <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_HOME}/>}  />
             </React.Fragment>
     },
     {
@@ -49,7 +49,7 @@ const routes = [
     },
     {
         path: "/projects",
-        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_CERTIFICATES}/>} />
+        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_PROJECTS}/>} />
     },
     {
         path: "/blog",
@@ -63,7 +63,7 @@ export default class Main extends React.Component {
 
         return (
             <React.Fragment>
-                <Router>
+                <Router basename={process.env.PUBLIC_URL}>
                     <Switch>
                         {routes.map((route, index) => (
                             <Route

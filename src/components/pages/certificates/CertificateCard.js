@@ -13,12 +13,12 @@ export default function CertificateCard(props) {
       <Card className="card-container">
         <CardBody>
           <CardTitle>{props.name}</CardTitle>
-          <CardSubtitle>{props.year}</CardSubtitle>
+          <CardSubtitle>{props.organization + ' ' + props.year}</CardSubtitle>
         </CardBody>
         <CardImg width="100%" src={IMAGE_PATH} alt={props.name} />
         <CardBody>
           <CardText>{props.description}</CardText>
-          <CardLink href={props.link}>check certificate</CardLink>
+          <CardLink href={props.link} target='_blank'>check certificate</CardLink>
         </CardBody>
       </Card>
     </React.Fragment>

@@ -13,7 +13,6 @@ import { faIceCream } from '@fortawesome/free-solid-svg-icons';
 export default function NavBar(props) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
-    console.log(props);
 
     return (
         <Navbar id="nav-bar" dark expand="md" sticky="top">
@@ -21,9 +20,10 @@ export default function NavBar(props) {
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
-                    {props.navigationHash}
-                    {props.navigationAchievments}
                     {props.navigationPages}
+                </Nav>
+                <Nav>
+                    {props.navigationHash}
                 </Nav>
             </Collapse>
         </Navbar>

@@ -21,7 +21,7 @@ const hashLinksList = props.links;
 
     return (
         <React.Fragment>
-            <ul id="hash-links-list">
+            <ul id="hash-links">
                 {hashLinks}
             </ul>
         </React.Fragment>

@@ -7,7 +7,7 @@ export const LINKS = [
     {
         id: 1,
         name: 'Home',
-        url: '/home'
+        url: '/'
     },
     {
         id: 2,
@@ -67,8 +67,30 @@ export const HASH_CERTIFICATES = [
     },
     {
         id: 3,
-        name: 'Design',
+        name: 'Graphic Design',
         hashUrl: '#design'
+        
+    }
+];
+
+export const HASH_PROJECTS = [
+    {
+        id: 1,
+        name: 'Statistics',
+        hashUrl: '#statistics',
+        jsx: <div/>
+    },
+    {
+        id: 2,
+        name: 'CodePen',
+        hashUrl: '#codepen',
+        jsx: <div/>
+    },
+    {
+        id: 3,
+        name: 'GitHub',
+        hashUrl: '#github',
+        jsx: <div/>
         
     }
 ];

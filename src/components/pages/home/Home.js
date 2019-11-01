@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Section from '../Section';
 import { HASH_HOME } from '../../navigation/links/nav-links';
 import { Row, Col } from 'reactstrap';

@@ -125,7 +125,7 @@ div.col-12.container-row-col, div.row.container-row-col {
   }
 }
 
-#hash-links-list{
+#hash-links{
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -134,6 +134,11 @@ div.col-12.container-row-col, div.row.container-row-col {
   background-color: cadetblue;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.hash-links-list {
+  width: 100%;
 }
 
 /* ------ Main elements ------ */
@@ -213,7 +218,7 @@ span.navbar-toggler-icon {
 .section {
   margin: 30px 40px;
   padding: 40px 60px;
-  background-color: rgba(30, 37, 47, 0.95);
+  background-color: pink;
 }
 
 .section-content {
