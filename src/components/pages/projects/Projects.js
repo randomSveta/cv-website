@@ -3,7 +3,7 @@ import Breadcrumbs from '../../navigation/Breadcrumbs';
 import { Row, Col } from 'reactstrap';
 import { HASH_PROJECTS } from '../../navigation/links/nav-links'
 import Section from '../Section';
-import ProjectsDisplay from './ProjectsDisplay';
+import ProjectsDisplay from './sections/projects/ProjectsDisplay';
 
 
 export default function Certificates(props) {

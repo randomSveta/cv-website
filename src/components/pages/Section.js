@@ -3,24 +3,14 @@ import { Row, Col } from 'reactstrap';
 
 export default function Section(props) {
     return (
-        <React.Fragment>
-            <section id={props.sectionId} className="section">
-                <Row className="section-container">
-                    <Col xs="12" className="section-container">
-                        <Row>
-                            <Col xs="12">
-                                <h2>{props.name}</h2>
-                            </Col>
-                        </Row>
-                        <Row className="section-content">
-                            <Col xs="12">
+            <section id={props.sectionId} className="m-0 p-0">
+                <h2 className="text-center">{props.name}</h2>
+                        <Row className="m-0 p-3">
+                            <Col xs="12" className="m-0 p-3">
                                 {props.content}
                             </Col>
                         </Row>
-                    </Col>
-                </Row>
             </section>
-        </React.Fragment>
 
     );
 }

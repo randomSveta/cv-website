@@ -8,41 +8,24 @@ rgb(224, 229, 235) - hover links
 */
 
 /*------ Layout ------*/
-
-body, html {
-  height: 100%;
-  width: 100%;
-
-}
-
 #root {
-  background-color: blanchedalmond;
   font-family: 'Montserrat', 'Arial', sans-serif;
-  color: white;
 }
 
-#home-sections {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("./assets/images/star49_1.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-div.col-12.container-row-col, div.row.container-row-col {
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 /*------ Link styles ------ */
 
-.link-style, #achievements.link-style{
+.link-style-hash {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+.link-style-hash:hover {
+  color: pink;
+  text-decoration: none;
+}
+.link-style {
   color: white;
 }
-
-.link-style:hover, #achievements.link-style:hover {
+.link-style:hover {
   color: coral;
   text-decoration: none;
 }
@@ -78,15 +61,6 @@ div.col-12.container-row-col, div.row.container-row-col {
 
 .underscore:hover::after {
   transform: scale(1, 1);
-}
-
-.nav-link-style {
-  margin: 0 10px;
-  padding: 5px 0;
-}
-
-.nav-link-style-ach {
-  padding: 5px 10px;
 }
 
 @keyframes rotate {
@@ -125,88 +99,17 @@ div.col-12.container-row-col, div.row.container-row-col {
   }
 }
 
-#hash-links{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  list-style-type: none;
-  font-size: 14px;
-  background-color: cadetblue;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.hash-links-list {
-  width: 100%;
-}
-
 /* ------ Main elements ------ */
-h1, h2, h3 {
-  text-align: center;
-  padding: 5px 0;
-}
-
 
 /*------ Navigation Bar------*/
 
 .active-item {
   color: red;
 }
-
-/*.active-hash-item {
-  color: green;
-}*/
-
-#nav-bar {
-  background-color: rgba(30, 37, 47, 0.98);
-  padding: 10px 40px;
-}
-
-ul.ml-auto.navbar-nav {
-  align-items: center;
-}
-
-div.dropdown-menu.dropdown-menu-right.show {
-  background-color: rgb(48, 64, 79);
-}
-
-a#achievements.link-style.dropdown-toggle.nav-link {
-  align-items: center;
-  text-align: center;
-}
-
-button.dropdown-item {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-
-/*button.navbar-toggler {
-  background-color: white;
-  color: black;
-}
-span.navbar-toggler-icon {
-  color: red;
-} */
-.navbar-collapse {
-  flex-direction: column ;
-}
 /*------ Social icons ------ */
 
 .social-icon-item {
   font-size: 35px;
-}
-
-.social-icons-list {
-  list-style-type: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #hero-social {
@@ -215,30 +118,9 @@ span.navbar-toggler-icon {
 
 /*------ Section ------*/
 
-.section {
-  margin: 30px 40px;
-  padding: 40px 60px;
-  background-color: pink;
-}
-
-.section-content {
-  color: rgba(30, 37, 47, 0.9);
-}
-
 /*------ Home page ------ */
 
 /*---- Hero Image section ----*/
-
-#hero-h1 {
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-#hero-p {
-  margin: 5px;
-  padding: 5px;
-}
 
 #hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/images/HeroImage_5.jpg");
@@ -249,14 +131,6 @@ span.navbar-toggler-icon {
   position: relative;
   color: white;
   text-align: center;
-}
-
-div#hero-image.jumbotron {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
 }
 
 /*------ About section ------*/
@@ -270,46 +144,7 @@ div#hero-image.jumbotron {
   background-size: cover;
 } */
 
-div.about-col-6.col-6 {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: 10px 10px 1px rgba(255, 255, 255, 0.5);
-}
-
-div#text-about.about-col-6.col-6 {
-  margin: 0;
-  padding: 40px;
-}
-
-div#send-message-about.about-col-6.col-6 {
-  margin: 50px 0 120px -20px;
-  border: 0.5px solid rgba(30, 37, 47, 0.2);
-}
 /*------ Certificates ------*/
-
-.card-container {
-  margin: 10px;
-  padding: 5px;
-  color: rgb(30, 37, 47);
-}
 /*------ Footer ------*/
 
-#footer {
-  background-color: rgba(30, 37, 47, 0.98);
-  width: 100%;
-  margin: 0;
-  padding: 20px 40px 5px 40px;
-  color: white;
-}
-
-#nav-links-footer {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-text {
-  text-align: center;
-}
 

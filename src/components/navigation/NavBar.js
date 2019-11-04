@@ -15,14 +15,14 @@ export default function NavBar(props) {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <Navbar id="nav-bar" dark expand="md" sticky="top">
-            <NavbarBrand href="/" className='rotate-animation'><SocialIcon icon={faIceCream} /></NavbarBrand>
+        <Navbar id="nav-bar" color="dark" dark expand="md" sticky="top" className="pb-3 pl-3 pr-3 m-0">
+            <NavbarBrand href="/" className='ml-3 mr-3 rotate-animation'><SocialIcon icon={faIceCream} /></NavbarBrand>
             <NavbarToggler onClick={toggle} />
-            <Collapse isOpen={isOpen} navbar>
-                <Nav className="ml-auto" navbar>
+            <Collapse isOpen={isOpen} className="justify-content-between flex-md-column" navbar>
+                <Nav className="m-0 p-0 d-md-flex flex-md-row w-100 justify-content-end" navbar>
                     {props.navigationPages}
                 </Nav>
-                <Nav>
+                <Nav className="m-0 p-0 border border-light" navbar>
                     {props.navigationHash}
                 </Nav>
             </Collapse>

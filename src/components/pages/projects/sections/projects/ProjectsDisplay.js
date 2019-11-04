@@ -8,7 +8,7 @@ export default function ProjectsDisplay(props) {
         return (
             <Col xs="12" sm="6" key={project.id}>
                 {project.jsx}
-                <p>Open a <a href={project.link} target="_blank">full page </a></p>
+                <p>Open a <a href={project.link} target="_blank" rel="noopener noreferrer">full page </a></p>
             </Col>
         );
     });

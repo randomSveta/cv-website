@@ -5,7 +5,7 @@ import SocialIconsDisplay from '../../../../social-icons/SocialIconsDisplay';
 export default function HeroImage(props) {
   return (
     <React.Fragment>
-      <Jumbotron id="hero-image">
+      <Jumbotron id="hero-image" className="m-0">
         <Row>
           <Col xs="12">
             <h1 id="hero-h1">Hi, my name is Sveta!</h1>

@@ -14,10 +14,8 @@ export default function Home(props) {
     });
 
     return (
-
-
-        <Row className="container-row-col">
-            <Col xs='12'>
+        <Row className="justify-content-center slign-items-center m-0 p-0">
+            <Col xs='12' className="m-0 p-0">
                 {sectionsDisplay}
             </Col>
         </Row>

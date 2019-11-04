@@ -7,18 +7,18 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer(props) {
     return (
-        <footer id="footer">
-            <Row className="container-row-col">
-                <Col xs="12" sm="6" className="container-row-col">
+        <footer id="footer" className="bg-dark">
+            <Row className="m-0 p-0">
+                <Col xs="12" sm="6" className="m-0 p-0 d-flex flex-row justify-content-center align-items-center">
                     <NavLinks />
                 </Col>
-                <Col xs="12" sm="6" className="container-row-col">
+                <Col xs="12" sm="6" className="m-0 p-0">
                     <SocialIconsDisplay place="footer-social" />
                 </Col>
             </Row>
-            <Row>
-                <Col xs="12">
-                    <p className="footer-text">Made with love by SK  <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon></p>
+            <Row className="m-0 p-0">
+                <Col xs="12" className="m-0 p-0">
+                    <p className="text-center text-white">Made with love by SK  <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon></p>
                 </Col>
             </Row>
         </footer>
