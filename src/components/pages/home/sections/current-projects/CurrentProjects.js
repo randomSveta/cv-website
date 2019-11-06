@@ -1,9 +1,9 @@
 import React from 'react';
-import ProjectsTabs from './ProjectsTabs';
+import CurrentProjectsDisplay from './CurrentProjectsDisplay';
 
 export default function CurrentProjects(props) {
     return(
-<ProjectsTabs />);
+<CurrentProjectsDisplay />);
 }
 
 

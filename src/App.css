@@ -154,6 +154,11 @@ rgb(224, 229, 235) - hover links
 .skills-icon-item svg{
   font-size: 50px;
 }
+/*------ Current Projects ------*/
+.media-img {
+  width: 100px;  
+  height: 100px;
+}
 /*------ Certificates ------*/
 /*------ Footer ------*/
 

@@ -19,11 +19,7 @@ export default function Section(props) {
         return (
             <section id={props.sectionId} className="m-0 p-0">
                 <h2 className="text-center p-3 m-0 bg-secondary text-white">{props.name}</h2>
-                <Row className="m-0 p-0">
-                    <Col xs="12" className="m-0 p-0">
                         {props.content}
-                    </Col>
-                </Row>
             </section>
 
         );

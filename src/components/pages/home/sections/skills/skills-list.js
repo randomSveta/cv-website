@@ -5,57 +5,68 @@ export const SKILLS =[
     {
     id: 1,
     icon: faHtml5,
-    name: 'HTML'
+    name: 'HTML',
+    progress: 80
 },
 {
     id: 2,
     icon: faCss3,
-    name: 'CSS'
+    name: 'CSS',
+    progress: 80
 },
 {
     id: 3,
     icon: faJs,
-    name: 'JavaScript'
+    name: 'JavaScript',
+    progress: 80
    
 },
 {
     id: 4,
     icon: faReact,
-    name: 'React'
+    name: 'React',
+    progress: 80
 },
 {
     id: 5,
     icon: faBootstrap,
-    name: 'Bootstrap'
+    name: 'Bootstrap',
+    progress: 80
 },
 {
     id: 6,
     icon: faNodeJs,
-    name: 'Node JS'
+    name: 'Node JS',
+    progress: 80
 },
 {
     id: 7,
     icon: faGit,
-    name: 'Git'
+    name: 'Git',
+    progress: 80
 },
 {
     id: 8,
     icon: faDatabase,
-    name: 'SQL'
+    name: 'SQL',
+    progress: 80
 },
 {
     id: 9,
     icon: faJira,
-    name: 'Jira'
+    name: 'Jira',
+    progress: 80
 },
 {
     id: 10,
     icon: faBitbucket,
-    name: 'Bitbusked'
+    name: 'Bitbusked',
+    progress: 80
 },
 {
     id: 11,
     icon: faConfluence,
-    name: 'Confluence'
+    name: 'Confluence',
+    progress: 80
 }
 ]
