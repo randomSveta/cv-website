@@ -3,14 +3,14 @@ import Breadcrumbs from '../../navigation/Breadcrumbs';
 import { Row, Col } from 'reactstrap';
 import { HASH_PROJECTS } from '../../navigation/links/nav-links'
 import Section from '../Section';
-import ProjectsDisplay from './sections/projects/ProjectsDisplay';
+import CodePenProjectsDisplay from './sections/codepen-projects/CodePenProjectsDisplay';
 
 
 export default function Certificates(props) {
 
-    const sectionsDisplay = HASH_PROJECTS.map(section => {
+    const codePenSectionsDisplay = HASH_PROJECTS.map(section => {
         return (
-            <Section key={section.id} content={<ProjectsDisplay section={section.name}/>} name={section.name} sectionId={section.hashUrl.split('').splice(1).join('')} />
+            <Section key={section.id} content={<CodePenProjectsDisplay section={section.name}/>} name={section.name} sectionId={section.hashUrl.split('').splice(1).join('')} />
         );
     });
 
@@ -21,7 +21,7 @@ export default function Certificates(props) {
                 <Col xs='12'>
                     <Row className="container-row-col">
                         <Col xs='12'>
-                            {sectionsDisplay}
+                            {codePenSectionsDisplay}
                         </Col>
                     </Row>
                 </Col>

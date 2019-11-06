@@ -21,7 +21,7 @@ export default function CertificatesDisplay(props) {
     return (
 
         <React.Fragment>
-            <Row>
+            <Row className="m-0 p-0">
                 {certificatesCards}
             </Row>
         </React.Fragment>

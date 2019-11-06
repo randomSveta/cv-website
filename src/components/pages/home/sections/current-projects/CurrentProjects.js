@@ -1,9 +1,9 @@
 import React from 'react';
-import ProjectsCarousel from './ProjectsCarousel';
+import ProjectsTabs from './ProjectsTabs';
 
 export default function CurrentProjects(props) {
     return(
-<ProjectsCarousel />);
+<ProjectsTabs />);
 }
 
 

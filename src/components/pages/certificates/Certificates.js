@@ -17,17 +17,12 @@ export default function Certificates(props) {
     return (
         <React.Fragment>
             <Breadcrumbs page="Certificates" />
-            <Row className="container-row-col">
-                <Col xs='12'>
-                    <h1 id='certificates-h1'>Certificates</h1>
-                    <Row className="container-row-col">
-                        <Col xs='12'>
-                            {sectionsDisplay}
-                        </Col>
-                    </Row>
+            <Row className="m-0 p-0">
+                <h1 className="text-center w-100">Certificates</h1>
+                <Col xs='12' className='m-0 p-0'>
+                    {sectionsDisplay}
                 </Col>
             </Row>
-
         </React.Fragment>
 
     );

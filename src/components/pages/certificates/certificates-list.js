@@ -90,7 +90,7 @@ export const CERTIFICATES_LIST = [
         year: 2019
     },
     {
-        id: 8,
+        id: 10,
         imgPath: require('../../../assets/images/HeroImage.jpg'),
         name: 'Ideas from the History of Graphic Design',
         organization: 'Coursera',
@@ -100,7 +100,7 @@ export const CERTIFICATES_LIST = [
         year: 2019
     },
     {
-        id: 9,
+        id: 11,
         imgPath: require('../../../assets/images/HeroImage.jpg'),
         name: 'ISTQB Certified Tester Foundation Level',
         organization: 'ISTQB, (SJSI, Poland)',
@@ -110,7 +110,7 @@ export const CERTIFICATES_LIST = [
         year: 2018
     },
     {
-        id: 10,
+        id: 12,
         imgPath: require('../../../assets/images/HeroImage.jpg'),
         name: 'ISTQB Certified Tester Agile Tester Extension',
         organization: 'ISTQB, (SJSI, Poland)',
@@ -120,7 +120,7 @@ export const CERTIFICATES_LIST = [
         year: 2018
     },
     {
-        id: 11,
+        id: 13,
         imgPath: require('../../../assets/images/HeroImage.jpg'),
         name: 'Software Quality Assurance and Testing',
         organization: 'QATUTOR school',

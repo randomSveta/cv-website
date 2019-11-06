@@ -1,5 +1,5 @@
 import React from 'react';
-import { PROJECTS } from './projects-list';
+import { PROJECTS } from './cp-projects-list';
 import { Row, Col } from 'reactstrap';
 
 export default function ProjectsDisplay(props) {

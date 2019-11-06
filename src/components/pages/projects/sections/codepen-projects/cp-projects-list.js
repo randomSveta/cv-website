@@ -86,20 +86,14 @@ export const PROJECTS = [
     },
     {
         id: 9,
-        jsx: <iframe height="400" width="100%" scrolling="yes" title="randomsveta-for-foundersandcoders" src="https://randomsveta.github.io/randomsveta-for-foundersandcoders/" frameborder="no" allowtransparency="true" allowfullscreen="true">
-        See the website <a href='https://randomsveta.github.io/randomsveta-for-foundersandcoders/'>RandomSveta for FoundersAndCoders</a> by Sveta
-        (<a href='https://github.com/randomSveta'>@randomsveta</a>) on <a href='https://github.com'>GitHub</a>.
-      </iframe>,
+        jsx: <div/>,
         name: 'RandomSveta for FoundersAndCoders',
         year: 2019,
         section: 'GitHub'
     },
     {
         id: 10,
-        jsx: <iframe height="400" width="100%" scrolling="yes" title="Hotel Website" src="https://randomsveta.github.io/HotelSite/" frameborder="no" allowtransparency="true" allowfullscreen="true">
-        See the website <a href='https://randomsveta.github.io/HotelSite/'>Hotel Website</a> by Sveta
-        (<a href='https://github.com/randomSveta'>@randomsveta</a>) on <a href='https://github.com'>GitHub</a>.
-      </iframe>,
+        jsx: <div/>,
         name: 'Hotel Websitew',
         year: 2019,
         section: 'GitHub'

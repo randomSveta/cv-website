@@ -135,15 +135,25 @@ rgb(224, 229, 235) - hover links
 
 /*------ About section ------*/
 
-/*.parallax-about {
-  background-image: url("./assets/images/star81.jpg");
+.parallax-home {
+  background-image: url("./assets/images/HeroImage_5.jpg");
   height: 100px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
-
+} 
+.about-text {
+  font-size: 14px;
+}
+.about-img {
+  width: 100px;
+  height: 100px;
+}
+/*------ Skills ------*/
+.skills-icon-item svg{
+  font-size: 50px;
+}
 /*------ Certificates ------*/
 /*------ Footer ------*/
 
