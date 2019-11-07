@@ -9,8 +9,9 @@ export default function Skills(props) {
         return (
             <Col xs="6" sm="3" className='skills-icon-item text-center m-2 border p-2' key={icon.id}>
                 <SkillIcon icon={icon.icon} />
-                <Progress value={icon.progress} className="mr-5 ml-5 mt-2 mb-2">{icon.progress}%</Progress>
                 <p className="mt-1 mb-0 p-0">{icon.name}</p>
+                <Progress value={icon.progress} striped color='dark' className="mr-5 ml-5 mt-2 mb-2" />
+
             </Col >);
     });
     return (

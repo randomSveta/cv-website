@@ -12,61 +12,61 @@ export const SKILLS =[
     id: 2,
     icon: faCss3,
     name: 'CSS',
-    progress: 80
+    progress: 60
 },
 {
     id: 3,
     icon: faJs,
     name: 'JavaScript',
-    progress: 80
+    progress: 50
    
 },
 {
     id: 4,
     icon: faReact,
     name: 'React',
-    progress: 80
+    progress: 60
 },
 {
     id: 5,
     icon: faBootstrap,
     name: 'Bootstrap',
-    progress: 80
+    progress: 70
 },
 {
     id: 6,
     icon: faNodeJs,
     name: 'Node JS',
-    progress: 80
+    progress: 50
 },
 {
     id: 7,
     icon: faGit,
     name: 'Git',
-    progress: 80
+    progress: 40
 },
 {
     id: 8,
     icon: faDatabase,
     name: 'SQL',
-    progress: 80
+    progress: 40
 },
 {
     id: 9,
     icon: faJira,
     name: 'Jira',
-    progress: 80
+    progress: 70
 },
 {
     id: 10,
     icon: faBitbucket,
     name: 'Bitbusked',
-    progress: 80
+    progress: 60
 },
 {
     id: 11,
     icon: faConfluence,
     name: 'Confluence',
-    progress: 80
+    progress: 60
 }
 ]
