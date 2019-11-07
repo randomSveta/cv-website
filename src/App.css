@@ -100,12 +100,20 @@ rgb(224, 229, 235) - hover links
 
 /* ------ Main elements ------ */
 
-/*------ Navigation Bar------*/
+/*------ Navigation------*/
 
 .active-item {
   color: red;
 }
 
+div.breadcrumb {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin:0;
+  height: 100%;
+}
+span.active.breadcrumb-item::before {
+  color: white;
+}
 /*------ Social icons ------ */
 
 .social-icon-item {

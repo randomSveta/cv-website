@@ -3,12 +3,11 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 export default function Breadcrumbs(props) {
   return (
-    <div>
-      <Breadcrumb tag="nav" listTag="div">
-        <BreadcrumbItem tag="a" href="/">Home</BreadcrumbItem>
-        <BreadcrumbItem active tag="span">{props.page}</BreadcrumbItem>
-      </Breadcrumb>
-    </div>
+    <Breadcrumb tag="nav" listTag="div" className="h-100">
+      <BreadcrumbItem tag="a" href="/" className="link-style-hash text-decoration-none">Home</BreadcrumbItem>
+      <BreadcrumbItem active tag="span" className="text-white link-style-hash">{props.page}</BreadcrumbItem>
+    </Breadcrumb>
+
   );
 };
 

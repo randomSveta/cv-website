@@ -16,9 +16,19 @@ export default function Certificates(props) {
 
     return (
         <React.Fragment>
-            <Breadcrumbs page="Certificates" />
             <Row className="m-0 p-0">
-                <h1 className="text-center w-100">Certificates</h1>
+                <Col xs="2" className="m-0 p-0">
+                    <Breadcrumbs page="Certificates" />
+                </Col>
+                <Col xs="8" className="m-0 p-0">
+                    <h1 className="text-center w-100 m-0">Certificates</h1>
+                </Col>
+            </Row>
+
+
+
+            <Row className="m-0 p-0">
+
                 <Col xs='12' className='m-0 p-0'>
                     {sectionsDisplay}
                 </Col>
