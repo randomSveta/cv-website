@@ -20,14 +20,13 @@ rgb(224, 229, 235) - hover links
 }
 .link-style-hash:hover {
   color: pink;
-  text-decoration: none;
 }
 .link-style {
   color: white;
 }
 .link-style:hover {
   color: coral;
-  text-decoration: none;
+
 }
 
 .rotate-animation {
@@ -106,6 +105,7 @@ rgb(224, 229, 235) - hover links
 .active-item {
   color: red;
 }
+
 /*------ Social icons ------ */
 
 .social-icon-item {

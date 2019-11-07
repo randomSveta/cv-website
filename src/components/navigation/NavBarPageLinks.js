@@ -7,8 +7,8 @@ export default function NavBarPageLinks(props) {
 
     const navigationItems = LINKS.map(link => {
         return (
-            <NavItem key={link.id}>
-                <NavLink exact activeClassName='active-item' className="link-style nav-link-style underscore mr-2 ml-2" to={link.url}>{link.name}</NavLink>
+            <NavItem key={link.id} className="text-center">
+                <NavLink exact activeClassName='active-item' className="link-style nav-link-style underscore m-1 p-1 text-decoration-none d-inline-block" to={link.url}>{link.name}</NavLink>
             </NavItem>
         );
 

@@ -18,11 +18,11 @@ export default function NavBar(props) {
         <Navbar id="nav-bar" color="dark" dark expand="md" sticky="top" className="pb-3 pl-3 pr-3 m-0">
             <NavbarBrand href="/" className='ml-3 mr-3 rotate-animation'><SocialIcon icon={faIceCream} /></NavbarBrand>
             <NavbarToggler onClick={toggle} />
-            <Collapse isOpen={isOpen} className="justify-content-between flex-md-column" navbar>
-                <Nav className="m-0 pt-2 d-md-flex flex-md-row w-100 justify-content-end" navbar>
+            <Collapse isOpen={isOpen} className="flex-md-column" navbar>
+                <Nav className="m-0 p-0 d-md-flex flex-md-row w-100 justify-content-end" navbar>
                     {props.navigationPages}
                 </Nav>
-                <Nav className="m-0 p-0" navbar>
+                <Nav className="m-0 p-0  d-flex flex-row justify-content-center align-items-center border-top border-secondary" navbar>
                     {props.navigationHash}
                 </Nav>
             </Collapse>
