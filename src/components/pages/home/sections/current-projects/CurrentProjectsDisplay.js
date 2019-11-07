@@ -8,26 +8,26 @@ export default function CurrentProjectsDisplay(props) {
   const currentProjects = CURRENT_PROJECTS.map(project => {
     return (
       <React.Fragment key={project.id}>
-        <Media className="m-4 p-4">
-          <Media left middle href={project.taskLink}>
-            <Media object src={project.imgPath} alt={project.alt} className="media-img"/>
+        <Media className="mr-3 my-3 py-2 pr-3 border">
+          <Media left middle href={project.taskLink} className="mx-2 p-2">
+            <Media object src={project.imgPath} alt={project.alt} className="media-img" />
           </Media>
           <Media body>
             <Media heading>
-              {project.title}
+              <a href={project.projectLink}>{project.title}</a>
             </Media>
             {project.description}
-            <a href={project.projectLink}>Have a look at the project!</a>
+            <p className="mt-2">Progress:</p>
+            <Progress value={project.progress} className="my-3" color="dark">{project.progress}%</Progress>
           </Media>
         </Media>
-        <Progress value={project.progress} className="mr-5 ml-5 mt-2 mb-2">{project.progress}%</Progress>
-      </React.Fragment>
 
+      </React.Fragment>
     );
   });
   return (
-    <Row className="m-0 p-0 justify-content-center">
-      <Col>
+    <Row className="mx-5 mt-1 mb-5 px-5 justify-content-center align-items-center">
+      <Col xs="12">
         {currentProjects}
       </Col>
     </Row>

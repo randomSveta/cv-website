@@ -7,7 +7,7 @@ export default function NavLinks(props) {
   const footerNavLinks = LINKS.map(link => {
     return (
       <li key={link.id}>
-        <Link to={link.url} className='link-style m-3 underscore'>{link.name}</Link>
+        <Link to={link.url} className='link-style m-3 underscore text-decoration-none'>{link.name}</Link>
       </li>
     );
   });

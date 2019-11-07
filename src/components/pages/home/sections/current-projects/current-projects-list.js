@@ -2,7 +2,7 @@ export const CURRENT_PROJECTS = [
     {
         id: 1,
         imgPath: require('../../../../../assets/images/HeroImage_9.jpg'),
-        title: 'Calculator Project for FreeCodeCamp',
+        title: '"Calculator"',
         alt: 'Calculator',
         description: 'There is a "Calculator" project in the course "Front  End Libraries Certification" on the FreeCodeCamp website',
         taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator',
