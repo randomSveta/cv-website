@@ -1,7 +1,7 @@
 export const CERTIFICATES_LIST = [
     {
         id: 1,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/FCC_Responsive_web_design.png'),
         name: 'Responsive Web Design Certification',
         organization: 'FreeCodeCamp',
         description: 'FreeCodeCamp certificate',
@@ -11,7 +11,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 2,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/FCC_JS_algoritms.png'),
         name: 'JavaScript Algorithms and Data Structures Certification',
         organization: 'FreeCodeCamp',
         description: 'FreeCodeCamp certificate',
@@ -21,7 +21,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 3,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/Coursera_Bootstrap.png'),
         name: 'Front-End Web UI Frameworks and Tools:Bootstrap 4',
         organization: 'Coursera',
         description: 'Coursera certificate, part of Full-Stack Web Developmentwith React Specialization',
@@ -31,7 +31,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 4,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/Coursera_React.png'),
         name: 'Front-End Web Development with React',
         organization: 'Coursera',
         description: 'Coursera certificate, part of Full-Stack Web Developmentwith React Specialization',
@@ -41,7 +41,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 5,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/Coursera_ReactNative.png'),
         name: 'Multiplatform Mobile App Development withReact Native',
         organization: 'Coursera',
         description: 'Coursera certificate, part of Full-Stack Web Developmentwith React Specialization',
@@ -51,7 +51,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 6,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/Coursera_NodeJS.png'),
         name: 'Server-side Development with NodeJS, Expressand MongoDB',
         organization: 'Coursera',
         description: 'Coursera certificate, part of Full-Stack Web Developmentwith React Specialization',
@@ -61,7 +61,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 7,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/Coursera_Fundamentals_design.png'),
         name: 'Fundamentals of Graphic Design',
         organization: 'Coursera',
         description: 'Coursera certificate, part of Graphic Design Specialization',
@@ -71,7 +71,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 8,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/Coursera_Introduction_typography.png'),
         name: 'Introduction to Typography',
         organization: 'Coursera',
         description: 'Coursera certificate, part of Graphic Design Specialization',
@@ -81,7 +81,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 9,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/Coursera_Introduction_imagemaking.png'),
         name: 'Introduction to Imagemaking',
         organization: 'Coursera',
         description: 'Coursera certificate, part of Graphic Design Specialization',
@@ -91,7 +91,7 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 10,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/Coursera_Desing_history.png'),
         name: 'Ideas from the History of Graphic Design',
         organization: 'Coursera',
         description: 'Coursera certificate, part of Graphic Design Specialization',
@@ -101,27 +101,27 @@ export const CERTIFICATES_LIST = [
     },
     {
         id: 11,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/ISTQB_Foundation_QA.png'),
         name: 'ISTQB Certified Tester Foundation Level',
         organization: 'ISTQB, (SJSI, Poland)',
         description: 'ISTQB certificate',
-        link: '#',
+        link: '',
         section: "Testing",
         year: 2018
     },
     {
         id: 12,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/ISTQB_Agile_QA.png'),
         name: 'ISTQB Certified Tester Agile Tester Extension',
         organization: 'ISTQB, (SJSI, Poland)',
         description: 'ISTQB certificate',
-        link: '#',
+        link: '',
         section: "Testing",
         year: 2018
     },
     {
         id: 13,
-        imgPath: require('../../../assets/images/HeroImage.jpg'),
+        imgPath: require('../../../assets/images/certificates/QA_TUTOR_certificates.png'),
         name: 'Software Quality Assurance and Testing',
         organization: 'QATUTOR school',
         description: 'QATUTOR school',

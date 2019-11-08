@@ -168,6 +168,18 @@ span.active.breadcrumb-item::before {
   height: 100px;
 }
 /*------ Certificates ------*/
+.certificate-img {
+  cursor: pointer;
+}
+.card-subtitle {
+  font-size: 12px;
+}
+.card-text, .card-link {
+  font-size: 14px;
+}
+.card-link {
+  color: black;
+}
 /*------ Footer ------*/
 
 
