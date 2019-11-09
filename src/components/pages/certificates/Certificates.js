@@ -2,13 +2,13 @@ import React from 'react';
 import Breadcrumbs from '../../navigation/Breadcrumbs';
 import CertificatesDisplay from './CertificatesDisplay';
 import { Row, Col } from 'reactstrap';
-import { HASH_CERTIFICATES } from '../../navigation/links/nav-links'
+import { SECTIONS_CERTIFICATES } from '../../navigation/links/nav-links'
 import Section from '../Section';
 
 
 export default function Certificates(props) {
 
-    const sectionsDisplay = HASH_CERTIFICATES.map(section => {
+    const sectionsDisplay = SECTIONS_CERTIFICATES.map(section => {
         return (
             <Section key={section.id} content={<CertificatesDisplay section={section.name} />} name={section.name} sectionId={section.hashUrl.split('').splice(1).join('')} />
         );

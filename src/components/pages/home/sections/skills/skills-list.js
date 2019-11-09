@@ -1,4 +1,4 @@
-import { faHtml5, faCss3, faReact, faGit, faBootstrap, faNodeJs, faJs, faJira, faBitbucket, faConfluence } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faReact, faGit, faBootstrap, faNodeJs, faJs } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'; 
 
 export const SKILLS =[
@@ -50,23 +50,5 @@ export const SKILLS =[
     icon: faDatabase,
     name: 'SQL',
     progress: 40
-},
-{
-    id: 9,
-    icon: faJira,
-    name: 'Jira',
-    progress: 70
-},
-{
-    id: 10,
-    icon: faBitbucket,
-    name: 'Bitbusked',
-    progress: 60
-},
-{
-    id: 11,
-    icon: faConfluence,
-    name: 'Confluence',
-    progress: 60
 }
 ]

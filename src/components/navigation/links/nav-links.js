@@ -10,11 +10,6 @@ export const LINKS = [
         url: '/'
     },
     {
-        id: 2,
-        name: 'CV',
-        url: '/cv'
-    },
-    {
         id: 3,
         name: 'Certificates',
         url: '/certificates'
@@ -22,8 +17,8 @@ export const LINKS = [
     },
     {
         id: 4,
-        name: 'Projects',
-        url: '/projects'
+        name: 'Portfolio',
+        url: '/portfolio'
     },
     {
         id: 5,
@@ -32,7 +27,7 @@ export const LINKS = [
     }
 ]
 
-export const HASH_HOME = [
+export const SECTIONS_HOME = [
     {
         id: 1,
         name: 'About',
@@ -54,7 +49,7 @@ export const HASH_HOME = [
     }
 ];
 
-export const HASH_CERTIFICATES = [
+export const SECTIONS_CERTIFICATES = [
     {
         id: 1,
         name: 'Web Development',
@@ -73,7 +68,7 @@ export const HASH_CERTIFICATES = [
     }
 ];
 
-export const HASH_PROJECTS = [
+export const SECTIONS_PORTFOLIO = [
     {
         id: 1,
         name: 'Statistics',

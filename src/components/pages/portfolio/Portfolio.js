@@ -1,14 +1,14 @@
 import React from 'react';
 import Breadcrumbs from '../../navigation/Breadcrumbs';
 import { Row, Col } from 'reactstrap';
-import { HASH_PROJECTS } from '../../navigation/links/nav-links'
+import { SECTIONS_PORTFOLIO } from '../../navigation/links/nav-links'
 import Section from '../Section';
 import CodePenProjectsDisplay from './sections/codepen-projects/CodePenProjectsDisplay';
 
 
-export default function Certificates(props) {
+export default function Portfolio(props) {
 
-    const codePenSectionsDisplay = HASH_PROJECTS.map(section => {
+    const codePenSectionsDisplay = SECTIONS_PORTFOLIO.map(section => {
         return (
             <Section key={section.id} content={<CodePenProjectsDisplay section={section.name}/>} name={section.name} sectionId={section.hashUrl.split('').splice(1).join('')} />
         );
@@ -26,7 +26,6 @@ export default function Certificates(props) {
                     </Row>
                 </Col>
             </Row>
-
         </React.Fragment>
 
     );

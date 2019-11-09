@@ -1,9 +1,7 @@
 import React from 'react';
-
 import Home from './pages/home/Home';
-import CV from './pages/cv/CV';
 import Certificates from './pages/certificates/Certificates';
-import Projects from './pages/projects/Projects';
+import Portfolio from './pages/portfolio/Portfolio';
 import Blog from './pages/blog/Blog';
 
 import {
@@ -21,7 +19,7 @@ import HeroImage from '../components/pages/home/sections/hero-image/HeroImage';
 import NavBarHash from '../components/navigation/NavBarHash';
 import NavBarPageLinks from '../components/navigation/NavBarPageLinks';
 
-import { HASH_HOME, HASH_CERTIFICATES, HASH_PROJECTS } from './navigation/links/nav-links';
+import { SECTIONS_HOME, SECTIONS_CERTIFICATES, SECTIONS_PORTFOLIO } from './navigation/links/nav-links';
 
 //const achievments = <NavBarAchievments />;
 const navPages = <NavBarPageLinks />;
@@ -33,27 +31,20 @@ const routes = [
         navbarDispaly: () =>
             <React.Fragment>
                 <HeroImage />
-                <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_HOME}/>}  />
+                <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={SECTIONS_HOME}/>}  />
             </React.Fragment>
     },
     {
-        path: "/cv",
-        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_HOME}/>}/>
-
-
-    }
-    ,
-    {
         path: "/certificates",
-        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_CERTIFICATES}/>}/>
+        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={SECTIONS_CERTIFICATES}/>}/>
     },
     {
-        path: "/projects",
-        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_PROJECTS}/>} />
+        path: "/portfolio",
+        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={SECTIONS_PORTFOLIO}/>} />
     },
     {
         path: "/blog",
-        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={HASH_CERTIFICATES}/>} />
+        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={SECTIONS_CERTIFICATES}/>} />
     }
 ];
 
@@ -78,14 +69,11 @@ export default class Main extends React.Component {
                         <Route exact path="/">
                             <Home />
                         </Route>
-                        <Route path="/cv">
-                            <CV />
-                        </Route>
                         <Route path="/certificates">
                             <Certificates />
                         </Route>
-                        <Route path="/projects">
-                            <Projects />
+                        <Route path="/portfolio">
+                            <Portfolio />
                         </Route>
                         <Route path="/blog">
                             <Blog />
