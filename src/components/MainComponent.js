@@ -19,34 +19,38 @@ import HeroImage from '../components/pages/home/sections/hero-image/HeroImage';
 import NavBarHash from '../components/navigation/NavBarHash';
 import NavBarPageLinks from '../components/navigation/NavBarPageLinks';
 
-import { SECTIONS_HOME, SECTIONS_CERTIFICATES, SECTIONS_PORTFOLIO } from './navigation/links/nav-links';
+import { LINKS } from './navigation/links/nav-links';
 
 //const achievments = <NavBarAchievments />;
 const navPages = <NavBarPageLinks />;
 
-const routes = [
-    {
-        path: "/",
-        exact: true,
-        navbarDispaly: () =>
-            <React.Fragment>
-                <HeroImage />
-                <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={SECTIONS_HOME}/>}  />
-            </React.Fragment>
-    },
-    {
-        path: "/certificates",
-        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={SECTIONS_CERTIFICATES}/>}/>
-    },
-    {
-        path: "/portfolio",
-        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={SECTIONS_PORTFOLIO}/>} />
-    },
-    {
-        path: "/blog",
-        navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={SECTIONS_CERTIFICATES}/>} />
+
+
+const routes = [];
+
+LINKS.forEach((link, index) => {
+    let route = {};
+    if (index === 0) {
+        route =
+            {
+                path: link.url,
+                exact: true,
+                navbarDispaly: () =>
+                    <React.Fragment>
+                        <HeroImage />
+                        <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={link.sections} />} />
+                    </React.Fragment>
+            }
     }
-];
+    else {
+        route = {
+            path: link.url,
+            navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={link.sections} />} />
+        }
+
+    }
+    routes.push(route);
+});
 
 export default class Main extends React.Component {
 

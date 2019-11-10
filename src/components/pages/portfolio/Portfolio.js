@@ -10,20 +10,16 @@ export default function Portfolio(props) {
 
     const codePenSectionsDisplay = SECTIONS_PORTFOLIO.map(section => {
         return (
-            <Section key={section.id} content={<CodePenProjectsDisplay section={section.name}/>} name={section.name} sectionId={section.hashUrl.split('').splice(1).join('')} />
+            <Section key={section.id} content={<CodePenProjectsDisplay section={section.name} />} name={section.name} sectionId={section.hashUrl.split('').splice(1).join('')} />
         );
     });
 
     return (
         <React.Fragment>
             <Breadcrumbs page="Projects" />
-            <Row className="container-row-col">
-                <Col xs='12'>
-                    <Row className="container-row-col">
-                        <Col xs='12'>
-                            {codePenSectionsDisplay}
-                        </Col>
-                    </Row>
+            <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
+                <Col xs='12' className="m-0 p-0">
+                    {codePenSectionsDisplay}
                 </Col>
             </Row>
         </React.Fragment>

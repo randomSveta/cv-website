@@ -2,31 +2,6 @@ import React from 'react';
 import About from '../.././pages/home/sections/about/About'
 import Skills from '../../pages/home/sections/skills/Skills';
 import CurrentProjects from '../../pages/home/sections/current-projects/CurrentProjects';
-
-export const LINKS = [
-    {
-        id: 1,
-        name: 'Home',
-        url: '/'
-    },
-    {
-        id: 3,
-        name: 'Certificates',
-        url: '/certificates'
-
-    },
-    {
-        id: 4,
-        name: 'Portfolio',
-        url: '/portfolio'
-    },
-    {
-        id: 5,
-        name: 'Blog',
-        url: '/blog'
-    }
-]
-
 export const SECTIONS_HOME = [
     {
         id: 1,
@@ -89,4 +64,32 @@ export const SECTIONS_PORTFOLIO = [
         
     }
 ];
+
+
+export const LINKS = [
+    {
+        id: 1,
+        name: 'Home',
+        url: '/',
+        sections: SECTIONS_HOME
+    },
+    {
+        id: 3,
+        name: 'Certificates',
+        url: '/certificates',
+        sections: SECTIONS_CERTIFICATES
+
+    },
+    {
+        id: 4,
+        name: 'Portfolio',
+        url: '/portfolio',
+        sections: SECTIONS_PORTFOLIO
+    },
+    {
+        id: 5,
+        name: 'Blog',
+        url: '/blog'
+    }
+]
 
