@@ -1,7 +1,13 @@
 import React from 'react';
+
 import About from '../.././pages/home/sections/about/About'
 import Skills from '../../pages/home/sections/skills/Skills';
 import CurrentProjects from '../../pages/home/sections/current-projects/CurrentProjects';
+
+import CodePenProjects from '../../pages/portfolio/sections/codepen-projects/CodePenProjects';
+import Statistics from '../../pages/portfolio/sections/statistics/Statistics';
+import GitHubProjects from '../../pages/portfolio/sections/github-projects/GitHubProjects';
+
 export const SECTIONS_HOME = [
     {
         id: 1,
@@ -48,41 +54,19 @@ export const SECTIONS_PORTFOLIO = [
         id: 1,
         name: 'Statistics',
         hashUrl: '#statistics',
-        jsx: <div/>
+        jsx: <Statistics/>
     },
     {
         id: 2,
         name: 'CodePen',
         hashUrl: '#codepen',
-        jsx: <div/>
+        jsx: <CodePenProjects />
     },
     {
         id: 3,
         name: 'GitHub',
         hashUrl: '#github',
-        jsx: <div/>
+        jsx: <GitHubProjects/>
         
     }
 ];
-
-
-export const LINKS = [
-    {
-        id: 1,
-        name: 'Home',
-        url: '/',
-        sections: SECTIONS_HOME
-    },
-    {
-        id: 3,
-        name: 'Portfolio',
-        url: '/portfolio',
-        sections: SECTIONS_PORTFOLIO
-    },
-    {
-        id: 4,
-        name: 'Blog',
-        url: '/blog'
-    }
-]
-

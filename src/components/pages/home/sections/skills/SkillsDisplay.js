@@ -8,10 +8,7 @@ export default function Skills(props) {
     const skillsIconsDisplay = SKILLS.map(icon => {
         return (
             <Col xs="6" md="3" className="m-0 p-0" key={icon.id}>
-                <div className="m-3 p-3 border skills-icon-item text-center">
-                    <SkillIcon icon={icon.icon} />
-                    <p className="m-0 p-0">{icon.name}</p>
-                </div>
+                <SkillIcon icon={icon.icon} name={icon.name} />
             </Col >);
     });
     return (

@@ -8,6 +8,7 @@ rgb(224, 229, 235) - hover links
 */
 
 /*------ Layout ------*/
+
 #root {
   font-family: 'Montserrat', 'Arial', sans-serif;
 }
@@ -18,15 +19,17 @@ rgb(224, 229, 235) - hover links
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
 }
+
 .link-style-hash:hover {
   color: pink;
 }
+
 .link-style {
   color: white;
 }
+
 .link-style:hover {
   color: coral;
-
 }
 
 .rotate-animation {
@@ -108,12 +111,14 @@ rgb(224, 229, 235) - hover links
 
 div.breadcrumb {
   background-color: rgba(0, 0, 0, 0.7);
-  margin:0;
+  margin: 0;
   height: 100%;
 }
+
 span.active.breadcrumb-item::before {
   color: white;
 }
+
 /*------ Social icons ------ */
 
 .social-icon-item {
@@ -140,42 +145,52 @@ span.active.breadcrumb-item::before {
 /*------ About section ------*/
 
 .parallax-home {
-  background-image: url("./assets/images/HeroImage_5.jpg");
+  background-image: linear-gradient(rgba(255,255,255, 0.1), rgba(255, 255, 255, 0.1)), url("./assets/images/HeroImage_5.jpg");
   height: 100px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} 
+}
+
 .about-text {
   font-size: 14px;
 }
+
 .about-img {
   width: 100px;
   height: 100px;
 }
+
 /*------ Skills ------*/
-.skills-icon-item svg{
+
+.skills-icon-item svg {
   font-size: 50px;
 }
+
 /*------ Current Projects ------*/
+
 .media-img {
-  width: 100px;  
+  width: 100px;
   height: 100px;
 }
+
 /*------ Certificates ------*/
+
 .certificate-img {
   cursor: pointer;
 }
+
 .card-subtitle {
   font-size: 12px;
 }
+
 .card-text, .card-link {
   font-size: 14px;
 }
+
 .card-link {
   color: black;
 }
+
 /*------ Footer ------*/
-
-

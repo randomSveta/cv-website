@@ -1,11 +1,11 @@
 import React from 'react';
-import StatisticsDisplay from './StatisticsDisplay';
+import GitHubProjectsDisplay from './GithubProjectsDisplay';
 
 
 export default function Statistics(props) {
 
     return (
-        <StatisticsDisplay />
+        <GitHubProjectsDisplay />
     );
 }
 

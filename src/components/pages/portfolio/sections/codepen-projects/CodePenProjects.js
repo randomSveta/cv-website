@@ -1,9 +1,9 @@
 import React from 'react';
-import CodePenDisplay from './CodePenProjectsDisplay';
+import CodePenProjectsDisplay from './CodePenProjectsDisplay';
 
 export default function CodePenProjects(props) {
 
     return (
-       <CodePenDisplay/>
+        <CodePenProjectsDisplay />
     );
 }

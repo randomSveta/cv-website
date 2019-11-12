@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../Section';
-import { SECTIONS_HOME } from '../../navigation/links/nav-links';
+import { SECTIONS_HOME } from '../../navigation/pages-and-sections/sections';
 import { Row, Col } from 'reactstrap';
 
 export default function Home(props) {

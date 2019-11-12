@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LINKS } from './links/nav-links';
+import { PAGES } from './pages-and-sections/pages';
 
 export default function NavLinks(props) {
 
-  const footerNavLinks = LINKS.map(link => {
+  const footerNavLinks = PAGES.map(link => {
     return (
       <li key={link.id}>
         <Link to={link.url} className='link-style m-3 underscore text-decoration-none'>{link.name}</Link>

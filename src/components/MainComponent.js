@@ -18,7 +18,7 @@ import HeroImage from '../components/pages/home/sections/hero-image/HeroImage';
 import NavBarSections from '../components/navigation/NavBarSections';
 import NavBarPages from '../components/navigation/NavBarPages';
 
-import { LINKS } from './navigation/links/nav-links';
+import { PAGES } from './navigation/pages-and-sections/pages';
 
 //const achievments = <NavBarAchievments />;
 const navPages = <NavBarPages />;
@@ -27,7 +27,7 @@ const navPages = <NavBarPages />;
 
 const routes = [];
 
-LINKS.forEach((link, index) => {
+PAGES.forEach((link, index) => {
     let route = {};
     if (index === 0) {
         route =
