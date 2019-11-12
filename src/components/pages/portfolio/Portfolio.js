@@ -16,7 +16,7 @@ export default function Portfolio(props) {
 
     return (
         <React.Fragment>
-            <Breadcrumbs page="Projects" />
+            <Breadcrumbs page="Portfolio" />
             <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
                 <Col xs='12' className="m-0 p-0">
                     {codePenSectionsDisplay}

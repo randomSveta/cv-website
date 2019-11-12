@@ -1,6 +1,5 @@
 import React from 'react';
 import Home from './pages/home/Home';
-import Certificates from './pages/certificates/Certificates';
 import Portfolio from './pages/portfolio/Portfolio';
 import Blog from './pages/blog/Blog';
 
@@ -72,9 +71,6 @@ export default class Main extends React.Component {
                     <Switch location={this.props.location}>
                         <Route exact path="/">
                             <Home />
-                        </Route>
-                        <Route path="/certificates">
-                            <Certificates />
                         </Route>
                         <Route path="/portfolio">
                             <Portfolio />

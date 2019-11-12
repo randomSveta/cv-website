@@ -75,19 +75,12 @@ export const LINKS = [
     },
     {
         id: 3,
-        name: 'Certificates',
-        url: '/certificates',
-        sections: SECTIONS_CERTIFICATES
-
-    },
-    {
-        id: 4,
         name: 'Portfolio',
         url: '/portfolio',
         sections: SECTIONS_PORTFOLIO
     },
     {
-        id: 5,
+        id: 4,
         name: 'Blog',
         url: '/blog'
     }
