@@ -14,7 +14,7 @@ export default function HeroImage(props) {
         </Row>
         <Row>
           <Col xs="12">
-            <SocialIconsDisplay place="hero-social"/>
+            <SocialIconsDisplay place="hero"/>
           </Col>
         </Row>
       </Jumbotron>

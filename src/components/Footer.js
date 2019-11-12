@@ -13,7 +13,7 @@ export default function Footer(props) {
                     <NavLinks />
                 </Col>
                 <Col xs="12" md="6" className="m-0 p-0">
-                    <SocialIconsDisplay place="footer-social" />
+                    <SocialIconsDisplay place="footer"/>
                 </Col>
             </Row>
             <Row className="m-0 p-0">

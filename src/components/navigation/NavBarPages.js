@@ -7,13 +7,11 @@ export default function NavBarPageLinks(props) {
 
     const navigationItems = LINKS.map(link => {
         return (
-            <React.Fragment>
             <NavItem key={link.id} className="text-center">
                 <NavLink exact activeClassName='active-item' className="link-style nav-link-style underscore m-1 p-1 text-decoration-none d-inline-block" to={link.url}>
                     {link.name}
                 </NavLink>
             </NavItem>
-            </React.Fragment>
         );
 
     });
