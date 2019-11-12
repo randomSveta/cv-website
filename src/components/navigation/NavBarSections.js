@@ -8,7 +8,7 @@ import { NavHashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHashtag } from '@fortawesome/free-solid-svg-icons'
 
-export default function NavBarHash(props) {
+export default function NavBarSections(props) {
     const hashLinksList = props.links;
 
     let hashLinks = [];

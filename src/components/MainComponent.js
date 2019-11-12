@@ -16,13 +16,13 @@ import NavBar from './navigation/NavBar';
 import HeroImage from '../components/pages/home/sections/hero-image/HeroImage';
 
 //import NavBarAchievments from '../components/navigation/NavBarAchievments';
-import NavBarHash from '../components/navigation/NavBarHash';
-import NavBarPageLinks from '../components/navigation/NavBarPageLinks';
+import NavBarSections from '../components/navigation/NavBarSections';
+import NavBarPages from '../components/navigation/NavBarPages';
 
 import { LINKS } from './navigation/links/nav-links';
 
 //const achievments = <NavBarAchievments />;
-const navPages = <NavBarPageLinks />;
+const navPages = <NavBarPages />;
 
 
 
@@ -38,14 +38,14 @@ LINKS.forEach((link, index) => {
                 navbarDispaly: () =>
                     <React.Fragment>
                         <HeroImage />
-                        <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={link.sections} />} />
+                        <NavBar navigationPages={navPages} navigationSections={<NavBarSections links={link.sections} />} />
                     </React.Fragment>
             }
     }
     else {
         route = {
             path: link.url,
-            navbarDispaly: () => <NavBar navigationPages={navPages} navigationHash={<NavBarHash links={link.sections} />} />
+            navbarDispaly: () => <NavBar navigationPages={navPages} navigationSections={<NavBarSections links={link.sections} />} />
         }
 
     }
