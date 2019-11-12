@@ -1,7 +1,5 @@
 import React from 'react';
-import Home from './pages/home/Home';
-import Portfolio from './pages/portfolio/Portfolio';
-import Blog from './pages/blog/Blog';
+import Breadcrumbs from './navigation/Breadcrumbs';
 
 import {
     BrowserRouter as Router,
@@ -24,33 +22,45 @@ import { PAGES } from './navigation/pages-and-sections/pages';
 const navPages = <NavBarPages />;
 
 
-
 const routes = [];
 
-PAGES.forEach((link, index) => {
-    let route = {};
+PAGES.forEach((page, index) => {
+    let route = {
+        path: page.url,
+        exact: true
+    };
+
+    const breadcrumbsArticle = <Breadcrumbs article={page.article} secondStep={page.page} secondStepUrl={page.pageUrl} thirdStep={page.name} />;
+    const breadcrumbsPages = <Breadcrumbs article={page.article} secondStep={page.name} />;
+
     if (index === 0) {
-        route =
-            {
-                path: link.url,
-                exact: true,
-                navbarDispaly: () =>
-                    <React.Fragment>
-                        <HeroImage />
-                        <NavBar navigationPages={navPages} navigationSections={<NavBarSections links={link.sections} />} />
-                    </React.Fragment>
-            }
+        route.navigation = () =>
+            <React.Fragment>
+                <HeroImage />
+                <NavBar navigationPages={navPages} navigationSections={<NavBarSections sections={page.sections} />} />
+            </React.Fragment>
     }
     else {
-        route = {
-            path: link.url,
-            navbarDispaly: () => <NavBar navigationPages={navPages} navigationSections={<NavBarSections links={link.sections} />} />
+        route.navigation = () => {
+            return (
+                <React.Fragment>
+                    <NavBar navigationPages={navPages} navigationSections={<NavBarSections sections={page.sections} />} />
+                    {page.article ? breadcrumbsArticle : breadcrumbsPages}
+                </React.Fragment>
+            );
         }
-
     }
     routes.push(route);
 });
 
+const pages = PAGES.map((page) => {
+    console.log('url ' + page.url);
+    return (
+        <Route exact={!page.article} path={page.url}>
+            {page.jsx}
+        </Route>
+    );
+});
 export default class Main extends React.Component {
 
     render() {
@@ -64,24 +74,15 @@ export default class Main extends React.Component {
                                 key={index}
                                 path={route.path}
                                 exact={route.exact}
-                                children={<route.navbarDispaly />}
+                                children={<route.navigation />}
                             />
                         ))}
                     </Switch>
                     <Switch location={this.props.location}>
-                        <Route exact path="/">
-                            <Home />
-                        </Route>
-                        <Route path="/portfolio">
-                            <Portfolio />
-                        </Route>
-                        <Route path="/blog">
-                            <Blog />
-                        </Route>
+                        {pages}
                         <Redirect to="/" />
                     </Switch>
                     <Footer />
-
                 </Router>
             </React.Fragment>
         );

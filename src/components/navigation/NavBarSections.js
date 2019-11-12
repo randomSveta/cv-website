@@ -9,31 +9,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHashtag } from '@fortawesome/free-solid-svg-icons'
 
 export default function NavBarSections(props) {
-    const hashLinksList = props.links;
+    const sectionsNavList = props.sections;
 
-    let hashLinks = [];
-    if (hashLinksList) {
-        hashLinks = hashLinksList.map(link => {
+    let sectionsNavLinks = [];
+    if (sectionsNavList) {
+        sectionsNavLinks = sectionsNavList.map(section => {
             return (
-                <NavItem key={link.id} className="navbar-li-hash">
-                    <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='link-style-hash m-1 p-1 text-decoration-none' to={link.hashUrl}
-                    >{link.name}</NavHashLink>
+                <NavItem key={section.id} className="navbar-li-hash">
+                    <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='link-style-hash m-1 p-1 text-decoration-none' to={section.hashUrl}
+                    >{section.name}</NavHashLink>
                 </NavItem>
             );
         });
     }
 
-    if (hashLinks.length !== 0) {
+    if (sectionsNavLinks.length !== 0) {
         return (
             <div className="d-flex flex-md-row-reverse flex-column justify-content-center align-items-center">
-
                 <Button color="secondary" id="hash-list-toggler"><FontAwesomeIcon icon={faHashtag} className="active-item" /></Button>
                 <UncontrolledTooltip placement="left" target="hash-list-toggler">
                     Sections navigation
                 </UncontrolledTooltip>
                 <UncontrolledCollapse toggler="#hash-list-toggler">
                     <Nav>
-                        {hashLinks}
+                        {sectionsNavLinks}
 
                     </Nav>
                 </UncontrolledCollapse>

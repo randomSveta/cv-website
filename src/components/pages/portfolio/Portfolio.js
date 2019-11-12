@@ -1,5 +1,4 @@
 import React from 'react';
-import Breadcrumbs from '../../navigation/Breadcrumbs';
 import { Row, Col } from 'reactstrap';
 import { SECTIONS_PORTFOLIO } from '../../navigation/pages-and-sections/sections'
 import Section from '../Section';
@@ -15,7 +14,6 @@ export default function Portfolio(props) {
 
     return (
         <React.Fragment>
-            <Breadcrumbs page="Portfolio" />
             <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
                 <Col xs='12' className="m-0 p-0">
                     {codePenSectionDisplay}

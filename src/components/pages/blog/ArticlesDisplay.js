@@ -7,7 +7,7 @@ export default function GitHubProjectsDisplay(props) {
 
     const articles = ARTICLES.sort((a, b) => b.year - a.year).map(article => {
         return (
-            <ArticlePreview article={article} />
+            <ArticlePreview article={article} sectionUrl={props.sectionUrl}/>
         );
     });
 
