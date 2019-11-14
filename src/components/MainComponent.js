@@ -21,13 +21,12 @@ import { PAGES } from './navigation/pages-and-sections/pages';
 //const achievments = <NavBarAchievments />;
 const navPages = <NavBarPages />;
 
-
 const routes = [];
 
 PAGES.forEach((page, index) => {
     let route = {
         path: page.url,
-        exact: true
+        exact: (page.article ? false: true)
     };
 
     const breadcrumbsArticle = <Breadcrumbs article={page.article} secondStep={page.page} secondStepUrl={page.pageUrl} thirdStep={page.name} />;
@@ -54,9 +53,8 @@ PAGES.forEach((page, index) => {
 });
 
 const pages = PAGES.map((page) => {
-    console.log('url ' + page.url);
     return (
-        <Route exact={!page.article} path={page.url}>
+        <Route exact={page.exact} path={page.url}>
             {page.jsx}
         </Route>
     );

@@ -13,13 +13,11 @@ export default function Portfolio(props) {
     });
 
     return (
-        <React.Fragment>
             <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
                 <Col xs='12' className="m-0 p-0">
                     {codePenSectionDisplay}
                 </Col>
             </Row>
-        </React.Fragment>
 
     );
 }

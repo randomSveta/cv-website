@@ -1,10 +1,24 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 export default function ArticlePage(props) {
     return (
-        <React.Fragment>
-            <div>Mu</div>
-        </React.Fragment>
- 
+        <Container>
+            <Row>
+                <Col xs='12'>
+                    <h1>{props.article.title}</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs='12'>
+                    <img />
+                </Col>
+            </Row>
+            <Row>
+                <Col xs='12'>
+                    {props.article.jsx}
+                </Col>
+            </Row>
+        </Container>
     );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import Breadcrumbs from '../../navigation/Breadcrumbs';
 import ArticlesDisplay from './ArticlesDisplay'
 
 export default function Blog(props) {
