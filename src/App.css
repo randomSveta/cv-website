@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 /* Colors: 
 
-rgb(30, 37, 47) - dark,
-rgb(192, 204, 216) - light,
-rgb(224, 229, 235) - hover links
-
+#141b1f, rgb(20, 27, 31) - dark,
+#87bdd8, rgb(135, 189, 216) - blue
+rgba(121, 216, 255, 0.95) - sky blue
 */
 
 /*------ Layout ------*/
@@ -20,16 +19,12 @@ rgb(224, 229, 235) - hover links
   font-size: 14px;
 }
 
-.link-style-hash:hover {
-  color: pink;
-}
-
 .link-style {
   color: white;
 }
 
-.link-style:hover {
-  color: coral;
+.link-style:hover, .link-style-hash:hover {
+  color: white;
 }
 
 .rotate-animation {
@@ -39,20 +34,21 @@ rgb(224, 229, 235) - hover links
 .rotate-animation:hover {
   animation: rotate 1.5s;
   animation-iteration-count: infinite;
+  
 }
 
-.underscore {
+.underscore, .underscore-sections {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.underscore::after {
+.underscore::after, .underscore-sections::after  {
   content: '';
-  background-color: white;
+  background-color: #83d3fc;
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: 0;
   display: block;
   width: 100%;
@@ -60,8 +56,11 @@ rgb(224, 229, 235) - hover links
   transform: scale(0, 1);
   transition: transform ease-in-out 250ms;
 }
+.underscore-sections::after {
+  height: 1px;
+}
 
-.underscore:hover::after {
+.underscore:hover::after, .underscore-sections:hover::after {
   transform: scale(1, 1);
 }
 
@@ -104,9 +103,29 @@ rgb(224, 229, 235) - hover links
 /* ------ Main elements ------ */
 
 /*------ Navigation------*/
+#nav-bar {
+  height: 70px;
+  background-color: #141b1f;
+}
 
-.active-item {
-  color: red;
+.navbar-collapse {
+  background-color: #141b1f;
+}
+
+svg.active-item {
+ color: #87bdd8;
+}
+
+.active-item::before  {
+  content: '';
+  background-color: #87bdd8;
+  position: absolute;
+  top: -5px;
+  left: 45%;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
 }
 
 div.breadcrumb {
@@ -119,10 +138,17 @@ span.active.breadcrumb-item::before {
   color: white;
 }
 
+#hash-list-toggler {
+  background-color: #141b1f;
+  border: 2px dotted gray;
+  width: 40px;
+  height: 40px;
+}
+
 /*------ Social icons ------ */
 
 .social-icon-item {
-  font-size: 35px;
+  font-size: 32px;
 }
 
 /*------ Section ------*/
@@ -132,26 +158,17 @@ span.active.breadcrumb-item::before {
 /*---- Hero Image section ----*/
 
 #hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/images/HeroImage_5.jpg");
-  height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/images/home-page/IMG_1497_1.jpg");
+  height: calc(100vh - 70px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  color: white;
-  text-align: center;
 }
 
 /*------ About section ------*/
 
-.parallax-home {
-  background-image: linear-gradient(rgba(255,255,255, 0.1), rgba(255, 255, 255, 0.1)), url("./assets/images/HeroImage_5.jpg");
-  height: 100px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .about-text {
   font-size: 14px;
@@ -163,34 +180,45 @@ span.active.breadcrumb-item::before {
 }
 
 /*------ Skills ------*/
+.skills-parallax {
+  background-image: linear-gradient(rgba(0,0,0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/images/home-page/IMG_6072.JPG");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .skills-icon-item svg {
   font-size: 50px;
 }
 
+.skills-icon-item {
+  border: 3px dotted #65c9fb;
+  background-color:  rgba(20, 27, 31, 0.9);
+  color: white;
+  height: 120px;
+  width: 120px;
+}
+
 /*------ Current Projects ------*/
+.current-projects-parallax {
+  background-image: linear-gradient(rgba(0,0,0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/images/home-page/IMG_6066.JPG");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .media-img {
   width: 100px;
   height: 100px;
 }
 
-/*------ Certificates ------*/
-
-.certificate-img {
-  cursor: pointer;
-}
-
-.card-subtitle {
-  font-size: 12px;
-}
-
-.card-text, .card-link {
-  font-size: 14px;
-}
-
-.card-link {
-  color: black;
-}
 
 /*------ Footer ------*/
+
+#footer {
+  background-color: #141b1f;
+}

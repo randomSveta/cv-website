@@ -15,8 +15,8 @@ export default function NavBarSections(props) {
     if (sectionsNavList) {
         sectionsNavLinks = sectionsNavList.map(section => {
             return (
-                <NavItem key={section.id} className="navbar-li-hash">
-                    <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='link-style-hash m-1 p-1 text-decoration-none' to={section.hashUrl}
+                <NavItem key={section.id} className="navbar-li-hash p-0 m-2">
+                    <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='link-style-hash p-0 m-1 underscore-sections text-decoration-none' to={section.hashUrl}
                     >{section.name}</NavHashLink>
                 </NavItem>
             );
@@ -26,8 +26,8 @@ export default function NavBarSections(props) {
     if (sectionsNavLinks.length !== 0) {
         return (
             <div className="d-flex flex-md-row-reverse flex-column justify-content-center align-items-center">
-                <Button color="secondary" id="hash-list-toggler"><FontAwesomeIcon icon={faHashtag} className="active-item" /></Button>
-                <UncontrolledTooltip placement="left" target="hash-list-toggler">
+                <Button id="hash-list-toggler" className="rounded-circle"><FontAwesomeIcon icon={faHashtag} className="active-item" /></Button>
+                <UncontrolledTooltip placement="top" target="hash-list-toggler">
                     Sections navigation
                 </UncontrolledTooltip>
                 <UncontrolledCollapse toggler="#hash-list-toggler">

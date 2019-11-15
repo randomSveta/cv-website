@@ -4,7 +4,7 @@ import { faCode, faTerminal } from '@fortawesome/free-solid-svg-icons';
 export const SOCIAL_LINKS = [
     {
         id: 1,
-        name: "Linked In",
+        name: "LinkedIn",
         url: "https://www.linkedin.com/in/svetaklimova/",
         icon: faLinkedin
     },
@@ -24,7 +24,7 @@ export const SOCIAL_LINKS = [
         id: 4,
         name: "CodeWars",
         url: "https://www.codewars.com/users/randomsveta",
-        icon: faCode
+        icon: faTerminal
     },
     {
         id: 5,
@@ -36,7 +36,7 @@ export const SOCIAL_LINKS = [
         id: 6,
         name: "Cadecademy",
         url: "https://www.codecademy.com/profiles/randomsveta",
-        icon: faTerminal
+        icon: faCode
 
     },
     {

@@ -15,7 +15,7 @@ export default function NavBar(props) {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <Navbar id="nav-bar" color="dark" dark expand="md" sticky="top" className="pb-3 pl-3 pr-5 pt-3 m-0">
+        <Navbar id="nav-bar" dark expand="md" sticky="top" className="py-md-3 pl-md-3 pr-md-5 m-0">
             <NavbarBrand href="/" className='ml-3 mr-0 rotate-animation'><SocialIcon icon={faIceCream} /></NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} className="m-0 justify-content-end align-items-center" navbar>

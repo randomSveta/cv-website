@@ -18,7 +18,7 @@ export default function SocialIconsDisplay(props) {
     });
     return (
         <React.Fragment>
-            <ul className='d-flex flex-direction-row justify-content-center align-items-center m-0 p-0'>
+            <ul className='d-flex flex-direction-row flex-wrap justify-content-center align-items-center m-0 p-0'>
                 {icons}
             </ul>
         </React.Fragment>

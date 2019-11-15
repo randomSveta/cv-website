@@ -7,7 +7,7 @@ import { Row, Col } from 'reactstrap';
 export default function Skills(props) {
     const skillsIconsDisplay = SKILLS.map(icon => {
         return (
-            <Col xs="6" md="3" className="m-0 p-0" key={icon.id}>
+            <Col xs="6" md="3" className="my-0 p-0 " key={icon.id}>
                 <SkillIcon icon={icon.icon} name={icon.name} />
             </Col >);
     });
