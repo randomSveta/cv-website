@@ -54,7 +54,7 @@ PAGES.forEach((page, index) => {
 
 const pages = PAGES.map((page) => {
     return (
-        <Route exact={page.exact} path={page.url}>
+        <Route key={page.id} exact={page.exact} path={page.url}>
             {page.jsx}
         </Route>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../Section';
 import { SECTIONS_HOME } from '../../navigation/pages-and-sections/sections';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 export default function Home(props) {
 
@@ -14,12 +14,12 @@ export default function Home(props) {
     });
 
     return (
-
-        <Row className="justify-content-center align-items-center m-0 p-0">
-            <Col xs='12' className="m-0 p-0">
-                {sectionsDisplay}
-            </Col>
-        </Row>
-
+        <Container id="home" className="mw-100">
+            <Row className="justify-content-center align-items-center m-0 p-0">
+                <Col xs='12' className="m-0 p-0">
+                    {sectionsDisplay}
+                </Col>
+            </Row>
+        </Container>
     );
 }

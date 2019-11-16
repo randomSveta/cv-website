@@ -11,7 +11,7 @@ export default function ArticlePage(props) {
             </Row>
             <Row>
                 <Col xs='12'>
-                    <img />
+                    <div/>
                 </Col>
             </Row>
             <Row>

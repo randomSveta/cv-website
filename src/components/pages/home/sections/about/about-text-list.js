@@ -1,20 +1,22 @@
+import {faBook, faBug, faGlobeEurope } from '@fortawesome/free-solid-svg-icons';
+
 export const ABOUT_TEXT_BLOCKS = [
     {
         id: 1,
-        text: 'Hi! My name is Sveta and I am Web Developer! The last my job was as QA Engeneer (near 6 years of experience). I loved my job very much, but I have decided to change my career path because I have found out that Web Development is really awesome too :)',
+        text: "I love web development and want to do it for a job. It all started as a hobby. Doing various online courses and code katas I eventually realised that I would like to do it full time. So, I started looking at job openings and see what gaps did I have in my knowledge.",
         alt: 'test',
-        imgPath: require('../../../../../assets/images/HeroImage_5.jpg')
+        icon: faBook
     },
     {
         id: 2,
-        text: 'Hi! My name is Sveta and I am Web Developer! The last my job was as QA Engeneer (near 6 years of experience). I loved my job very much, but I have decided to change my career path because I have found out that Web Development is really awesome too :)',
+        text: 'Also, having more than 5 years of experience as a QA Engineer I have quite a lot of experience with the software development life cycle, agile practices and working in a team. Thanks to my previous job, I deeply understand what quality and customer focus means.',
         alt: 'test',
-        imgPath: require('../../../../../assets/images/HeroImage_5.jpg')
+        icon: faBug
     },
     {
         id: 3,
-        text: 'Hi! My name is Sveta and I am Web Developer! The last my job was as QA Engeneer (near 6 years of experience). I loved my job very much, but I have decided to change my career path because I have found out that Web Development is really awesome too :)',
+        text: "I think I chose that job because I like solving puzzles, getting to the bottom of the bug and understanding its root cause. What I didn't know is that programming puzzles are much more fun to solve. One the social side, I like travelling and socks with funny patterns. :)",
         alt: 'test',
-        imgPath: require('../../../../../assets/images/HeroImage_5.jpg')
+        icon: faGlobeEurope
     }
 ]

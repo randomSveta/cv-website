@@ -10,6 +10,7 @@ rgba(121, 216, 255, 0.95) - sky blue
 
 #root {
   font-family: 'Montserrat', 'Arial', sans-serif;
+  background-color: rgb(20, 27, 31);
 }
 
 /*------ Link styles ------ */
@@ -39,16 +40,13 @@ rgba(121, 216, 255, 0.95) - sky blue
 
 .underscore, .underscore-sections {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .underscore::after, .underscore-sections::after  {
   content: '';
-  background-color: #83d3fc;
+  background-color: rgba(23, 162, 184, 1);
   position: absolute;
-  bottom: -2px;
+  bottom: -3px;
   left: 0;
   display: block;
   width: 100%;
@@ -102,9 +100,30 @@ rgba(121, 216, 255, 0.95) - sky blue
 
 /* ------ Main elements ------ */
 
+  h2 {
+  
+  }
+  /*position: relative;*/
+/*h2::before, h2::after {
+  content: '';
+  background-color: black;
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: 40%;
+}
+
+h2::before {
+  left: 20%;
+}
+h2::after {
+  right: 20%;
+}*/
+
 /*------ Navigation------*/
 #nav-bar {
-  height: 70px;
   background-color: #141b1f;
 }
 
@@ -113,12 +132,12 @@ rgba(121, 216, 255, 0.95) - sky blue
 }
 
 svg.active-item {
- color: #87bdd8;
+ color: rgba(23, 162, 184, 1);
 }
 
 .active-item::before  {
   content: '';
-  background-color: #87bdd8;
+  background-color: rgba(23, 162, 184, 1);
   position: absolute;
   top: -5px;
   left: 45%;
@@ -148,18 +167,24 @@ span.active.breadcrumb-item::before {
 /*------ Social icons ------ */
 
 .social-icon-item {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 /*------ Section ------*/
 
 /*------ Home page ------ */
-
+#home .h2-row{
+  height: 100px;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*---- Hero Image section ----*/
 
 #hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/images/home-page/IMG_1497_1.jpg");
-  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/images/home-page/hero_image.jpg");
+  height: calc(100vh - 72px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,26 +192,33 @@ span.active.breadcrumb-item::before {
 }
 
 /*------ About section ------*/
+#about .h2-row{
+  background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/about_parallax_bw.jpg");
+} 
 
+.about-icon {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  background-color: rgba(23, 162, 184, 1);
+}
 
 
 .about-text {
   font-size: 14px;
 }
 
-.about-img {
-  width: 100px;
-  height: 100px;
+/*------ Skills ------*/
+
+
+#skills .h2-row {
+  background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/skills_parallax_bw.jpg");
 }
 
-/*------ Skills ------*/
-.skills-parallax {
-  background-image: linear-gradient(rgba(0,0,0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/images/home-page/IMG_6072.JPG");
-  height: 200px;
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+#home h2 {
+  background-color: rgba(0, 0, 0, 0.8) ;
+  height: 100px;
 }
 
 .skills-icon-item svg {
@@ -194,26 +226,25 @@ span.active.breadcrumb-item::before {
 }
 
 .skills-icon-item {
-  border: 3px dotted #65c9fb;
-  background-color:  rgba(20, 27, 31, 0.9);
+  background-color:  rgba(20, 27, 31, 0.95);
   color: white;
   height: 120px;
   width: 120px;
 }
 
-/*------ Current Projects ------*/
-.current-projects-parallax {
-  background-image: linear-gradient(rgba(0,0,0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/images/home-page/IMG_6066.JPG");
-  height: 200px;
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#skills .blue-bg-section{
+  background-color: rgba(23, 162, 184, 1);
+
 }
 
-.media-img {
-  width: 100px;
-  height: 100px;
+/*------ Current Projects ------*/
+
+#current-projects .h2-row{
+  background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/current_p_parallax_bw.jpg");
+}
+
+.current-p-card {
+  background-color: rgba(20, 27, 31, 0.95);
 }
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { SKILLS } from './skills-list';
 import SkillIcon from './SkillIcon';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 
 export default function Skills(props) {
@@ -12,10 +12,11 @@ export default function Skills(props) {
             </Col >);
     });
     return (
-        <Row className="mx-5 mt-1 mb-5 px-5 justify-content-center align-items-center">
-            {skillsIconsDisplay}
-        </Row>
-
+        <Container id="skills-display">
+            <Row className="m-5 p-0 justify-content-center align-items-center">
+                {skillsIconsDisplay}
+            </Row>
+        </Container>
 
     );
 }

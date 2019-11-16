@@ -20,7 +20,7 @@ export default function SocialIcon(props) {
     }
     return (
         <React.Fragment>
-            <FontAwesomeIcon icon={props.icon} className='link-style' id={listItemId} />
+            <FontAwesomeIcon icon={props.icon} className='rotate-animation' id={listItemId} />
             {iconTooltip}
         </React.Fragment>
 
