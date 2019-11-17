@@ -34,7 +34,7 @@ export const SOCIAL_LINKS = [
     },
     {
         id: 6,
-        name: "Cadecademy",
+        name: "Codecademy",
         url: "https://www.codecademy.com/profiles/randomsveta",
         icon: faCode
 
