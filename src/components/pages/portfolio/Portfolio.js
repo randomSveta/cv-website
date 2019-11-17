@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import { SECTIONS_PORTFOLIO } from '../../navigation/pages-and-sections/sections'
 import Section from '../Section';
 
@@ -13,11 +13,17 @@ export default function Portfolio(props) {
     });
 
     return (
+        <Container id="portfolio">
+            <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
+                <Col xs='12' className="m-0 p-0">
+                    <h1 className="text-white">Portfolio</h1>
+                </Col>
+            </Row>
             <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
                 <Col xs='12' className="m-0 p-0">
                     {codePenSectionDisplay}
                 </Col>
             </Row>
-
+        </Container>
     );
 }
