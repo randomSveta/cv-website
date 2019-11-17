@@ -2,8 +2,7 @@
 /* Colors: 
 
 #141b1f, rgb(20, 27, 31) - dark,
-#87bdd8, rgb(135, 189, 216) - blue
-rgba(121, 216, 255, 0.95) - sky blue
+rgba(23, 162, 184, 1)- blue
 */
 
 /*------ Layout ------*/
@@ -35,14 +34,13 @@ rgba(121, 216, 255, 0.95) - sky blue
 .rotate-animation:hover {
   animation: rotate 1.5s;
   animation-iteration-count: infinite;
-  
 }
 
 .underscore, .underscore-sections {
   position: relative;
 }
 
-.underscore::after, .underscore-sections::after  {
+.underscore::after, .underscore-sections::after {
   content: '';
   background-color: rgba(23, 162, 184, 1);
   position: absolute;
@@ -54,6 +52,7 @@ rgba(121, 216, 255, 0.95) - sky blue
   transform: scale(0, 1);
   transition: transform ease-in-out 250ms;
 }
+
 .underscore-sections::after {
   height: 1px;
 }
@@ -98,31 +97,19 @@ rgba(121, 216, 255, 0.95) - sky blue
   }
 }
 
-/* ------ Main elements ------ */
+/* ------ Titles h1, h2, h3,... ------ */
 
-  h2 {
-  
-  }
-  /*position: relative;*/
-/*h2::before, h2::after {
-  content: '';
-  background-color: black;
-  position: absolute;
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  bottom: 40%;
+#home h2, #portfolio h2 {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
-h2::before {
-  left: 20%;
+#home h2 {
+  height: 100px;
 }
-h2::after {
-  right: 20%;
-}*/
-
+#portfolio h2 {
+  height: 70px;
+}
 /*------ Navigation------*/
+
 #nav-bar {
   background-color: #141b1f;
 }
@@ -132,10 +119,10 @@ h2::after {
 }
 
 svg.active-item {
- color: rgba(23, 162, 184, 1);
+  color: rgba(23, 162, 184, 1);
 }
 
-.active-item::before  {
+.active-item::before {
   content: '';
   background-color: rgba(23, 162, 184, 1);
   position: absolute;
@@ -173,13 +160,15 @@ span.active.breadcrumb-item::before {
 /*------ Section ------*/
 
 /*------ Home page ------ */
-#home .h2-row{
+
+#home .h2-row {
   height: 100px;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /*---- Hero Image section ----*/
 
 #hero-image {
@@ -192,9 +181,10 @@ span.active.breadcrumb-item::before {
 }
 
 /*------ About section ------*/
-#about .h2-row{
-  background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/about_parallax_bw.jpg");
-} 
+
+#about .h2-row {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/about_parallax_bw.jpg");
+}
 
 .about-icon {
   width: 100px;
@@ -203,53 +193,68 @@ span.active.breadcrumb-item::before {
   background-color: rgba(23, 162, 184, 1);
 }
 
-
 .about-text {
   font-size: 14px;
 }
 
 /*------ Skills ------*/
 
-
 #skills .h2-row {
-  background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/skills_parallax_bw.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/skills_parallax_bw.jpg");
 }
-
-
-#home h2 {
-  background-color: rgba(0, 0, 0, 0.8) ;
-  height: 100px;
-}
-
 .skills-icon-item svg {
   font-size: 50px;
 }
 
 .skills-icon-item {
-  background-color:  rgba(20, 27, 31, 0.95);
+  background-color: rgba(20, 27, 31, 0.95);
   color: white;
   height: 120px;
   width: 120px;
 }
 
-#skills .blue-bg-section{
+#skills .blue-bg-section {
   background-color: rgba(23, 162, 184, 1);
-
 }
 
 /*------ Current Projects ------*/
 
-#current-projects .h2-row{
-  background-image: linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/current_p_parallax_bw.jpg");
+#current-projects .h2-row {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/current_p_parallax_bw.jpg");
 }
 
 .current-p-card {
   background-color: rgba(20, 27, 31, 0.95);
 }
 
-
 /*------ Footer ------*/
 
 #footer {
   background-color: #141b1f;
+}
+
+/*------- Portfolio ------*/
+
+#portfolio .h2-row {
+  background-color: rgba(23, 162, 184, 1);
+}
+
+/*--- Statistics ---*/
+
+
+.statistica{
+  background-color:rgba(20, 27, 31, 1);
+  width: 200px;
+  height: 200px;
+  border: 8px solid rgba(23, 162, 184, 1);
+}
+.statistica svg {
+  font-size: 32px;
+}
+.stat-name {
+  font-size: 14px;
+}
+.stat-points {
+  font-size: 18px;
+  font-weight: bold;
 }
