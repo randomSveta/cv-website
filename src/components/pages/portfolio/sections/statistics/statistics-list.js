@@ -1,23 +1,27 @@
+import { SOCIAL_LINKS } from '../../../../social-icons/links/social-links';
+
 export const STATISTICS = [
     {
         id: 1,
-        link: '',
-        img: '',
-        name: 'FreeCodeCamp',
-        points: 600
+        profile: 'FreeCodeCamp',
+        points: 629
     },
     {
         id: 2,
-        link: '',
-        img: '',
-        name: 'CodeWars',
-        points: 300
+        profile: 'CodeWars',
+        points: 333
     },
     {
         id: 3,
-        link: '',
-        img: '',
-        name: 'Codecademy',
-        points: 300
+        profile: 'Codecademy',
+        points: 647
     }
 ];
+
+STATISTICS.forEach(statistic => {
+    const profile = SOCIAL_LINKS.filter(socLink=> statistic.profile === socLink.name)[0];
+    if(profile) {
+        statistic.url = profile.url;
+        statistic.icon = profile.icon;
+    }
+})
