@@ -1,13 +1,13 @@
 import React from 'react';
 import { STATISTICS } from './statistics-list';
 import Statistica from './Statistica';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 export default function StatisticsDisplay(props) {
 
     const statistics = STATISTICS.map(stat => {
         return (
-            <Col className="m-3 p-3">
+            <Col className="m-0 p-0">
                 <Statistica stat={stat} />
             </Col>
 
@@ -15,8 +15,10 @@ export default function StatisticsDisplay(props) {
     });
 
     return (
-        <Row className="mx-5 mt-1 mb-5 px-5 justify-content-center align-items-center">
-            {statistics}
-        </Row >
+        <Container>
+            <Row className="m-md-5 px-md-5 py-0 m-2 px-2  justify-content-center align-items-center flex-wrap">
+                {statistics}
+            </Row >
+        </Container>
     );
 }

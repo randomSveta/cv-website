@@ -14,7 +14,7 @@ export default function AboutTextsDisplay(props) {
 
     return (
         <Container>
-            <Row className="m-5 px-5 py-0 justify-content-center align-items-start">
+            <Row className="m-md-5 px-md-5 py-0 m-2 px-2 justify-content-center align-items-start">
                 {textDisplay}
             </Row>
         </Container>

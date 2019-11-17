@@ -14,7 +14,7 @@ export default function Home(props) {
     });
 
     return (
-        <Container id="home" className="mw-100">
+        <Container id="home">
             <Row className="justify-content-center align-items-center m-0 p-0">
                 <Col xs='12' className="m-0 p-0">
                     {sectionsDisplay}
