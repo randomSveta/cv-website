@@ -8,8 +8,8 @@ export default function HeroImage(props) {
         <Container>
           <Row className="m-0 p-0">
             <Col xs="12" className="m-0 p-0">
-              <h1 id="hero-h1">Hi, my name is Sveta!</h1>
-              <p id="hero-p">I am Web Developer</p>
+              <h1>Hi, my name is Sveta!</h1>
+              <p>I am Web Developer</p>
             </Col>
           </Row>
           <Row>
