@@ -14,7 +14,7 @@ export default function SocialIcon(props) {
             listItemId = "h".concat(props.name).split(' ').join('');
         }
         iconTooltip =
-            <UncontrolledTooltip placement="top" target={listItemId}>
+            <UncontrolledTooltip placement="top" target={listItemId} delay={{ show: 150, hide: 0}}>
                 {props.name}
             </UncontrolledTooltip>
     }

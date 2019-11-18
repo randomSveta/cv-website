@@ -27,7 +27,7 @@ export default function NavBarSections(props) {
         return (
             <div className="d-flex flex-md-row-reverse flex-column justify-content-center align-items-center">
                 <Button id="hash-list-toggler" className="rounded-circle"><FontAwesomeIcon icon={faHashtag} className="active-item" /></Button>
-                <UncontrolledTooltip placement="top" target="hash-list-toggler">
+                <UncontrolledTooltip placement="top" target="hash-list-toggler" delay={{ show: 200, hide: 0}}>
                     Sections navigation
                 </UncontrolledTooltip>
                 <UncontrolledCollapse toggler="#hash-list-toggler">
