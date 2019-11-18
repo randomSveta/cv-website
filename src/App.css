@@ -95,15 +95,16 @@ rgba(23, 162, 184, 1)- blue
 
 /* ------ Titles h1, h2, h3,... ------ */
 
-#home h2, #portfolio h2 {
+
+h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#home h2 {
+#home h2, #blog h2{
   height: 100px;
 }
 
-#portfolio h2 {
+#portfolio h2  {
   height: 70px;
 }
 
@@ -274,4 +275,20 @@ span.active.breadcrumb-item::before {
 
 .stat-points {
   font-size: 18px;
+}
+
+/*------ Blog ------*/
+.card-footer.art-card-bg {
+  background-color: rgb(20, 27, 31);
+}
+.card.article-preview-card{
+  border: 5px solid rgb(20, 27, 31);
+}
+
+ #articles .h2-row{
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/blog-page/blog-parallax-bw.jpg");
 }
