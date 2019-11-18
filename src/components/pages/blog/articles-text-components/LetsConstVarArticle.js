@@ -1,12 +1,19 @@
 import React from 'react';
-import { Row, Col } from 'reactstrap';
 
 export default function LetConstVarArticle(props) {
+
     return (
-        <Row>
-            <Col xs='12'>
-                <div>FFFFFF</div>
-            </Col>
-        </Row>
+        <React.Fragment>
+            <section className="">
+                <h2 className="">Var</h2>
+            </section>
+            <section className="">
+                <h2>Const</h2>
+            </section>
+            <section className="">
+                <h2>let</h2>
+            </section>
+        </React.Fragment>
+
     );
 }
