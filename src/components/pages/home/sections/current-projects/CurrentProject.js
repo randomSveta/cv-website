@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, CardTitle, CardText, Progress, CardBody, CardSubtitle, UncontrolledTooltip } from 'reactstrap';
+import { Card, Button, CardTitle, CardText, Progress, CardBody, CardSubtitle } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class CurrentProject extends React.Component {
@@ -8,21 +8,37 @@ export default class CurrentProject extends React.Component {
         window.open(this.props.project.projectLink, '_blank');
     }
 
+    openTask() {
+        window.open(this.props.project.taskLink, '_blank');
+    }
+
+    openRepo() {
+        window.open(this.props.project.repoLink, '_blank');
+    }
+
+
+
     render() {
-        const tooltipId = this.props.idTooltip;
 
         return (
             <Card inverse >
                 <CardBody className="current-p-card">
-                    <CardTitle>{this.props.project.title + ' '}</CardTitle>
-                    <a href={this.props.project.taskLink} alt={this.props.project.title} className="link-style underscore-sections" target="_blank" rel="noopener noreferrer"><CardSubtitle><FontAwesomeIcon icon={this.props.project.icon} id={tooltipId} className="rotate-animation" /></CardSubtitle></a>
-                    <UncontrolledTooltip placement="left" target={tooltipId}>
-                        Link to the task
-                    </UncontrolledTooltip>
+                    <CardTitle className="font-weight-bold">
+                        {this.props.project.title}
+                    </CardTitle>
+                    <CardSubtitle><FontAwesomeIcon icon={this.props.project.icon} /></CardSubtitle>
                     <CardText>{this.props.project.description}</CardText>
-                    <CardText className="mt-2">Progress:</CardText>
                     <Progress striped value={this.props.project.progress} className="my-3" color="info" />
-                    <Button onClick={() => this.openProject()} color="secondary">Open project</Button>
+                    {this.props.project.projectLink ?
+                        <Button onClick={() => this.openProject()} color="secondary" className="mr-2">Project</Button>
+                        : null}
+                    {this.props.project.taskLink ?
+                        <Button onClick={() => this.openTask()} color="secondary" className="mr-2">Task</Button>
+                        : null}
+                    {this.props.project.repoLink ?
+                        <Button onClick={() => this.openRepo()} color="secondary">Repository</Button>
+                        : null}
+
                 </CardBody>
             </Card>
 

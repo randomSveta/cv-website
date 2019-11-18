@@ -7,7 +7,7 @@ export default function CurrentProjectsDisplay(props) {
 
   const currentProjects = CURRENT_PROJECTS.map(project => {
     return (
-      <CurrentProject key={project.id} project={project} idTooltip={project.title.toLowerCase().split(' ').join('-')}/>
+      <CurrentProject key={project.id} project={project}/>
     );
   });
   return (
