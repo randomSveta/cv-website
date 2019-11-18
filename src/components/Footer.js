@@ -9,7 +9,7 @@ export default function Footer(props) {
     return (
         <footer id="footer" className="container">
             <Row className="m-0 p-0">
-                <Col xs="12" md="6" className="m-0 p-0 d-flex flex-row justify-content-center align-items-center">
+                <Col xs="12" md="6" className="m-0 p-md-0 pt-4 pb-0 px-0 d-flex flex-row justify-content-center align-items-center">
                     <NavLinks />
                 </Col>
                 <Col xs="12" md="6" className="m-0 p-0">

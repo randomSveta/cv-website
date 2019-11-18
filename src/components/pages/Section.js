@@ -11,7 +11,7 @@ export default function Section(props) {
                     </h2>
                 </Col>
             </Row>
-            <Row className="m-0 p-0 blue-bg-section">
+            <Row className="m-0 p-0 bg-section">
                 <Col xs="12" className="m-0 p-0">
                     {props.content}
                 </Col>

@@ -13,39 +13,20 @@ export const SECTIONS_HOME = [
         id: 1,
         name: 'About',
         hashUrl: '#about',
-        jsx: <About/>
+        jsx: <About />
     },
     {
         id: 2,
         name: 'Skills',
         hashUrl: '#skills',
-        jsx: <Skills/>
+        jsx: <Skills />
     },
     {
         id: 3,
         name: 'Current Projects',
         hashUrl: '#current-projects',
-        jsx: <CurrentProjects/>
-        
-    }
-];
+        jsx: <CurrentProjects />
 
-export const SECTIONS_CERTIFICATES = [
-    {
-        id: 1,
-        name: 'Web Development',
-        hashUrl: '#web-development'
-    },
-    {
-        id: 2,
-        name: 'Testing',
-        hashUrl: '#testing'
-    },
-    {
-        id: 3,
-        name: 'Graphic Design',
-        hashUrl: '#design'
-        
     }
 ];
 
@@ -54,19 +35,20 @@ export const SECTIONS_PORTFOLIO = [
         id: 1,
         name: 'Statistics',
         hashUrl: '#statistics',
-        jsx: <Statistics/>
+        jsx: <Statistics />
     },
     {
         id: 2,
-        name: 'CodePen',
-        hashUrl: '#codepen',
-        jsx: <CodePenProjects />
+        name: 'GitHub',
+        hashUrl: '#github',
+        jsx: <GitHubProjects />
     },
     {
         id: 3,
-        name: 'GitHub',
-        hashUrl: '#github',
-        jsx: <GitHubProjects/>
-        
+        name: 'CodePen',
+        hashUrl: '#codepen',
+        jsx: <CodePenProjects />
+
+
     }
 ];
