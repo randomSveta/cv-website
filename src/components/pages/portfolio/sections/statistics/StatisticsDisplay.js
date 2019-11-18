@@ -7,7 +7,7 @@ export default function StatisticsDisplay(props) {
 
     const statistics = STATISTICS.map(stat => {
         return (
-            <Col className="m-0 p-0">
+            <Col className="m-0 p-0" key={stat.id} >
                 <Statistica stat={stat} />
             </Col>
 
