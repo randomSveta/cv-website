@@ -96,7 +96,7 @@ rgba(23, 162, 184, 1)- blue
 /* ------ Titles h1, h2, h3,... ------ */
 
 
-h2 {
+#home h2, #portfolio h2, #blog h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
