@@ -1,6 +1,6 @@
 import React from 'react';
 import { GH_PROJECTS } from './gh-projects-list';
-import { Row, CardColumns } from 'reactstrap';
+import { Row, CardColumns, Container } from 'reactstrap';
 import GitHubProject from './GitHubProject';
 
 export default function GitHubProjectsDisplay(props) {
@@ -12,11 +12,13 @@ export default function GitHubProjectsDisplay(props) {
     });
 
     return (
-        <Row className="mx-5 mt-1 mb-5 px-5 justify-content-center align-items-center">
-            <CardColumns className="m-3 p-3">
-                {penProjects}
-            </CardColumns>
-        </Row>
+        <Container>
+            <Row className="m-md-5 px-md-5 py-0 m-2 px-2 justify-content-center align-items-center">
+                <CardColumns className="m-0 p-0">
+                    {penProjects}
+                </CardColumns>
+            </Row>
+        </Container>
 
     )
 
