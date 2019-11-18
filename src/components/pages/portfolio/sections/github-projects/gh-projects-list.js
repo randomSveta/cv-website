@@ -3,27 +3,30 @@ export const GH_PROJECTS = [
         id: 1,
         name: 'RandomSveta for FoundersAndCoders',
         year: 2019,
-        linkRepo: 'https://github.com/randomSveta/randomsveta-for-foundersandcoders',
-        linkPages: 'https://randomsveta.github.io/randomsveta-for-foundersandcoders/',
-        description: 'AAAAAAAAAAAAAA',
+        taskLink: 'https://www.foundersandcoders.com/apply/',
+        repoLink: 'https://github.com/randomSveta/randomsveta-for-foundersandcoders',
+        projectLink: 'https://randomsveta.github.io/randomsveta-for-foundersandcoders/',
+        description: 'One page website for Founders and Coders bootcamp. Page was created with HTML, CSS, Vanilla JS without any additional frameworks and libraries (only Font Awesome icons)',
         section: 'GitHub'
     },
     {
         id: 2,
         name: 'Hotel Website',
         year: 2019,
-        linkRepo: 'https://github.com/randomSveta/HotelSite',
-        linkPages: 'https://randomsveta.github.io/HotelSite/',
-        description: 'AAAAAAAAAAAAAA',
+        taskLink: '',
+        repoLink: 'https://github.com/randomSveta/HotelSite',
+        projectLink: 'https://randomsveta.github.io/HotelSite/',
+        description: 'Website for trainig React, Reactstrap, Bootsrap and others. I decided to create website for any unreal Hotels chain and apply all my knowledge.',
         section: 'GitHub'
     },
     {
         id: 3,
         name: 'CV website',
         year: 2019,
-        linkRepo: 'https://github.com/randomSveta/cv-website',
-        linkPages: 'https://randomsveta.github.io/cv-website/',
-        description: 'AAAAAAAAAAAAAA',
+        taskLink: '',
+        repoLink: 'https://github.com/randomSveta/cv-website',
+        projectLink: 'https://randomsveta.github.io/cv-website/',
+        description: 'Website portfolio and blog, where I would like to show everything that I did and going to do.',
         section: 'GitHub'
     }
 

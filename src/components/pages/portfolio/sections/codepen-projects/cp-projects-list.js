@@ -8,7 +8,8 @@ export const CP_PROJECTS = [
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Drum Machine',
-    link: 'https://codepen.io/randomsveta/full/PrLXLg',
+    taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-drum-machine',
+    projectLink: 'https://codepen.io/randomsveta/full/PrLXLg',
     year: 2019,
     section: 'CodePen'
   },
@@ -19,7 +20,8 @@ export const CP_PROJECTS = [
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Markdown Previewer',
-    link: 'https://codepen.io/randomsveta/full/xoXQgr',
+    taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer',
+    projectLink: 'https://codepen.io/randomsveta/full/xoXQgr',
     year: 2019,
     section: 'CodePen'
   },
@@ -30,7 +32,8 @@ export const CP_PROJECTS = [
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Random Quote Machine',
-    link: 'https://codepen.io/randomsveta/full/oRRVVM',
+    taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine',
+    projectLink: 'https://codepen.io/randomsveta/full/oRRVVM',
     year: 2019,
     section: 'CodePen'
   },
@@ -42,7 +45,8 @@ export const CP_PROJECTS = [
 (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>,
     name: 'Avocado',
-    link: 'https://codepen.io/randomsveta/full/drVOzX',
+    taskLink: '',
+    projectLink: 'https://codepen.io/randomsveta/full/drVOzX',
     year: 2019,
     section: 'CodePen'
   },
@@ -53,7 +57,8 @@ export const CP_PROJECTS = [
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Survey Form',
-    link: 'https://codepen.io/randomsveta/full/GGZeRb',
+    taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form',
+    projectLink: 'https://codepen.io/randomsveta/full/GGZeRb',
     year: 2018,
     section: 'CodePen'
   },
@@ -64,7 +69,8 @@ export const CP_PROJECTS = [
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Personal Portfolio Webpage',
-    link: 'https://codepen.io/randomsveta/full/odyppL',
+    taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage',
+    projectLink: 'https://codepen.io/randomsveta/full/odyppL',
     year: 2018,
     section: 'CodePen'
   },
@@ -76,7 +82,8 @@ export const CP_PROJECTS = [
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Technical Documentation Pages',
-    link: 'https://codepen.io/randomsveta/full/QYQjBg',
+    taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page',
+    projectLink: 'https://codepen.io/randomsveta/full/QYQjBg',
     year: 2019,
     section: 'CodePen'
   },
@@ -87,7 +94,8 @@ export const CP_PROJECTS = [
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Adele-Tribute page',
-    link: 'https://codepen.io/randomsveta/full/zjKRJb',
+    taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page',
+    projectLink: 'https://codepen.io/randomsveta/full/zjKRJb',
     year: 2018,
     section: 'CodePen'
   },
@@ -98,7 +106,8 @@ export const CP_PROJECTS = [
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Product Landing Page',
-    link: 'https://codepen.io/randomsveta/full/JZNWVZ',
+    taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page',
+    projectLink: 'https://codepen.io/randomsveta/full/JZNWVZ',
     year: 2019,
     section: 'CodePen'
   }
