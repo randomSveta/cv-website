@@ -5,9 +5,9 @@ import GitHubProject from './GitHubProject';
 
 export default function GitHubProjectsDisplay(props) {
 
-    const penProjects = GH_PROJECTS.sort((a, b) => b.year - a.year).map(project => {
+    const ghProjects = GH_PROJECTS.sort((a, b) => b.year - a.year).map(project => {
         return (
-            <GitHubProject project={project} key={project.id} />
+            <GitHubProject project={project} key={project.id}/>
         );
     });
 
@@ -15,7 +15,7 @@ export default function GitHubProjectsDisplay(props) {
         <Container>
             <Row className="m-md-5 px-md-5 py-0 m-2 px-2 justify-content-center align-items-center">
                 <CardColumns className="m-0 p-0">
-                    {penProjects}
+                    {ghProjects}
                 </CardColumns>
             </Row>
         </Container>
