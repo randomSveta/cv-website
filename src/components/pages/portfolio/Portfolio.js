@@ -6,9 +6,15 @@ import Section from '../Section';
 
 export default function Portfolio(props) {
 
+
+
     const codePenSectionDisplay = SECTIONS_PORTFOLIO.map(section => {
+
+        const createdParallaxClass = section.name.split(' ').join('-').toLowerCase() + '-parallax';
+        const createdSectionId = section.hashUrl.split('').splice(1).join('');
+
         return (
-            <Section key={section.id} content={section.jsx} name={section.name} sectionId={section.hashUrl.split('').splice(1).join('')} />
+            <Section key={section.id} section={section} class={createdParallaxClass} content={section.jsx} name={section.name} sectionId={createdSectionId} />
         );
     });
 
