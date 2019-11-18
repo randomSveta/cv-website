@@ -19,11 +19,7 @@ rgba(23, 162, 184, 1)- blue
   font-size: 14px;
 }
 
-.link-style {
-  color: white;
-}
-
-.link-style:hover, .link-style-hash:hover {
+.link-style, .link-style:hover, .link-style-hash:hover {
   color: white;
 }
 
@@ -102,12 +98,15 @@ rgba(23, 162, 184, 1)- blue
 #home h2, #portfolio h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 #home h2 {
   height: 100px;
 }
+
 #portfolio h2 {
   height: 70px;
 }
+
 /*------ Navigation------*/
 
 #nav-bar {
@@ -202,6 +201,7 @@ span.active.breadcrumb-item::before {
 #skills .h2-row {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/home-page/skills_parallax_bw.jpg");
 }
+
 .skills-icon-item svg {
   font-size: 50px;
 }
@@ -213,8 +213,16 @@ span.active.breadcrumb-item::before {
   width: 120px;
 }
 
-#skills .blue-bg-section {
+#skills .bg-section {
   background-color: rgba(23, 162, 184, 1);
+}
+
+#github .bg-section {
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/portfolio-page/gh-projects-parallax-bw.jpg");
 }
 
 /*------ Current Projects ------*/
@@ -239,22 +247,31 @@ span.active.breadcrumb-item::before {
   background-color: rgba(23, 162, 184, 1);
 }
 
+.card-footer.gh-card-bg, .card-header.gh-card-bg, .cp-projects-links-bg {
+  background-color: rgb(20, 27, 31);
+}
+
+.card.gh-project {
+  border: none;
+}
+
 /*--- Statistics ---*/
 
-
-.statistica{
-  background-color:rgba(20, 27, 31, 1);
+.statistica {
+  background-color: rgba(20, 27, 31, 1);
   width: 200px;
   height: 200px;
   border: 8px solid rgba(23, 162, 184, 1);
 }
+
 .statistica svg {
   font-size: 32px;
 }
+
 .stat-name {
   font-size: 14px;
 }
+
 .stat-points {
   font-size: 18px;
-  font-weight: bold;
 }
