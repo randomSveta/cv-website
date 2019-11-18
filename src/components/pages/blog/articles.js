@@ -9,15 +9,30 @@ export const ARTICLES = [
         id: 1,
         url: '/place-footer-at-the-bottom/',
         title: 'Place Footer at the bottom',
-        shortDescription: 'AAAA',
-        jsx: <BottomFooterArticle/>
+        shortDescription: "If a page too short and footer is placed at the middle of the page let's force fotter to take it place and stay at the bootom no matter what.",
+        jsx: <BottomFooterArticle />,
+        images: [{
+            id: 1,
+            path: require('../../../assets/images/blog-page/articles/footer-at-the-bottom.png') ,
+            alt: 'Footer at the bottom'
+        },
+        { id:2,
+            path: require('../../../assets/images/blog-page/articles/let-const-var-title.png'),
+            alt: 'GGG'
+        }
+    ]
     },
     {
-        id: 1,
+        id: 2,
         url: '/let-const-var/',
         title: 'Let vs Const vs Var',
-        shortDescription: 'AAAA',
-        jsx: <LetConstVarArticle/>
+        shortDescription: "Why there are 3 words for declare a variable? What is the difference? Let's try to use them and find out.",
+        jsx: <LetConstVarArticle />,
+        images: [{
+            id: 1,
+            path: require('../../../assets/images/blog-page/articles/let-const-var-title.png'),
+            alt: 'Let vs Const vs Var'
+        }]
     }
 ];
 
