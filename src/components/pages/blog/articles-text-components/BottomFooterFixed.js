@@ -140,7 +140,7 @@ footer {
                                 We want all <strong>.container</strong> + <strong>footer</strong> take the whole visible page space.
                                 So, let's add to <strong>.container</strong> and <strong>footer</strong> some styles.
                                 In the <strong>styles.css</strong> file add <em>min-height: 100vh</em> 
-                    (<a className="text-info" href="https://www.w3schools.com/cssref/css_units.asp" alt="viewport height">100vh</a> - means 100% of the height of the viewport).
+                    (<a className="text-info" href="https://www.w3schools.com/cssref/css_units.asp">100vh</a> - means 100% of the height of the viewport).
                 </p>
                         </Col>
                     </Row>
