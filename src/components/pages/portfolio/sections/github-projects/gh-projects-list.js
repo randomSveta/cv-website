@@ -21,7 +21,7 @@ export const GH_PROJECTS = [
     },
     {
         id: 3,
-        name: 'CV website',
+        name: 'Portfolio website',
         year: 2019,
         taskLink: '',
         repoLink: 'https://github.com/randomSveta/cv-website',
