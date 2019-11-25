@@ -6,44 +6,44 @@ export const SOCIAL_LINKS = [
         id: 1,
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/svetaklimova/",
-        icon: faLinkedin
+        image: faLinkedin
     },
     {
         id: 2,
         name: "GitHub",
         url: "https://github.com/randomSveta",
-        icon: faGithub
+        image: faGithub
     },
     {
         id: 3,
         name: "FreeCodeCamp",
         url: "https://www.freecodecamp.org/randomsveta",
-        icon: faFreeCodeCamp
+        image: faFreeCodeCamp
     },
     {
         id: 4,
         name: "CodeWars",
         url: "https://www.codewars.com/users/randomsveta",
-        icon: faTerminal
+        image: faTerminal
     },
     {
         id: 5,
         name: "CodePen",
         url: "https://codepen.io/randomsveta",
-        icon: faCodepen
+        image: faCodepen
     },
     {
         id: 6,
         name: "Codecademy",
         url: "https://www.codecademy.com/profiles/randomsveta",
-        icon: faCode
+        image: faCode
 
     },
     {
         id: 7,
         name: "WordPress",
         url: "https://randomsveta.wordpress.com/",
-        icon: faWordpress
+        image: faWordpress
     }
 
 ];

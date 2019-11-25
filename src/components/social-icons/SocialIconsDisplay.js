@@ -7,8 +7,8 @@ export default function SocialIconsDisplay(props) {
     let icons = SOCIAL_LINKS.map(link => {
         return (
             <li key={link.id} className='social-icon-item  m-3'>
-                <a href={link.url} target="_blank" rel="noopener noreferrer" className="link-style underscore">
-                    <SocialIcon icon={link.icon} name={link.name} place={props.place} />
+                <a href={link.url} target="_blank" rel="noopener noreferrer" className="link-style underscore" aria-label={"Link to " + link.name}>
+                    <SocialIcon image={link.image} name={link.name} place={props.place} />
                 </a>
             </li>
 

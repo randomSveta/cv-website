@@ -22,6 +22,6 @@ STATISTICS.forEach(statistic => {
     const profile = SOCIAL_LINKS.filter(socLink=> statistic.profile === socLink.name)[0];
     if(profile) {
         statistic.url = profile.url;
-        statistic.icon = profile.icon;
+        statistic.image = profile.image;
     }
 })
