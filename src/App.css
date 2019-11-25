@@ -7,9 +7,14 @@ rgba(23, 162, 184, 1)- blue
 
 /*------ Layout ------*/
 
+body, html {
+  height: 100%;
+}
+
 #root {
   font-family: 'Montserrat', 'Arial', sans-serif;
-  background-color: rgb(20, 27, 31);
+  background-color: #141b1f;
+  min-height: 100%;
 }
 
 /*------ Link styles ------ */
@@ -95,16 +100,15 @@ rgba(23, 162, 184, 1)- blue
 
 /* ------ Titles h1, h2, h3,... ------ */
 
-
 #home h2, #portfolio h2, #blog h2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#home h2, #blog h2{
+#home h2, #blog h2 {
   height: 100px;
 }
 
-#portfolio h2  {
+#portfolio h2 {
   height: 70px;
 }
 
@@ -238,7 +242,7 @@ span.active.breadcrumb-item::before {
 
 /*------ Footer ------*/
 
-#footer {
+footer {
   background-color: #141b1f;
 }
 
@@ -278,17 +282,29 @@ span.active.breadcrumb-item::before {
 }
 
 /*------ Blog ------*/
-.card-footer.art-card-bg {
+
+.card-footer.art-card-bg, .card-header.art-card-bg {
   background-color: rgb(20, 27, 31);
 }
-.card.article-preview-card{
+
+.card.article-preview-card {
   border: 5px solid rgb(20, 27, 31);
 }
 
- #articles .h2-row{
+#articles .h2-row {
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/images/blog-page/blog-parallax-bw.jpg");
+}
+code {
+  display: block;
+  white-space: pre-wrap;
+}
+.code-styles{
+  font-size: 10px;
+}
+.page-screenshot{
+  cursor: pointer;
 }
