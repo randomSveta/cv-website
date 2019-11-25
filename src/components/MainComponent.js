@@ -66,6 +66,7 @@ export default class Main extends React.Component {
         return (
             <React.Fragment>
                 <Router basename={process.env.PUBLIC_URL}>
+                    <div className="content">
                     <Switch>
                         {routes.map((route, index) => (
                             <Route
@@ -80,6 +81,7 @@ export default class Main extends React.Component {
                         {pages}
                         <Redirect to="/" />
                     </Switch>
+                    </div>
                     <Footer />
                 </Router>
             </React.Fragment>
