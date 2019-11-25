@@ -6,7 +6,7 @@ export default function Statistica(props) {
     const tooltipId = 's-'.concat(props.stat.profile.toLowerCase().split(' ').join('-'));
     return (
         <div className="mb-2 mb-md-0 mx-auto rounded-circle statistica text-white d-flex flex-column justify-content-center align-items-center flex-wrap">
-            <a id={tooltipId} href={props.stat.url} target="_blank" rel="noopener noreferrer" className="link-style underscore-sections"><FontAwesomeIcon icon={props.stat.icon} className="rotate-animation" /></a>
+            <a id={tooltipId} href={props.stat.url} target="_blank" rel="noopener noreferrer" className="link-style underscore-sections" aria-label={"Link to the " + props.stat.profile + " profile"}><FontAwesomeIcon icon={props.stat.image} className="rotate-animation" aria-hidden="true" /></a>
             <UncontrolledTooltip placement="top" target={tooltipId} delay={{ show: 150, hide: 0 }}>
                 {props.stat.profile}
             </UncontrolledTooltip>
