@@ -1,27 +1,35 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.9a6caf93.chunk.css",
-    "main.js": "/my-website/static/js/main.05a83cab.chunk.js",
-    "main.js.map": "/my-website/static/js/main.05a83cab.chunk.js.map",
+    "main.css": "/my-website/static/css/main.0e123c7c.chunk.css",
+    "main.js": "/my-website/static/js/main.3b63301f.chunk.js",
+    "main.js.map": "/my-website/static/js/main.3b63301f.chunk.js.map",
     "runtime-main.js": "/my-website/static/js/runtime-main.6b26dad8.js",
     "runtime-main.js.map": "/my-website/static/js/runtime-main.6b26dad8.js.map",
     "static/css/2.0624914a.chunk.css": "/my-website/static/css/2.0624914a.chunk.css",
-    "static/js/2.eb1a2adc.chunk.js": "/my-website/static/js/2.eb1a2adc.chunk.js",
-    "static/js/2.eb1a2adc.chunk.js.map": "/my-website/static/js/2.eb1a2adc.chunk.js.map",
+    "static/js/2.7149aa8f.chunk.js": "/my-website/static/js/2.7149aa8f.chunk.js",
+    "static/js/2.7149aa8f.chunk.js.map": "/my-website/static/js/2.7149aa8f.chunk.js.map",
     "index.html": "/my-website/index.html",
-    "precache-manifest.45873c44f39daab53f75fb9ab4d56bd9.js": "/my-website/precache-manifest.45873c44f39daab53f75fb9ab4d56bd9.js",
+    "precache-manifest.3cc50d5dbe816b73224e9472bdf92d7f.js": "/my-website/precache-manifest.3cc50d5dbe816b73224e9472bdf92d7f.js",
     "service-worker.js": "/my-website/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/my-website/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.9a6caf93.chunk.css.map": "/my-website/static/css/main.9a6caf93.chunk.css.map",
+    "static/css/main.0e123c7c.chunk.css.map": "/my-website/static/css/main.0e123c7c.chunk.css.map",
     "static/media/App.css": "/my-website/static/media/skills_parallax_bw.6f6ad9a2.jpg",
-    "static/media/footer-at-the-bottom.png": "/my-website/static/media/footer-at-the-bottom.3c8da50b.png",
-    "static/media/let-const-var-title.png": "/my-website/static/media/let-const-var-title.71142a7c.png"
+    "static/media/footer-start-html.png": "/my-website/static/media/footer-start-html.e180d7ce.png",
+    "static/media/let-const-var-preview-img.png": "/my-website/static/media/let-const-var-preview-img.71142a7c.png",
+    "static/media/min-height-100-200px.png": "/my-website/static/media/min-height-100-200px.9644baa7.png",
+    "static/media/min-height-100.png": "/my-website/static/media/min-height-100.1df746ce.png",
+    "static/media/pos-absolute-1.png": "/my-website/static/media/pos-absolute-1.0b1478c3.png",
+    "static/media/pos-absolute-2.png": "/my-website/static/media/pos-absolute-2.9fa07baf.png",
+    "static/media/pos-absolute-3.png": "/my-website/static/media/pos-absolute-3.e7c32c2e.png",
+    "static/media/preview-image-1.png": "/my-website/static/media/preview-image-1.7f20bbc1.png",
+    "static/media/preview-image-2.png": "/my-website/static/media/preview-image-2.e452a8b2.png",
+    "static/media/preview-image-3.png": "/my-website/static/media/preview-image-3.7e267f3c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6b26dad8.js",
     "static/css/2.0624914a.chunk.css",
-    "static/js/2.eb1a2adc.chunk.js",
-    "static/css/main.9a6caf93.chunk.css",
-    "static/js/main.05a83cab.chunk.js"
+    "static/js/2.7149aa8f.chunk.js",
+    "static/css/main.0e123c7c.chunk.css",
+    "static/js/main.3b63301f.chunk.js"
   ]
 }
