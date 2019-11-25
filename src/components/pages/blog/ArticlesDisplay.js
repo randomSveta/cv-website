@@ -5,7 +5,7 @@ import ArticlePreview from './ArticlePreview';
 
 export default function ArticlesDisplay(props) {
 
-    const articles = ARTICLES.sort((a, b) => b.year - a.year).map(article => {
+    const articles = ARTICLES.sort((a, b) => b.id - a.id).map(article => {
         return (
             <ArticlePreview article={article} sectionUrl={props.sectionUrl} key={article.id} />
         );
