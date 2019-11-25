@@ -50,6 +50,16 @@ export const CURRENT_PROJECTS = [
         repoLink: 'https://github.com/randomSveta/my-website',
         taskLink: '',
         projectLink: 'https://randomsveta.github.io/my-website/',
-        progress: 60
+        progress: 70
+    },
+    {
+        id: 6,
+        title: 'JavaScript tutorial',
+        icon: faTerminal,
+        description: 'Studying JS for better understanding',
+        repoLink: '',
+        taskLink: 'https://javascript.info/',
+        projectLink: '',
+        progress: 10
     }
 ]
