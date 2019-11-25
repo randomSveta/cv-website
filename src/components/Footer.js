@@ -7,7 +7,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer(props) {
     return (
-        <footer id="footer" className="container">
+        <footer id="footer" className="container mw-100">
             <Row className="m-0 p-0">
                 <Col xs="12" md="6" className="m-0 p-md-0 pt-4 pb-0 px-0 d-flex flex-row justify-content-center align-items-center">
                     <NavLinks />

@@ -19,7 +19,7 @@ export default function Portfolio(props) {
     });
 
     return (
-        <Container id="portfolio">
+        <Container id="portfolio" className="mw-100 m-0 px-4 py-0">
             <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
                 <Col xs='12' className="m-0 p-0">
                     <h1 className="text-white">Portfolio</h1>
