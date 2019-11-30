@@ -8,7 +8,7 @@ import {
 export default function ArticlePreview(props) {
 
   const linkPath = props.sectionUrl.concat(props.article.url);
-  const titleImagePath = props.article.images[0].path;
+  const titleImagePath = props.article.previewImg.path;
 
   return (
     <Card className="rounded-0 article-preview-card">
