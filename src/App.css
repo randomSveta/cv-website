@@ -245,7 +245,7 @@ span.active.breadcrumb-item::before {
 
 /*------ Footer ------*/
 
-footer {
+#footer-page-bottom {
   background-color: #141b1f;
 }
 
@@ -305,9 +305,13 @@ code {
   display: block;
   white-space: pre-wrap;
 }
-.code-styles{
+.code-styles {
   font-size: 0.625rem;
 }
 .page-screenshot{
   cursor: pointer;
+}
+
+blockquote p {
+  font-size: 0.75rem;
 }
