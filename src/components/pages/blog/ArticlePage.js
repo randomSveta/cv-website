@@ -25,7 +25,7 @@ export default function ArticlePage(props) {
             </Row>
             <Row>
                 <Col xs='12'>
-                    <article className="m-3 p-4 border bg-white">
+                    <article className="m-3 p-3 bg-info">
                         {props.article.jsx}
                     </article>
                 </Col>
