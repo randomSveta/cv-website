@@ -305,7 +305,7 @@ code {
   display: block;
   white-space: pre-wrap;
 }
-.code-styles {
+.code-styles, .useful-info {
   font-size: 0.625rem;
 }
 .page-screenshot{
