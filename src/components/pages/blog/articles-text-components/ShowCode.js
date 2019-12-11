@@ -6,7 +6,7 @@ export default function ShowCode(props) {
 
     return (
         <div>
-            <Button color="info" id={props.codeId} style={{ marginBottom: '1rem', width: "100%" }}>
+            <Button color="info" id={props.codeId} style={{ marginBottom: '1rem', marginTop: '1rem', width: "100%" }}>
                 {props.button}
             </Button>
             <UncontrolledCollapse toggler={props.codeId}>
