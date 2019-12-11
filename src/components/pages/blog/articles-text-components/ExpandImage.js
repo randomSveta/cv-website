@@ -23,7 +23,7 @@ export default class ExpandImage extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <img onClick={() => this.toggle()} className="page-screenshot mb-3" width="100%" src={this.state.image} alt={this.state.title} />
+                <img onClick={() => this.toggle()} className={"page-screenshot mb-3" + this.props.class} width="100%" src={this.state.image} alt={this.state.title} />
                 <ImageModal title={this.state.title} img={this.state.image} modal={this.state.modal} toggle={this.toggle} />
             </React.Fragment>
         );
