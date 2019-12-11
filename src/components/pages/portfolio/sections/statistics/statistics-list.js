@@ -9,7 +9,7 @@ export const STATISTICS = [
     {
         id: 2,
         profile: 'CodeWars',
-        points: 333
+        points: 373
     },
     {
         id: 3,
@@ -19,8 +19,8 @@ export const STATISTICS = [
 ];
 
 STATISTICS.forEach(statistic => {
-    const profile = SOCIAL_LINKS.filter(socLink=> statistic.profile === socLink.name)[0];
-    if(profile) {
+    const profile = SOCIAL_LINKS.filter(socLink => statistic.profile === socLink.name)[0];
+    if (profile) {
         statistic.url = profile.url;
         statistic.image = profile.image;
     }

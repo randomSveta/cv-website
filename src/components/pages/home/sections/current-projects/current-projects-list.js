@@ -1,5 +1,5 @@
 import { faFreeCodeCamp, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faTerminal, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faTerminal, faCode, faBook } from '@fortawesome/free-solid-svg-icons';
 
 export const CURRENT_PROJECTS = [
     {
@@ -10,7 +10,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator',
         projectLink: 'https://codepen.io/randomsveta/pen/VwwPjLK',
-        progress: 1
+        progress: 20
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 0
+        progress: 12
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codecademy.com/learn/learn-php',
         projectLink: '',
-        progress: 5
+        progress: 10
     },
     {
         id: 5,
@@ -59,6 +59,26 @@ export const CURRENT_PROJECTS = [
         description: 'Studying JS for better understanding',
         repoLink: '',
         taskLink: 'https://javascript.info/',
+        projectLink: '',
+        progress: 10
+    },
+    {
+        id: 7,
+        title: "You Don't Know JS",
+        icon: faTerminal,
+        description: 'Reading a very important book to find out more about JavaScript',
+        repoLink: '',
+        taskLink: 'https://github.com/getify/You-Dont-Know-JS/',
+        projectLink: '',
+        progress: 10
+    },
+    {
+        id: 8,
+        title: "Let vs Var vs Const",
+        icon: faBook,
+        description: 'I am writing an article aboute 3 important keywords to declare variables',
+        repoLink: '',
+        taskLink: './blog/let-const-var/',
         projectLink: '',
         progress: 10
     }
