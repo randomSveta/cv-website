@@ -8,7 +8,7 @@ import secondImg100vh200f from '../../../../../assets/images/blog-page/articles/
 import ReactCompareImage from 'react-compare-image';
 
 import ExpandImage from '../ExpandImage';
-import ShowCode from '../ShowCode'
+import ShowCode from '../ShowCode';
 
 export default function BottomFooterMinHeight(props) {
 
@@ -36,6 +36,10 @@ export default function BottomFooterMinHeight(props) {
                             <img className='page-screenshot' width='100%' src={previewImg} alt={article100vh.title} />
                         </Col>
                     </Row>
+                </Container>
+            </section>
+            <section className='bg-white p-3 border border-dark mt-3'>
+                <Container>
                     <Row className='mt-5 mb-2'>
                         <Col xs='12'>
                             <h2>Initial settings</h2>
@@ -174,8 +178,9 @@ footer {
                                 Add <em>min-height: <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank" rel="noopener noreferrer">100vh</a></em> to the .container in the <strong>styles.css</strong> file.
 
                             </p>
-                            <p> I would recommend using "min-height" property because if you use simply "height" then the height of the element is fixed at some value.  As a result of applying "height", could be cutting the content by the viewport level on full of content pages.
- </p>
+                            <p>
+                                I would recommend using "min-height" property because if you use simply "height" then the height of the element is fixed at some value.  As a result of applying "height", could be cutting the content by the viewport level on full of content pages.
+                            </p>
                         </Col>
                     </Row>
                     <Row className="justify-content-center">
@@ -203,9 +208,8 @@ footer {
                                 How can you see on the picture above, the footer now is arranged after the 100% of the viewport and we need to scroll to find it.
                                 Not that convenient and looks like the footer is hidden.
                                 No problem, we can change it by adding "height" to the footer and then reduce the "min-height" of .container  to the footer "height".
-
- The best way to do it is - using <a href="https://www.w3schools.com/cssref/func_calc.asp">"calc()"</a> function. It is simpler then everyone think {`:)`}.
- </p>
+                                The best way to do it is - using <a href="https://www.w3schools.com/cssref/func_calc.asp">"calc()"</a> function. It is simpler then everyone think {`:)`}.
+                            </p>
                             <p>
                                 So, let's use calc() function to find a place for the footer inside the viewport.
                                 Add the height of the footer, 200px, for example. Then add calc(100vh - 200px) function to the .container "min-height".

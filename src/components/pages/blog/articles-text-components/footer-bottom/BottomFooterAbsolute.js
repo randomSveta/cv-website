@@ -39,6 +39,10 @@ There are several solutions that I have found for myself to the mentioned query.
                             <img width="100%" src={previewImg} alt={articleAbsolute.title} />
                         </Col>
                     </Row>
+                </Container>
+            </section>
+            <section className='bg-white p-3 border border-dark mt-3'>
+                <Container>
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <h2>Initial settings</h2>
