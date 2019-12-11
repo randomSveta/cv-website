@@ -4,7 +4,7 @@ import BottomFooterMinHeight from './articles-text-components/footer-bottom/Bott
 import BottomFooterAbsolute from './articles-text-components/footer-bottom/BottomFooterAbsolute';
 import BottomFooterFixed from './articles-text-components/footer-bottom/BottomFooterFixed';
 
-import LetConstVarArticle from './articles-text-components/LetsConstVarArticle';
+import LetConstVarArticle from './articles-text-components/let-const-var/LetConstVarArticle';
 
 export const ARTICLES = [
     {
@@ -18,7 +18,7 @@ export const ARTICLES = [
             path: require('../../../assets/images/blog-page/articles/footer/100vh/preview-image-100vh.png')
         },
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png') ,
+            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
             alt: 'Initial page'
         }
     },
@@ -33,7 +33,7 @@ export const ARTICLES = [
             path: require('../../../assets/images/blog-page/articles/footer/absolute/preview-image-absolute.png'),
         },
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png') ,
+            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
             alt: 'Initial page'
         }
 
@@ -49,7 +49,7 @@ export const ARTICLES = [
             path: require('../../../assets/images/blog-page/articles/footer/fixed/preview-image-fixed.png')
         },
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png') ,
+            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
             alt: 'Initial page'
         }
     },
@@ -64,7 +64,7 @@ export const ARTICLES = [
         }
         ,
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/let-const-var/let-const-var-preview.png') ,
+            path: require('../../../assets/images/blog-page/articles/let-const-var/let-const-var-initial-page.png'),
             alt: 'Initial page'
         }
     }
