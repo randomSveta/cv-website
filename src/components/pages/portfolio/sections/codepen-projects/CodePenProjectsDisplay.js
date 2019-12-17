@@ -5,10 +5,10 @@ import CodePenProject from './CodePenProject';
 
 export default function CodePenProjectsDisplay(props) {
 
-    const penProjects = CP_PROJECTS.sort((a, b) => b.year - a.year).map(project => {
+    const penProjects = CP_PROJECTS.sort((a, b) => b.id - a.id).map(project => {
         return (
             <Col xs="12" lg="6" className="m-0 p-0" key={project.id}>
-                <CodePenProject project={project}/>
+                <CodePenProject project={project} />
             </Col>
         );
     });
