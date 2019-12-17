@@ -4,13 +4,13 @@ import { faTerminal, faCode, faBook } from '@fortawesome/free-solid-svg-icons';
 export const CURRENT_PROJECTS = [
     {
         id: 1,
-        title: 'Calculator',
+        title: 'Pomodoro Clock',
         icon: faFreeCodeCamp,
-        description: 'There is a "Calculator" project in the course "Front  End Libraries Certification" on the FreeCodeCamp website',
+        description: 'There is a "Pomodoro Clock" project in the course "Front  End Libraries Certification" on the FreeCodeCamp website',
         repoLink: '',
-        taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator',
-        projectLink: 'https://codepen.io/randomsveta/pen/VwwPjLK',
-        progress: 20
+        taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock',
+        projectLink: 'https://codepen.io/randomsveta/pen/PowWPeY',
+        progress: 0
     },
     {
         id: 2,
