@@ -26,11 +26,11 @@ export const CURRENT_PROJECTS = [
         id: 3,
         title: 'CodeWars 50 tasks',
         icon: faTerminal,
-        description: 'I have decided to complite 50 task on CodeWars website starting from th1 1th of December. I have 333 points already and going to practice JavaScript skills further',
+        description: 'I have decided to complite 50 task on CodeWars website starting from the 1th of December. I had 333 points at start and going to practice JavaScript skills further',
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 12
+        progress: 18
     },
     {
         id: 4,
