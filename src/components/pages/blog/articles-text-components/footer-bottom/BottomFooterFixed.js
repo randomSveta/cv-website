@@ -50,7 +50,7 @@ export default function BottomFooterFixed(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="d-flex flex-row flex-wrap justify-content-center align-items-start m-0 p-0">
+                    <Row className="align-items-start m-0 p-0">
                         <Col xs="12" md="6" className="m-0 p-0">
                             <ExpandImage src={initialPage} title={articleFixed.initialPageImg.alt} />
                             <p>index.html</p>
