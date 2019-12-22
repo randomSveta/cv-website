@@ -9,7 +9,7 @@ export const STATISTICS = [
     {
         id: 2,
         profile: 'CodeWars',
-        points: 385
+        points: 399
     },
     {
         id: 3,

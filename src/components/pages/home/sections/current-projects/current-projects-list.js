@@ -30,7 +30,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 18
+        progress: 26
     },
     {
         id: 4,
