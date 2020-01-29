@@ -56,7 +56,7 @@ export const ARTICLES = [
     {
         id: 4,
         url: '/let-const-var/',
-        title: 'Let vs Const vs Var',
+        title: 'Var vs Let/Const',
         shortDescription: "Why there are 3 words for declare a variable? What is the difference? Let's try to use them and find out.",
         jsx: <LetConstVarArticle />,
         previewImg: {
