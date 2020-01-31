@@ -127,6 +127,18 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/VwwPjLK',
     year: 2019,
     section: 'CodePen'
+  },
+  {
+    id: 11,
+    jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Pomodoro Clock" src="https://codepen.io/randomsveta/embed/preview/PowWPeY?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+      See the Pen <a href='https://codepen.io/randomsveta/pen/PowWPeY'>FCC: Calculator  (Immediate Execution Logic)</a> by Sveta
+        (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>,
+    name: 'FCC: Pomodoro Clock',
+    taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock',
+    projectLink: 'https://codepen.io/randomsveta/full/PowWPeY',
+    year: 2019,
+    section: 'CodePen'
   }
 
 ];
