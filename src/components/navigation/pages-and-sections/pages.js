@@ -16,7 +16,7 @@ export const PAGES = [
         url: '/',
         sections: SECTIONS_HOME,
         article: false,
-        jsx: <Home/>,
+        jsx: <Home />,
         exact: true
     },
     {
@@ -25,7 +25,7 @@ export const PAGES = [
         url: '/portfolio',
         sections: SECTIONS_PORTFOLIO,
         article: false,
-        jsx: <Portfolio/>,
+        jsx: <Portfolio />,
         exact: true
     },
     {
@@ -33,7 +33,7 @@ export const PAGES = [
         name: 'Blog',
         url: '/blog',
         article: false,
-        jsx: <Blog/>,
+        jsx: <Blog />,
         exact: true
     }
 ]
@@ -47,7 +47,7 @@ ARTICLES.forEach(article => {
         pageUrl: pageUrl,
         url: pageUrl.concat(article.url),
         article: true,
-        jsx: <ArticlePage article={article}/>
+        jsx: <ArticlePage article={article} />
     })
 
 });

@@ -241,7 +241,7 @@ export default function BottomFooterMinHeight(props) {
                     </Row>
                     <Row className="mt-5 mb-2 justify-content-center">
                         <Col xs="12" md="6">
-                            <p>Short page</p>
+                            <p><strong>Short page</strong></p>
                             <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/100vh/short-min-height-100vh.png")} title='Short page with footer at the bottom' />
                             <ShowCode button="Final styles.css" codeId="min-height-final-styles"
                                 code=
@@ -288,7 +288,7 @@ footer {
                             />
                         </Col>
                         <Col xs="12" md="6">
-                            <p>Long page</p>
+                            <p><strong>Long page</strong></p>
                             <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/long.png")} title='Long page with the footer at the bottom' />
                         </Col>
                     </Row>

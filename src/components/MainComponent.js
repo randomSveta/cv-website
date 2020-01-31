@@ -26,7 +26,7 @@ const routes = [];
 PAGES.forEach((page, index) => {
     let route = {
         path: page.url,
-        exact: (page.article ? false: true)
+        exact: (page.article ? false : true)
     };
 
     //const breadcrumbsArticle = <Breadcrumbs article={page.article} secondStep={page.page} secondStepUrl={page.pageUrl} thirdStep={page.name} />;
@@ -44,7 +44,7 @@ PAGES.forEach((page, index) => {
             return (
                 <React.Fragment>
                     <NavBar navigationPages={navPages} navigationSections={<NavBarSections sections={page.sections} />} />
-            {/*{page.article ? breadcrumbsArticle : breadcrumbsPages}*/} 
+                    {/*{page.article ? breadcrumbsArticle : breadcrumbsPages}*/}
                 </React.Fragment>
             );
         }
@@ -67,20 +67,20 @@ export default class Main extends React.Component {
             <React.Fragment>
                 <Router basename={process.env.PUBLIC_URL}>
                     <div className="content">
-                    <Switch>
-                        {routes.map((route, index) => (
-                            <Route
-                                key={index}
-                                path={route.path}
-                                exact={route.exact}
-                                children={<route.navigation />}
-                            />
-                        ))}
-                    </Switch>
-                    <Switch location={this.props.location}>
-                        {pages}
-                        <Redirect to="/" />
-                    </Switch>
+                        <Switch>
+                            {routes.map((route, index) => (
+                                <Route
+                                    key={index}
+                                    path={route.path}
+                                    exact={route.exact}
+                                    children={<route.navigation />}
+                                />
+                            ))}
+                        </Switch>
+                        <Switch location={this.props.location}>
+                            {pages}
+                            <Redirect to="/" />
+                        </Switch>
                     </div>
                     <Footer />
                 </Router>
