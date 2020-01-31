@@ -23,17 +23,17 @@ export default function BottomFooterMinHeight(props) {
                     <Row>
                         <Col xs='12' md='6' className='align-self-center'>
                             <p>
-                                Any Web Developer has faced an issue of a <strong>'flying' footer</strong> once or twice in their life.
-                                This problem occurs when <strong>a page does not contain enough content</strong> to show.
-                                There are several solutions that I have found for myself to the mentioned query.
+                                Any Web Developer has faced an issue of a <strong>"flying" footer</strong> several times. The problem occurs when a page does <em>not</em> contain <em>enough content</em> to show. There are several ways to solve the problem and make things right.
                             </p>
                             <p>
-                                In this article, I would like to explain one of the methods - <strong>min-height: 100vh</strong>.
-                                Let's try to put the footer into the right place.
+                                In this article, I would like to explain one of the methods, which has something to do with: <strong>min-height: 100vh</strong>.
+                            </p>
+                            <p>
+                                Let's try to settle a footer at the end of a page.
                             </p>
                         </Col>
                         <Col xs='12' md='6'>
-                            <img className='page-screenshot' width='100%' src={previewImg} alt={article100vh.title} />
+                            <img width='100%' src={previewImg} alt={article100vh.title} />
                         </Col>
                     </Row>
                 </Container>
@@ -45,47 +45,45 @@ export default function BottomFooterMinHeight(props) {
                             <h2>Initial settings</h2>
                             <p>
                                 Two documents have been prepared: <strong>index.html</strong>, and <strong>styles.css</strong>.
-                                Have a look at them.
                             </p>
                         </Col>
                     </Row>
                     <Row className="d-flex flex-row flex-wrap justify-content-center align-items-start m-0 p-0">
                         <Col xs="12" md="6" className="m-0 p-0">
                             <ExpandImage src={initialPage} title={article100vh.initialPageImg.alt} />
-                            <p>index.html</p>
+                            <p className='mt-2 mb-0'><strong>index.html</strong></p>
                             <code className="code-styles px-5 py-3 text-light bg-dark">{`
 
 <!DOCTYPE html>
-<html>
+`}<span className='text-success'>&lt;html&gt;</span>{`
 
-<head>
-    <link rel="stylesheet" href="./styles.css">
-</head>
+    `}<span className='text-success'>&lt;head&gt;</span>{`
+        <link rel="stylesheet" href="./styles.css">
+    `}<span className='text-success'>&lt;/head&gt;</span>{`
 
-<body>
-    <div class="container">
+    `}<span className='text-success'>&lt;body&gt;</span>{`
+        `}<span className='text-info'>&lt;div class="container"&gt;</span>{`
 
-        <header>
-            header
-        </header>
+            `}<span className='text-success'>&lt;header&gt;</span>{`
+                header
+            `}<span className='text-success'>&lt;/header&gt;</span>{`
         
-        <div class="content">
-            content
-        </div>
+            `}<span className='text-info'>&lt;div class="content"&gt;</span>{`
+                content
+            `}<span className='text-info'>&lt;/div&gt;</span>{`
         
-    </div>
+        `}<span className='text-info'>&lt;/div&gt;</span>{`
 
-    <footer>
-        footer
-    </footer>
+        `}<span className='text-success'>&lt;footer&gt;</span>{`
+            footer
+        `}<span className='text-success'>&lt;/footer&gt;</span>{`
 
-</body>
-
-</html>`}
+    `}<span className='text-success'>&lt;/body&gt;</span>{`
+`}<span className='text-success'>&lt;/html&gt;</span>
                             </code>
                         </Col>
                         <Col xs="12" md="6">
-                            <p>styles.css</p>
+                            <p className='my-0 pt-0'><strong>styles.css</strong></p>
                             <code className="code-styles px-5 py-3 text-light bg-dark">
                                 {`
 * {
@@ -93,7 +91,7 @@ export default function BottomFooterMinHeight(props) {
     padding: 0;
     }
 
-html {
+`}<span className='text-success'>html</span>{` {
     background-color: lightgray;
     font-size: 50px;
     text-align: center;
@@ -102,25 +100,25 @@ html {
     /* or min-height: 100vh; */
     }
 
-body {
+`}<span className='text-success'>body</span>{` {
     background-color: lightsalmon;
 }
 
-.container {
+`}<span className='text-info'>.container</span>{` {
     background-color: skyblue;
 }
 
-header {
+`}<span className='text-success'>header</span>{` {
     background-color: lemonchiffon;
     margin: 0 5px;
 }
 
-.content {
+`}<span className='text-info'>.content</span>{` {
     background-color: hotpink;
     margin: 0 5px;
 }
 
-footer {
+`}<span className='text-success'>footer</span>{` {
     background-color: aquamarine;
 }`}
                             </code>
@@ -129,26 +127,13 @@ footer {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                How you can see, index.html contains: {`<html>`}, {`<head>`}, {`<body>`},
-                                {`<header>`}, {`<div class="container">`}, {`<div class="content">`},
-                                and {`<footer>`}elements. All elements have different background-color
-                                in the styles.css doctument.
+                                How you can see, <strong>index.html</strong> contains: <em>&lt;html&gt;</em>, <em>&lt;head&gt;</em>, <em>&lt;body&gt;</em>, <em>&lt;header&gt;</em>, <em>&lt;div class="container"&gt;</em>, <em>&lt;div class="content"&gt;</em>, and <em>&lt;footer&gt;</em> elements. Each element has different background-color in the <strong>styles.css</strong> file so that every one is visible.
                             </p>
                             <p>
-                                The html element has min-height: 100% because by default html takes the only
-                                height of all element inside but anyway, uses background-color to cover 100%
-                                of the page. Furthermore, I have used "min-height" instead of "height" because
-                                different kind of pages always should be taken into account,
-                                like pages full of content and pages short of content. Of course,
-                                CSS classes and ids applied to the short pages could be a solution
-                                but I have decided it would be nice to use one approach for all kind of pages.
-                                Margin and padding are 0 for all components because some elements have default
-                                margins and paddings, and I want to use custom margins and paddings.
-                                So, there are 5px left and right margins for the {`<header>`} and .content,
-                                because it would be nice to see the .container under other elements.
+                                The html element has CSS property <strong>"min-height: 100%"</strong> because <em>&lt;html&gt;</em> <strong>"background-color"</strong> covers 100% of the viewport by default despite the fact that <em>&lt;html&gt;</em> height could be less than the height of the viewport and as for me it looks weird. Besides, I have used <strong>"min-height"</strong> property <em>instead</em> of <strong>"height"</strong> so long pages would not be cut to the fixed height. <em>Margin</em> and <em>padding</em> are 0 for all components because some elements have default values, but I would like to use custom margins and paddings. The 5px left and right margins have purpose to show  <em>&lt;header&gt;</em> and <em>.content</em> elements under the other.
                             </p>
                             <p>
-                                Besides, for screenshots I am using small-screen 740 x 360 px to see elements movements on a better scale.
+                                I am using small-screen 740 x 360 px to see elements changes in a better scale.
                             </p>
                         </Col>
                     </Row>
@@ -159,9 +144,11 @@ footer {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <h2>Using min-height</h2>
-                            <p>This way is the simplest one, from my point of view.
-                                We want all <strong>.container</strong> + <strong>footer</strong> take the whole visible page space.
-                                So, let's add to <strong>.container</strong> and <strong>footer</strong> some styles.
+                            <p> From my point of view, the <strong>"min-height: 100vh"</strong> way to place a footer is the easiest one.
+                                The main goal is that <em>.container</em> + <em>&lt;footer&gt;</em>  should take the whole visible space on the page.
+                            </p>
+                            <p>
+                                So, let's add to  <em>.container</em> and <em>&lt;footer&gt;</em> elements some styles.
                             </p>
                             <div className="p-3 bg-info w-50 mx-auto my-3">
                                 <Toast className="mx-auto">
@@ -169,17 +156,17 @@ footer {
                                         Useful information:
                                     </ToastHeader>
                                     <ToastBody>
-                                        height: 100vh = 100% of the viewport height<br />
-                                        height: 100% = 100% of the parent element height<br />
+                                        <strong>height: 100vh</strong> = 100% of the viewport height<br />
+                                        <strong>height: 100% </strong> = 100% of the parent element height<br />
                                     </ToastBody>
                                 </Toast>
                             </div>
                             <p>
-                                Add <em>min-height: <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank" rel="noopener noreferrer">100vh</a></em> to the .container in the <strong>styles.css</strong> file.
+                                Add <strong>min-height: <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank" rel="noopener noreferrer">100vh</a></strong> to the <em>.container</em> class inside the <strong>styles.css</strong> file.
 
                             </p>
                             <p>
-                                I would recommend using "min-height" property because if you use simply "height" then the height of the element is fixed at some value.  As a result of applying "height", could be cutting the content by the viewport level on full of content pages.
+                                I would recommend using "min-height" property because if use just <strong>"height"</strong> then the height of the element is fixed at specified value. As a result of applying <strong>"height"</strong>, could be page cropped in the middle of the content.
                             </p>
                         </Col>
                     </Row>
@@ -188,10 +175,10 @@ footer {
                             <code className="code-styles px-5 py-3 text-light bg-dark">{`
 ...
 
-.container {
+`}<span className='text-info'>.container</span>{` {
     background-color: skyblue ;
     border: 5px solid skyblue ;
-    min-height: 100vh;
+    min-height: `}<span className='text-warning'>100vh</span>{`;
 }
 
 ... `}
@@ -205,14 +192,10 @@ footer {
                         <Col xs="12">
 
                             <p>
-                                How can you see on the picture above, the footer now is arranged after the 100% of the viewport and we need to scroll to find it.
-                                Not that convenient and looks like the footer is hidden.
-                                No problem, we can change it by adding "height" to the footer and then reduce the "min-height" of .container  to the footer "height".
-                                The best way to do it is - using <a href="https://www.w3schools.com/cssref/func_calc.asp">"calc()"</a> function. It is simpler then everyone think {`:)`}.
+                                As you can see on the picture above, the <em>footer</em> now is arranged after the 100% of the viewport and we need to scroll to find it. Not very convenient and looks like the <em>footer</em> is hidden. No big deal. First, we can change the situation by adding <strong>"height"</strong> to the <em>footer</em>. Second, reduce the <strong>"min-height"</strong> of <em>.container</em> by the <em>footer</em> <strong>"height"</strong>. The best way to do so is by using <strong><a href="https://www.w3schools.com/cssref/func_calc.asp">"calc()"</a></strong> function. No worries, it is easier than it looks {`:)`}.
                             </p>
                             <p>
-                                So, let's use calc() function to find a place for the footer inside the viewport.
-                                Add the height of the footer, 200px, for example. Then add calc(100vh - 200px) function to the .container "min-height".
+                                So, let's use <strong>calc()</strong> function. Add the <strong>"height"</strong> property to the <em>footer</em>, for example, <strong>200px</strong>. Then add <strong>calc(100vh - 200px)</strong> function to the <em>.container</em> class <strong>"min-height"</strong>.
  </p>
                         </Col>
                     </Row>
@@ -220,26 +203,26 @@ footer {
 
                 <Container>
                     <Row className="mt-5 mb-2">
-                        <Col xs="12" md="8">
+                        <Col xs="12" md="7">
                             <ReactCompareImage leftImage={firstImg100vh} leftImageAlt="Footer outside the viewport" rightImageAlt="Footer inside the viewport" rightImage={secondImg100vh200f} sliderPositionPercentage="0.95" />
                             <p> Compare the current look of the page to the previous one.</p>
                         </Col>
-                        <Col xs="12" md="4">
+                        <Col xs="12" md="5">
                             <code className="code-styles px-5 py-3 text-light bg-dark">
                                 {`
 ...
 
-.container {
+`}<span className='text-info'>.container</span>{`{
     background-color: skyblue;
-    min-height: calc(100vh - 200px);
-   /* 200px - the height of the footer */
+    min-height: `}<span className='text-warning'>calc(100vh - 200px);</span><br />
+                                {`/* 200px - the height of the footer */
     }
 
 ... 
 
-footer {
+`}<span className='text-success'>footer</span>{` {
     background-color: aquamarine;
-    height: 200px;
+    height: `} <span className='text-warning'>200px</span>{`;
     }
 
 ...
@@ -251,10 +234,7 @@ footer {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                One more step before the end. Please, check various pages to be sure the result fits multiple cases.
-     In the "flying" footer condition, there are two types of pages: full of content and short of the content.
-     To check both, we can create a new page or just add enough content to the "index.html", your choice.
- I am going to change the element with "content" class and add some dummy text, like <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank" rel="noopener noreferrer">"Lorem Ipsum"</a>
+                                One more thing before finishing. I would like to check two kinds of pages depending on the length of content: <em>long</em> and <em>short</em> (which I already have). To make a page full of content, I am going to change the element with <em>"content"</em> class and add some long dummy text, like <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank" rel="noopener noreferrer">"Lorem Ipsum"</a>
 
                             </p>
                         </Col>
@@ -262,7 +242,7 @@ footer {
                     <Row className="mt-5 mb-2 justify-content-center">
                         <Col xs="12" md="6">
                             <p>Short page</p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/100vh/short-min-height-100vh.png")} title='Final page full of content with the footer at the bottom' />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/100vh/short-min-height-100vh.png")} title='Short page with footer at the bottom' />
                             <ShowCode button="Final styles.css" codeId="min-height-final-styles"
                                 code=
                                 {`
@@ -309,18 +289,20 @@ footer {
                         </Col>
                         <Col xs="12" md="6">
                             <p>Long page</p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/long.png")} title='Final short page with the footer at the bottom' />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/long.png")} title='Long page with the footer at the bottom' />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                There are some nuances, of course. Always check a mobile/tablet version of your website and find, for example, the height of the footer that suits all sizes of the screens (using <strong>@media</strong> for instance). Moreover, you can experiment with different absolute and relative length units and choose the most suitable for your conditions.
+                                There are, of course, some nuances. I always check a mobile/tablet version of my website to be sure I have chosen the correct length of the footer and everything works together.
+Cool, the <em>footer</em> is at the bottom of the page! I am glad to see that {`:)`}
                             </p>
+                            <p><strong>Good luck!</strong></p>
                         </Col>
                     </Row>
                 </Container>
             </section>
-        </React.Fragment>
+        </React.Fragment >
     );
 }

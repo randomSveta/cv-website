@@ -19,7 +19,7 @@ export const ARTICLES = [
         },
         initialPageImg: {
             path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
-            alt: 'Initial page'
+            alt: 'Initial page view'
         }
     },
     {
@@ -34,7 +34,7 @@ export const ARTICLES = [
         },
         initialPageImg: {
             path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
-            alt: 'Initial page'
+            alt: 'Initial page view'
         }
 
     },
@@ -50,7 +50,7 @@ export const ARTICLES = [
         },
         initialPageImg: {
             path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
-            alt: 'Initial page'
+            alt: 'Initial page view'
         }
     },
     {
@@ -65,7 +65,7 @@ export const ARTICLES = [
         ,
         initialPageImg: {
             path: require('../../../assets/images/blog-page/articles/let-const-var/let-const-var-initial-page.png'),
-            alt: 'Initial page'
+            alt: 'Initial page view'
         }
     }
 
