@@ -14,8 +14,8 @@ export const GH_PROJECTS = [
         name: 'Hotel Website',
         year: 2019,
         taskLink: '',
-        repoLink: 'https://github.com/randomSveta/HotelSite',
-        projectLink: 'https://randomsveta.github.io/HotelSite/',
+        repoLink: 'https://github.com/randomSveta/hotel-website',
+        projectLink: 'https://randomsveta.github.io/hotel-website/',
         description: 'Website for trainig React, Reactstrap, Bootsrap and others. I decided to create website for any unreal Hotels chain and apply all my knowledge.',
         section: 'GitHub'
     },
