@@ -4,13 +4,13 @@ import { faTerminal, faCode, faBook } from '@fortawesome/free-solid-svg-icons';
 export const CURRENT_PROJECTS = [
     {
         id: 1,
-        title: 'Pomodoro Clock',
+        title: 'Bar Chart',
         icon: faFreeCodeCamp,
-        description: 'There is a "Pomodoro Clock" project in the course "Front  End Libraries Certification" on the FreeCodeCamp website',
+        description: 'There is a "D3. Bar Chart" project in the course "Data Visualization Certification" on the FreeCodeCamp website',
         repoLink: '',
-        taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock',
-        projectLink: 'https://codepen.io/randomsveta/pen/PowWPeY',
-        progress: 0
+        taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-bar-chart',
+        projectLink: 'https://codepen.io/randomsveta/pen/RwPNbqd',
+        progress: 30
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export const CURRENT_PROJECTS = [
         repoLink: 'https://github.com/randomSveta/HotelSite',
         taskLink: '',
         projectLink: 'https://randomsveta.github.io/HotelSite/',
-        progress: 22
+        progress: 20
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 26
+        progress: 30
     },
     {
         id: 4,
