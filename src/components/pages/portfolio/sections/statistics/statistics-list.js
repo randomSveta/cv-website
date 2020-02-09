@@ -4,17 +4,17 @@ export const STATISTICS = [
     {
         id: 1,
         profile: 'FreeCodeCamp',
-        points: 630
+        points: 671
     },
     {
         id: 2,
         profile: 'CodeWars',
-        points: 399
+        points: 433
     },
     {
         id: 3,
         profile: 'Codecademy',
-        points: 647
+        points: 672
     }
 ];
 
