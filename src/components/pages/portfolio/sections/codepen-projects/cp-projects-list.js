@@ -11,7 +11,8 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage',
     projectLink: 'https://codepen.io/randomsveta/full/odyppL',
     year: 2018,
-    section: 'CodePen'
+    section: 'CodePen',
+    finished: true
 
   },
   {
@@ -24,8 +25,8 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page',
     projectLink: 'https://codepen.io/randomsveta/full/zjKRJb',
     year: 2018,
-    section: 'CodePen'
-
+    section: 'CodePen',
+    finished: true
   },
   {
     id: 3,
@@ -37,8 +38,8 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page',
     projectLink: 'https://codepen.io/randomsveta/full/JZNWVZ',
     year: 2019,
-    section: 'CodePen'
-
+    section: 'CodePen',
+    finished: true
   },
   {
     id: 4,
@@ -50,8 +51,8 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page',
     projectLink: 'https://codepen.io/randomsveta/full/QYQjBg',
     year: 2019,
-    section: 'CodePen'
-
+    section: 'CodePen',
+    finished: true
   },
   {
     id: 5,
@@ -63,7 +64,8 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form',
     projectLink: 'https://codepen.io/randomsveta/full/GGZeRb',
     year: 2018,
-    section: 'CodePen'
+    section: 'CodePen',
+    finished: true
   },
   {
     id: 6,
@@ -76,7 +78,8 @@ export const CP_PROJECTS = [
     taskLink: '',
     projectLink: 'https://codepen.io/randomsveta/full/drVOzX',
     year: 2019,
-    section: 'CodePen'
+    section: 'CodePen',
+    finished: true
   },
 
   {
@@ -89,7 +92,8 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine',
     projectLink: 'https://codepen.io/randomsveta/full/oRRVVM',
     year: 2019,
-    section: 'CodePen'
+    section: 'CodePen',
+    finished: true
   },
   {
     id: 8,
@@ -101,8 +105,8 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer',
     projectLink: 'https://codepen.io/randomsveta/full/xoXQgr',
     year: 2019,
-    section: 'CodePen'
-
+    section: 'CodePen',
+    finished: true
   },
   {
     id: 9,
@@ -114,7 +118,8 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-drum-machine',
     projectLink: 'https://codepen.io/randomsveta/full/PrLXLg',
     year: 2019,
-    section: 'CodePen'
+    section: 'CodePen',
+    finished: true
   },
   {
     id: 10,
@@ -126,19 +131,34 @@ export const CP_PROJECTS = [
     taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator',
     projectLink: 'https://codepen.io/randomsveta/full/VwwPjLK',
     year: 2019,
-    section: 'CodePen'
+    section: 'CodePen',
+    finished: true
   },
   {
     id: 11,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Pomodoro Clock" src="https://codepen.io/randomsveta/embed/preview/PowWPeY?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
-      See the Pen <a href='https://codepen.io/randomsveta/pen/PowWPeY'>FCC: Calculator  (Immediate Execution Logic)</a> by Sveta
+      See the Pen <a href='https://codepen.io/randomsveta/pen/PowWPeY'>FCC: Pomodoro Clock</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
     name: 'FCC: Pomodoro Clock',
     taskLink: 'https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock',
     projectLink: 'https://codepen.io/randomsveta/full/PowWPeY',
-    year: 2019,
-    section: 'CodePen'
+    year: 2020,
+    section: 'CodePen',
+    finished: true
+  },
+  {
+    id: 12,
+    jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: D3 Bar Chart" src="https://codepen.io/randomsveta/embed/preview/RwPNbqd?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+      See the Pen <a href='https://codepen.io/randomsveta/pen/RwPNbqd'>FCC: D3 Bar Chart</a> by Sveta
+        (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>,
+    name: 'FCC: Pomodoro Clock',
+    taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-bar-chart',
+    projectLink: 'https://codepen.io/randomsveta/full/RwPNbqd',
+    year: 2020,
+    section: 'CodePen',
+    finished: false
   }
 
 ];
