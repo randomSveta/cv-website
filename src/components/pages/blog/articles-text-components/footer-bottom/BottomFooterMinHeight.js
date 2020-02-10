@@ -29,7 +29,7 @@ export default function BottomFooterMinHeight(props) {
                                 In this article, I would like to explain one of the methods, which has something to do with: <strong>min-height: 100vh</strong>.
                             </p>
                             <p>
-                                Let"s try to settle a footer at the end of a page.
+                                Let's try to settle a footer at the end of a page.
                             </p>
                         </Col>
                         <Col xs="12" md="6">
@@ -145,10 +145,10 @@ export default function BottomFooterMinHeight(props) {
                         <Col xs="12">
                             <h2>Using <strong>min-height</strong></h2>
                             <p> From my point of view, the <strong>min-height: 100vh</strong> way to place a footer is the easiest one.
-                                The main goal is that <em>.container</em> + <em>&lt;footer&gt;</em>  should take the whole visible space on the page.
+                                The main goal is that <em>.container</em> + <em>&lt;footer&gt;</em> should take the whole visible space on the page.
                             </p>
                             <p>
-                                So, let"s add to  <em>.container</em> and <em>&lt;footer&gt;</em> elements some styles.
+                                So, let's add to  <em>.container</em> and <em>&lt;footer&gt;</em> elements some styles.
                             </p>
                             <div className="p-3 bg-info w-50 mx-auto my-3">
                                 <Toast className="mx-auto">
@@ -195,7 +195,7 @@ export default function BottomFooterMinHeight(props) {
                                 As you can see on the picture above, the <em>footer</em> now is arranged after the 100% of the viewport and we need to scroll to find it. Not very convenient and looks like the <em>footer</em> is hidden. No big deal. First, we can change the situation by adding <strong>height</strong> to the <em>footer</em>. Second, reduce the <strong>min-height</strong> of <em>.container</em> by the <em>footer</em> <strong>height</strong>. The best way to do so is by using <strong><a href="https://www.w3schools.com/cssref/func_calc.asp">"calc()"</a></strong> function. No worries, it is easier than it looks {`:)`}.
                             </p>
                             <p>
-                                So, let"s use <strong>calc()</strong> function. Add the <strong>height</strong> property to the <em>footer</em>, for example, <strong>200px</strong>. Then add <strong>calc(100vh - 200px)</strong> function to the <em>.container</em> class <strong>min-height</strong>.
+                                So, let's use <strong>calc()</strong> function. Add the <strong>height</strong> property to the <em>footer</em>, for example, <strong>200px</strong>. Then add <strong>calc(100vh - 200px)</strong> function to the <em>.container</em> class <strong>min-height</strong>.
  </p>
                         </Col>
                     </Row>

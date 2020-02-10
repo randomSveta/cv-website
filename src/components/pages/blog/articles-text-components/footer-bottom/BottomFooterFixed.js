@@ -31,7 +31,7 @@ export default function BottomFooterFixed(props) {
                                 <Link to={"/blog/footer-bottom-absolute/"}> "position: absolute"</Link>.
                              </p>
                             <p>
-                                Let"s try to settle a footer at the end of a page.
+                                Let's try to settle a footer at the end of a page.
                             </p>
                         </Col>
                     </Row>
@@ -146,7 +146,7 @@ export default function BottomFooterFixed(props) {
                             <p>
                                 This way is the third and not that complicated.
                                 I suggest fixing the <em>&lt;footer&gt;</em> at the bottom of the parent container, which is <em>&lt;body&gt;</em> in our case.
-                                To start our experiment, let"s apply <strong>position: fixed</strong> to the <em>footer</em>.
+                                To start our experiment, let's apply <strong>position: fixed</strong> to the <em>footer</em>.
                                 Add <strong>position: <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank" rel="noopener noreferrer">fixed</a></strong> to the <strong>styles.css</strong> file.
                             </p>
                         </Col>
@@ -185,7 +185,7 @@ export default function BottomFooterFixed(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                Let"s make <em>&lt;footer&gt;</em> take the widthof the whole page, not only the width of its content.
+                                Let's make <em>&lt;footer&gt;</em> take the widthof the whole page, not only the width of its content.
                                 To do so we should apply <strong>width</strong> property to the <strong>footer</strong> element.
                             </p>
                             <p>
@@ -248,7 +248,7 @@ export default function BottomFooterFixed(props) {
                                 Looks nice but...
                             </p>
                             <p>
-                                Let"s open <strong>Developer Tools</strong> from your browser and find a tab where you can inspect elements (ex. <strong>Inspector</strong> tab in the Firefox). Next, locate the <em>&lt;body&gt;</em> tag using the inspector.
+                                Let's open <strong>Developer Tools</strong> from your browser and find a tab where you can inspect elements (ex. <strong>Inspector</strong> tab in the Firefox). Next, locate the <em>&lt;body&gt;</em> tag using the inspector.
 How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em> area. We should do something about it because that is not the correct behaviour.
                             </p>
                             <p>
@@ -292,7 +292,7 @@ How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em
                                 Nice work! Almost there!
                             </p>
                             <p>
-                                Let"s see how the page would look like if it has long content, just in case. I am going to add one more HTML document for the <em>full of content</em> page and add a dummy text <strong><a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank" rel="noopener noreferrer">"Lorem Ipsum"</a></strong> to a new page inside the <em>&lt;div class="content"&gt;</em> element.
+                                Let's see how the page would look like if it has long content, just in case. I am going to add one more HTML document for the <em>full of content</em> page and add a dummy text <strong><a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank" rel="noopener noreferrer">"Lorem Ipsum"</a></strong> to a new page inside the <em>&lt;div class="content"&gt;</em> element.
                             </p>
                             <p>
                                 So, now we have two types of pages related to content: <em>short</em> and <em>long</em>. Let's look closely at them.
