@@ -24,15 +24,13 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="6" className="align-self-center">
                             <p>
-                                Any Web Developer has faced an issue of a <strong>"flying" footer</strong> once or twice in their life.
-                                    This problem occurs when <strong>a page does not contain enough content</strong> to show.
-There are several solutions that I have found for myself to the mentioned query.
-                                </p>
+                                Any Web Developer has faced an issue of a <strong>"flying" footer</strong> several times. The problem occurs when a page does <em>not</em> contain <em>enough content</em> to show. There are several ways to solve the problem and make things right.
+                            </p>
                             <p>In this article, I would like to explain one of the methods (the second one in my blog) - <strong>position: absolute</strong>.
-                                The first one is <Link to={"/blog/footer-bottom-min-height/"}>"min-heignt: 100vh"</Link>.
+                                The first one is <Link to={"/blog/footer-bottom-min-height/"}><strong>min-heignt: 100vh</strong></Link>.
                             </p>
                             <p>
-                                Let"s start, again! {`:)`}
+                                Let's start, again! {`:)`}
                             </p>
                         </Col>
                         <Col xs="12" md="6">
@@ -48,46 +46,45 @@ There are several solutions that I have found for myself to the mentioned query.
                             <h2>Initial settings</h2>
                             <p>
                                 Two documents have been prepared: <strong>index.html</strong>, and <strong>styles.css</strong>.
-                        Have a look at them.
-                                </p>
+                            </p>
                         </Col>
                     </Row>
                     <Row className="d-flex flex-row flex-wrap justify-content-center align-items-start m-0 p-0">
                         <Col xs="12" md="6" className="m-0 p-0">
-                            <ExpandImage src={initialPage} title={articleAbsolute.initialPageImg.path} />
-                            <p>index.html</p>
+                            <ExpandImage src={initialPage} title={articleAbsolute.initialPageImg.alt} />
+                            <p className="mt-2 mb-0"><strong>index.html</strong></p>
                             <code className="code-styles px-5 py-3 text-light bg-dark">{`
+
 <!DOCTYPE html>
-<html>
+`}<span className="text-success">&lt;html&gt;</span>{`
 
-<head>
-    <link rel="stylesheet" href="./styles.css">
-</head>
+    `}<span className="text-success">&lt;head&gt;</span>{`
+        <link rel="stylesheet" href="./styles.css">
+    `}<span className="text-success">&lt;/head&gt;</span>{`
 
-<body>
-    <div class="container">
+    `}<span className="text-success">&lt;body&gt;</span>{`
+        `}<span className="text-info">&lt;div class="container"&gt;</span>{`
 
-        <header>
-            header
-        </header>
+            `}<span className="text-success">&lt;header&gt;</span>{`
+                header
+            `}<span className="text-success">&lt;/header&gt;</span>{`
         
-        <div class="content">
-            content
-        </div>
+            `}<span className="text-info">&lt;div class="content"&gt;</span>{`
+                content
+            `}<span className="text-info">&lt;/div&gt;</span>{`
         
-    </div>
+        `}<span className="text-info">&lt;/div&gt;</span>{`
 
-    <footer>
-        footer
-    </footer>
+        `}<span className="text-success">&lt;footer&gt;</span>{`
+            footer
+        `}<span className="text-success">&lt;/footer&gt;</span>{`
 
-</body>
-
-</html>`}
+    `}<span className="text-success">&lt;/body&gt;</span>{`
+`}<span className="text-success">&lt;/html&gt;</span>
                             </code>
                         </Col>
                         <Col xs="12" md="6">
-                            <p>styles.css</p>
+                            <p className="my-0 pt-0"><strong>styles.css</strong></p>
                             <code className="code-styles px-5 py-3 text-light bg-dark">
                                 {`
 * {
@@ -95,32 +92,34 @@ There are several solutions that I have found for myself to the mentioned query.
     padding: 0;
     }
 
-html {
+`}<span className="text-success">html</span>{` {
     background-color: lightgray;
     font-size: 50px;
     text-align: center;
     min-height: 100%;
+
+    /* or min-height: 100vh; */
     }
 
-body {
+`}<span className="text-success">body</span>{` {
     background-color: lightsalmon;
 }
 
-.container {
+`}<span className="text-info">.container</span>{` {
     background-color: skyblue;
 }
 
-header {
+`}<span className="text-success">header</span>{` {
     background-color: lemonchiffon;
     margin: 0 5px;
 }
 
-.content {
+`}<span className="text-info">.content</span>{` {
     background-color: hotpink;
     margin: 0 5px;
 }
 
-footer {
+`}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
 }`}
                             </code>
@@ -129,26 +128,13 @@ footer {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                How you can see, index.html contains: {`<html>`}, {`<head>`}, {`<body>`},
-                                {`<header>`}, {`<div class="container">`}, {`<div class="content">`},
-                                and {`<footer>`}elements. All elements have different background-color
-                                in the styles.css doctument.
+                                How you can see, <strong>index.html</strong> contains: <em>&lt;html&gt;</em>, <em>&lt;head&gt;</em>, <em>&lt;body&gt;</em>, <em>&lt;header&gt;</em>, <em>&lt;div class="container"&gt;</em>, <em>&lt;div class="content"&gt;</em>, and <em>&lt;footer&gt;</em> elements. Each element has different background-color in the <strong>styles.css</strong> file so that every one is visible.
                             </p>
                             <p>
-                                The html element has min-height: 100% because by default html takes the only
-                                height of all element inside but anyway, uses background-color to cover 100%
-                                of the page. Furthermore, I have used "min-height" instead of "height" because
-                                different kind of pages always should be taken into account,
-                                like pages full of content and pages short of content. Of course,
-                                CSS classes and ids applied to the short pages could be a solution
-                                but I have decided it would be nice to use one approach for all kind of pages.
-                                Margin and padding are 0 for all components because some elements have default
-                                margins and paddings, and I want to use custom margins and paddings.
-                                So, there are 5px left and right margins for the {`<header>`} and .content,
-                                because it would be nice to see the .container under other elements.
+                                The html element has CSS property <strong>min-height: 100%</strong> because <em>&lt;html&gt;</em> <strong>background-color</strong> covers 100% of the viewport by default despite the fact that <em>&lt;html&gt;</em> height could be less than the height of the viewport and as for me it looks weird. Besides, I have used <strong>min-height</strong> property <em>instead</em> of <strong>height</strong> so long pages would not be cut to the fixed height. <em>Margin</em> and <em>padding</em> are 0 for all components because some elements have default values, but I would like to use custom margins and paddings. The 5px left and right margins have purpose to show  <em>&lt;header&gt;</em> and <em>.content</em> elements under the other.
                             </p>
                             <p>
-                                Besides, for screenshots I am using small-screen 740 x 360 px to see elements movements on a better scale.
+                                I am using small-screen 740 x 360 px to see elements changes in a better scale.
                             </p>
                         </Col>
                     </Row>
@@ -158,22 +144,21 @@ footer {
                 <Container>
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
-                            <h2>Using position "absolute"</h2>
+                            <h2>Using <strong>absolute</strong> position</h2>
                             <p>
-                                I could say the "position: absolute" it is the most popular way to keep a footer at the bottom.
-                                Many articles describe this approach. The "absolute" way is always the first suggestion for those who are searching for help with "flying" footer.
+                                I could say the absolute positioning it is the most popular way to keep a <em>footer</em> at the page bottom. Many articles suggest this approach. The <strong>absolute</strong> way often is the first recommendation for those who are seeking for a help with <strong>"flying"</strong> <em>footer</em>
                             </p>
                             <p>
-                                At first, what is <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank" rel="noopener noreferrer">"position: absolute"</a>?
-                                The element is positioned as "absolute" is excluded from the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow" target="_blank" rel="noopener noreferrer">normal document flow</a> and placed in the document relatively to the closest positioned parent i.e parent should have "position:" with one of the values: relative, fixed, sticky, absolute but not static.
+                                First of all, what does<a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank" rel="noopener noreferrer">position: absolute</a> mean?
+                            The <strong>absolutely</strong> positioned element is excluded from the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow" target="_blank" rel="noopener noreferrer">normal document flow</a> and placed in the document flow relative to the closest positioned parent i.e the parent should have <strong>position</strong> property with one of the values: relative, fixed, sticky, absolute but not static.
+    
                             </p>
                             <p>
                                 I invite you to investigate {`:)`}.
                             </p>
                             <p>
-                                Let"s try to position our footer using "position: absolute".
-                                Go to the styles.css and add the "position: absolute" property to the footer element styles.
- </p>
+                                Let's try to position our <em>footer</em> using <strong>position: absolute</strong>. Go to the styles.css and add the "position: absolute" property to the footer element styles.
+                            </p>
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
@@ -182,9 +167,9 @@ footer {
                                 {`
 ... 
 
-footer {
+`}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
-    position: absolute;
+    position: `}<span className="text-warning">absolute</span>{`;
     }
 
 ...
@@ -192,32 +177,32 @@ footer {
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/pos-absolute-to-footer.png")} title="The footer absolute position" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/pos-absolute-to-footer.png")} title="Footer position is absolute" />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                Hmm... Nothing has been changed in elements order, but the footer tooks only the amount of place needed for its content.
+                            Hmm... Nothing changed in the order of the elements, but now the <em>footer</em> is using content space only.
                             </p>
                             <p>
-                                Cool! Let"s fix it and add "width: 100%" to the footer.
+                            Good anyway! So, we should make the <em>footer</em> full size long and add <strong>width: 100%</strong> to it.
                             </p>
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-width-100.png")} title="The footer width 100%" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-width-100.png")} title="Footer has width 100%" />
                         </Col>
                         <Col xs="12" md="4">
                             <code className="code-styles px-5 py-2 bg-dark text-light">
                                 {`
 ...
 
-footer {
+`}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
     position: absolute;
-    width: 100%;
+    width: `}<span className="text-warning">100%</span>{`;
     }
 
 ...`}
@@ -227,10 +212,10 @@ footer {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                Then, without adding "position" to the parent element of the footer (we are going to add it later), let"s try to move the {`<footer>`} to the bottom and find which element is the landmark for the absolute positioning.
+                            Next, let's try to move the <em>&lt;footer&gt;</em> to the page bottom and find what element is the reference point for the absolute positioning.
                             </p>
                             <p>
-                                Add "bottom: 0" to the footer in "styles.css."
+                                Add <strong>bottom: 0</strong> to the <em>footer</em> in <strong>styles.css</strong>.
                             </p>
                         </Col>
                     </Row>
@@ -240,11 +225,11 @@ footer {
                                 {`
 ...
 
-footer {
+`}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: `}<span className="text-warning">0</span>{`;
     }
 
 ...`}
@@ -257,40 +242,36 @@ footer {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                Hmmm...again! Looks like the default "positioned" parent element for the {`<footer>`} is the page itself. It is called a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block" target="_blank" rel="noopener noreferrer"> initial containing block </a>(in many sources the {`<body>`} is mentioned as default object for positioning, but it isn"t true).
+                            Looks like the <strong>default positioned parent</strong> element for the <em>&lt;footer&gt;</em> is the page itself or in other words an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block" target="_blank" rel="noopener noreferrer"> initial containing block</a>. Sometimes the <em>&lt;body&gt;</em> is specified as a default object for positioning, but it is not true.
                             </p>
-
                             <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
-                                    The containing block in which the root element ({`<html>`}) resides is a rectangle called the initial containing block.
+                                    The containing block in which the root element (<em>&lt;html&gt;</em>) resides is a rectangle called the initial containing block.
                                     It has the dimensions of the viewport (for continuous media) or the page area (for paged media).
                                 </p>
                                 <footer class="blockquote-footer p-2 text-right"><cite title="MDN"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block">MDN</a></cite></footer>
                             </blockquote>
                             <p>
-                                The footer is laying at the bottom of the page, isn"t it? Yes, but it isn"t right.
-                                    If you open Web Developers tools in the browser and then find a tab where elements could be inspected ("Inspector" in Mozilla for example), then you can see that the {`<footer>`} is placed outside the {`<body>`} area.
-                                    We know from the index.html layout that the footer should be inside the {`<body>`} tag.
+                            The <em>footer</em> is laying at the bottom of the page, isn't it? Yes, but there are some issues. Let's open Web Developer tools in a browser and then find a tab where elements could be inspected (Ex. <strong>Inspector</strong> in Mozilla). How you can see the <em>&lt;footer&gt;</em> is located outside the <em>&lt;body&gt;</em> element area. We know from the <strong>index.html</strong> layout that the <em>footer</em> should be inside the <em>&lt;body&gt;</em> tag.
                                     </p>
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2 justify-content-center">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-out-of-body.png")} title="The footer inside the body tag" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-out-of-body.png")} title="Footer outside the body area" />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                Let"s fix it!
-                                The closest parent container for the {`<footer>`} is the {`<body>`}. So, let"s add "position" property to the body, but which one?
-                                How it was described above, for our purpose it could be relative, fixed, absolute, sticky, but not static.
+                            We should sort it out. The closest parent container for the <em>&lt;footer&gt;</em> is the <em>&lt;body&gt;</em>. Let's add <strong>position</strong> property to the <em>body</em> tag, but which value should we use? How it was described above it could be <em>relative, fixed, absolute, and sticky</em> values but <em>not the static</em>.
+
                             </p>
                             <p>
-                                The "position: relative" is preferred because it has less impact on the element compared to the other but if you need or want, of course, you can use them either.
+                            The <strong>position: relative</strong> is preferred because it has less impact on the element in comparison with the other. 
                             </p>
                             <p>
-                                Add "position: relative" to the body.
+                            Add <strong>position: relative</strong> to the <em>body</em>.
                             </p>
                         </Col>
                     </Row>
@@ -301,38 +282,34 @@ footer {
                                 {`
 ...
 
-body {
+`}<span className="text-success">body</span>{` {
     background-color: lightsalmon;
-    position: relative;
+    position: `}<span className="text-warning">relative</span>{`;
 }
 
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-relative.png")} alt="The <body> positioned" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-relative.png")} title="Body has a relative position" />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                Whaaat? Where it will end?
-                            </p>
-                            <p>
-                                How you can see on the image below, the {`<footer>`} is placed "inside" the parent container - {`<body>`} and overall other elements, because the {`<footer>`} is removed from the normal document flow and is resting at the {`<body>`} bottom ("bottom: 0") relatively to it. The next thing we should do is to make the parent element {`<body>`} takes the whole visible height of the page.
-                                Hence, if we apply the "height" property, then the pages with the long content will have the bottom-border of the body and the footer in the middle of the page. I believe it is much better to use "min-height" instead of "height", especially for the container elements.
+                            How you can see on the image below, the <em>&lt;footer&gt;</em> is placed <strong>inside</strong> the parent container which is <em>&lt;body&gt;</em>. Also, the <em>footer</em> is located over all other elements, because the <em>&lt;footer&gt;</em> is removed from the <em>normal document flow</em> and now is resting at the <em>&lt;body&gt;</em> bottom (<strong>bottom: 0</strong>) relatively to it. The next step is to make the <em>&lt;body&gt;</em> element take the whole visible height of the page. Hence, if we apply the <strong>height</strong> property, then the pages with the long content will be cut by the footer in the middle of a page. I believe it would be much better to use <strong>min-height</strong> instead of <strong>height</strong>, especially for the container elements.
                             </p>
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2 justify-content-center">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-inside-body.png")} title="The body min-height 100vh" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-inside-body.png")} title="Footer is at the body bottom" />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12" >
                             <p>
-                                Could we use "min-height: 100%" for the parent container? We could, but it would not work {`:)`}.
+                                Could we use <strong>min-height: 100%</strong> for the parent container? We could, but it would not work {`:)`}.
                             </p>
                             <div className="p-3 bg-info w-50 mx-auto my-3">
                                 <Toast className="mx-auto">
@@ -340,26 +317,26 @@ body {
                                         Useful information:
                                     </ToastHeader>
                                     <ToastBody>
-                                        height: 100vh = 100% of the viewport height<br />
-                                        height: 100% = 100% of the parent element height<br />
+                                        <strong>height: 100vh</strong> = 100% of the viewport height<br />
+                                        <strong>height: 100%</strong> = 100% of the parent element height<br />
                                     </ToastBody>
                                 </Toast>
                             </div>
                             <p>
-                                The "min-height: 100%" property value does not work because the relatively positioned element is part of the document flow and takes its height from the first parent. As we applying "min-height" to the body, then closest parent element is {`<html>`} Therefore, the {`<html>`} does not have explicit height, only the "min-height", which does not count. Sadly, because of that the body  "min-height" does not know what height it should use.
+                                The <strong>min-height: 100%</strong> property value does not work because the relatively positioned element like <em>body</em> is a part of the document flow and takes the first parent height. As we applying only <strong>min-height</strong> to the body, then closest parent element is <em>&lt;html&gt;</em>. Therefore, the <em>&lt;html&gt;</em> does not have explicit <strong>height</strong>, only the <strong>min-height</strong>, which does not count. Sadly, the body <strong>min-height</strong> does not know what height it should use to apply 100%.
                                 You can verify it <a href="https://www.w3.org/TR/CSS2/visudet.html#the-height-property" target="_blank" rel="noopener noreferrer">in the CSS documentation</a>.
                                 </p>
 
                             <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
-                                    {`<percentage>`}<br />
+                                <strong>&lt;percentage&gt;</strong><br />
                                     <br />
-                                    Specifies a percentage height. The percentage is calculated with respect to the height of the generated box"s containing block. If the height of the containing block is not specified explicitly (i.e., it depends on content height), and this element is not absolutely positioned, the value computes to "auto". A percentage height on the root element is relative to the initial containing block. Note: For absolutely positioned elements whose containing block is based on a block-level element, the percentage is calculated with respect to the height of the padding box of that element. This is a change from CSS1, where the percentage was always calculated with respect to the content box of the parent element.
+                                    Specifies a percentage height. The percentage is calculated with respect to the height of the generated box's containing block. If the height of the containing block is not specified explicitly (i.e., it depends on content height), and this element is not absolutely positioned, the value computes to "auto". A percentage height on the root element is relative to the initial containing block. Note: For absolutely positioned elements whose containing block is based on a block-level element, the percentage is calculated with respect to the height of the padding box of that element. This is a change from CSS1, where the percentage was always calculated with respect to the content box of the parent element.
                                 </p>
                                 <footer class="blockquote-footer p-2 text-right"><cite title="w3"><a href="https://www.w3.org/TR/CSS2/visudet.html#the-height-property">w3</a></cite></footer>
                             </blockquote>
                             <p>
-                                Let"s check it anyway and add "min-height: 100%" property to the body element.
+                                Let's check it anyway and add <strong>min-height: 100%</strong> property to the <em>body</em> element.
                             </p>
                         </Col>
                     </Row>
@@ -369,30 +346,30 @@ body {
                                 {`
 ...
 
-body {
+`}<span className="text-success">body</span>{` {
     background-color: lightsalmon;
     position: relative;
-    min-height: 100%;
+    min-height: `}<span className="text-warning">100%</span>{`;
 
-    /* 100% - doesn"t work */ 
+    /* 100% - doesn't work */ 
 }
 
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-relative.png")} title="The body min-height is 100vh" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-relative.png")} title="Body min-height 100% does not work" />
                         </Col>
 
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                Yep, does not work. The next way is to use CSS <a href="https://www.w3schools.com/css/css_units.asp" target="_blank" rel="noopener noreferrer">vh</a> units for instance.
+                                Yep, does not work. The next way to make the <em>body</em> take the whole page height is to use CSS <a href="https://www.w3schools.com/css/css_units.asp" target="_blank" rel="noopener noreferrer">vh</a> units.
                             </p>
                             <p>
-                                Add "min-height: 100vh" to the body in the styles.css file.
-                                Moreover, if you want,  you can use the "100vh" for the html element min-height too.
+                                Add <strong>min-height: 100vh</strong> to the <em>body</em> in the <strong>styles.css</strong> file.
+                                Moreover, if you want,  you can use the <strong>100vh</strong> for the <em>html</em> element <strong>min-height</strong> too.
                             </p>
 
                         </Col>
@@ -403,26 +380,26 @@ body {
                                 {`
 ...
 
-body {
+`}<span className="text-success">footer</span>{` {
     background-color: lightsalmon;
     position: relative;
-    min-height: 100vh;
+    min-height: `}<span className="text-warning">100vh</span>{`;
 }
 
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-m-height-100vh.png")} title="The body min-height is 100vh" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-m-height-100vh.png")} title="Body min-height is 100vh" />
                         </Col>
 
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                                Wow! Finally!
-                                But wait. Let"s have a look at the page full of content. You could create a new page or just add enough content to the "index.html", your choice.
-                                I am going to change the element with "content" class and add some dummy text, like <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank" rel="noopener noreferrer">"Lorem Ipsum"</a>
+                            Wow! Finally!
+                             Wait, I would like to have a look at the page with long content block. Create a new page or just add enough content to the <strong>index.html</strong> file, your choice.
+                                I am going to change the element with <em>content</em> class and add a dummy text like <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank" rel="noopener noreferrer">"Lorem Ipsum"</a>
                             </p>
                             <p>
                                 Next, remember the last lines of the added text, just in case {`:)`}. The last words of my text are "deserunt mollit anim id est laborum."
@@ -431,19 +408,19 @@ body {
                     </Row>
                     <Row className="mt-5 mb-2 justify-content-center">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/long-p-last-line-hidden.png")} title="Long content" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/long-p-last-line-hidden.png")} title="Long content block" />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="12">
                             <p>
-                                I could not see the last words "anim id est laborum.". Could you see yours? The final line is hidden under the footer.
-                                The footer is placed over text because it stays relatively to the body bottom.
-                                 To fix that we should give the footer its "height" and somehow make the body bigger on the footer height.
-                                 I suggest using "padding-bottom" property.
+                            I could not see the last words <strong>"anim id est laborum."</strong>. Could you see yours? The final line is under the <em>footer</em> element.
+                                The <em>footer</em> is placed over text because the <em>footer bottom border</em> is staying relatively to the <em>body bottom border</em>.
+                                 To fix that we should give the <em>footer</em> its <strong>height</strong> and somehow make the body element longer on that height. 
+                                 I suggest to use <strong>padding-bottom</strong> property.
                             </p>
                             <p>
-                                Add the footer "height" and then add "padding-bottom" for the body that equal to the footer height.
+                                Add the footer <strong>height</strong> and then add <strong>padding-bottom</strong> for the <em>body</em> that equal to the <em>footer</em> height.
                             </p>
                         </Col>
                     </Row>
@@ -453,11 +430,11 @@ body {
                                 {`
 ...
 
-body {
+`}<span className="text-success">body</span>{` {
     background-color: lightsalmon;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 200px;  
+    padding-bottom: `}<span className="text-warning">200px</span>{`;  
     
     /* 200px - footer height */
    
@@ -465,58 +442,57 @@ body {
 
 ...
 
-footer {
+`}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
     height: 200px;
     position: absolute;
     width: 100%;
     bottom: 0;
-    height: 200px;
+    height: `}<span className="text-warning">200px</span>{`;
 }
 
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-pb-footer-h-200.png")} title="padding-bottom for the body and height for the footer " />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-pb-footer-h-200.png")} title="Added padding-bottom for the body and height for the footer " />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="12">
                             <p>
-                                Now I could see everything {`:)`}! The last line of my text remains before {`<footer>`}. If you scroll the "long page" from top to bottom, you can see that everything is fine: footer is inside the html tag area and inside the body tag area, like all other content too.
+                                Now I could see everything {`:)`}!
+                                The last line of my text rests before the <em>&lt;footer&gt;</em>. If you scroll the <em>long page</em> from top to bottom, you can see that everything is fine: <em>footer</em> is inside the <em>html</em> tag area and inside the <em>body</em> tag area, like all other content too.
+
                             </p>
                             <p>
-                                It is time to check the short page again. Go to the "short" page.
+                            It is time to check the <em>short page</em> again.
                             </p>
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2 justify-content-center">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-out-of-100vh-viewport.png")} title="padding-bottom for the body and height for the footer" />
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-out-of-100vh-viewport.png")} title="Footer outside the viewport area on the short page" />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12" >
                             <p>
-                                Oh, no! The footer is actually at the bottom, but for seeing it we need to scroll. This has happened because we added a "padding-bottom: 200px" to the body.
-                                The "height" or "min-height" of the elements takes into account only the height of the element content by default. The "min-height: 100vh" includes only the body content, without any additional padding. So, because of that, there is a scroll for extra 200px down. Padding height is not included in the "min-height" property.
+                            Oh, no! The <em>footer</em> is actually at the short page bottom, but we need to scroll to see it. This has happened because we added a <strong>padding-bottom: 200px</strong> to the <em>body</em>. The <strong>height</strong> or <strong>min-height</strong> of the elements takes into account only the <strong>height</strong> of the element content by default. So, <strong>min-height: 100vh</strong> includes only the <em>body</em> content, without any additional <strong>padding</strong> and there is a scroll bar for an extra 200px. <strong>Padding height</strong> is not included in the <strong>min-height</strong> property for the <em>&lt;body&gt;</em>.
                             </p>
                             <p>
-                                To change the situation we can apply property which counts the height of the element as the sum of content, padding, border.
-                                The property is <a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank" rel="noopener noreferrer">"box-sizing: border-box;"</a>
+                            To change the situation we can apply CSS property which counts the height of the element as the <em>sum of <strong>content, padding, and border</strong></em>.
+                                The property is <strong><a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank" rel="noopener noreferrer">box-sizing: border-box</a></strong>
                             </p>
                             <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
-                                    border-box:<br />
+                                    <strong>border-box:</strong><br />
                                     The width and height properties (and min/max properties) includes content, padding and border.
                                 </p>
                                 <footer class="blockquote-footer p-2 text-right"><cite title="w3schools"><a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.asp">w3schools</a></cite></footer>
                             </blockquote>
                             <p>
-                                Let"s apply "box-sizing: border-box;" for all elements because I want to measure the height of each element as a sum of the heights of content, padding and border.
-                                Compare a look of the short page with "border-box" property and without.
-                                You can spot the difference for sure.
+                            Let's apply <strong>box-sizing: border-box</strong> for each element because I want to measure the height of an element as a sum of the <em>height of the content, padding and border</em>. Compare the <strong>short</strong> page with <strong>border-box</strong> property and without. You can spot the difference for sure.
                             </p>
                         </Col>
                     </Row>
@@ -529,27 +505,28 @@ footer {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: `}<span className="text-warning">border-box</span>{`;
 }
 
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ReactCompareImage leftImage={leftShortContent} leftImageAlt="Page with property box-sizing is border-box;" rightImageAlt="Page without property box-sizing is border-box;" rightImage={rightShortContentBorderBox} sliderPositionPercentage="0.95" />
+                            <ReactCompareImage leftImage={leftShortContent} leftImageAlt="Page with property box-sizing is border-box" rightImageAlt="Page without property box-sizing is border-box" rightImage={rightShortContentBorderBox} sliderPositionPercentage="0.95" />
+                            <p> Compare the current look of the page to the previous one.</p>
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="12">
                             <p>
-                                Hurray! We did it. Let"s check again that the footer is placed correctly on the long and short pages.
+                            Hurray! We did it. Let's check again that the <em>footer</em> is placed correctly on the <strong>long</strong> and <strong>short</strong> pages.
                             </p>
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2 justify-content-center">
                         <Col xs="12" md="6">
-                            <p>Short page</p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/short-absolute.png")} title="padding-bottom for the body and height for the footer" />
+                            <p><strong>Short page</strong></p>
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/short-absolute.png")} title="Footer at the bottom of the short page" />
                             <ShowCode button="styles.css" codeId="absolute-final-styles"
                                 code=
                                 {`
@@ -598,16 +575,15 @@ footer {
                             />
                         </Col>
                         <Col xs="12" md="6">
-                            <p>Long page</p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/long.png")} title="padding-bottom for the body and height for the footer" />
+                            <p><strong>Long page</strong></p>
+                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/long.png")} title="Footer at the bottom of the long page" />
                         </Col>
                     </Row>
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="12">
                             <p>
-                                Congratulations! I always knew that we can do it!
-     I advise you to check pages without enough content and pages full of content. All pages need to be displayed correctly.
-     The same with the footer "height". Check that the height of the footer is adapted to different screen sizes.
+                            Congratulations! I knew we could do it!
+     I recommend you always review pages with <em>long</em> and <em>short</em> content blocks. All kinds of pages should have the correct layout and elements placement. Also, be careful with the <em>footer height</em> and make it sutable for different screen sizes.
                             </p>
                             <p>
                                 Has been a long way, but we did it! Everything is possible {`:)`}
