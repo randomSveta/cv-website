@@ -60,7 +60,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://javascript.info/',
         projectLink: '',
-        progress: 10
+        progress: 15
     },
     {
         id: 7,
@@ -70,16 +70,16 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://github.com/getify/You-Dont-Know-JS/',
         projectLink: '',
-        progress: 10
+        progress: 13
     },
     {
         id: 8,
-        title: "Let vs Var vs Const",
+        title: "JS Closures",
         icon: faBook,
-        description: 'I am writing an article aboute 3 important keywords to declare variables',
+        description: 'I am writing an article aboute closures in JS',
         repoLink: '',
-        taskLink: './blog/let-const-var/',
+        taskLink: false,
         projectLink: '',
-        progress: 10
+        progress: 0
     }
 ]

@@ -57,7 +57,7 @@ export const ARTICLES = [
         id: 4,
         url: '/let-const-var/',
         title: 'Var vs Let/Const',
-        shortDescription: 'Why there are several words to declare a variable? What is the difference between the old "var" and new ones? Let\'s try to find out.',
+        shortDescription: 'Why are there several words to declare a variable? What is the difference between the old "var" and new ones? Let\'s try to find out.',
         jsx: <LetConstVarArticle />,
         previewImg: {
             path: require('../../../assets/images/blog-page/articles/let-const-var/let-const-var-preview.png')
