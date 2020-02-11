@@ -10,8 +10,8 @@ export const ARTICLES = [
     {
         id: 1,
         url: '/footer-bottom-min-height/',
-        title: 'Footer at the bottom. "min-height: 100vh"',
-        shortDescription: 'Short content and a footer is "flying"? No problem, show the footer its place. Highest standard!',
+        title: 'Footer at the bottom. min-height: 100vh',
+        shortDescription: 'Content is short, and a footer is "flying"? No problem, show the footer its place. Highest standard!',
         jsx: <BottomFooterMinHeight />,
         date: '21/11/2019',
         previewImg: {
@@ -25,8 +25,8 @@ export const ARTICLES = [
     {
         id: 2,
         url: '/footer-bottom-absolute/',
-        title: 'Footer at the bottom. "position: absolute"',
-        shortDescription: 'Ho to use "position: absolute" to keep a footer at a page bottom. Absoluttely stunnig!',
+        title: 'Footer at the bottom. position: absolute',
+        shortDescription: 'How to use "position: absolute" to keep a footer at a page bottom. Absolutely stunning!',
         jsx: <BottomFooterAbsolute />,
         date: '22/11/2019',
         previewImg: {
@@ -41,7 +41,7 @@ export const ARTICLES = [
     {
         id: 3,
         url: '/footer-bottom-fixed/',
-        title: 'Footer at the bottom. "position: fixed"',
+        title: 'Footer at the bottom. position: fixed',
         shortDescription: 'This text is shows how to train a footer stays in its place. Fix it!',
         jsx: <BottomFooterFixed />,
         date: '23/11/2019',
@@ -57,7 +57,7 @@ export const ARTICLES = [
         id: 4,
         url: '/let-const-var/',
         title: 'Var vs Let/Const',
-        shortDescription: "Why there are 3 words for declare a variable? What is the difference? Let's try to use them and find out.",
+        shortDescription: 'Why there are several words to declare a variable? What is the difference between the old "var" and new ones? Let\'s try to find out.',
         jsx: <LetConstVarArticle />,
         previewImg: {
             path: require('../../../assets/images/blog-page/articles/let-const-var/let-const-var-preview.png')
