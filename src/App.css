@@ -462,3 +462,10 @@ code {
 blockquote p {
 	font-size: 0.75rem;
 }
+
+.text-pink {
+	color: pink;
+}
+.text-mint {
+	color: rgb(142, 255, 217);
+}
