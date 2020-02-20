@@ -9,12 +9,12 @@ export const STATISTICS = [
     {
         id: 2,
         profile: 'CodeWars',
-        points: 433
+        points: 435
     },
     {
         id: 3,
         profile: 'Codecademy',
-        points: 672
+        points: 932
     }
 ];
 
