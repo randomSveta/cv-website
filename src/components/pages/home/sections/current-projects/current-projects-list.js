@@ -24,13 +24,13 @@ export const CURRENT_PROJECTS = [
     },
     {
         id: 3,
-        title: 'CodeWars 50 tasks',
+        title: 'CodeWars 50 tasks. JavaScript',
         icon: faTerminal,
         description: 'I have decided to complite 50 task on CodeWars website starting from the 1th of December. I had 333 points at start and going to practice JavaScript skills further',
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 30
+        progress: 34
     },
     {
         id: 4,
@@ -56,11 +56,11 @@ export const CURRENT_PROJECTS = [
         id: 6,
         title: 'JavaScript tutorial',
         icon: faTerminal,
-        description: 'Studying JS for better understanding',
+        description: 'Revisiting JS Tutorial',
         repoLink: '',
         taskLink: 'https://javascript.info/',
         projectLink: '',
-        progress: 15
+        progress: 30
     },
     {
         id: 7,
@@ -70,7 +70,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://github.com/getify/You-Dont-Know-JS/',
         projectLink: '',
-        progress: 13
+        progress: 15
     },
     {
         id: 8,
@@ -81,5 +81,15 @@ export const CURRENT_PROJECTS = [
         taskLink: false,
         projectLink: '',
         progress: 0
+    },
+    {
+        id: 9,
+        title: 'CodeWars 50 tasks. Python',
+        icon: faTerminal,
+        description: 'I have decided to complite 50 task on CodeWars using Python',
+        repoLink: '',
+        taskLink: 'https://www.codewars.com/dashboard',
+        projectLink: '',
+        progress: 8
     }
 ]
