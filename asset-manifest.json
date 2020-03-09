@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.72d87044.chunk.css",
-    "main.js": "/my-website/static/js/main.51026674.chunk.js",
-    "main.js.map": "/my-website/static/js/main.51026674.chunk.js.map",
+    "main.css": "/my-website/static/css/main.970bda7d.chunk.css",
+    "main.js": "/my-website/static/js/main.8ec43ba3.chunk.js",
+    "main.js.map": "/my-website/static/js/main.8ec43ba3.chunk.js.map",
     "runtime-main.js": "/my-website/static/js/runtime-main.6b26dad8.js",
     "runtime-main.js.map": "/my-website/static/js/runtime-main.6b26dad8.js.map",
     "static/css/2.0624914a.chunk.css": "/my-website/static/css/2.0624914a.chunk.css",
-    "static/js/2.e98b11d6.chunk.js": "/my-website/static/js/2.e98b11d6.chunk.js",
-    "static/js/2.e98b11d6.chunk.js.map": "/my-website/static/js/2.e98b11d6.chunk.js.map",
+    "static/js/2.4ed2a6c7.chunk.js": "/my-website/static/js/2.4ed2a6c7.chunk.js",
+    "static/js/2.4ed2a6c7.chunk.js.map": "/my-website/static/js/2.4ed2a6c7.chunk.js.map",
     "index.html": "/my-website/index.html",
-    "precache-manifest.1b2d5f9528eb19343ad5091ab94aee02.js": "/my-website/precache-manifest.1b2d5f9528eb19343ad5091ab94aee02.js",
+    "precache-manifest.8a547b33e9876f02dbd46e80880834b3.js": "/my-website/precache-manifest.8a547b33e9876f02dbd46e80880834b3.js",
     "service-worker.js": "/my-website/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/my-website/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.72d87044.chunk.css.map": "/my-website/static/css/main.72d87044.chunk.css.map",
-    "static/media/App.css": "/my-website/static/media/skills_parallax_bw.6f6ad9a2.jpg",
+    "static/css/main.970bda7d.chunk.css.map": "/my-website/static/css/main.970bda7d.chunk.css.map",
+    "static/media/about.css": "/my-website/static/media/about_parallax_bw.83549916.jpg",
+    "static/media/blog.css": "/my-website/static/media/blog-parallax-bw.b37ac136.jpg",
     "static/media/body-m-height-100vh.png": "/my-website/static/media/body-m-height-100vh.6b8e40d4.png",
     "static/media/body-pb-footer-h-200.png": "/my-website/static/media/body-pb-footer-h-200.c596c48e.png",
     "static/media/body-relative.png": "/my-website/static/media/body-relative.24ff07d4.png",
+    "static/media/current-projects.css": "/my-website/static/media/current_p_parallax_bw.8d91a0a3.jpg",
     "static/media/footer-bottom-0.png": "/my-website/static/media/footer-bottom-0.a50146cb.png",
     "static/media/footer-fixed-bottom-0.png": "/my-website/static/media/footer-fixed-bottom-0.2d0c9e3b.png",
     "static/media/footer-fixed-inside-body.png": "/my-website/static/media/footer-fixed-inside-body.0e495446.png",
@@ -31,6 +33,8 @@
     "static/media/footer-out-of-body.png": "/my-website/static/media/footer-out-of-body.c4063b82.png",
     "static/media/footer-position-fixed.png": "/my-website/static/media/footer-position-fixed.c06cfa12.png",
     "static/media/footer-width-100.png": "/my-website/static/media/footer-width-100.9fa07baf.png",
+    "static/media/skills.css": "/my-website/static/media/skills_parallax_bw.6f6ad9a2.jpg",
+    "static/media/hero-image.css": "/my-website/static/media/hero_image.f0fb1496.jpg",
     "static/media/let-const-block-scope.png": "/my-website/static/media/let-const-block-scope.165997e8.png",
     "static/media/let-const-hoisting.png": "/my-website/static/media/let-const-hoisting.d7455191.png",
     "static/media/let-const-var-initial-page.png": "/my-website/static/media/let-const-var-initial-page.7aab7f5b.png",
@@ -52,8 +56,8 @@
   "entrypoints": [
     "static/js/runtime-main.6b26dad8.js",
     "static/css/2.0624914a.chunk.css",
-    "static/js/2.e98b11d6.chunk.js",
-    "static/css/main.72d87044.chunk.css",
-    "static/js/main.51026674.chunk.js"
+    "static/js/2.4ed2a6c7.chunk.js",
+    "static/css/main.970bda7d.chunk.css",
+    "static/js/main.8ec43ba3.chunk.js"
   ]
 }
