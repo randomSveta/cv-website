@@ -17,7 +17,7 @@ export default function ArticlePreview(props) {
       <CardBody>
         <CardText>{props.article.shortDescription}</CardText>
       </CardBody>
-      <CardFooter className="rounded-0 text-center art-card-bg"><Link to={linkPath} className="link-style underscore text-decoration-none">Full article >></Link></CardFooter>
+      <CardFooter className="rounded-0 text-center art-card-bg"><Link to={process.env.PUBLIC_URL + linkPath} className="link-style underscore text-decoration-none">Full article >></Link></CardFooter>
     </Card>
   );
 }
