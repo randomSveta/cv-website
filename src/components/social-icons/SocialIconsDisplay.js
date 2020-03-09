@@ -2,6 +2,8 @@ import React from 'react';
 import SocialIcon from './SocialIcon';
 import { SOCIAL_LINKS } from './links/social-links';
 
+import "./social-icons.css"
+
 export default function SocialIconsDisplay(props) {
 
     let icons = SOCIAL_LINKS.map(link => {

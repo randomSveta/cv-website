@@ -1,0 +1,56 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+#blog h2 {
+	background-color: rgba(0, 0, 0, 0.8);
+	height: 6.2rem;
+}
+
+.card-footer.art-card-bg,
+.card-header.art-card-bg {
+	background-color: rgb(20, 27, 31);
+}
+
+.card.article-preview-card {
+	border: 0.3rem solid rgb(20, 27, 31);
+}
+
+#articles .h2-row {
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.3)),
+			to(rgba(0, 0, 0, 0.3))
+		),
+		url('../../../assets/images/blog-page/blog-parallax-bw.jpg');
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('../../../assets/images/blog-page/blog-parallax-bw.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('../../../assets/images/blog-page/blog-parallax-bw.jpg');
+}
+code {
+	display: block;
+	white-space: pre-wrap;
+}
+.code-styles,
+.useful-info {
+	font-size: 0.875rem;
+}
+.page-screenshot {
+	cursor: pointer;
+}
+
+blockquote p {
+	font-size: 0.75rem;
+}
+
+.text-pink {
+	color: pink;
+}
+.text-mint {
+	color: rgb(142, 255, 217);
+}

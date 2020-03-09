@@ -11,6 +11,8 @@ import {
 } from 'reactstrap';
 import { faIceCream } from '@fortawesome/free-solid-svg-icons';
 
+import "./navigation.css"
+
 export default function NavBar(props) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);

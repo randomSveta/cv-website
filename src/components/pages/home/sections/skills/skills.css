@@ -1,0 +1,50 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+#skills .h2-row {
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.3)),
+			to(rgba(0, 0, 0, 0.3))
+		),
+		url('../../../../../assets/images/home-page/skills_parallax_bw.jpg');
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('../../../../../assets/images/home-page/skills_parallax_bw.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('../../../../../assets/images/home-page/skills_parallax_bw.jpg');
+}
+
+.skills-icon-item svg {
+	font-size: 3.125rem;
+}
+
+.skills-icon-item {
+	background-color: rgba(20, 27, 31, 0.95);
+	color: white;
+	height: 7.5rem;
+	width: 7.5rem;
+}
+
+#skills .bg-section {
+	background-color: rgba(23, 162, 184, 1);
+}
+
+#github .bg-section {
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(0, 0, 0, 0.3)),
+			to(rgba(0, 0, 0, 0.3))
+		),
+		url('../../../../../assets/images/portfolio-page/gh-projects-parallax-bw.jpg');
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('../../../../../assets/images/portfolio-page/gh-projects-parallax-bw.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('../../../../../assets/images/portfolio-page/gh-projects-parallax-bw.jpg');
+}

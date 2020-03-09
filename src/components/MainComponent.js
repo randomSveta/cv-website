@@ -8,7 +8,7 @@ import {
     Redirect
 } from "react-router-dom";
 
-import Footer from './Footer';
+import Footer from './footer/Footer';
 import NavBar from './navigation/NavBar';
 import HeroImage from '../components/pages/home/sections/hero-image/HeroImage';
 

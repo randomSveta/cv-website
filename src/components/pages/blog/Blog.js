@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import ArticlesDisplay from './ArticlesDisplay';
 import Section from '../Section';
 
+import "./blog.css";
+
 export default function Blog(props) {
     return (
         <Container id="blog" className="mw-100 m-0 px-4 py-0">

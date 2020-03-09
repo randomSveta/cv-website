@@ -3,6 +3,8 @@ import { Row, Col, Container } from 'reactstrap';
 import { SECTIONS_PORTFOLIO } from '../../navigation/pages-and-sections/sections'
 import Section from '../Section';
 
+import "./portfolio.css"
+
 
 export default function Portfolio(props) {
 

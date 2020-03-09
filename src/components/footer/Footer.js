@@ -1,9 +1,11 @@
 import React from 'react';
-import SocialIconsDisplay from './social-icons/SocialIconsDisplay';
-import NavLinks from './navigation/NavLinksFooter';
+import SocialIconsDisplay from '../social-icons/SocialIconsDisplay';
+import NavLinks from '../navigation/NavLinksFooter';
 import { Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
+import "./footer.css";
 
 export default function Footer(props) {
     return (

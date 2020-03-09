@@ -3,6 +3,8 @@ import Section from '../Section';
 import { SECTIONS_HOME } from '../../navigation/pages-and-sections/sections';
 import { Row, Col, Container } from 'reactstrap';
 
+import "./home.css";
+
 export default function Home(props) {
 
     const sectionsDisplay = SECTIONS_HOME.map(section => {
