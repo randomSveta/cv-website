@@ -7,7 +7,7 @@ export default function NavLinks(props) {
   const footerNavLinks = PAGES.filter(page => !page.article).map(link => {
     return (
       <li key={link.id}>
-        <Link to={process.env.PUBLIC_URL + link.url} className='link-style m-3 underscore text-decoration-none'>{link.name}</Link>
+        <Link to={link.url} className='link-style m-3 underscore text-decoration-none'>{link.name}</Link>
       </li>
     );
   });
