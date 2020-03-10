@@ -20,7 +20,7 @@ export default function NavBar(props) {
     return (
         <Navbar id="nav-bar" dark expand="md" sticky="top" className="p-md-3 m-0">
             <Container className="mw-100 m-0 px-4 py-0">
-                <NavbarBrand href="/" className='m-0 p-0 rotate-animation' aria-label="Link to the main page from the ice cream logo" ><SocialIcon image={faIceCream} name="Logo" place="navbar-brand" /></NavbarBrand>
+                <NavbarBrand href={process.env.PUBLIC_URL + "/"} className='m-0 p-0 rotate-animation' aria-label="Link to the main page from the ice cream logo" ><SocialIcon image={faIceCream} name="Logo" place="navbar-brand" /></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} className="m-0 p-0 justify-content-end align-items-center" navbar>
                     {props.navigationSections}
