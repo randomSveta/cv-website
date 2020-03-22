@@ -3,20 +3,25 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@babel/preset-react": "^7.9.1",
 		"@fortawesome/fontawesome-svg-core": "^1.2.27",
 		"@fortawesome/free-brands-svg-icons": "^5.12.1",
 		"@fortawesome/free-solid-svg-icons": "^5.12.1",
 		"@fortawesome/react-fontawesome": "^0.1.9",
 		"bootstrap": "^4.4.1",
+		"core-js": "^3.6.4",
 		"gh-pages": "^2.2.0",
-		"react": "^16.13.0",
+		"jquery": "^3.4.1",
+		"react": "^16.13.1",
 		"react-compare-image": "^2.0.4",
-		"react-dom": "^16.13.0",
+		"react-dom": "^16.13.1",
 		"react-iframe": "^1.8.0",
 		"react-router-dom": "^5.1.2",
 		"react-router-hash-link": "^1.2.2",
-		"react-scripts": "3.4.0",
-		"reactstrap": "^8.4.1"
+		"react-router-pagination": "^2.0.5",
+		"react-scripts": "3.4.1",
+		"reactstrap": "^8.4.1",
+		"typescript": "^3.8.3"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -43,12 +48,16 @@
 	},
 	"homepage": "https://randomsveta.github.io/my-website/",
 	"devDependencies": {
+		"@babel/core": "^7.9.0",
+		"@babel/preset-env": "^7.9.0",
+		"babel-loader": "^8.1.0",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb": "^18.1.0",
-		"eslint-config-prettier": "^6.10.0",
+		"eslint-config-prettier": "^6.10.1",
 		"eslint-plugin-import": "^2.20.1",
 		"eslint-plugin-react": "^7.19.0",
-		"prettier": "^1.19.1",
-		"pretty-quick": "^2.0.1"
+		"prettier": "^2.0.1",
+		"pretty-quick": "^2.0.1",
+		"webpack": "^4.42.0"
 	}
 }
