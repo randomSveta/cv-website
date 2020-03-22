@@ -153,12 +153,12 @@ export const CP_PROJECTS = [
       See the Pen <a href='https://codepen.io/randomsveta/pen/RwPNbqd'>FCC: D3 Bar Chart</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
       </iframe>,
-    name: 'FCC: Pomodoro Clock',
+    name: 'FCC: D3 Bar Chart',
     taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-bar-chart',
     projectLink: 'https://codepen.io/randomsveta/full/RwPNbqd',
     year: 2020,
     section: 'CodePen',
-    finished: false
+    finished: true
   }
 
 ];

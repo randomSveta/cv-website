@@ -4,13 +4,13 @@ import { faTerminal, faCode, faBook } from '@fortawesome/free-solid-svg-icons';
 export const CURRENT_PROJECTS = [
     {
         id: 1,
-        title: 'Bar Chart',
+        title: 'FCC: Data Visualization Projects',
         icon: faFreeCodeCamp,
-        description: 'There is a "D3. Bar Chart" project in the course "Data Visualization Certification" on the FreeCodeCamp website',
+        description: 'Projects for the course "Data Visualization Certification" on the FreeCodeCamp website',
         repoLink: '',
-        taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-bar-chart',
-        projectLink: 'https://codepen.io/randomsveta/pen/RwPNbqd',
-        progress: 30
+        taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/',
+        projectLink: 'https://codepen.io/dashboard/',
+        progress: 25
     },
     {
         id: 2,
