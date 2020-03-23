@@ -4,10 +4,21 @@ import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 
 export default function PaginationComponent(props) {
 
-
-    function handlePageClick(pageNumber) {
+    //create pages buttons
+    function handlePageButtonClick(pageNumber) {
         props.setPageNumber(pageNumber);
     }
+
+    function setActive(pageNum) {
+        return pageNum === props.page ? true : false;
+    }
+
+
+
+    function setBootstrapClassesPageButton(active) {
+        return active ? "text-dark ".concat("bg-info border border-dark") : "text-dark";
+    }
+
 
     function createPagesNumbers() {
         let pagesNumbers = [];
@@ -15,10 +26,12 @@ export default function PaginationComponent(props) {
         let i = 1;
         while (i <= props.pagesTotal) {
             const pageNumber = i;
+            const isActivePage = setActive(pageNumber);
+            const pageButtonClasses = setBootstrapClassesPageButton(isActivePage);
 
             pagesNumbers.push(
-                <PaginationItem key={i - 1} active={pageNumber === props.page ? true : false} onClick={() => handlePageClick(pageNumber)}>
-                    <PaginationLink>
+                <PaginationItem key={i - 1} id="page-button" active={isActivePage} onClick={() => handlePageButtonClick(pageNumber)}>
+                    <PaginationLink className={pageButtonClasses}>
                         {i}
                     </PaginationLink>
                 </PaginationItem>
@@ -29,18 +42,23 @@ export default function PaginationComponent(props) {
         return pagesNumbers;
     }
 
-    const pagesLinks = createPagesNumbers();
+    const pagesButtons = createPagesNumbers();
 
-    function setDisabledStatus(controlsPlace) {
+    //create controls
+    function setDisabled(controlsPlace) {
         if (controlsPlace === "start") {
-            return props.page === 1 ? true : false;
+            return props.page === 1
+                ? true
+                : false;
         } else if (controlsPlace === "end") {
-            return props.page === props.pagesTotal ? true : false;
+            return props.page === props.pagesTotal
+                ? true
+                : false;
         }
     }
 
-    const isDisabledStart = setDisabledStatus("start");
-    const isDisabledEnd = setDisabledStatus("end");
+    const isDisabledStartControls = setDisabled("start");
+    const isDisabledEndControls = setDisabled("end");
 
     function goToLastPage(pagesTotalNum) {
         props.setPageNumber(pagesTotalNum);
@@ -62,20 +80,31 @@ export default function PaginationComponent(props) {
         }
     }
 
+    function findControlsColor(disabled) {
+        if (disabled) {
+            return "text-secondary"
+        } else {
+            return "text-dark"
+        }
+    }
+
+    const startControlsColor = findControlsColor(isDisabledStartControls);
+    const endControlsColor = findControlsColor(isDisabledEndControls);
+
     return (
-        <Pagination aria-label="Page navigation example">
-            <PaginationItem disabled={isDisabledStart} onClick={goToFirstPage}>
-                <PaginationLink first />
+        <Pagination aria-label="Page pagination. CodePen Projects.">
+            <PaginationItem disabled={isDisabledStartControls} onClick={goToFirstPage}>
+                <PaginationLink first className={startControlsColor} />
             </PaginationItem>
-            <PaginationItem disabled={isDisabledStart} onClick={() => goToPreviousPage(props.page)}>
-                <PaginationLink previous />
+            <PaginationItem disabled={isDisabledStartControls} onClick={() => goToPreviousPage(props.page)}>
+                <PaginationLink previous className={startControlsColor} />
             </PaginationItem>
-            {pagesLinks}
-            <PaginationItem disabled={isDisabledEnd} onClick={() => goToNextPage(props.page, props.pagesTotal)}>
-                <PaginationLink next />
+            {pagesButtons}
+            <PaginationItem disabled={isDisabledEndControls} onClick={() => goToNextPage(props.page, props.pagesTotal)}>
+                <PaginationLink next className={endControlsColor} />
             </PaginationItem>
-            <PaginationItem disabled={isDisabledEnd} onClick={() => goToLastPage(props.pagesTotal)}>
-                <PaginationLink last />
+            <PaginationItem disabled={isDisabledEndControls} onClick={() => goToLastPage(props.pagesTotal)}>
+                <PaginationLink last className={endControlsColor} />
             </PaginationItem>
         </Pagination>
     );
