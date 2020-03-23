@@ -1,6 +1,6 @@
 export const GH_PROJECTS = [
     {
-        id: 1,
+        id: 0,
         name: 'RandomSveta for FoundersAndCoders',
         year: 2019,
         taskLink: 'https://www.foundersandcoders.com/apply/',
@@ -10,7 +10,7 @@ export const GH_PROJECTS = [
         section: 'GitHub'
     },
     {
-        id: 2,
+        id: 1,
         name: 'Hotel Website',
         year: 2019,
         taskLink: '',
@@ -20,7 +20,7 @@ export const GH_PROJECTS = [
         section: 'GitHub'
     },
     {
-        id: 3,
+        id: 2,
         name: 'Portfolio website',
         year: 2019,
         taskLink: '',

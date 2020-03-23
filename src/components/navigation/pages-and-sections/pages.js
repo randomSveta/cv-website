@@ -11,7 +11,7 @@ import ArticlePage from '../../pages/blog/ArticlePage';
 
 export const PAGES = [
     {
-        id: 1,
+        id: 0,
         name: 'Home',
         url: '/',
         sections: SECTIONS_HOME,
@@ -20,7 +20,7 @@ export const PAGES = [
         exact: true
     },
     {
-        id: 3,
+        id: 1,
         name: 'Portfolio',
         url: '/portfolio',
         sections: SECTIONS_PORTFOLIO,
@@ -29,7 +29,7 @@ export const PAGES = [
         exact: true
     },
     {
-        id: 4,
+        id: 2,
         name: 'Blog',
         url: '/blog',
         article: false,

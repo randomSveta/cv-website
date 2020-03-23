@@ -3,44 +3,44 @@ import { faCode, faTerminal } from '@fortawesome/free-solid-svg-icons';
 
 export const SOCIAL_LINKS = [
     {
-        id: 1,
+        id: 0,
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/svetaklimova/",
         image: faLinkedin
     },
     {
-        id: 2,
+        id: 1,
         name: "GitHub",
         url: "https://github.com/randomSveta",
         image: faGithub
     },
     {
-        id: 3,
+        id: 2,
         name: "FreeCodeCamp",
         url: "https://www.freecodecamp.org/randomsveta",
         image: faFreeCodeCamp
     },
     {
-        id: 4,
+        id: 3,
         name: "CodeWars",
         url: "https://www.codewars.com/users/randomsveta",
         image: faTerminal
     },
     {
-        id: 5,
+        id: 4,
         name: "CodePen",
         url: "https://codepen.io/randomsveta",
         image: faCodepen
     },
     {
-        id: 6,
+        id: 5,
         name: "Codecademy",
         url: "https://www.codecademy.com/profiles/randomsveta",
         image: faCode
 
     },
     {
-        id: 7,
+        id: 6,
         name: "WordPress",
         url: "https://randomsveta.wordpress.com/",
         image: faWordpress

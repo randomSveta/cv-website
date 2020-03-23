@@ -3,7 +3,7 @@ import { faTerminal, faCode, faBook } from '@fortawesome/free-solid-svg-icons';
 
 export const CURRENT_PROJECTS = [
     {
-        id: 1,
+        id: 0,
         title: 'FCC: Data Visualization Projects',
         icon: faFreeCodeCamp,
         description: 'Projects for the course "Data Visualization Certification" on the FreeCodeCamp website',
@@ -13,7 +13,7 @@ export const CURRENT_PROJECTS = [
         progress: 25
     },
     {
-        id: 2,
+        id: 1,
         title: 'Hotel Website',
         icon: faGithub,
         description: 'Project to practice React, Bootstrap, Reactstrap etc. I have decided to create a website for the invented/unreal Hotel chain, where an user could choose the city, book a room and find availible options. I am also going to use Mongo DB to store data for the rooms and search.',
@@ -23,7 +23,7 @@ export const CURRENT_PROJECTS = [
         progress: 20
     },
     {
-        id: 3,
+        id: 2,
         title: 'CodeWars 50 tasks. JavaScript',
         icon: faTerminal,
         description: 'I have decided to complite 50 task on CodeWars website starting from the 1th of December. I had 333 points at start and going to practice JavaScript skills further',
@@ -33,7 +33,7 @@ export const CURRENT_PROJECTS = [
         progress: 34
     },
     {
-        id: 4,
+        id: 3,
         title: 'Codecademy PHP course',
         icon: faCode,
         description: 'One more skill to study and understand',
@@ -43,7 +43,7 @@ export const CURRENT_PROJECTS = [
         progress: 10
     },
     {
-        id: 5,
+        id: 4,
         title: 'My portfolio website',
         icon: faGithub,
         description: 'I am creating a portfolio website to show all information about me and my skills. Looking forward to find a job!',
@@ -53,7 +53,7 @@ export const CURRENT_PROJECTS = [
         progress: 70
     },
     {
-        id: 6,
+        id: 5,
         title: 'JavaScript tutorial',
         icon: faTerminal,
         description: 'Revisiting JS Tutorial',
@@ -63,7 +63,7 @@ export const CURRENT_PROJECTS = [
         progress: 32
     },
     {
-        id: 7,
+        id: 6,
         title: "You Don't Know JS",
         icon: faTerminal,
         description: 'Reading a very important book to find out more about JavaScript',
@@ -73,7 +73,7 @@ export const CURRENT_PROJECTS = [
         progress: 15
     },
     {
-        id: 8,
+        id: 7,
         title: "JS Closures",
         icon: faBook,
         description: 'I am writing an article aboute closures in JS',
@@ -83,7 +83,7 @@ export const CURRENT_PROJECTS = [
         progress: 0
     },
     {
-        id: 9,
+        id: 8,
         title: 'CodeWars 50 tasks. Python',
         icon: faTerminal,
         description: 'I have decided to complite 50 task on CodeWars using Python',

@@ -2,7 +2,7 @@ import React from 'react';
 
 export const CP_PROJECTS = [
   {
-    id: 1,
+    id: 0,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Personal Portfolio Webpage" src="https://codepen.io/randomsveta/embed/preview/odyppL?height=265&theme-id=0&default-tab=css,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/odyppL'>FCC: Personal Portfolio Webpage</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -16,7 +16,7 @@ export const CP_PROJECTS = [
 
   },
   {
-    id: 2,
+    id: 1,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Adele-Tribute page" src="https://codepen.io/randomsveta/embed/preview/zjKRJb?height=265&theme-id=0&default-tab=html,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/zjKRJb'>FCC: Adele-Tribute page</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -29,7 +29,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 3,
+    id: 2,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Product Landing Page" src="https://codepen.io/randomsveta/embed/preview/JZNWVZ?height=265&theme-id=default&default-tab=html,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/JZNWVZ'>FCC: Product Landing Page</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -42,7 +42,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 4,
+    id: 3,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Technical Documentation Page" src="https://codepen.io/randomsveta/embed/preview/QYQjBg?height=265&theme-id=0&default-tab=html,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/QYQjBg'>FCC: Technical Documentation Page</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -55,7 +55,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 5,
+    id: 4,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Survey Form " src="https://codepen.io/randomsveta/embed/preview/GGZeRb?height=265&theme-id=0&default-tab=html,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/GGZeRb'>FCC: Survey Form </a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -68,7 +68,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 6,
+    id: 5,
     jsx: <iframe height="400" width='100%' scrolling="no" title="Avocado" src='https://codepen.io/randomsveta/embed/preview/drVOzX?height=265&theme-id=0&default-tab=css,result'
       frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/drVOzX'>Avocado</a> by Sveta
@@ -83,7 +83,7 @@ export const CP_PROJECTS = [
   },
 
   {
-    id: 7,
+    id: 6,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Random Quote Machine" src="https://codepen.io/randomsveta/embed/preview/oRRVVM?height=265&theme-id=0&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/oRRVVM'>FCC: Random Quote Machine</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -96,7 +96,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 8,
+    id: 7,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Markdown Previewer" src="https://codepen.io/randomsveta/embed/preview/xoXQgr?height=265&theme-id=0&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/xoXQgr'>FCC: Markdown Previewer</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -109,7 +109,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 9,
+    id: 8,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Drum Machine" src="https://codepen.io/randomsveta/embed/preview/PrLXLg?height=265&theme-id=0&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/PrLXLg'>FCC: Drum Machine</a> by Sveta
       (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -122,7 +122,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 10,
+    id: 9,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Calculator (Immediate Execution Logic)" src="https://codepen.io/randomsveta/embed/preview/VwwPjLK?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/VwwPjLK'>FCC: Calculator  (Immediate Execution Logic)</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -135,7 +135,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 11,
+    id: 10,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Pomodoro Clock" src="https://codepen.io/randomsveta/embed/preview/PowWPeY?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/PowWPeY'>FCC: Pomodoro Clock</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
@@ -148,7 +148,7 @@ export const CP_PROJECTS = [
     finished: true
   },
   {
-    id: 12,
+    id: 11,
     jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: D3 Bar Chart" src="https://codepen.io/randomsveta/embed/preview/RwPNbqd?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
       See the Pen <a href='https://codepen.io/randomsveta/pen/RwPNbqd'>FCC: D3 Bar Chart</a> by Sveta
         (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.

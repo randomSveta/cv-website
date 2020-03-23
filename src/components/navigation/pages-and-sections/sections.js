@@ -10,19 +10,19 @@ import GitHubProjects from '../../pages/portfolio/sections/github-projects/GitHu
 
 export const SECTIONS_HOME = [
     {
-        id: 1,
+        id: 0,
         name: 'About',
         hashUrl: '#about',
         jsx: <About />
     },
     {
-        id: 2,
+        id: 1,
         name: 'Skills',
         hashUrl: '#skills',
         jsx: <Skills />
     },
     {
-        id: 3,
+        id: 2,
         name: 'Current Projects',
         hashUrl: '#current-projects',
         jsx: <CurrentProjects />
@@ -32,19 +32,19 @@ export const SECTIONS_HOME = [
 
 export const SECTIONS_PORTFOLIO = [
     {
-        id: 1,
+        id: 0,
         name: 'Statistics',
         hashUrl: '#statistics',
         jsx: <Statistics />
     },
     {
-        id: 2,
+        id: 1,
         name: 'GitHub',
         hashUrl: '#github',
         jsx: <GitHubProjects />
     },
     {
-        id: 3,
+        id: 2,
         name: 'CodePen',
         hashUrl: '#codepen',
         jsx: <CodePenProjects />
