@@ -2,7 +2,7 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 
-import PaginationComponent from '../../../../../PaginationComponent'
+import PaginationComponent from '../../../../../Pagination'
 import "./pagination.css";
 
 
