@@ -20,19 +20,16 @@ export default function CodePenProjectsDisplay(props) {
         );
     });
 
-    function getProjectsForPage(page, projects, pagesTotalNumber, perPage) {
-        let projectsToShow = [];
-        const lastPageProjectsStartIndex = projects.length - pagesTotalNumber % perPage;
+    function getProjectsForPage(page, projects, perPage) {
+        let projectsToShow = "check types for: page, projects and perPage in CodePenProjectsDisplay.js line: 23";
 
-        if (page === pagesTotalNumber) {
-            projectsToShow = projects.slice(lastPageProjectsStartIndex);
-        } else {
-            projectsToShow = projects.slice(perPage * (page - 1), perPage * page)
+        if (page > 0 && Number.isInteger(page) && projects.length > 0 && perPage > 0 && Number.isInteger(perPage)) {
+            projectsToShow = projects.slice(perPage * (page - 1), perPage * page > projects.length ? projects.length : perPage * page)
         }
         return projectsToShow;
     }
 
-    const CodePenProjects = getProjectsForPage(page, penProjects, PAGES_TOTAL, PROJECTS_PER_PAGE);
+    const CodePenProjects = getProjectsForPage(page, penProjects, PROJECTS_PER_PAGE);
 
     return (
         <Container>

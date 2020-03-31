@@ -159,6 +159,18 @@ export const CP_PROJECTS = [
     year: 2020,
     section: 'CodePen',
     finished: true
+  },
+  {
+    id: 12,
+    jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: Scatterplot Graph" src="https://codepen.io/randomsveta/embed/preview/LYVXgmP?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+      See the Pen <a href='https://codepen.io/randomsveta/pen/LYVXgmP'>FCC: Scatterplot Graph</a> by Sveta
+        (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>,
+    name: 'FCC: Scatterplot Graph',
+    taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-scatterplot-graph',
+    projectLink: 'https://codepen.io/randomsveta/full/LYVXgmP',
+    year: 2020,
+    section: 'CodePen',
+    finished: true
   }
-
 ];
