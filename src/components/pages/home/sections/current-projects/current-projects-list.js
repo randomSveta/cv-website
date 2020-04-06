@@ -90,6 +90,6 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 8
+        progress: 14
     }
 ]
