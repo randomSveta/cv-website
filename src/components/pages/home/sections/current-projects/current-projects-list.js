@@ -60,7 +60,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://javascript.info/',
         projectLink: '',
-        progress: 32
+        progress: 29
     },
     {
         id: 6,
@@ -90,6 +90,6 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 14
+        progress: 20
     }
 ]
