@@ -6,6 +6,8 @@ import BottomFooterFixed from './articles-text-components/footer-bottom/BottomFo
 
 import LetConstVarArticle from './articles-text-components/let-const-var/LetConstVarArticle';
 
+import Closures from './articles-text-components/closures/Closures'
+
 export const ARTICLES = [
     {
         id: 0,
@@ -65,6 +67,21 @@ export const ARTICLES = [
         ,
         initialPageImg: {
             path: require('../../../assets/images/blog-page/articles/let-const-var/let-const-var-initial-page.png'),
+            alt: 'Initial page view'
+        }
+    },
+    {
+        id: 4,
+        url: '/closures/',
+        title: 'Closures',
+        shortDescription: 'Mysteries of the "closures world"',
+        jsx: <Closures />,
+        previewImg: {
+            path: require('../../../assets/images/blog-page/articles/closures/ex.png')
+        }
+        ,
+        initialPageImg: {
+            path: require('../../../assets/images/blog-page/articles/closures/ex.png'),
             alt: 'Initial page view'
         }
     }
