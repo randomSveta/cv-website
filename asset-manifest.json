@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/my-website/static/css/main.00b39c7a.chunk.css",
-    "main.js": "/my-website/static/js/main.23d5e592.chunk.js",
-    "main.js.map": "/my-website/static/js/main.23d5e592.chunk.js.map",
+    "main.js": "/my-website/static/js/main.dd680bf7.chunk.js",
+    "main.js.map": "/my-website/static/js/main.dd680bf7.chunk.js.map",
     "runtime-main.js": "/my-website/static/js/runtime-main.6d230b81.js",
     "runtime-main.js.map": "/my-website/static/js/runtime-main.6d230b81.js.map",
     "static/css/2.de424728.chunk.css": "/my-website/static/css/2.de424728.chunk.css",
     "static/js/2.78455b1a.chunk.js": "/my-website/static/js/2.78455b1a.chunk.js",
     "static/js/2.78455b1a.chunk.js.map": "/my-website/static/js/2.78455b1a.chunk.js.map",
     "index.html": "/my-website/index.html",
-    "precache-manifest.2ca35e411bdd6d61d0dc4bcece720841.js": "/my-website/precache-manifest.2ca35e411bdd6d61d0dc4bcece720841.js",
+    "precache-manifest.ac3989e5bfe006fef48795ce7227af5a.js": "/my-website/precache-manifest.ac3989e5bfe006fef48795ce7227af5a.js",
     "service-worker.js": "/my-website/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/my-website/static/css/2.de424728.chunk.css.map",
     "static/css/main.00b39c7a.chunk.css.map": "/my-website/static/css/main.00b39c7a.chunk.css.map",
@@ -20,7 +20,6 @@
     "static/media/body-pb-footer-h-200.png": "/my-website/static/media/body-pb-footer-h-200.c596c48e.png",
     "static/media/body-relative.png": "/my-website/static/media/body-relative.24ff07d4.png",
     "static/media/current-projects.css": "/my-website/static/media/current_p_parallax_bw.8d91a0a3.jpg",
-    "static/media/ex.png": "/my-website/static/media/ex.b388506e.png",
     "static/media/footer-bottom-0.png": "/my-website/static/media/footer-bottom-0.a50146cb.png",
     "static/media/footer-fixed-bottom-0.png": "/my-website/static/media/footer-fixed-bottom-0.2d0c9e3b.png",
     "static/media/footer-fixed-inside-body.png": "/my-website/static/media/footer-fixed-inside-body.0e495446.png",
@@ -53,13 +52,14 @@
     "static/media/short-min-height-100vh.png": "/my-website/static/media/short-min-height-100vh.7e147d57.png",
     "static/media/undefined-outside-function-scope.png": "/my-website/static/media/undefined-outside-function-scope.1ed9aea1.png",
     "static/media/var-block-scope.png": "/my-website/static/media/var-block-scope.4b1f088f.png",
-    "static/media/var-hoisting.png": "/my-website/static/media/var-hoisting.97117d8f.png"
+    "static/media/var-hoisting.png": "/my-website/static/media/var-hoisting.97117d8f.png",
+    "static/media/work-in-progress.png": "/my-website/static/media/work-in-progress.0d3d04b9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6d230b81.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.78455b1a.chunk.js",
     "static/css/main.00b39c7a.chunk.css",
-    "static/js/main.23d5e592.chunk.js"
+    "static/js/main.dd680bf7.chunk.js"
   ]
 }
