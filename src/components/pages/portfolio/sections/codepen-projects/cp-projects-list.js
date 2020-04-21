@@ -172,5 +172,18 @@ export const CP_PROJECTS = [
     year: 2020,
     section: 'CodePen',
     finished: true
+  },
+  {
+    id: 13,
+    jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: D3 Heat Map" src="https://codepen.io/randomsveta/embed/preview/ZEbOzmW?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+      See the Pen <a href='https://codepen.io/randomsveta/pen/ZEbOzmW'>FCC: D3 Heat Map</a> by Sveta
+        (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>,
+    name: 'FCC: D3 Heat Map',
+    taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-heat-map',
+    projectLink: 'https://codepen.io/randomsveta/full/ZEbOzmW',
+    year: 2020,
+    section: 'CodePen',
+    finished: true
   }
 ];
