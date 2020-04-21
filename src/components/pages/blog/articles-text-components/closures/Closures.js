@@ -14,7 +14,7 @@ export default function Closures(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="6" className="align-self-center">
                             <p>
-                                beep-beep
+                                Work in progress ...
                             </p>
                         </Col>
                         <Col xs="12" md="6">
@@ -29,7 +29,7 @@ export default function Closures(props) {
                         <Col xs="12">
                             <h2>Initial settings</h2>
                             <p>
-                                beep-beep
+                                Work in progress ...
                             </p>
                         </Col>
                     </Row>

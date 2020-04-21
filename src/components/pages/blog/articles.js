@@ -77,11 +77,11 @@ export const ARTICLES = [
         shortDescription: 'Mysteries of the "closures world"',
         jsx: <Closures />,
         previewImg: {
-            path: require('../../../assets/images/blog-page/articles/closures/ex.png')
+            path: require('../../../assets/images/blog-page/articles/closures/work-in-progress.png')
         }
         ,
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/closures/ex.png'),
+            path: require('../../../assets/images/blog-page/articles/closures/work-in-progress.png'),
             alt: 'Initial page view'
         }
     }
