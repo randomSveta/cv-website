@@ -1,12 +1,12 @@
 import React from 'react';
 
-import BottomFooterMinHeight from '../../pages/blog/articles-text-components/footer-bottom/BottomFooterMinHeight';
-import BottomFooterAbsolute from '../../pages/blog/articles-text-components/footer-bottom/BottomFooterAbsolute';
-import BottomFooterFixed from '../../pages/blog/articles-text-components/footer-bottom/BottomFooterFixed';
+import BottomFooterMinHeight from '../../pages/blog/articles-text/footer-bottom/BottomFooterMinHeight';
+import BottomFooterAbsolute from '../../pages/blog/articles-text/footer-bottom/BottomFooterAbsolute';
+import BottomFooterFixed from '../../pages/blog/articles-text/footer-bottom/BottomFooterFixed';
 
-import LetConstVarArticle from '../../pages/blog/articles-text-components/let-const-var/LetConstVarArticle';
+import LetConstVarArticle from '../../pages/blog/articles-text/let-const-var/LetConstVarArticle';
 
-import Closures from '../../pages/blog/articles-text-components/closures/Closures';
+import Closures from '../../pages/blog/articles-text/closures/Closures';
 
 export const ARTICLES = [
     {

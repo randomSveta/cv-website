@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialIconsDisplay from '../social-icons/SocialIconsDisplay';
+import SocialIconsLayout from '../social-icons/SocialIconsLayout';
 import NavLinks from '../navigation/NavLinksFooter';
 import { Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,7 +15,7 @@ export default function Footer(props) {
                     <NavLinks />
                 </Col>
                 <Col xs="12" md="6" className="m-0 p-0">
-                    <SocialIconsDisplay place="footer" />
+                    <SocialIconsLayout place="footer" />
                 </Col>
             </Row>
             <Row className="m-0 p-0">

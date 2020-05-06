@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { UncontrolledTooltip } from 'reactstrap';
 
-export default function Statistica(props) {
+export default function StatisticaCard(props) {
     const tooltipId = 's-'.concat(props.stat.profile.toLowerCase().split(' ').join('-'));
     return (
         <div className="mb-2 mb-md-0 mx-auto rounded-circle statistica text-white d-flex flex-column justify-content-center align-items-center flex-wrap">

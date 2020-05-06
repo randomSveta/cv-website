@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import ArticlesDisplay from './ArticlesDisplay';
+import Articles from './Articles';
 import Section from '../Section';
 
 import "../../../styles/css/blog.css";
@@ -15,7 +15,7 @@ export default function Blog(props) {
             </Row>
             <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
                 <Col xs='12' className="m-0 p-0">
-                    <Section content={<ArticlesDisplay sectionUrl='/blog' />} name="Articles" sectionId="articles" />
+                    <Section content={<Articles sectionUrl='/blog' />} name="Articles" sectionId="articles" />
                 </Col>
             </Row>
         </Container>

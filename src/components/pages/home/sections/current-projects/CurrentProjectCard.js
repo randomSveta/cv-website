@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Button, CardTitle, CardText, Progress, CardBody, CardSubtitle } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default class CurrentProject extends React.Component {
+export default class CurrentProjectCard extends React.Component {
 
     openProject() {
         window.open(this.props.project.projectLink, '_blank');

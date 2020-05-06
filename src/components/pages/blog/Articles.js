@@ -3,7 +3,7 @@ import { ARTICLES } from '../../website-data/blog/articles';
 import { Row, CardColumns, Container } from 'reactstrap';
 import ArticlePreview from './ArticlePreview';
 
-export default function ArticlesDisplay(props) {
+export default function Articles(props) {
 
     const articles = ARTICLES.sort((a, b) => b.id - a.id).map(article => {
         return (

@@ -10,7 +10,7 @@ export default function Portfolio(props) {
 
 
 
-    const codePenSectionDisplay = SECTIONS_PORTFOLIO.map(section => {
+    const sections = SECTIONS_PORTFOLIO.map(section => {
 
         const createdParallaxClass = section.name.split(' ').join('-').toLowerCase() + '-parallax';
         const createdSectionId = section.hashUrl.split('').splice(1).join('');
@@ -29,7 +29,7 @@ export default function Portfolio(props) {
             </Row>
             <Row className="m-0 p-0 justify-content-center align-items-center m-0 p-0">
                 <Col xs='12' className="m-0 p-0">
-                    {codePenSectionDisplay}
+                    {sections}
                 </Col>
             </Row>
         </Container>

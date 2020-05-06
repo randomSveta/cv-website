@@ -8,7 +8,7 @@ import {
     CardHeader
 } from 'reactstrap';
 
-export default function GitHubProject(props) {
+export default function GitHubProjectCard(props) {
 
     return (
         <Card className="gh-project rounded-0">

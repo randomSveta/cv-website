@@ -4,7 +4,7 @@ import { SOCIAL_LINKS } from '../../website-data/social-links/social-links';
 
 import "../../../styles/css/social-icons.css"
 
-export default function SocialIconsDisplay(props) {
+export default function SocialIconsLayout(props) {
 
     let icons = SOCIAL_LINKS.map(link => {
         return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Row, Col, Container } from 'reactstrap';
-import SocialIconsDisplay from '../../../../shared/social-icons/SocialIconsDisplay';
+import SocialIconsLayout from '../../../../shared/social-icons/SocialIconsLayout';
 
 import "../../../../../styles/css/hero-image.css"
 
@@ -16,7 +16,7 @@ export default function HeroImage(props) {
         </Row>
         <Row>
           <Col xs="12">
-            <SocialIconsDisplay place="hero" />
+            <SocialIconsLayout place="hero" />
           </Col>
         </Row>
       </Container>
