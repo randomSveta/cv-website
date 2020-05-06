@@ -22,8 +22,7 @@ export default function NavBarSections(props) {
             );
         });
     }
-
-    if (sectionsNavLinks.length !== 0) {
+    if (sectionsNavLinks.length > 1) {
         return (
             <div className="d-flex flex-md-row-reverse flex-column justify-content-center align-items-center">
                 <Button id="hash-list-toggler" className="rounded-circle"><FontAwesomeIcon icon={faHashtag} className="active-item" /></Button>
@@ -33,14 +32,12 @@ export default function NavBarSections(props) {
                 <UncontrolledCollapse toggler="#hash-list-toggler">
                     <Nav>
                         {sectionsNavLinks}
-
                     </Nav>
                 </UncontrolledCollapse>
             </div>
 
         );
-    }
-    else {
+    } else {
         return null;
     }
 }

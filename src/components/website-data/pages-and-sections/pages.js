@@ -1,5 +1,5 @@
 import React from 'react';
-import { SECTIONS_HOME, SECTIONS_PORTFOLIO } from './sections';
+import { SECTIONS_HOME, SECTIONS_PORTFOLIO, SECTIONS_BLOG, SECTIONS_PROJECTS_HISTORY } from './sections';
 import { ARTICLES } from '../blog/articles';
 import Home from '../../pages/home/Home';
 
@@ -17,6 +17,7 @@ export const PAGES = [
         url: '/',
         sections: SECTIONS_HOME,
         isArticle: false,
+        isHistory: false,
         jsx: <Home />,
         exact: true
     },
@@ -26,6 +27,7 @@ export const PAGES = [
         url: '/portfolio',
         sections: SECTIONS_PORTFOLIO,
         isArticle: false,
+        isHistory: false,
         jsx: <Portfolio />,
         exact: true
     },
@@ -33,7 +35,9 @@ export const PAGES = [
         id: 2,
         name: 'Blog',
         url: '/blog',
+        sections: SECTIONS_BLOG,
         isArticle: false,
+        isHistory: false,
         jsx: <Blog />,
         exact: true
     },
@@ -41,6 +45,7 @@ export const PAGES = [
         id: 3,
         name: 'Projects History',
         url: '/projects-history',
+        sections: SECTIONS_PROJECTS_HISTORY,
         isArticle: false,
         isHistory: true,
         jsx: < ProjectsHistory />,

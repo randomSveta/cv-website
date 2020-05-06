@@ -10,6 +10,8 @@ import GitHubProjects from '../../pages/portfolio/sections/github-projects/GitHu
 
 import ProjectsHistoryTable from '../../pages/projects-history/ProjectsHistoryTable';
 
+import Articles from '../../pages/blog/Articles';
+
 export const SECTIONS_HOME = [
     {
         id: 0,
@@ -52,6 +54,15 @@ export const SECTIONS_PORTFOLIO = [
         jsx: <CodePenProjects />
 
 
+    }
+];
+
+export const SECTIONS_BLOG = [
+    {
+        id: 0,
+        name: 'Articles',
+        hashUrl: '#articles',
+        jsx: <Articles sectionUrl='/blog' />
     }
 ];
 
