@@ -20,7 +20,7 @@ export default class CurrentProject extends React.Component {
 
     render() {
 
-        return (
+        return (!this.props.project.isFinished ?
             <Card inverse >
                 <CardBody className="current-p-card">
                     <CardTitle className="font-weight-bold">
@@ -38,10 +38,9 @@ export default class CurrentProject extends React.Component {
                     {this.props.project.repoLink ?
                         <Button onClick={() => this.openRepo()} color="secondary">Repository</Button>
                         : null}
-
                 </CardBody>
-            </Card>
-
+            </Card> :
+            null
         );
     }
 
