@@ -1,0 +1,33 @@
+#nav-bar 
+	background-color: #141b1f
+
+.navbar-collapse 
+	background-color: #141b1f
+
+svg.active-item 
+	color: rgba(23, 162, 184, 1)
+
+.active-item::before 
+	content: ''
+	background-color: rgba(23, 162, 184, 1)
+	position: absolute
+	top: -0.3rem
+	left: 45%
+	display: block
+	width: 0.35rem
+	height: 0.32rem
+	border-radius: 50%
+
+div.breadcrumb 
+	background-color: rgba(0, 0, 0, 0.7)
+	margin: 0
+	height: 100%
+
+span.active.breadcrumb-item::before 
+	color: white
+
+#hash-list-toggler 
+	background-color: #141b1f
+	border: 0.125rem dotted gray
+	width: 2.5rem
+	height: 2.5rem

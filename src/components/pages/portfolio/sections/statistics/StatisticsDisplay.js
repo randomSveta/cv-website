@@ -1,5 +1,5 @@
 import React from 'react';
-import { STATISTICS } from './statistics-list';
+import { STATISTICS } from '../../../../website-data/portfolio/statistics-list';
 import Statistica from './Statistica';
 import { Row, Col, Container } from 'reactstrap';
 

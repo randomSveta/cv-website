@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Toast, ToastBody, ToastHeader } from "reactstrap";
 
-import { ARTICLES } from "../../articles";
+import { ARTICLES } from "../../../../website-data/blog/articles";
 
 import firstImg100vh from "../../../../../assets/images/blog-page/articles/footer/100vh/min-height-100-200px.png";
 import secondImg100vh200f from "../../../../../assets/images/blog-page/articles/footer/100vh/min-height-100.png";

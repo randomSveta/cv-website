@@ -8,15 +8,15 @@ import {
     Redirect
 } from "react-router-dom";
 
-import Footer from './footer/Footer';
-import NavBar from './navigation/NavBar';
-import HeroImage from '../components/pages/home/sections/hero-image/HeroImage';
+import Footer from './shared/footer/Footer';
+import NavBar from './shared/navigation/NavBar';
+import HeroImage from './pages/home/sections/hero-image/HeroImage';
 
 //import NavBarAchievments from '../components/navigation/NavBarAchievments';
-import NavBarSections from '../components/navigation/NavBarSections';
-import NavBarPages from '../components/navigation/NavBarPages';
+import NavBarSections from './shared/navigation/NavBarSections';
+import NavBarPages from './shared/navigation/NavBarPages';
 
-import { PAGES } from './navigation/pages-and-sections/pages';
+import { PAGES } from './website-data/pages-and-sections/pages';
 
 //const achievments = <NavBarAchievments />;
 const navPages = <NavBarPages />;

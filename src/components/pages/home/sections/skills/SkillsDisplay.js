@@ -1,5 +1,5 @@
 import React from 'react';
-import { SKILLS } from './skills-list';
+import { SKILLS } from '../../../../website-data/home/skills-list';
 import SkillIcon from './SkillIcon';
 import { Row, Col, Container } from 'reactstrap';
 

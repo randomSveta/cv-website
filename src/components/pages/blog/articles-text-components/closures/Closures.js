@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { ARTICLES } from "../../articles";
+import { ARTICLES } from "../../../../website-data/blog/articles";
 
 
 export default function Closures(props) {

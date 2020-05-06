@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
-import { ARTICLES } from "../../articles";
+import { ARTICLES } from "../../../../website-data/blog/articles";
 
 import ExpandImage from "../ExpandImage";
 import ShowCode from "../ShowCode";
@@ -492,7 +492,7 @@ footer {
                         <Col xs="12">
                             <p>
                                 Wow! It is the third way to put the wild footer to its place. I am sure there are more ways!
-                               I wish you luck and am happy to show everything I know.
+                                I wish you luck and am happy to show everything I know.
                             </p>
                         </Col>
                     </Row>

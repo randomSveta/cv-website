@@ -1,9 +1,9 @@
 import React from 'react';
 import Section from '../Section';
-import { SECTIONS_HOME } from '../../navigation/pages-and-sections/sections';
+import { SECTIONS_HOME } from '../../website-data/pages-and-sections/sections';
 import { Row, Col, Container } from 'reactstrap';
 
-import "./home.css";
+import "../../../styles/css/home.css";
 
 export default function Home(props) {
 

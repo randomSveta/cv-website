@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import CodePenProject from './CodePenProject';
 
-import { CP_PROJECTS } from './cp-projects-list';
-import { PAGES_TOTAL, PROJECTS_PER_PAGE } from './pagination/codepen-pages';
+import { CP_PROJECTS } from '../../../../website-data/portfolio/cp-projects-list';
+import { PAGES_TOTAL, PROJECTS_PER_PAGE } from '../../../../website-data/portfolio/codepen-pages';
 
 import CodePenProjectsPagination from './pagination/CodePenProjectsPagination';
 

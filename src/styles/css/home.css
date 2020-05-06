@@ -1,0 +1,14 @@
+#home h2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 6.2rem;
+}
+
+#home .h2-row {
+  height: 6.25rem;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=home.css.map */

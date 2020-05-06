@@ -1,0 +1,11 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+#hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/home-page/hero_image.jpg");
+  height: calc(100vh - 4.5rem);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*# sourceMappingURL=hero-image.css.map */

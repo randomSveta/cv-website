@@ -1,8 +1,8 @@
 import React from 'react';
 import { Jumbotron, Row, Col, Container } from 'reactstrap';
-import SocialIconsDisplay from '../../../../social-icons/SocialIconsDisplay';
+import SocialIconsDisplay from '../../../../shared/social-icons/SocialIconsDisplay';
 
-import "./hero-image.css"
+import "../../../../../styles/css/hero-image.css"
 
 export default function HeroImage(props) {
   return (

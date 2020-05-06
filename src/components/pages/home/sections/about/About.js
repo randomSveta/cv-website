@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutTextsDisplay from './AboutTextsDisplay';
-import "./about.css";
+import '../../../../../styles/css/about.css';
 
 export default function About(props) {
     return (

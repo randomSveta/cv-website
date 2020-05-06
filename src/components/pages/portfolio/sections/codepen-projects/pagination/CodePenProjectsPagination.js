@@ -2,8 +2,8 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 
-import PaginationComponent from '../../../../../Pagination'
-import "./pagination.css";
+import PaginationComponent from '../../../../../shared/Pagination'
+import "../../../../../../styles/css/pagination.css";
 
 
 export default function CodePenProjectsPagination(props) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ARTICLES } from './articles';
+import { ARTICLES } from '../../website-data/blog/articles';
 import { Row, CardColumns, Container } from 'reactstrap';
 import ArticlePreview from './ArticlePreview';
 

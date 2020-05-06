@@ -1,9 +1,9 @@
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import { SECTIONS_PORTFOLIO } from '../../navigation/pages-and-sections/sections'
+import { SECTIONS_PORTFOLIO } from '../../website-data/pages-and-sections/sections'
 import Section from '../Section';
 
-import "./portfolio.css"
+import "../../../styles/css/portfolio.css"
 
 
 export default function Portfolio(props) {

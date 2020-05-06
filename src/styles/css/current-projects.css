@@ -1,0 +1,10 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+#current-projects .h2-row {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/home-page/current_p_parallax_bw.jpg");
+}
+
+.current-p-card {
+  background-color: rgba(20, 27, 31, 0.95);
+}
+
+/*# sourceMappingURL=current-projects.css.map */

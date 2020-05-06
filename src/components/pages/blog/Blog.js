@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import ArticlesDisplay from './ArticlesDisplay';
 import Section from '../Section';
 
-import "./blog.css";
+import "../../../styles/css/blog.css";
 
 export default function Blog(props) {
     return (

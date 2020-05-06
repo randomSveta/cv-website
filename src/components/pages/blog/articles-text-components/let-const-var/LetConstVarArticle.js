@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Container, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from "reactstrap";
 
-import { ARTICLES } from "../../articles";
+import { ARTICLES } from "../../../../website-data/blog/articles";
 import ExpandImage from "../ExpandImage";
 
 export default function LetConstVarArticle(props) {

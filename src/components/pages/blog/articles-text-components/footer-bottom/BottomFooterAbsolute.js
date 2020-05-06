@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import ExpandImage from "../ExpandImage";
 import ShowCode from "../ShowCode";
 
-import { ARTICLES } from "../../articles";
+import { ARTICLES } from "../../../../website-data/blog/articles";
 
 import leftShortContent from "../../../../../assets/images/blog-page/articles/footer/absolute/short-absolute.png";
 import rightShortContentBorderBox from "../../../../../assets/images/blog-page/articles/footer/absolute/footer-out-of-100vh-viewport.png";
@@ -151,7 +151,7 @@ export default function BottomFooterAbsolute(props) {
                             <p>
                                 First of all, what does<a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank" rel="noopener noreferrer">position: absolute</a> mean?
                             The <strong>absolutely</strong> positioned element is excluded from the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow" target="_blank" rel="noopener noreferrer">normal document flow</a> and placed in the document flow relative to the closest positioned parent i.e the parent should have <strong>position</strong> property with one of the values: relative, fixed, sticky, absolute but not static.
-    
+
                             </p>
                             <p>
                                 I invite you to investigate {`:)`}.
@@ -183,10 +183,10 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                            Hmm... Nothing changed in the order of the elements, but now the <em>footer</em> is using content space only.
+                                Hmm... Nothing changed in the order of the elements, but now the <em>footer</em> is using content space only.
                             </p>
                             <p>
-                            Good anyway! So, we should make the <em>footer</em> full size long and add <strong>width: 100%</strong> to it.
+                                Good anyway! So, we should make the <em>footer</em> full size long and add <strong>width: 100%</strong> to it.
                             </p>
                         </Col>
                     </Row>
@@ -212,7 +212,7 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                            Next, let's try to move the <em>&lt;footer&gt;</em> to the page bottom and find what element is the reference point for the absolute positioning.
+                                Next, let's try to move the <em>&lt;footer&gt;</em> to the page bottom and find what element is the reference point for the absolute positioning.
                             </p>
                             <p>
                                 Add <strong>bottom: 0</strong> to the <em>footer</em> in <strong>styles.css</strong>.
@@ -242,7 +242,7 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                            Looks like the <strong>default positioned parent</strong> element for the <em>&lt;footer&gt;</em> is the page itself or in other words an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block" target="_blank" rel="noopener noreferrer"> initial containing block</a>. Sometimes the <em>&lt;body&gt;</em> is specified as a default object for positioning, but it is not true.
+                                Looks like the <strong>default positioned parent</strong> element for the <em>&lt;footer&gt;</em> is the page itself or in other words an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block" target="_blank" rel="noopener noreferrer"> initial containing block</a>. Sometimes the <em>&lt;body&gt;</em> is specified as a default object for positioning, but it is not true.
                             </p>
                             <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
@@ -252,7 +252,7 @@ export default function BottomFooterAbsolute(props) {
                                 <footer class="blockquote-footer p-2 text-right"><cite title="MDN"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block">MDN</a></cite></footer>
                             </blockquote>
                             <p>
-                            The <em>footer</em> is laying at the bottom of the page, isn't it? Yes, but there are some issues. Let's open Web Developer tools in a browser and then find a tab where elements could be inspected (Ex. <strong>Inspector</strong> in Mozilla). How you can see the <em>&lt;footer&gt;</em> is located outside the <em>&lt;body&gt;</em> element area. We know from the <strong>index.html</strong> layout that the <em>footer</em> should be inside the <em>&lt;body&gt;</em> tag.
+                                The <em>footer</em> is laying at the bottom of the page, isn't it? Yes, but there are some issues. Let's open Web Developer tools in a browser and then find a tab where elements could be inspected (Ex. <strong>Inspector</strong> in Mozilla). How you can see the <em>&lt;footer&gt;</em> is located outside the <em>&lt;body&gt;</em> element area. We know from the <strong>index.html</strong> layout that the <em>footer</em> should be inside the <em>&lt;body&gt;</em> tag.
                                     </p>
                         </Col>
                     </Row>
@@ -264,14 +264,14 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                            We should sort it out. The closest parent container for the <em>&lt;footer&gt;</em> is the <em>&lt;body&gt;</em>. Let's add <strong>position</strong> property to the <em>body</em> tag, but which value should we use? How it was described above it could be <em>relative, fixed, absolute, and sticky</em> values but <em>not the static</em>.
+                                We should sort it out. The closest parent container for the <em>&lt;footer&gt;</em> is the <em>&lt;body&gt;</em>. Let's add <strong>position</strong> property to the <em>body</em> tag, but which value should we use? How it was described above it could be <em>relative, fixed, absolute, and sticky</em> values but <em>not the static</em>.
 
                             </p>
                             <p>
-                            The <strong>position: relative</strong> is preferred because it has less impact on the element in comparison with the other. 
+                                The <strong>position: relative</strong> is preferred because it has less impact on the element in comparison with the other.
                             </p>
                             <p>
-                            Add <strong>position: relative</strong> to the <em>body</em>.
+                                Add <strong>position: relative</strong> to the <em>body</em>.
                             </p>
                         </Col>
                     </Row>
@@ -297,7 +297,7 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                            How you can see on the image below, the <em>&lt;footer&gt;</em> is placed <strong>inside</strong> the parent container which is <em>&lt;body&gt;</em>. Also, the <em>footer</em> is located over all other elements, because the <em>&lt;footer&gt;</em> is removed from the <em>normal document flow</em> and now is resting at the <em>&lt;body&gt;</em> bottom (<strong>bottom: 0</strong>) relatively to it. The next step is to make the <em>&lt;body&gt;</em> element take the whole visible height of the page. Hence, if we apply the <strong>height</strong> property, then the pages with the long content will be cut by the footer in the middle of a page. I believe it would be much better to use <strong>min-height</strong> instead of <strong>height</strong>, especially for the container elements.
+                                How you can see on the image below, the <em>&lt;footer&gt;</em> is placed <strong>inside</strong> the parent container which is <em>&lt;body&gt;</em>. Also, the <em>footer</em> is located over all other elements, because the <em>&lt;footer&gt;</em> is removed from the <em>normal document flow</em> and now is resting at the <em>&lt;body&gt;</em> bottom (<strong>bottom: 0</strong>) relatively to it. The next step is to make the <em>&lt;body&gt;</em> element take the whole visible height of the page. Hence, if we apply the <strong>height</strong> property, then the pages with the long content will be cut by the footer in the middle of a page. I believe it would be much better to use <strong>min-height</strong> instead of <strong>height</strong>, especially for the container elements.
                             </p>
                         </Col>
                     </Row>
@@ -329,7 +329,7 @@ export default function BottomFooterAbsolute(props) {
 
                             <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
-                                <strong>&lt;percentage&gt;</strong><br />
+                                    <strong>&lt;percentage&gt;</strong><br />
                                     <br />
                                     Specifies a percentage height. The percentage is calculated with respect to the height of the generated box's containing block. If the height of the containing block is not specified explicitly (i.e., it depends on content height), and this element is not absolutely positioned, the value computes to "auto". A percentage height on the root element is relative to the initial containing block. Note: For absolutely positioned elements whose containing block is based on a block-level element, the percentage is calculated with respect to the height of the padding box of that element. This is a change from CSS1, where the percentage was always calculated with respect to the content box of the parent element.
                                 </p>
@@ -397,7 +397,7 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12">
                             <p>
-                            Wow! Finally!
+                                Wow! Finally!
                              Wait, I would like to have a look at the page with long content block. Create a new page or just add enough content to the <strong>index.html</strong> file, your choice.
                                 I am going to change the element with <em>content</em> class and add a dummy text like <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank" rel="noopener noreferrer">"Lorem Ipsum"</a>
                             </p>
@@ -414,9 +414,9 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="12">
                             <p>
-                            I could not see the last words <strong>"anim id est laborum."</strong>. Could you see yours? The final line is under the <em>footer</em> element.
+                                I could not see the last words <strong>"anim id est laborum."</strong>. Could you see yours? The final line is under the <em>footer</em> element.
                                 The <em>footer</em> is placed over text because the <em>footer bottom border</em> is staying relatively to the <em>body bottom border</em>.
-                                 To fix that we should give the <em>footer</em> its <strong>height</strong> and somehow make the body element longer on that height. 
+                                 To fix that we should give the <em>footer</em> its <strong>height</strong> and somehow make the body element longer on that height.
                                  I suggest to use <strong>padding-bottom</strong> property.
                             </p>
                             <p>
@@ -466,7 +466,7 @@ export default function BottomFooterAbsolute(props) {
 
                             </p>
                             <p>
-                            It is time to check the <em>short page</em> again.
+                                It is time to check the <em>short page</em> again.
                             </p>
                         </Col>
                     </Row>
@@ -478,10 +478,10 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12" >
                             <p>
-                            Oh, no! The <em>footer</em> is actually at the short page bottom, but we need to scroll to see it. This has happened because we added a <strong>padding-bottom: 200px</strong> to the <em>body</em>. The <strong>height</strong> or <strong>min-height</strong> of the elements takes into account only the <strong>height</strong> of the element content by default. So, <strong>min-height: 100vh</strong> includes only the <em>body</em> content, without any additional <strong>padding</strong> and there is a scroll bar for an extra 200px. <strong>Padding height</strong> is not included in the <strong>min-height</strong> property for the <em>&lt;body&gt;</em>.
+                                Oh, no! The <em>footer</em> is actually at the short page bottom, but we need to scroll to see it. This has happened because we added a <strong>padding-bottom: 200px</strong> to the <em>body</em>. The <strong>height</strong> or <strong>min-height</strong> of the elements takes into account only the <strong>height</strong> of the element content by default. So, <strong>min-height: 100vh</strong> includes only the <em>body</em> content, without any additional <strong>padding</strong> and there is a scroll bar for an extra 200px. <strong>Padding height</strong> is not included in the <strong>min-height</strong> property for the <em>&lt;body&gt;</em>.
                             </p>
                             <p>
-                            To change the situation we can apply CSS property which counts the height of the element as the <em>sum of <strong>content, padding, and border</strong></em>.
+                                To change the situation we can apply CSS property which counts the height of the element as the <em>sum of <strong>content, padding, and border</strong></em>.
                                 The property is <strong><a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank" rel="noopener noreferrer">box-sizing: border-box</a></strong>
                             </p>
                             <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
@@ -492,7 +492,7 @@ export default function BottomFooterAbsolute(props) {
                                 <footer class="blockquote-footer p-2 text-right"><cite title="w3schools"><a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.asp">w3schools</a></cite></footer>
                             </blockquote>
                             <p>
-                            Let's apply <strong>box-sizing: border-box</strong> for each element because I want to measure the height of an element as a sum of the <em>height of the content, padding and border</em>. Compare the <strong>short</strong> page with <strong>border-box</strong> property and without. You can spot the difference for sure.
+                                Let's apply <strong>box-sizing: border-box</strong> for each element because I want to measure the height of an element as a sum of the <em>height of the content, padding and border</em>. Compare the <strong>short</strong> page with <strong>border-box</strong> property and without. You can spot the difference for sure.
                             </p>
                         </Col>
                     </Row>
@@ -519,7 +519,7 @@ export default function BottomFooterAbsolute(props) {
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="12">
                             <p>
-                            Hurray! We did it. Let's check again that the <em>footer</em> is placed correctly on the <strong>long</strong> and <strong>short</strong> pages.
+                                Hurray! We did it. Let's check again that the <em>footer</em> is placed correctly on the <strong>long</strong> and <strong>short</strong> pages.
                             </p>
                         </Col>
                     </Row>
@@ -582,7 +582,7 @@ footer {
                     <Row className="mt-5 mb-2">
                         <Col xs="12" md="12">
                             <p>
-                            Congratulations! I knew we could do it!
+                                Congratulations! I knew we could do it!
      I recommend you always review pages with <em>long</em> and <em>short</em> content blocks. All kinds of pages should have the correct layout and elements placement. Also, be careful with the <em>footer height</em> and make it sutable for different screen sizes.
                             </p>
                             <p>
