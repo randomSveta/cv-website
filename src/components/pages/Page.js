@@ -12,7 +12,7 @@ export default function Home(props) {
         const createdSectionId = section.hashUrl.split('').splice(1).join('');
 
         return (
-            <Section key={section.id} section={section} class={createdParallaxClass} content={section.jsx} name={section.name} sectionId={createdSectionId} />
+            <Section key={section.id} section={section} page={props.page} />
         );
     });
 

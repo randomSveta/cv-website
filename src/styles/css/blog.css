@@ -1,6 +1,5 @@
-#blog h2 {
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 6.2rem;
+#articles .section-h2-row-parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/blog-page/blog-parallax-bw.jpg");
 }
 
 .card-footer.art-card-bg,
@@ -10,14 +9,6 @@
 
 .card.article-preview-card {
   border: 0.3rem solid #141b1f;
-}
-
-#articles .h2-row {
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/blog-page/blog-parallax-bw.jpg");
 }
 
 code {
