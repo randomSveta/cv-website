@@ -1,5 +1,5 @@
 import React from 'react';
-import { GH_PROJECTS } from '../../../../website-data/portfolio/gh-projects-list';
+import { GH_PROJECTS } from '../../../../website-data/portfolio/github-projects';
 import { Row, CardColumns, Container } from 'reactstrap';
 import GitHubProjectCard from './GitHubProjectCard';
 

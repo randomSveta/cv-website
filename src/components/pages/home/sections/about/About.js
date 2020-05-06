@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import { ABOUT_TEXT_BLOCKS } from '../../../../website-data/home/about-text-list';
+import { ABOUT_TEXT_BLOCKS } from '../../../../website-data/home/about-texts';
 import AboutText from './AboutText';
 import '../../../../../styles/css/about.css';
 

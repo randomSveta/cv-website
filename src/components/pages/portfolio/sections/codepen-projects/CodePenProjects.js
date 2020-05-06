@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import CodePenProjectCard from './CodePenProjectCard';
 
-import { CP_PROJECTS } from '../../../../website-data/portfolio/cp-projects-list';
+import { CP_PROJECTS } from '../../../../website-data/portfolio/codepen-projects';
 import { PAGES_TOTAL, PROJECTS_PER_PAGE } from '../../../../website-data/portfolio/codepen-pages';
 
 import CodePenProjectsPagination from './pagination/CodePenProjectsPagination';

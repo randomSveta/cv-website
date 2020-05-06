@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
-import { SKILLS } from '../../../../website-data/home/skills-list';
+import { SKILLS } from '../../../../website-data/home/skills';
 import SkillIcon from './SkillIcon';
 
 import "../../../../../styles/css/skills.css";
