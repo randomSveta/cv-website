@@ -1,5 +1,4 @@
 import React from 'react';
-//import Breadcrumbs from './navigation/Breadcrumbs';
 
 import {
     BrowserRouter as Router,
@@ -29,9 +28,6 @@ PAGES.forEach((page, index) => {
         exact: (page.article ? false : true)
     };
 
-    //const breadcrumbsArticle = <Breadcrumbs article={page.article} secondStep={page.page} secondStepUrl={page.pageUrl} thirdStep={page.name} />;
-    //const breadcrumbsPages = <Breadcrumbs article={page.article} secondStep={page.name} />;
-
     if (index === 0) {
         route.navigation = () =>
             <React.Fragment>
@@ -44,7 +40,6 @@ PAGES.forEach((page, index) => {
             return (
                 <React.Fragment>
                     <NavBar navigationPages={navPages} navigationSections={<NavBarSections sections={page.sections} />} />
-                    {/*{page.article ? breadcrumbsArticle : breadcrumbsPages}*/}
                 </React.Fragment>
             );
         }
