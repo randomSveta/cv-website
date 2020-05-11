@@ -9,7 +9,7 @@ export default function SocialIconsLayout(props) {
     let icons = SOCIAL_LINKS.map(link => {
         return (
             <li key={link.id} className='social-icon-item  m-3'>
-                <a href={link.url} target="_blank" rel="noopener noreferrer" className="link-style underscore" aria-label={"Link to " + link.name}>
+                <a href={link.url} target="_blank" rel="noopener noreferrer" className="app-link app-link-underscore" aria-label={"Link to " + link.name}>
                     <SocialIcon image={link.image} name={link.name} place={props.place} />
                 </a>
             </li>

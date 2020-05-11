@@ -3,8 +3,6 @@ import { STATISTICS } from '../../../../website-data/portfolio/statistics';
 import StatisticaCard from './StatisticaCard';
 import { Row, Col, Container } from 'reactstrap';
 
-import "../../../../../styles/css/statistics.css";
-
 
 export default function Statistics(props) {
 
@@ -19,7 +17,7 @@ export default function Statistics(props) {
 
     return (
         <Container>
-            <Row className="m-md-5 px-md-5 py-0 m-2 px-2  justify-content-center align-items-center flex-wrap">
+            <Row className="m-md-5 px-md-5 py-0 m-2 px-2 justify-content-center align-items-center flex-wrap">
                 {statistics}
             </Row >
         </Container>

@@ -2,14 +2,9 @@ import React from 'react';
 import Section from './Section';
 import { Row, Col, Container } from 'reactstrap';
 
-import "../../styles/css/page.css";
-
 export default function Home(props) {
 
     const sections = props.sections.map(section => {
-
-        const createdParallaxClass = section.name.split(' ').join('-').toLowerCase() + '-parallax';
-        const createdSectionId = section.hashUrl.split('').splice(1).join('');
 
         return (
             <Section key={section.id} section={section} page={props.page} />

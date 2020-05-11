@@ -15,8 +15,8 @@ export default function NavBarSections(props) {
     if (sectionsNavList) {
         sectionsNavLinks = sectionsNavList.map(section => {
             return (
-                <NavItem key={section.id} className="navbar-li-hash p-0 ml-2 mr-1 my-1">
-                    <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='link-style-hash p-0 m-1 underscore-sections text-decoration-none' to={section.hashUrl}
+                <NavItem key={section.id} className="navigation-section-item p-0 ml-2 mr-1 my-1">
+                    <NavHashLink smooth /*activeClassName= 'active-hash-item'*/ className='app-link p-0 m-1 app-link-underscore text-decoration-none' to={section.hashUrl}
                     >{section.name}</NavHashLink>
                 </NavItem>
             );
@@ -25,11 +25,11 @@ export default function NavBarSections(props) {
     if (sectionsNavLinks.length > 1) {
         return (
             <div className="d-flex flex-md-row-reverse flex-column justify-content-center align-items-center">
-                <Button id="hash-list-toggler" className="rounded-circle"><FontAwesomeIcon icon={faHashtag} className="active-item" /></Button>
-                <UncontrolledTooltip placement="top" target="hash-list-toggler" delay={{ show: 200, hide: 0 }}>
+                <Button id="navigation-sections-toggle" className="rounded-circle"><FontAwesomeIcon icon={faHashtag} className="navigation-active-item" /></Button>
+                <UncontrolledTooltip placement="top" target="navigation-sections-toggle" delay={{ show: 200, hide: 0 }}>
                     Sections navigation
                 </UncontrolledTooltip>
-                <UncontrolledCollapse toggler="#hash-list-toggler">
+                <UncontrolledCollapse toggler="#navigation-sections-toggle">
                     <Nav>
                         {sectionsNavLinks}
                     </Nav>

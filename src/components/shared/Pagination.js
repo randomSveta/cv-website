@@ -31,7 +31,7 @@ export default function PaginationComponent(props) {
             const pageButtonClasses = setBootstrapClassesPageButton(isActivePage);
 
             pagesNumbers.push(
-                <PaginationItem key={i - 1} id="page-button" active={isActivePage} onClick={() => handlePageButtonClick(pageNumber)}>
+                <PaginationItem key={i - 1} active={isActivePage} onClick={() => handlePageButtonClick(pageNumber)}>
                     <PaginationLink className={pageButtonClasses}>
                         {i}
                     </PaginationLink>

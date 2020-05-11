@@ -8,7 +8,7 @@ export const ABOUT_TEXT_BLOCKS = [
     },
     {
         id: 1,
-        text: 'Also, having more than 5 years of experience as a QA Engineer I have quite a lot of experience with the software development life cycle, agile practices and working in a team. Thanks to my previous job, I deeply understand what quality and customer focus means.',
+        text: "Also, having more than 5 years of experience as a QA Engineer I have quite a lot of experience with the software development life cycle, agile practices and working in a team. Thanks to my previous job, I deeply understand what quality and customer focus means.",
         icon: faBug
     },
     {

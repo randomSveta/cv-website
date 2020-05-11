@@ -11,22 +11,22 @@ import {
 export default function GitHubProjectCard(props) {
 
     return (
-        <Card className="gh-project rounded-0">
-            <CardHeader className="text-center gh-card-bg rounded-0 text-white">{props.project.name}</CardHeader>
+        <Card className="rounded-0">
+            <CardHeader className="text-center rounded-0 text-white">{props.project.name}</CardHeader>
             <CardBody>
                 <CardText>{props.project.description}</CardText>
             </CardBody>
-            <CardFooter className="text-center gh-card-bg rounded-0">
+            <CardFooter className="text-center rounded-0">
                 {props.project.taskLink ?
-                    <CardLink href={props.project.taskLink} target="_blank" className="link-style underscore">Task</CardLink>
+                    <CardLink href={props.project.taskLink} target="_blank" className="app-link app-link-underscore">Task</CardLink>
                     : null
                 }
                 {props.project.repoLink ?
-                    <CardLink href={props.project.repoLink} target="_blank" className="link-style underscore">Repository</CardLink>
+                    <CardLink href={props.project.repoLink} target="_blank" className="app-link app-link-underscore">Repository</CardLink>
                     : null
                 }
                 {props.project.projectLink ?
-                    <CardLink href={props.project.projectLink} target="_blank" className="link-style underscore">Pages</CardLink>
+                    <CardLink href={props.project.projectLink} target="_blank" className="app-link app-link-underscore">Pages</CardLink>
                     : null}
             </CardFooter>
         </Card>

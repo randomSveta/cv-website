@@ -7,12 +7,12 @@ export default function CodePenProject(props) {
         <div className="m-1 p-1">
             {props.project.jsx}
             <div className="bg-info p-2">
-                <div className="cp-projects-links-bg p-2 text-center">
+                <div className="app-dark-bg p-2 text-center">
                     {props.project.taskLink ?
-                        <a href={props.project.taskLink} target="_blank" rel="noopener noreferrer" className="link-style m-2 underscore text-decoration-none"><FontAwesomeIcon icon={faThumbtack} />  Task</a>
+                        <a href={props.project.taskLink} target="_blank" rel="noopener noreferrer" className="app-link m-2 app-link-underscore text-decoration-none"><FontAwesomeIcon icon={faThumbtack} />  Task</a>
                         : null
                     }
-                    <a href={props.project.projectLink} target="_blank" rel="noopener noreferrer" className="link-style m-2 underscore text-decoration-none"><FontAwesomeIcon icon={faExpand} />  Full page</a>
+                    <a href={props.project.projectLink} target="_blank" rel="noopener noreferrer" className="app-link m-2 app-link-underscore text-decoration-none"><FontAwesomeIcon icon={faExpand} />  Full page</a>
                     <span className="text-white m-2"><FontAwesomeIcon icon={faCalendarAlt} /> {props.project.year}</span>
                     <span className="text-white m-2" hidden={props.project.finished ? true : false}><FontAwesomeIcon icon={faHourglassHalf} /></span>
                 </div>

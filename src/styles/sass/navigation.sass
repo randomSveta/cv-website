@@ -1,33 +1,32 @@
-#nav-bar 
-	background-color: #141b1f
+@use 'colors'
+@use 'sizes'
+
+$hash-button-height: 0.32rem
 
 .navbar-collapse 
-	background-color: #141b1f
+	background-color: colors.$dark
 
-svg.active-item 
-	color: rgba(23, 162, 184, 1)
+.navigation-active-item
+	color: colors.$green
+	&::before
+		content: ''
+		background-color: colors.$green
+		position: absolute
+		top: -0.3rem
+		left: 45%
+		display: block
+		width: $hash-button-height
+		height: $hash-button-height
+		border-radius: 50%
 
-.active-item::before 
-	content: ''
-	background-color: rgba(23, 162, 184, 1)
-	position: absolute
-	top: -0.3rem
-	left: 45%
-	display: block
-	width: 0.35rem
-	height: 0.32rem
-	border-radius: 50%
+.navigation-section-item
+	.app-link
+		color: colors.$white-08
+		font-size: sizes.$font-size-small
 
-div.breadcrumb 
-	background-color: rgba(0, 0, 0, 0.7)
-	margin: 0
-	height: 100%
-
-span.active.breadcrumb-item::before 
-	color: white
-
-#hash-list-toggler 
-	background-color: #141b1f
-	border: 0.125rem dotted gray
-	width: 2.5rem
-	height: 2.5rem
+#navigation-sections-toggle
+	&.btn
+		background-color: colors.$dark
+		border: 0.125rem dotted gray
+		height: sizes.$height-xsmall
+		width:  sizes.$height-xsmall

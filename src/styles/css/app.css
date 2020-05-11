@@ -2,6 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+.app-parallax-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app-parallax-bg {
+  background-attachment: fixed;
+}
+
 body,
 html {
   height: 100%;
@@ -20,40 +29,53 @@ h2 {
   height: 6.25rem;
 }
 
+.app-icon {
+  height: 7.5rem;
+  width: 7.5rem;
+}
+.app-icon svg {
+  font-size: 3.125rem;
+}
+
 .app-green-bg {
   background-color: #17a2b8;
 }
 
-/*------ Link styles ------ */
-.link-style-hash {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
+.app-dark-bg {
+  background-color: #141b1f;
 }
 
-.link-style,
-.link-style:hover,
-.link-style-hash:hover {
+.app-white-bg {
+  background-color: white;
+}
+
+.app-parallax-bg {
+  background-position: top center;
+}
+
+.app-link {
+  color: white;
+}
+.app-link:hover {
   color: white;
 }
 
-.rotate-animation {
+.app-link-rotate-animation {
   border: none;
 }
 
-.rotate-animation:hover {
+.app-link-rotate-animation:hover {
   -webkit-animation: rotate 1.5s;
   animation: rotate 1.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-.underscore,
-.underscore-sections {
+.app-link-underscore {
   position: relative;
 }
 
-.underscore::after,
-.underscore-sections::after {
+.app-link-underscore::after {
   content: "";
   background-color: #17a2b8;
   position: absolute;
@@ -72,12 +94,7 @@ h2 {
   transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
 }
 
-.underscore-sections::after {
-  height: 0.06rem;
-}
-
-.underscore:hover::after,
-.underscore-sections:hover::after {
+.app-link-underscore:hover::after {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);

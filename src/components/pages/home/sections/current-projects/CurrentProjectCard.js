@@ -22,7 +22,7 @@ export default class CurrentProjectCard extends React.Component {
 
         return (!this.props.project.isFinished ?
             <Card inverse >
-                <CardBody className="current-p-card">
+                <CardBody className="app-dark-bg">
                     <CardTitle className="font-weight-bold">
                         {this.props.project.title}
                     </CardTitle>

@@ -33,7 +33,6 @@ export default function CodePenProjects(props) {
 
     return (
         <Container>
-
             <CodePenProjectsPagination pagesTotal={PAGES_TOTAL} page={page} setPageNumber={setPage} />
             <Row className="m-md-5 px-md-5 py-0 m-2 px-2  justify-content-center align-items-center flex-wrap">
                 {CodePenProjects}

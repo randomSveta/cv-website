@@ -1,4 +1,4 @@
-#articles .section-h2-row-parallax {
+#articles .app-parallax-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/blog-page/blog-parallax-bw.jpg");
 }
 
@@ -18,7 +18,7 @@ code {
 
 .code-styles,
 .useful-info {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 }
 
 .page-screenshot {
@@ -26,7 +26,7 @@ code {
 }
 
 blockquote p {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .text-pink {

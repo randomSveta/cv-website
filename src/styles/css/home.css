@@ -1,0 +1,24 @@
+#hero-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero-image {
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/images/home-page/hero_image.jpg");
+  height: calc(100vh - 4.5rem);
+}
+
+#about .app-parallax-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("../../assets/images/home-page/about_parallax_bw.jpg");
+}
+
+#skills .app-parallax-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/home-page/skills_parallax_bw.jpg");
+}
+
+#current-projects .app-parallax-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/home-page/current_p_parallax_bw.jpg");
+}
+
+/*# sourceMappingURL=home.css.map */

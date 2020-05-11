@@ -1,0 +1,12 @@
+$home-hero: url('../../assets/images/home-page/hero_image.jpg') 
+$home-about: url('../../assets/images/home-page/about_parallax_bw.jpg')
+$home-skills: url('../../assets/images/home-page/skills_parallax_bw.jpg')
+$home-current-projects: url('../../assets/images/home-page/current_p_parallax_bw.jpg')
+
+%images-background
+	background-repeat: no-repeat
+	background-size: cover
+
+%images-parallax
+	@extend %images-background
+	background-attachment: fixed

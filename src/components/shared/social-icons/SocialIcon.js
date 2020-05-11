@@ -12,21 +12,21 @@ export default function SocialIcon(props) {
         if (props.place === 'footer') {
             listItemId = "f".concat(props.name).split(' ').join('');
         }
-        else if (props.place === 'hero'){
+        else if (props.place === 'hero') {
             listItemId = "h".concat(props.name).split(' ').join('');
         }
-        else if(props.place === 'navbar-brand'){
+        else if (props.place === 'navbar-brand') {
             listItemId = "logo-ice-cream";
         }
 
         iconTooltip =
-            <UncontrolledTooltip placement="top" target={listItemId} delay={{ show: 150, hide: 0}}>
+            <UncontrolledTooltip placement="top" target={listItemId} delay={{ show: 150, hide: 0 }}>
                 {props.name}
             </UncontrolledTooltip>
     }
     return (
         <React.Fragment>
-            <FontAwesomeIcon icon={props.image} className='rotate-animation' id={listItemId} aria-hidden="true"/>
+            <FontAwesomeIcon icon={props.image} className='app-link-rotate-animation' id={listItemId} aria-hidden="true" />
             {iconTooltip}
         </React.Fragment>
 

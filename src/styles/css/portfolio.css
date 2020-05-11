@@ -1,15 +1,26 @@
 #portfolio h2 {
-  height: 4.25rem;
+  height: 4.5rem;
 }
 
-.card-footer.gh-card-bg,
-.card-header.gh-card-bg,
-.cp-projects-links-bg {
-  background-color: #141b1f;
+.statistica-card {
+  height: 12.5rem;
+  width: 12.5rem;
+  border: 0.5rem solid #17a2b8;
+}
+.statistica-card svg,
+.statistica-card .statistica-card-points {
+  font-size: 2rem;
 }
 
-.card.gh-project {
+#github.app-parallax-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/portfolio-page/gh-projects-parallax-bw.jpg");
+}
+#github.app-parallax-bg .card {
   border: none;
+}
+#github.app-parallax-bg .card .card-footer,
+#github.app-parallax-bg .card .card-header {
+  background-color: #141b1f;
 }
 
 /*# sourceMappingURL=portfolio.css.map */

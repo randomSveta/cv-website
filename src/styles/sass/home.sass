@@ -1,0 +1,27 @@
+@use 'sizes'
+@use 'colors'
+@use 'images'
+
+// hero image
+#hero-image
+	@extend %images-background
+	background-position: center 
+	background-image: linear-gradient(colors.$black-04, colors.$black-04), images.$home-hero
+	height: sizes.$height-hero-image
+
+
+// about
+#about
+	.app-parallax-bg
+		background-image: linear-gradient(colors.$black-03, colors.$black-04), images.$home-about
+ 
+// skills
+#skills 
+	.app-parallax-bg
+		background-image: linear-gradient(colors.$black-03, colors.$black-03), images.$home-skills
+			
+// Currrent Projects section
+#current-projects
+	.app-parallax-bg
+		background-image: linear-gradient(colors.$black-03, colors.$black-03), images.$home-current-projects
+

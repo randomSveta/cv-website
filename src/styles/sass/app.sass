@@ -1,6 +1,7 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 @use 'colors'
 @use 'sizes'
+@use 'images'
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap')
@@ -14,43 +15,55 @@ html
 
 #root 
 	font-family: 'Raleway', 'Arial', sans-serif
-	font-size: 1rem
+	font-size: sizes.$font-size-medium
 	background-color: colors.$dark
 	min-height: sizes.$min-height
 	
 h2
 	background-color: colors.$black-08
-	height: sizes.$height-h2-l
+	height: sizes.$height-medium
 
+// icon
+.app-icon
+	height: sizes.$height-large
+	width: sizes.$height-large
+	svg
+		font-size: sizes.$font-size-xlarge
+
+// colors and parallax
 .app-green-bg
 	background-color: colors.$green
 
-/*------ Link styles ------ */
+.app-dark-bg
+	background-color: colors.$dark
 
-.link-style-hash 
-	color: colors.$white-08
-	font-size: 0.9rem
+.app-white-bg
+	background-color: colors.$white
 
-.link-style,
-.link-style:hover,
-.link-style-hash:hover 
+.app-parallax-bg
+	@extend %images-parallax
+	background-position: top center 
+
+// links
+		
+.app-link
 	color: colors.$white
+	&:hover
+		color: colors.$white
 
-.rotate-animation 
+.app-link-rotate-animation 
 	border: none
 
-.rotate-animation:hover
+.app-link-rotate-animation:hover
 	-webkit-animation: rotate 1.5s
 	animation: rotate 1.5s
 	-webkit-animation-iteration-count: infinite
 	animation-iteration-count: infinite
 
-.underscore,
-.underscore-sections 
+.app-link-underscore 
 	position: relative
 
-.underscore::after,
-.underscore-sections::after 
+.app-link-underscore::after
 	content: ''
 	background-color: colors.$green
 	position: absolute
@@ -68,11 +81,7 @@ h2
 	transition: transform ease-in-out 250ms
 	transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms
 
-.underscore-sections::after 
-	height: 0.06rem
-
-.underscore:hover::after,
-.underscore-sections:hover::after 
+.app-link-underscore:hover::after
 	-webkit-transform: scale(1, 1)
 	-ms-transform: scale(1, 1)
 	transform: scale(1, 1)

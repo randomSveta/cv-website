@@ -2,11 +2,9 @@ import React from 'react';
 import { Jumbotron, Row, Col, Container } from 'reactstrap';
 import SocialIconsLayout from '../../../../shared/social-icons/SocialIconsLayout';
 
-import "../../../../../styles/css/hero-image.css"
-
 export default function HeroImage(props) {
   return (
-    <Jumbotron id="hero-image" className="m-0 p-0 d-flex flex-column align-items-center justify-content-center text-center text-white">
+    <Jumbotron id="hero-image" className="m-0 p-0 d-flex flex-column align-items-center justify-content-center text-center text-white position-relative">
       <Container>
         <Row className="m-0 p-0">
           <Col xs="12" className="m-0 p-0">

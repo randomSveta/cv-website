@@ -12,7 +12,7 @@ export default function ArticlePage(props) {
         <Container className="">
             <Row>
                 <Col className="text-center p-3">
-                    <Link className="link-style underscore text-decoration-none" to={'/blog'}><FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" /> All articles</Link>
+                    <Link className="app-link app-link-underscore text-decoration-none" to={'/blog'}><FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" /> All articles</Link>
                 </Col>
             </Row>
             <Row>
@@ -32,7 +32,7 @@ export default function ArticlePage(props) {
             </Row>
             <Row>
                 <Col className="text-center p-3">
-                    <Link className="link-style underscore text-decoration-none" to={'/blog'}><FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" /> All articles</Link>
+                    <Link className="app-link app-link-underscore text-decoration-none" to={'/blog'}><FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" /> All articles</Link>
                 </Col>
             </Row>
         </Container>

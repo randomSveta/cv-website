@@ -1,13 +1,30 @@
 @use 'sizes'
+@use 'colors'
 
 #portfolio 
 	h2 
-		height: sizes.$height-h2-m
+		height: sizes.$height-small
 
-.card-footer.gh-card-bg,
-.card-header.gh-card-bg,
-.cp-projects-links-bg 
-	background-color: rgb(20, 27, 31)
+// statistics
+.statistica-card
+	height: sizes.$height-xlarge
+	width:  sizes.$height-xlarge
+	border: 0.5rem solid colors.$green
+	svg, 
+	.statistica-card-points
+		font-size: sizes.$font-size-large
 
-.card.gh-project 
-	border: none
+// github
+#github
+	&.app-parallax-bg
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/portfolio-page/gh-projects-parallax-bw.jpg')
+		.card
+			border: none
+			.card-footer,
+			.card-header
+				background-color: colors.$dark
+
+
+
+
+

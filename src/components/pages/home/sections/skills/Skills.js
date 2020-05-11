@@ -3,9 +3,6 @@ import { Row, Col, Container } from 'reactstrap';
 import { SKILLS } from '../../../../website-data/home/skills';
 import SkillIcon from './SkillIcon';
 
-import "../../../../../styles/css/skills.css";
-
-
 export default function Skills(props) {
 
     const skillIcons = SKILLS.map(icon => {
