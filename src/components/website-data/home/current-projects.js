@@ -11,7 +11,8 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/',
         projectLink: 'https://codepen.io/dashboard/',
         progress: 60,
-        isFinished: false
+        isFinished: false,
+        endDate: false
     },
     {
         id: 1,
@@ -22,7 +23,8 @@ export const CURRENT_PROJECTS = [
         taskLink: '',
         projectLink: 'https://randomsveta.github.io/HotelSite/',
         progress: 20,
-        isFinished: false
+        isFinished: false,
+        endDate: false
     },
     {
         id: 2,
@@ -33,7 +35,8 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
         progress: 34,
-        isFinished: false
+        isFinished: false,
+        endDate: false
     },
     {
         id: 3,
@@ -43,8 +46,9 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codecademy.com/learn/learn-php',
         projectLink: '',
-        progress: 10,
-        isFinished: false
+        progress: 29,
+        isFinished: false,
+        endDate: false
     },
     {
         id: 4,
@@ -55,7 +59,8 @@ export const CURRENT_PROJECTS = [
         taskLink: '',
         projectLink: 'https://randomsveta.github.io/my-website/',
         progress: 70,
-        isFinished: false
+        isFinished: false,
+        endDate: false
     },
     {
         id: 5,
@@ -66,7 +71,8 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://javascript.info/',
         projectLink: '',
         progress: 29,
-        isFinished: false
+        isFinished: false,
+        endDate: false
     },
     {
         id: 6,
@@ -77,7 +83,8 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://github.com/getify/You-Dont-Know-JS/',
         projectLink: '',
         progress: 15,
-        isFinished: false
+        isFinished: false,
+        endDate: false
     },
     {
         id: 7,
@@ -88,7 +95,8 @@ export const CURRENT_PROJECTS = [
         taskLink: false,
         projectLink: '',
         progress: 2,
-        isFinished: false
+        isFinished: false,
+        endDate: false
     },
     {
         id: 8,
@@ -99,6 +107,7 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
         progress: 22,
-        isFinished: false
+        isFinished: false,
+        endDate: false
     },
 ]

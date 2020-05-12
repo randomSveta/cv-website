@@ -14,7 +14,7 @@ export const STATISTICS = [
     {
         id: 2,
         profile: 'Codecademy',
-        points: 932
+        points: 963
     }
 ];
 

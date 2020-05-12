@@ -10,13 +10,14 @@
 body,
 html 
 	height: 100%
-	min-height: sizes.$min-height
 
 #root 
 	font-family: "Raleway", "Arial", sans-serif
 	font-size: sizes.$font-size-medium
 	background-color: colors.$dark
-	min-height: sizes.$min-height
+	
+.content
+	min-height: calc(#{sizes.$min-height} - #{sizes.$height-large})
 	
 .app-h2
 	background-color: colors.$black-08
