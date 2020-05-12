@@ -12,7 +12,7 @@ export default function ShowCode(props) {
             <UncontrolledCollapse toggler={props.codeId}>
                 <Card>
                     <CardBody>
-                        <code className="code-styles px-5 py-3 text-light bg-dark">
+                        <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">
                             {props.code}
                         </code>
 

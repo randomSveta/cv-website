@@ -1,9 +1,11 @@
 @use 'colors'
+@use 'sizes'
 
 .pagination 
 	justify-content: center
 	margin: 0
 	padding: 0
 
-.page-item.active 
-	background-color: colors.$green
+.page-item
+	&.active 
+		background-color: colors.$green

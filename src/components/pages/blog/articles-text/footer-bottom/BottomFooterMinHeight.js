@@ -3,8 +3,8 @@ import { Container, Row, Col, Toast, ToastBody, ToastHeader } from "reactstrap";
 
 import { ARTICLES } from "../../../../website-data/blog/articles";
 
-import firstImg100vh from "../../../../../assets/images/blog-page/articles/footer/100vh/min-height-100-200px.png";
-import secondImg100vh200f from "../../../../../assets/images/blog-page/articles/footer/100vh/min-height-100.png";
+import firstImg100vh from "../../../../../assets/images/blog/articles/footer/100vh/min-height-100-200px.png";
+import secondImg100vh200f from "../../../../../assets/images/blog/articles/footer/100vh/min-height-100.png";
 import ReactCompareImage from "react-compare-image";
 
 import ExpandImage from "../ExpandImage";
@@ -40,7 +40,7 @@ export default function BottomFooterMinHeight(props) {
             </section>
             <section className="bg-white p-3 border border-dark mt-3">
                 <Container>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <h2>Initial settings</h2>
                             <p>
@@ -52,8 +52,7 @@ export default function BottomFooterMinHeight(props) {
                         <Col xs="12" md="6" className="m-0 p-0">
                             <ExpandImage src={initialPage} title={article100vh.initialPageImg.alt} />
                             <p className="mt-2 mb-0"><strong>index.html</strong></p>
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
-
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 <!DOCTYPE html>
 `}<span className="text-success">&lt;html&gt;</span>{`
 
@@ -84,7 +83,7 @@ export default function BottomFooterMinHeight(props) {
                         </Col>
                         <Col xs="12" md="6">
                             <p className="my-0 pt-0"><strong>styles.css</strong></p>
-                            <code className="code-styles px-5 py-3 text-light bg-dark">
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">
                                 {`
 * {
     margin: 0;
@@ -96,7 +95,6 @@ export default function BottomFooterMinHeight(props) {
     font-size: 50px;
     text-align: center;
     min-height: 100%;
-
     /* or min-height: 100vh; */
     }
 
@@ -124,7 +122,7 @@ export default function BottomFooterMinHeight(props) {
                             </code>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 How you can see, <strong>index.html</strong> contains: <em>&lt;html&gt;</em>, <em>&lt;head&gt;</em>, <em>&lt;body&gt;</em>, <em>&lt;header&gt;</em>, <em>&lt;div class="container"&gt;</em>, <em>&lt;div class="content"&gt;</em>, and <em>&lt;footer&gt;</em> elements. Each element has different background-color in the <strong>styles.css</strong> file so that every one is visible.
@@ -141,7 +139,7 @@ export default function BottomFooterMinHeight(props) {
             </section>
             <section className="bg-white p-3 border border-dark mt-3">
                 <Container>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <h2>Using <strong>min-height</strong></h2>
                             <p> From my point of view, the <strong>min-height: 100vh</strong> way to place a footer is the easiest one.
@@ -172,23 +170,21 @@ export default function BottomFooterMinHeight(props) {
                     </Row>
                     <Row className="justify-content-center">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 ...
-
 `}<span className="text-info">.container</span>{` {
     background-color: skyblue ;
     border: 5px solid skyblue ;
     min-height: `}<span className="text-warning">100vh</span>{`;
 }
-
 ... `}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/100vh/min-height-100.png")} title=".container has min-height: 100vh" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/100vh/min-height-100.png")} title=".container has min-height: 100vh" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
 
                             <p>
@@ -202,13 +198,13 @@ export default function BottomFooterMinHeight(props) {
                 </Container>
 
                 <Container>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="7">
                             <ReactCompareImage leftImage={firstImg100vh} leftImageAlt="Footer outside the viewport" rightImageAlt="Footer inside the viewport" rightImage={secondImg100vh200f} sliderPositionPercentage="0.95" />
                             <p> Compare the current look of the page to the previous one.</p>
                         </Col>
                         <Col xs="12" md="5">
-                            <code className="code-styles px-5 py-3 text-light bg-dark">
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">
                                 {`
 ...
 
@@ -231,7 +227,7 @@ export default function BottomFooterMinHeight(props) {
                         </Col>
 
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 One more thing before finishing. I would like to check two kinds of pages depending on the length of content: <em>long</em> and <em>short</em> (which I already have). To make a page full of content, I am going to change the element with <em>"content"</em> class and add some long dummy text, like <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank" rel="noopener noreferrer">"Lorem Ipsum"</a>
@@ -239,10 +235,10 @@ export default function BottomFooterMinHeight(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3 justify-content-center">
                         <Col xs="12" md="6">
                             <p><strong>Short page</strong></p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/100vh/short-min-height-100vh.png")} title="Short page with footer at the bottom" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/100vh/short-min-height-100vh.png")} title="Short page with footer at the bottom" />
                             <ShowCode button="styles.css" codeId="min-height-final-styles"
                                 code=
                                 {`
@@ -256,7 +252,6 @@ html {
     font-size: 50px;
     text-align: center;
     min-height: 100%;
-
     /* or min-height: 100vh; */
 }
                                 
@@ -289,10 +284,10 @@ footer {
                         </Col>
                         <Col xs="12" md="6">
                             <p><strong>Long page</strong></p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/long.png")} title="Long page with the footer at the bottom" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/long.png")} title="Long page with the footer at the bottom" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 There are, of course, some nuances. I always check a mobile/tablet version of my website to be sure I have chosen the correct length of the footer and everything works together.

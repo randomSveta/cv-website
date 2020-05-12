@@ -7,7 +7,6 @@ $hash-button-height: 0.32rem
 	background-color: colors.$dark
 
 .navigation-active-item
-	color: colors.$green
 	&::before
 		content: ''
 		background-color: colors.$green
@@ -26,7 +25,8 @@ $hash-button-height: 0.32rem
 
 #navigation-sections-toggle
 	&.btn
+		color: colors.$green
 		background-color: colors.$dark
-		border: 0.125rem dotted gray
+		border: 0.125rem dotted colors.$gray
 		height: sizes.$height-xsmall
 		width:  sizes.$height-xsmall

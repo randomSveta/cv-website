@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/blog.sass","../sass/_sizes.sass"],"names":[],"mappings":"AAGC;EACC;;;AAEF;AAAA;EAEC;;;AAGD;EACC;;;AAED;EACC;EACA;;;AAED;AAAA;EAEC,WCnBiB;;;ADqBlB;EACC;;;AAGD;EACC,WC1BiB;;;AD6BlB;EACC;;;AAED;EACC","file":"blog.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/blog.sass","../sass/_colors.sass"],"names":[],"mappings":"AAMC;EACC;;AAED;EACC;;AACA;AAAA;EAEC,kBCbI;;;ADkBL;EACC","file":"blog.css"}

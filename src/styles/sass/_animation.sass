@@ -1,0 +1,22 @@
+=transform-scale($scale)
+    -webkit-transform: $scale
+    -ms-transform: $scale
+    transform: $scale
+
+=transition-ease-in-out($mseconds)
+    -webkit-transition: -webkit-transform ease-in-out $mseconds
+    transition: -webkit-transform ease-in-out $mseconds
+    -o-transition: transform ease-in-out $mseconds
+    transition: transform ease-in-out $mseconds
+    transition: transform ease-in-out $mseconds, -webkit-transform ease-in-out $mseconds
+
+=animation($name, $seconds)
+    -webkit-animation: $name $seconds
+    animation: $name $seconds
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+
+=transform-rotate($degree)
+    -webkit-transform: rotateY($degree)
+    transform: rotateY($degree)
+

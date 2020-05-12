@@ -19,7 +19,7 @@ export default function BottomFooterFixed(props) {
                 <Container>
                     <Row>
                         <Col xs="12" md="6">
-                            <img className="page-screenshot" width="100%" src={previewImg} alt={articleFixed.title} />
+                            <img width="100%" src={previewImg} alt={articleFixed.title} />
                         </Col>
                         <Col xs="12" md="6" className="align-self-center">
                             <p>
@@ -39,7 +39,7 @@ export default function BottomFooterFixed(props) {
             </section>
             <section className="bg-white p-3 border border-dark mt-3">
                 <Container>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <h2>Initial settings</h2>
                             <p>
@@ -51,7 +51,7 @@ export default function BottomFooterFixed(props) {
                         <Col xs="12" md="6" className="m-0 p-0">
                             <ExpandImage src={initialPage} title={articleFixed.initialPageImg.alt} />
                             <p className="mt-2 mb-0"><strong>index.html</strong></p>
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 
 <!DOCTYPE html>
 `}<span className="text-success">&lt;html&gt;</span>{`
@@ -83,7 +83,7 @@ export default function BottomFooterFixed(props) {
                         </Col>
                         <Col xs="12" md="6">
                             <p className="my-0 pt-0"><strong>styles.css</strong></p>
-                            <code className="code-styles px-5 py-3 text-light bg-dark">
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">
                                 {`
 * {
     margin: 0;
@@ -95,7 +95,6 @@ export default function BottomFooterFixed(props) {
     font-size: 50px;
     text-align: center;
     min-height: 100%;
-
     /* or min-height: 100vh; */
     }
 
@@ -123,7 +122,7 @@ export default function BottomFooterFixed(props) {
                             </code>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 How you can see, <strong>index.html</strong> contains: <em>&lt;html&gt;</em>, <em>&lt;head&gt;</em>, <em>&lt;body&gt;</em>, <em>&lt;header&gt;</em>, <em>&lt;div class="container"&gt;</em>, <em>&lt;div class="content"&gt;</em>, and <em>&lt;footer&gt;</em> elements. Each element has different background-color in the <strong>styles.css</strong> file so that every one is visible.
@@ -140,9 +139,9 @@ export default function BottomFooterFixed(props) {
             </section>
             <section className="bg-white p-3 border border-dark mt-3">
                 <Container>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
-                            <h2>Using <strong>fixed</strong>position</h2>
+                            <h2>Using <strong>fixed</strong> position</h2>
                             <p>
                                 This way is the third and not that complicated.
                                 I suggest fixing the <em>&lt;footer&gt;</em> at the bottom of the parent container, which is <em>&lt;body&gt;</em> in our case.
@@ -151,38 +150,36 @@ export default function BottomFooterFixed(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/fixed/footer-position-fixed.png")} title="Footer has position: fixed" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/fixed/footer-position-fixed.png")} title="Footer has position: fixed" />
                         </Col>
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 ...
-
 `}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
     position:`}<span className="text-warning">fixed</span>{`;
 }
-
 ... `}
                             </code>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 It seems nothing has been modified in the order of the elements. The size of the <em>footer</em> now is the same as the size of its content. However, for using <strong>position: fixed</strong> properly, we also should use some directions.
                             </p>
-                            <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
+                            <blockquote className="border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
                                     An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
                                     A fixed element does not leave a gap in the page where it would normally have been located.
                                 </p>
-                                <footer class="blockquote-footer p-2 text-right"><cite title="w3school"><a href="https://www.w3schools.com/css/css_positioning.asp">w3school</a></cite></footer>
+                                <footer className="p-2 text-right"><cite title="w3school"><a href="https://www.w3schools.com/css/css_positioning.asp">w3school</a></cite></footer>
                             </blockquote>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Let's make <em>&lt;footer&gt;</em> take the widthof the whole page, not only the width of its content.
@@ -193,9 +190,9 @@ export default function BottomFooterFixed(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 ...
 
 `}<span className="text-success">footer</span>{` {
@@ -208,11 +205,11 @@ export default function BottomFooterFixed(props) {
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/fixed/footer-fixed-width-100.png")} title={"Width of the footer is 100%"} />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/fixed/footer-fixed-width-100.png")} title={"Width of the footer is 100%"} />
 
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 That is so much better now!
@@ -222,12 +219,12 @@ export default function BottomFooterFixed(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/fixed/footer-fixed-bottom-0.png")} title={"The footer is fixed to the bootom of the page"} />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/fixed/footer-fixed-bottom-0.png")} title={"The footer is fixed to the bootom of the page"} />
                         </Col>
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 ...
 
 `}<span className="text-success">footer</span>{` {
@@ -242,7 +239,7 @@ export default function BottomFooterFixed(props) {
                             </code>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Looks nice but...
@@ -256,21 +253,21 @@ How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3 justify-content-center">
                         <Col xs="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/fixed/footer-fixed-outside-body.png")} title={"Footer is fixed outside the body element"} />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/fixed/footer-fixed-outside-body.png")} title={"Footer is fixed outside the body element"} />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 The position <strong>fixed</strong> places an element relatively to the page viewport. To fix the situation <em>"the footer outside the body"</em> we should make <em>&lt;body&gt;</em> take the viewport height. As always, I suggest using <strong>min-height: <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank" rel="noopener noreferrer">100vh</a></strong> instead of <strong>height</strong> property to be sure we would not destroy other pages layout.
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 ...
 
 `}<span className="text-success">body</span>{` {
@@ -282,11 +279,11 @@ How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/fixed/footer-fixed-inside-body.png")} title={"Footer fixed inside the body"} />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/fixed/footer-fixed-inside-body.png")} title={"Footer fixed inside the body"} />
 
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Nice work! Almost there!
@@ -299,12 +296,12 @@ How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3 justify-content-center">
                         <Col xs="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/fixed/footer-fixed-long-page.png")} title={"Fixed footer on the long page."} />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/fixed/footer-fixed-long-page.png")} title={"Fixed footer on the long page."} />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 What a disaster a long page is! The <em>footer</em> is fixed relative to the viewport and because of that, there is a scroll bar at the right. If I scroll down, the <em>footer</em> stays fixed at the bottom of the viewport but the page content starts moving. We should fix this!
@@ -318,10 +315,10 @@ How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3 justify-content-center">
                         <Col xs="12" md="5">
                             <p><strong>index.html</strong></p>
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 ...
 
 `}<span className="text-success">&lt;footer class="short-page"&gt;</span>{`
@@ -333,7 +330,7 @@ How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em
                         </Col>
                         <Col xs="12" md="5">
                             <p><strong>styles.css</strong></p>
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 ...
 
 `}<span className="text-success">footer</span>{` {
@@ -351,7 +348,7 @@ How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em
                             </code>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 We did it! Check the both pages!
@@ -359,10 +356,10 @@ How can you see, the <em>footer</em> element is outside the <em>&lt;body&gt;</em
                         </Col>
                     </Row>
 
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3 justify-content-center">
                         <Col xs="12" md="6">
                             <p><strong>Short page</strong></p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/fixed/footer-fixed-short-page-final.png")} title="Fixed footer on the short page" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/fixed/footer-fixed-short-page-final.png")} title="Fixed footer on the short page" />
                             <ShowCode button="index.html" codeId="fixed-final-index-html"
                                 code=
                                 {`
@@ -408,7 +405,6 @@ html {
     font-size: 50px;
     text-align: center;
     min-height: 100%;
-    
     /* or min-height: 100vh; */
 }
 
@@ -445,7 +441,7 @@ footer {
                         </Col>
                         <Col xs="12" md="6">
                             <p><strong>Long page</strong></p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/fixed/footer-fixed-long-page-final.png")} title="Fixed footer on the long page " />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/fixed/footer-fixed-long-page-final.png")} title="Fixed footer on the long page " />
                             <ShowCode button="long-content-page.html"
                                 codeId="fixed-final-long-html"
                                 code=
@@ -488,7 +484,7 @@ footer {
                             />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Wow! It is the third way to put the wild footer to its place. I am sure there are more ways!

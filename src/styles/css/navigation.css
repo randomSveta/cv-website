@@ -2,9 +2,6 @@
   background-color: #141b1f;
 }
 
-.navigation-active-item {
-  color: #17a2b8;
-}
 .navigation-active-item::before {
   content: "";
   background-color: #17a2b8;
@@ -23,6 +20,7 @@
 }
 
 #navigation-sections-toggle.btn {
+  color: #17a2b8;
   background-color: #141b1f;
   border: 0.125rem dotted gray;
   height: 2.5rem;

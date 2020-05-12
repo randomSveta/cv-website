@@ -1,6 +1,6 @@
-.table-bg 
-	background-color: white
+@use 'images'
+@use 'colors'
 
 #projects-history 
 	.app-parallax-bg
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/projects-history/projects_history_parallax_bw.jpg')
+		background-image: linear-gradient(colors.$black-03, colors.$black-03),images.$projects-history

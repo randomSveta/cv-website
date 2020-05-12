@@ -11,7 +11,7 @@ export default function Closures(props) {
         <React.Fragment>
             <section className="bg-white p-3 border border-dark">
                 <Container >
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="6" className="align-self-center">
                             <p>
                                 Work in progress ...
@@ -25,7 +25,7 @@ export default function Closures(props) {
             </section>
             <section className="bg-white p-3 border border-dark mt-3">
                 <Container>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <h2>Initial settings</h2>
                             <p>

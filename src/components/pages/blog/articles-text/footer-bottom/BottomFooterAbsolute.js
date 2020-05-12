@@ -7,8 +7,8 @@ import ShowCode from "../ShowCode";
 
 import { ARTICLES } from "../../../../website-data/blog/articles";
 
-import leftShortContent from "../../../../../assets/images/blog-page/articles/footer/absolute/short-absolute.png";
-import rightShortContentBorderBox from "../../../../../assets/images/blog-page/articles/footer/absolute/footer-out-of-100vh-viewport.png";
+import leftShortContent from "../../../../../assets/images/blog/articles/footer/absolute/short-absolute.png";
+import rightShortContentBorderBox from "../../../../../assets/images/blog/articles/footer/absolute/footer-out-of-100vh-viewport.png";
 import ReactCompareImage from "react-compare-image";
 
 export default function BottomFooterAbsolute(props) {
@@ -21,7 +21,7 @@ export default function BottomFooterAbsolute(props) {
         <React.Fragment>
             <section className="bg-white p-3 border border-dark">
                 <Container >
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="6" className="align-self-center">
                             <p>
                                 Any Web Developer has faced an issue of a <strong>"flying" footer</strong> several times. The problem occurs when a page does <em>not</em> contain <em>enough content</em> to show. There are several ways to solve the problem and make things right.
@@ -41,7 +41,7 @@ export default function BottomFooterAbsolute(props) {
             </section>
             <section className="bg-white p-3 border border-dark mt-3">
                 <Container>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <h2>Initial settings</h2>
                             <p>
@@ -53,8 +53,7 @@ export default function BottomFooterAbsolute(props) {
                         <Col xs="12" md="6" className="m-0 p-0">
                             <ExpandImage src={initialPage} title={articleAbsolute.initialPageImg.alt} />
                             <p className="mt-2 mb-0"><strong>index.html</strong></p>
-                            <code className="code-styles px-5 py-3 text-light bg-dark">{`
-
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">{`
 <!DOCTYPE html>
 `}<span className="text-success">&lt;html&gt;</span>{`
 
@@ -85,9 +84,8 @@ export default function BottomFooterAbsolute(props) {
                         </Col>
                         <Col xs="12" md="6">
                             <p className="my-0 pt-0"><strong>styles.css</strong></p>
-                            <code className="code-styles px-5 py-3 text-light bg-dark">
-                                {`
-* {
+                            <code className="app-code pl-5 pr-2 py-2 text-light bg-dark">
+                                {`* {
     margin: 0;
     padding: 0;
     }
@@ -97,7 +95,6 @@ export default function BottomFooterAbsolute(props) {
     font-size: 50px;
     text-align: center;
     min-height: 100%;
-
     /* or min-height: 100vh; */
     }
 
@@ -125,7 +122,7 @@ export default function BottomFooterAbsolute(props) {
                             </code>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 How you can see, <strong>index.html</strong> contains: <em>&lt;html&gt;</em>, <em>&lt;head&gt;</em>, <em>&lt;body&gt;</em>, <em>&lt;header&gt;</em>, <em>&lt;div class="container"&gt;</em>, <em>&lt;div class="content"&gt;</em>, and <em>&lt;footer&gt;</em> elements. Each element has different background-color in the <strong>styles.css</strong> file so that every one is visible.
@@ -142,7 +139,7 @@ export default function BottomFooterAbsolute(props) {
             </section>
             <section className="bg-white p-3 border border-dark mt-3">
                 <Container>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <h2>Using <strong>absolute</strong> position</h2>
                             <p>
@@ -161,26 +158,24 @@ export default function BottomFooterAbsolute(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-2 bg-dark text-light">
+                            <code className="app-code pl-5 pr-2 py-2 bg-dark text-light">
                                 {`
 ... 
-
 `}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
     position: `}<span className="text-warning">absolute</span>{`;
     }
-
 ...
      `}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/pos-absolute-to-footer.png")} title="Footer position is absolute" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/pos-absolute-to-footer.png")} title="Footer position is absolute" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Hmm... Nothing changed in the order of the elements, but now the <em>footer</em> is using content space only.
@@ -190,26 +185,24 @@ export default function BottomFooterAbsolute(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-width-100.png")} title="Footer has width 100%" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/footer-width-100.png")} title="Footer has width 100%" />
                         </Col>
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-2 bg-dark text-light">
+                            <code className="app-code pl-5 pr-2 py-2 bg-dark text-light">
                                 {`
 ...
-
 `}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
     position: absolute;
     width: `}<span className="text-warning">100%</span>{`;
     }
-
 ...`}
                             </code>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Next, let's try to move the <em>&lt;footer&gt;</em> to the page bottom and find what element is the reference point for the absolute positioning.
@@ -219,49 +212,47 @@ export default function BottomFooterAbsolute(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-2 bg-dark text-light">
+                            <code className="app-code pl-5 pr-2 py-2 bg-dark text-light">
                                 {`
 ...
-
 `}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
     position: absolute;
     width: 100%;
     bottom: `}<span className="text-warning">0</span>{`;
     }
-
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-bottom-0.png")} title="Bottom 0" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/footer-bottom-0.png")} title="Bottom 0" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Looks like the <strong>default positioned parent</strong> element for the <em>&lt;footer&gt;</em> is the page itself or in other words an <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block" target="_blank" rel="noopener noreferrer"> initial containing block</a>. Sometimes the <em>&lt;body&gt;</em> is specified as a default object for positioning, but it is not true.
                             </p>
-                            <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
+                            <blockquote className="border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
                                     The containing block in which the root element (<em>&lt;html&gt;</em>) resides is a rectangle called the initial containing block.
                                     It has the dimensions of the viewport (for continuous media) or the page area (for paged media).
                                 </p>
-                                <footer class="blockquote-footer p-2 text-right"><cite title="MDN"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block">MDN</a></cite></footer>
+                                <footer className="p-2 text-right"><cite title="MDN"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block">MDN</a></cite></footer>
                             </blockquote>
                             <p>
                                 The <em>footer</em> is laying at the bottom of the page, isn't it? Yes, but there are some issues. Let's open Web Developer tools in a browser and then find a tab where elements could be inspected (Ex. <strong>Inspector</strong> in Mozilla). How you can see the <em>&lt;footer&gt;</em> is located outside the <em>&lt;body&gt;</em> element area. We know from the <strong>index.html</strong> layout that the <em>footer</em> should be inside the <em>&lt;body&gt;</em> tag.
                                     </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3justify-content-center">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-out-of-body.png")} title="Footer outside the body area" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/footer-out-of-body.png")} title="Footer outside the body area" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 We should sort it out. The closest parent container for the <em>&lt;footer&gt;</em> is the <em>&lt;body&gt;</em>. Let's add <strong>position</strong> property to the <em>body</em> tag, but which value should we use? How it was described above it could be <em>relative, fixed, absolute, and sticky</em> values but <em>not the static</em>.
@@ -275,38 +266,36 @@ export default function BottomFooterAbsolute(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
 
-                            <code className="code-styles px-5 py-2 bg-dark text-light">
+                            <code className="app-code pl-5 pr-2 py-2 bg-dark text-light">
                                 {`
 ...
-
 `}<span className="text-success">body</span>{` {
     background-color: lightsalmon;
     position: `}<span className="text-warning">relative</span>{`;
 }
-
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-relative.png")} title="Body has a relative position" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/body-relative.png")} title="Body has a relative position" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 How you can see on the image below, the <em>&lt;footer&gt;</em> is placed <strong>inside</strong> the parent container which is <em>&lt;body&gt;</em>. Also, the <em>footer</em> is located over all other elements, because the <em>&lt;footer&gt;</em> is removed from the <em>normal document flow</em> and now is resting at the <em>&lt;body&gt;</em> bottom (<strong>bottom: 0</strong>) relatively to it. The next step is to make the <em>&lt;body&gt;</em> element take the whole visible height of the page. Hence, if we apply the <strong>height</strong> property, then the pages with the long content will be cut by the footer in the middle of a page. I believe it would be much better to use <strong>min-height</strong> instead of <strong>height</strong>, especially for the container elements.
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3justify-content-center">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-inside-body.png")} title="Footer is at the body bottom" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/footer-inside-body.png")} title="Footer is at the body bottom" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" >
                             <p>
                                 Could we use <strong>min-height: 100%</strong> for the parent container? We could, but it would not work {`:)`}.
@@ -327,42 +316,39 @@ export default function BottomFooterAbsolute(props) {
                                 You can verify it <a href="https://www.w3.org/TR/CSS2/visudet.html#the-height-property" target="_blank" rel="noopener noreferrer">in the CSS documentation</a>.
                                 </p>
 
-                            <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
+                            <blockquote className="border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
                                     <strong>&lt;percentage&gt;</strong><br />
                                     <br />
                                     Specifies a percentage height. The percentage is calculated with respect to the height of the generated box's containing block. If the height of the containing block is not specified explicitly (i.e., it depends on content height), and this element is not absolutely positioned, the value computes to "auto". A percentage height on the root element is relative to the initial containing block. Note: For absolutely positioned elements whose containing block is based on a block-level element, the percentage is calculated with respect to the height of the padding box of that element. This is a change from CSS1, where the percentage was always calculated with respect to the content box of the parent element.
                                 </p>
-                                <footer class="blockquote-footer p-2 text-right"><cite title="w3"><a href="https://www.w3.org/TR/CSS2/visudet.html#the-height-property">w3</a></cite></footer>
+                                <footer className="p-2 text-right"><cite title="w3"><a href="https://www.w3.org/TR/CSS2/visudet.html#the-height-property">w3</a></cite></footer>
                             </blockquote>
                             <p>
                                 Let's check it anyway and add <strong>min-height: 100%</strong> property to the <em>body</em> element.
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-2 bg-dark text-light">
+                            <code className="app-code pl-5 pr-2 py-2 bg-dark text-light">
                                 {`
 ...
-
 `}<span className="text-success">body</span>{` {
     background-color: lightsalmon;
     position: relative;
     min-height: `}<span className="text-warning">100%</span>{`;
-
     /* 100% - doesn't work */ 
 }
-
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-relative.png")} title="Body min-height 100% does not work" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/body-relative.png")} title="Body min-height 100% does not work" />
                         </Col>
 
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Yep, does not work. The next way to make the <em>body</em> take the whole page height is to use CSS <a href="https://www.w3schools.com/css/css_units.asp" target="_blank" rel="noopener noreferrer">vh</a> units.
@@ -374,27 +360,25 @@ export default function BottomFooterAbsolute(props) {
 
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-2 bg-dark text-light">
+                            <code className="app-code pl-5 pr-2 py-2 bg-dark text-light">
                                 {`
 ...
-
 `}<span className="text-success">footer</span>{` {
     background-color: lightsalmon;
     position: relative;
     min-height: `}<span className="text-warning">100vh</span>{`;
 }
-
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-m-height-100vh.png")} title="Body min-height is 100vh" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/body-m-height-100vh.png")} title="Body min-height is 100vh" />
                         </Col>
 
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12">
                             <p>
                                 Wow! Finally!
@@ -406,12 +390,12 @@ export default function BottomFooterAbsolute(props) {
  </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3 justify-content-center">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/long-p-last-line-hidden.png")} title="Long content block" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/long-p-last-line-hidden.png")} title="Long content block" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="12">
                             <p>
                                 I could not see the last words <strong>"anim id est laborum."</strong>. Could you see yours? The final line is under the <em>footer</em> element.
@@ -424,24 +408,19 @@ export default function BottomFooterAbsolute(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-2 bg-dark text-light">
+                            <code className="app-code pl-5 pr-2 py-2 bg-dark text-light">
                                 {`
 ...
-
 `}<span className="text-success">body</span>{` {
     background-color: lightsalmon;
     position: relative;
     min-height: 100vh;
     padding-bottom: `}<span className="text-warning">200px</span>{`;  
-    
-    /* 200px - footer height */
-   
+    /* 200px - footer height */   
 }
-
 ...
-
 `}<span className="text-success">footer</span>{` {
     background-color: aquamarine;
     height: 200px;
@@ -450,15 +429,14 @@ export default function BottomFooterAbsolute(props) {
     bottom: 0;
     height: `}<span className="text-warning">200px</span>{`;
 }
-
 ...`}
                             </code>
                         </Col>
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/body-pb-footer-h-200.png")} title="Added padding-bottom for the body and height for the footer " />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/body-pb-footer-h-200.png")} title="Added padding-bottom for the body and height for the footer " />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="12">
                             <p>
                                 Now I could see everything {`:)`}!
@@ -470,12 +448,12 @@ export default function BottomFooterAbsolute(props) {
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3 justify-content-center">
                         <Col xs="12" md="8">
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/footer-out-of-100vh-viewport.png")} title="Footer outside the viewport area on the short page" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/footer-out-of-100vh-viewport.png")} title="Footer outside the viewport area on the short page" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" >
                             <p>
                                 Oh, no! The <em>footer</em> is actually at the short page bottom, but we need to scroll to see it. This has happened because we added a <strong>padding-bottom: 200px</strong> to the <em>body</em>. The <strong>height</strong> or <strong>min-height</strong> of the elements takes into account only the <strong>height</strong> of the element content by default. So, <strong>min-height: 100vh</strong> includes only the <em>body</em> content, without any additional <strong>padding</strong> and there is a scroll bar for an extra 200px. <strong>Padding height</strong> is not included in the <strong>min-height</strong> property for the <em>&lt;body&gt;</em>.
@@ -484,30 +462,27 @@ export default function BottomFooterAbsolute(props) {
                                 To change the situation we can apply CSS property which counts the height of the element as the <em>sum of <strong>content, padding, and border</strong></em>.
                                 The property is <strong><a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.asp" target="_blank" rel="noopener noreferrer">box-sizing: border-box</a></strong>
                             </p>
-                            <blockquote class="blockquote border p-2 my-3 w-75 mx-auto">
+                            <blockquote className="border p-2 my-3 w-75 mx-auto">
                                 <p className="m-0 p-2">
                                     <strong>border-box:</strong><br />
                                     The width and height properties (and min/max properties) includes content, padding and border.
                                 </p>
-                                <footer class="blockquote-footer p-2 text-right"><cite title="w3schools"><a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.asp">w3schools</a></cite></footer>
+                                <footer className="p-2 text-right"><cite title="w3schools"><a href="https://www.w3schools.com/cssref/css3_pr_box-sizing.asp">w3schools</a></cite></footer>
                             </blockquote>
                             <p>
                                 Let's apply <strong>box-sizing: border-box</strong> for each element because I want to measure the height of an element as a sum of the <em>height of the content, padding and border</em>. Compare the <strong>short</strong> page with <strong>border-box</strong> property and without. You can spot the difference for sure.
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="4">
-                            <code className="code-styles px-5 py-2 bg-dark text-light">
-                                {`
-...
-
+                            <code className="app-code pl-5 pr-2 py-2 bg-dark text-light">
+                                {`...
 * {
     margin: 0;
     padding: 0;
     box-sizing: `}<span className="text-warning">border-box</span>{`;
 }
-
 ...`}
                             </code>
                         </Col>
@@ -516,17 +491,17 @@ export default function BottomFooterAbsolute(props) {
                             <p> Compare the current look of the page to the previous one.</p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="12">
                             <p>
                                 Hurray! We did it. Let's check again that the <em>footer</em> is placed correctly on the <strong>long</strong> and <strong>short</strong> pages.
                             </p>
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2 justify-content-center">
+                    <Row className="my-3 justify-content-center">
                         <Col xs="12" md="6">
                             <p><strong>Short page</strong></p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/absolute/short-absolute.png")} title="Footer at the bottom of the short page" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/absolute/short-absolute.png")} title="Footer at the bottom of the short page" />
                             <ShowCode button="styles.css" codeId="absolute-final-styles"
                                 code=
                                 {`
@@ -541,7 +516,6 @@ html {
     font-size: 50px;
     text-align: center;
     min-height: 100%;
-   
     /* or min-height: 100vh; */
 }
                                 
@@ -576,10 +550,10 @@ footer {
                         </Col>
                         <Col xs="12" md="6">
                             <p><strong>Long page</strong></p>
-                            <ExpandImage src={require("../../../../../assets/images/blog-page/articles/footer/long.png")} title="Footer at the bottom of the long page" />
+                            <ExpandImage src={require("../../../../../assets/images/blog/articles/footer/long.png")} title="Footer at the bottom of the long page" />
                         </Col>
                     </Row>
-                    <Row className="mt-5 mb-2">
+                    <Row className="my-3">
                         <Col xs="12" md="12">
                             <p>
                                 Congratulations! I knew we could do it!

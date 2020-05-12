@@ -3,7 +3,7 @@ import { Table } from 'reactstrap';
 
 export default function ProjectsHistory(props) {
     return (
-        <Table className="table-bg" responsive>
+        <Table className="bg-white" responsive>
             <thead>
                 <tr>
                     <th>#</th>

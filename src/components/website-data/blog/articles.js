@@ -17,10 +17,10 @@ export const ARTICLES = [
         jsx: <BottomFooterMinHeight />,
         date: '21/11/2019',
         previewImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/100vh/preview-image-100vh.png')
+            path: require("../../../assets/images/blog/articles/footer/100vh/preview-image-100vh.png")
         },
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
+            path: require('../../../assets/images/blog/articles/footer/footer-initial-page.png'),
             alt: 'Initial page view'
         }
     },
@@ -32,10 +32,10 @@ export const ARTICLES = [
         jsx: <BottomFooterAbsolute />,
         date: '22/11/2019',
         previewImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/absolute/preview-image-absolute.png'),
+            path: require('../../../assets/images/blog/articles/footer/absolute/preview-image-absolute.png'),
         },
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
+            path: require('../../../assets/images/blog/articles/footer/footer-initial-page.png'),
             alt: 'Initial page view'
         }
 
@@ -48,10 +48,10 @@ export const ARTICLES = [
         jsx: <BottomFooterFixed />,
         date: '23/11/2019',
         previewImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/fixed/preview-image-fixed.png')
+            path: require('../../../assets/images/blog/articles/footer/fixed/preview-image-fixed.png')
         },
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/footer/footer-initial-page.png'),
+            path: require('../../../assets/images/blog/articles/footer/footer-initial-page.png'),
             alt: 'Initial page view'
         }
     },
@@ -62,11 +62,11 @@ export const ARTICLES = [
         shortDescription: 'Why are there several words to declare a variable? What is the difference between the old "var" and new ones? Let\'s try to find out.',
         jsx: <LetConstVarArticle />,
         previewImg: {
-            path: require('../../../assets/images/blog-page/articles/let-const-var/let-const-var-preview.png')
+            path: require('../../../assets/images/blog/articles/let-const-var/let-const-var-preview.png')
         }
         ,
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/let-const-var/let-const-var-initial-page.png'),
+            path: require('../../../assets/images/blog/articles/let-const-var/let-const-var-initial-page.png'),
             alt: 'Initial page view'
         }
     },
@@ -77,11 +77,11 @@ export const ARTICLES = [
         shortDescription: 'Mysteries of the "closures world"',
         jsx: <Closures />,
         previewImg: {
-            path: require('../../../assets/images/blog-page/articles/closures/work-in-progress.png')
+            path: require('../../../assets/images/blog/articles/closures/work-in-progress.png')
         }
         ,
         initialPageImg: {
-            path: require('../../../assets/images/blog-page/articles/closures/work-in-progress.png'),
+            path: require('../../../assets/images/blog/articles/closures/work-in-progress.png'),
             alt: 'Initial page view'
         }
     }
