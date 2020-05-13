@@ -2,6 +2,7 @@
 @use 'sizes'
 
 $hash-button-height: 0.32rem
+$height-xsmall: map-get(sizes.$height, "xsmall")
 
 .navbar-collapse 
 	background-color: colors.$dark
@@ -21,12 +22,12 @@ $hash-button-height: 0.32rem
 .navigation-section-item
 	.app-link
 		color: colors.$white-08
-		font-size: sizes.$font-size-small
+		font-size: map-get(sizes.$font-size, "small")
 
 #navigation-sections-toggle
 	&.btn
 		color: colors.$green
 		background-color: colors.$dark
 		border: 0.125rem dotted colors.$gray
-		height: sizes.$height-xsmall
-		width:  sizes.$height-xsmall
+		height: $height-xsmall
+		width:  $height-xsmall

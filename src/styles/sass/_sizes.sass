@@ -1,14 +1,4 @@
 $min-height: 100vh
-$font-size-small: 0.9rem
-$font-size-medium: 1rem
-$font-size-large: 2rem
-$font-size-xlarge: 3.125rem
-$font-size-h1: 2rem
-$font-size-h2: 1.5rem
-$height-xsmall: 2.5rem
-$height-small: 4.5rem
-$height-medium: 6.25rem
-$height-large: 7.5rem
-$height-xlarge: 12.5rem
-
-$height-hero-image: calc(#{$min-height} - #{$height-small})
+$font-size: ("small": 0.9rem, "medium": 1rem, "large": 2rem, "xlarge": 3.125rem)
+$height: ("xsmall": 2.5rem, "small": 4.5rem, "medium": 6.25rem, "large": 7.5rem, "xlarge": 12.5rem)
+$height-hero-image: calc(#{$min-height} - #{map-get($height, "small")})

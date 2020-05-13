@@ -2,18 +2,20 @@
 @use 'colors'
 @use 'images'
 
+$height-xlarge: map-get(sizes.$height, "xlarge")
+
 #portfolio 
 	h2 
-		height: sizes.$height-small
+		height: map-get(sizes.$height, "small")
 
 // statistics
 .statistica-card
-	height: sizes.$height-xlarge
-	width:  sizes.$height-xlarge
+	height: $height-xlarge
+	width:  $height-xlarge
 	border: 0.5rem solid colors.$green
 	svg, 
 	.statistica-card-points
-		font-size: sizes.$font-size-large
+		font-size: map-get(sizes.$font-size, "large")
 
 // github
 #github

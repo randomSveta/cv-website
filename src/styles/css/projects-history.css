@@ -2,4 +2,8 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/projects-history/projects_history_parallax_bw.jpg");
 }
 
+#certificates .app-parallax-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/images/projects-history/projects_history_parallax_bw.jpg");
+}
+
 /*# sourceMappingURL=projects-history.css.map */
