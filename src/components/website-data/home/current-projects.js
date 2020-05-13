@@ -110,4 +110,28 @@ export const CURRENT_PROJECTS = [
         isFinished: false,
         endDate: false
     },
+    {
+        id: 9,
+        title: 'Learn to Program: The Fundamentals',
+        icon: faCode,
+        description: 'Coursera. Revisiting Python fundamentals',
+        repoLink: '',
+        taskLink: '',
+        projectLink: 'https://www.coursera.org/learn/learn-to-program/',
+        progress: 100,
+        isFinished: true,
+        endDate: "2020-04-27"
+    },
+    {
+        id: 10,
+        title: 'Learn to Program: Crafting Quality Code',
+        icon: faCode,
+        description: 'Coursera. Revisiting Python fundamentals',
+        repoLink: '',
+        taskLink: '',
+        projectLink: 'https://www.coursera.org/learn/program-code/',
+        progress: 100,
+        isFinished: true,
+        endDate: "2020-05-01"
+    },
 ]
