@@ -8,9 +8,11 @@ import CodePenProjects from '../../pages/portfolio/sections/codepen-projects/Cod
 import Statistics from '../../pages/portfolio/sections/statistics/Statistics';
 import GitHubProjects from '../../pages/portfolio/sections/github-projects/GitHubProjects';
 
-import ProjectsHistoryTable from '../../pages/projects-history/ProjectsHistoryTable';
+import ProjectsHistoryTable from '../../pages/projects-history/projects-table/ProjectsHistoryTable';
+import CertificatesTable from '../../pages/projects-history/certificates/CertificatesTable';
 
 import Articles from '../../pages/blog/Articles';
+
 
 export const SECTIONS_HOME = [
     {
@@ -72,5 +74,11 @@ export const SECTIONS_PROJECTS_HISTORY = [
         name: 'Projects History',
         hashUrl: '#projects',
         jsx: <ProjectsHistoryTable />
+    },
+    {
+        id: 1,
+        name: 'Certificates',
+        hashUrl: '#certificates',
+        jsx: <CertificatesTable />
     }
 ];
