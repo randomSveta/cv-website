@@ -12,7 +12,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/odyppL',
     year: 2018,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
 
   },
   {
@@ -26,7 +26,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/zjKRJb',
     year: 2018,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/JZNWVZ',
     year: 2019,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/QYQjBg',
     year: 2019,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/GGZeRb',
     year: 2018,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 5,
@@ -79,7 +79,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/drVOzX',
     year: 2019,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
 
   {
@@ -93,7 +93,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/oRRVVM',
     year: 2019,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 7,
@@ -106,7 +106,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/xoXQgr',
     year: 2019,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 8,
@@ -119,7 +119,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/PrLXLg',
     year: 2019,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 9,
@@ -132,7 +132,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/VwwPjLK',
     year: 2019,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 10,
@@ -145,7 +145,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/PowWPeY',
     year: 2020,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 11,
@@ -158,7 +158,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/RwPNbqd',
     year: 2020,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 12,
@@ -171,7 +171,7 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/LYVXgmP',
     year: 2020,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
   },
   {
     id: 13,
@@ -184,6 +184,32 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/ZEbOzmW',
     year: 2020,
     section: 'CodePen',
-    finished: true
+    ifFinished: true
+  },
+  {
+    id: 14,
+    jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: D3 Choropleth Map" src="https://codepen.io/randomsveta/embed/preview/XWmVPKq?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+      See the Pen <a href='https://codepen.io/randomsveta/pen/XWmVPKq'>FCC: D3 Choropleth Map</a> by Sveta
+        (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>,
+    name: 'FCC: D3 Choropleth Map',
+    taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-choropleth-map',
+    projectLink: 'https://codepen.io/randomsveta/full/XWmVPKq',
+    year: 2020,
+    section: 'CodePen',
+    ifFinished: true
+  },
+  {
+    id: 15,
+    jsx: <iframe height="400" width="100%" scrolling="no" title="FCC: D3 Treemap Diagram" src="https://codepen.io/randomsveta/embed/preview/zYvJbKa?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+      See the Pen <a href='https://codepen.io/randomsveta/pen/zYvJbKa'>FCC: D3 Treemap Diagram</a> by Sveta
+        (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>,
+    name: 'FCC: D3 Treemap Diagram',
+    taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-treemap-diagram',
+    projectLink: 'https://codepen.io/randomsveta/full/zYvJbKa',
+    year: 2020,
+    section: 'CodePen',
+    ifFinished: false
   }
 ];

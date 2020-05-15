@@ -14,7 +14,7 @@ export default function CodePenProject(props) {
                     }
                     <a href={props.project.projectLink} target="_blank" rel="noopener noreferrer" className="app-link m-2 app-link-underscore text-decoration-none"><FontAwesomeIcon icon={faExpand} />  Full page</a>
                     <span className="text-white m-2"><FontAwesomeIcon icon={faCalendarAlt} /> {props.project.year}</span>
-                    <span className="text-white m-2" hidden={props.project.finished ? true : false}><FontAwesomeIcon icon={faHourglassHalf} /></span>
+                    <span className="text-white m-2" hidden={props.project.ifFinished ? true : false}><FontAwesomeIcon icon={faHourglassHalf} /></span>
                 </div>
 
             </div>

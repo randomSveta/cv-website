@@ -10,7 +10,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/',
         projectLink: 'https://codepen.io/dashboard/',
-        progress: 60,
+        progress: 80,
         isFinished: false,
         endDate: false
     },
