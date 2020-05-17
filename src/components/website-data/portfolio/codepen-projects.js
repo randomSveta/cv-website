@@ -210,6 +210,6 @@ export const CP_PROJECTS = [
     projectLink: 'https://codepen.io/randomsveta/full/zYvJbKa',
     year: 2020,
     section: 'CodePen',
-    ifFinished: false
+    ifFinished: true
   }
 ];

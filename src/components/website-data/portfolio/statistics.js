@@ -4,7 +4,7 @@ export const STATISTICS = [
     {
         id: 0,
         profile: 'FreeCodeCamp',
-        points: 672
+        points: 676
     },
     {
         id: 1,

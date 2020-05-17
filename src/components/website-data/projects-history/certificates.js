@@ -83,4 +83,10 @@ export const CERTIFICATES = [
         link: "https://www.freecodecamp.org/certification/randomsveta/front-end-libraries",
         year: 2019
     },
+    {
+        id: 14,
+        title: "Data Visualization",
+        link: "https://www.freecodecamp.org/certification/randomsveta/data-visualization",
+        year: 2020
+    },
 ]
