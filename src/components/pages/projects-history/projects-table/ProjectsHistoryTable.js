@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-import { CURRENT_PROJECTS } from '../../../website-data/home/current-projects'
+import { FINISHED_PROJECTS } from '../../../website-data/projects-history/finished-projects';
 
 function createDate(string) {
     const date = new Date(string).toDateString();
@@ -9,7 +9,7 @@ function createDate(string) {
 
 export default function ProjectsHistory(props) {
     let i = 0;
-    const rows = CURRENT_PROJECTS.filter(project => project.isFinished).sort((a, b) => new Date(b.endDate) - new Date(a.endDate)).map(project => {
+    const rows = FINISHED_PROJECTS.filter(project => project.isFinished).sort((a, b) => new Date(b.endDate) - new Date(a.endDate)).map(project => {
         i++;
 
         return (
