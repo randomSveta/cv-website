@@ -7,9 +7,9 @@ export default function CertificatesTable(props) {
     const rows = CERTIFICATES.sort((a, b) => b.year - a.year).map(certificate => {
         i++;
         return (
-            <tr>
+            <tr key={certificate.id}>
                 <th scope="row">{i}</th>
-                <td><a href={certificate.link}>{certificate.title}</a></td>
+                <td><a href={certificate.link ? certificate.link : undefined}>{certificate.title}</a></td>
                 <td>{certificate.year}</td>
             </tr>);
     })

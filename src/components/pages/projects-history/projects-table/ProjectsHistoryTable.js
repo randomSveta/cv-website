@@ -13,7 +13,7 @@ export default function ProjectsHistory(props) {
         i++;
 
         return (
-            <tr>
+            <tr key={project.id}>
                 <th scope="row">{i}</th>
                 <td><a href={project.projectLink}>{project.title}</a></td>
                 <td>{project.description}<br />{project.taskLink ? <a href={project.taskLink}>source</a> : null}</td>
