@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Section from './Section';
 import { Row, Col, Container } from 'reactstrap';
 
 export default function Home(props) {
+
+    useEffect(() => { window.scrollTo(0, 0); });
 
     const sections = props.sections.map(section => {
 
