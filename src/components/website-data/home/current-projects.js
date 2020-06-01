@@ -1,5 +1,5 @@
 import { faGithub, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons';
-import { faTerminal, faCode, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faTerminal, faBook, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 export const CURRENT_PROJECTS = [
     {
@@ -27,18 +27,6 @@ export const CURRENT_PROJECTS = [
         endDate: false
     },
     {
-        id: 2,
-        title: 'Codecademy PHP course',
-        icon: faCode,
-        description: 'One more skill to study and understand',
-        repoLink: '',
-        taskLink: 'https://www.codecademy.com/learn/learn-php',
-        projectLink: '',
-        progress: 52,
-        isFinished: false,
-        endDate: false
-    },
-    {
         id: 3,
         title: 'My portfolio website',
         icon: faGithub,
@@ -52,7 +40,7 @@ export const CURRENT_PROJECTS = [
     {
         id: 4,
         title: 'JavaScript tutorial',
-        icon: faTerminal,
+        icon: faBook,
         description: 'Revisiting JS Tutorial',
         repoLink: '',
         taskLink: 'https://javascript.info/',
@@ -63,7 +51,7 @@ export const CURRENT_PROJECTS = [
     {
         id: 5,
         title: "You Don't Know JS",
-        icon: faTerminal,
+        icon: faBook,
         description: 'Reading a very important book to find out more about JavaScript',
         repoLink: '',
         taskLink: 'https://github.com/getify/You-Dont-Know-JS/',
@@ -101,7 +89,18 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.freecodecamp.org/learn',
         projectLink: 'https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/',
-        progress: 25,
+        progress: 50,
+        isFinished: false
+    },
+    {
+        id: 9,
+        title: 'Missing Semester (MIT)',
+        icon: faVideo,
+        description: 'We’ll teach you how to master the command-line, use a powerful text editor, use fancy features of version control systems, and much more!',
+        repoLink: '',
+        taskLink: 'https://missing.csail.mit.edu/',
+        projectLink: '',
+        progress: 30,
         isFinished: false
     },
 ]
