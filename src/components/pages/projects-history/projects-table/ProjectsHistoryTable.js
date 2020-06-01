@@ -15,8 +15,8 @@ export default function ProjectsHistory(props) {
         return (
             <tr key={project.id}>
                 <th scope="row">{i}</th>
-                <td><a href={project.projectLink}>{project.title}</a></td>
-                <td>{project.description}<br />{project.taskLink ? <a href={project.taskLink}>source</a> : null}</td>
+                <td><a href={project.taskLink} target="_blank" rel="noopener noreferrer">{project.title}</a></td>
+                <td>{project.description}<br />{project.projectLink ? <a href={project.projectLink} target="_blank" rel="noopener noreferrer">view project</a> : null}</td>
                 <td>{createDate(project.endDate)}</td>
             </tr >);
     })

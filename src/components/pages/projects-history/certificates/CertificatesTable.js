@@ -9,7 +9,7 @@ export default function CertificatesTable(props) {
         return (
             <tr key={certificate.id}>
                 <th scope="row">{i}</th>
-                <td><a href={certificate.link ? certificate.link : undefined}>{certificate.title}</a></td>
+                <td><a href={certificate.link ? certificate.link : undefined} target="_blank" rel="noopener noreferrer">{certificate.title}</a></td>
                 <td>{certificate.year}</td>
             </tr>);
     })
