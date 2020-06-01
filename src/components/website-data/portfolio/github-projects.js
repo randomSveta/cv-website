@@ -24,8 +24,8 @@ export const GH_PROJECTS = [
         name: 'Portfolio website',
         year: 2019,
         taskLink: '',
-        repoLink: 'https://github.com/randomSveta/cv-website',
-        projectLink: 'https://randomsveta.github.io/cv-website/',
+        repoLink: 'https://github.com/randomSveta/my-website',
+        projectLink: 'https://randomsveta.github.io/my-website/',
         description: 'Website portfolio and blog, where I would like to show everything that I did and going to do.',
         section: 'GitHub'
     }
