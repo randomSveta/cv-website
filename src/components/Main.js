@@ -62,7 +62,7 @@ export default class Main extends React.Component {
         return (
             <React.Fragment>
                 <Router basename={process.env.PUBLIC_URL}>
-                    <div className="content">
+                    <div className="app-content">
                         <Switch>
                             {routes.map((route, index) => (
                                 <Route
