@@ -78,7 +78,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 22,
+        progress: 24,
         isFinished: false
     },
     {

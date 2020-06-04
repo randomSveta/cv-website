@@ -55,4 +55,13 @@ export const FINISHED_PROJECTS = [
         isFinished: true,
         endDate: "2020-05-30"
     },
+    {
+        id: 6,
+        title: 'React Tic-Tac-Toe',
+        description: "1. Display the location for each move in the format (col, row) in the move history list.\n2. Bold the currently selected item in the move list. (Add blue background to the active move)\n3. Rewrite Board to use two loops to make the squares instead of hardcoding them. (Add one while loop and \"flex\")\n4. Add a toggle button that lets you sort the moves in either ascending or descending order.\n5. When someone wins, highlight the three squares that caused the win.\n6. When no one wins, display a message about the result being a draw.\n",
+        taskLink: 'https://reactjs.org/tutorial/tutorial.html#wrapping-up',
+        projectLink: '',
+        isFinished: true,
+        endDate: "2020-06-04"
+    },
 ]

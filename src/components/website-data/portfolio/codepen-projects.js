@@ -211,5 +211,18 @@ export const CP_PROJECTS = [
     year: 2020,
     section: 'CodePen',
     ifFinished: true
+  },
+  {
+    id: 16,
+    jsx: <iframe height="400" width="100%" scrolling="no" title="Tic-Tac-Toe" src="https://codepen.io/randomsveta/embed/preview/ZNxmLy?height=265&theme-id=default&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+      See the Pen <a href='https://codepen.io/randomsveta/pen/ZNxmLy'>Tic-Tac-Toe</a> by Sveta
+        (<a href='https://codepen.io/randomsveta'>@randomsveta</a>) on <a href='https://codepen.io'>CodePen</a>.
+      </iframe>,
+    name: 'Tic-Tac-Toe',
+    taskLink: 'https://reactjs.org/tutorial/tutorial.html#wrapping-up',
+    projectLink: 'https://codepen.io/randomsveta/full/ZNxmLy',
+    year: 2020,
+    section: 'CodePen',
+    ifFinished: true
   }
 ];
