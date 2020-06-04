@@ -10,20 +10,31 @@ $height-large: map-get(sizes.$height, "large")
 $font-size-small: map-get(sizes.$font-size, "small")
 
 body,
-html 
+html
 	height: 100%
+	background-color: colors.$dark
+
+td
+	white-space: pre-wrap
+	word-wrap: break-word
 
 #root 
 	font-family: "Raleway", "Arial", sans-serif
 	font-size: map-get(sizes.$font-size, "medium")
 	background-color: colors.$dark
 	
-.content
+.app-content
 	min-height: calc(#{sizes.$min-height} - #{$height-large})
 	
 .app-h2
 	background-color: colors.$black-08
 	height: map-get(sizes.$height,"medium")
+
+.app-loading-page
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
 
 // icon
 .app-icon

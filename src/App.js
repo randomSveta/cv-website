@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Main from './components/Main';
 import './styles/css/app.css';
+import LoadingPage from './components/shared/LoadingPage';
 
-function App() {
+export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
-    <Main />
+    isLoading ? <LoadingPage /> : <Main />
   );
 }
 
-export default App;
