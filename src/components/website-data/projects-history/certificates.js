@@ -89,4 +89,10 @@ export const CERTIFICATES = [
         link: "https://www.freecodecamp.org/certification/randomsveta/data-visualization",
         year: 2020
     },
+    {
+        id: 15,
+        title: "APIs and Microservices",
+        link: "https://www.freecodecamp.org/certification/randomsveta/apis-and-microservices",
+        year: 2020
+    }
 ]

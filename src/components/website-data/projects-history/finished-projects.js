@@ -57,11 +57,20 @@ export const FINISHED_PROJECTS = [
     },
     {
         id: 6,
-        title: 'React Tic-Tac-Toe',
-        description: "1. Display the location for each move in the format (col, row) in the move history list.\n2. Bold the currently selected item in the move list. (Add blue background to the active move)\n3. Rewrite Board to use two loops to make the squares instead of hardcoding them. (Add one while loop and \"flex\")\n4. Add a toggle button that lets you sort the moves in either ascending or descending order.\n5. When someone wins, highlight the three squares that caused the win.\n6. When no one wins, display a message about the result being a draw.\n",
-        taskLink: 'https://reactjs.org/tutorial/tutorial.html#wrapping-up',
-        projectLink: '',
+        title: "React Tic-Tac-Toe",
+        description: "1. Display the location for each move in the format (col, row) in the move history list.\n2. Bold the currently selected item in the move list.\n(added a blue background to the active move)\n3. Rewrite Board to use two loops to make the squares instead of hardcoding them.\n(added one \"while\" loop and \"flex\")\n4. Add a toggle button that lets you sort the moves in either ascending or descending order.\n5. When someone wins, highlight the three squares that caused the win.\n6. When no one wins, display a message about the result being a draw.\n",
+        taskLink: "https://reactjs.org/tutorial/tutorial.html#wrapping-up",
+        projectLink: "",
         isFinished: true,
         endDate: "2020-06-04"
+    },
+    {
+        id: 7,
+        title: "APIs and Microservices Certification",
+        description: "Managing Packages with Npm.  Basic Node and Express. MongoDB and Mongoose. APIs and Micriservices Projects.API and Microservices:\n\nTimestamp\nhttps://chalk-flame-parade.glitch.me/\nRequest Header Parser\nhttps://veiled-pickle-woodpecker.glitch.me/\nURL Shortener\nhttps://thundering-eminent-sandpaper.glitch.me/\nExercise Tracker\nhttps://painted-elemental-licorice.glitch.me/\nFile Metadata\nhttps://electric-unexpected-yoke.glitch.me/",
+        taskLink: "https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/",
+        projectLink: "",
+        isFinished: true,
+        endDate: "2020-06-25"
     },
 ]

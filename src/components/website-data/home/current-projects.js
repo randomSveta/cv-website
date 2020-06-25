@@ -1,4 +1,4 @@
-import { faGithub, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTerminal, faBook, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 export const CURRENT_PROJECTS = [
@@ -22,7 +22,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 34,
+        progress: 38,
         isFinished: false,
         endDate: false
     },
@@ -78,18 +78,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 24,
-        isFinished: false
-    },
-    {
-        id: 8,
-        title: 'APIs and Microservices Certification',
-        icon: faFreeCodeCamp,
-        description: 'Managing Packages with Npm.  Basic Node and Express. MongoDB and Mongoose. APIs and Micriservices Projects.',
-        repoLink: '',
-        taskLink: 'https://www.freecodecamp.org/learn',
-        projectLink: 'https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/',
-        progress: 50,
+        progress: 26,
         isFinished: false
     },
     {
