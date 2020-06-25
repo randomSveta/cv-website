@@ -13,6 +13,7 @@
 		"gh-pages": "^2.2.0",
 		"jquery": "^3.4.1",
 		"react": "^16.13.1",
+		"react-animations": "^1.0.0",
 		"react-compare-image": "^2.0.4",
 		"react-dom": "^16.13.1",
 		"react-iframe": "^1.8.0",
@@ -20,6 +21,7 @@
 		"react-router-hash-link": "^1.2.2",
 		"react-router-pagination": "^2.0.5",
 		"react-scripts": "3.4.1",
+		"react-transition-group": "^4.4.1",
 		"reactstrap": "^8.4.1",
 		"typescript": "^3.8.3"
 	},
