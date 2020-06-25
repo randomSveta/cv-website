@@ -4,7 +4,7 @@ import { CERTIFICATES } from '../../../website-data/projects-history/certificate
 
 export default function CertificatesTable(props) {
     let i = 0;
-    const rows = CERTIFICATES.sort((a, b) => b.year - a.year).map(certificate => {
+    const rows = CERTIFICATES.sort((a, b) => b.id - a.id).map(certificate => {
         i++;
         return (
             <tr key={certificate.id}>
