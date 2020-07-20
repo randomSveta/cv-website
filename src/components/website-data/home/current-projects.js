@@ -1,4 +1,4 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons';
 import { faTerminal, faBook, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 export const CURRENT_PROJECTS = [
@@ -22,7 +22,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 38,
+        progress: 44,
         isFinished: false,
         endDate: false
     },
@@ -56,7 +56,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://github.com/getify/You-Dont-Know-JS/',
         projectLink: '',
-        progress: 15,
+        progress: 36,
         isFinished: false,
     },
     {
@@ -78,7 +78,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
-        progress: 26,
+        progress: 28,
         isFinished: false
     },
     {
@@ -89,7 +89,18 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://missing.csail.mit.edu/',
         projectLink: '',
-        progress: 30,
+        progress: 60,
+        isFinished: false
+    },
+    {
+        id: 10,
+        title: 'FCC: Quality Assurance Certification',
+        icon: faFreeCodeCamp,
+        description: "Using Chai, you can write tests that describe your program's requirements and see if your program meets them.\nAuthentication is the process or action of verifying the identity of a user or process.",
+        repoLink: '',
+        taskLink: 'https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/',
+        projectLink: '',
+        progress: 16.5,
         isFinished: false
     },
 ]

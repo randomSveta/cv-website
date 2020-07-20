@@ -66,8 +66,8 @@ export const FINISHED_PROJECTS = [
     },
     {
         id: 7,
-        title: "APIs and Microservices Certification",
-        description: "Managing Packages with Npm.  Basic Node and Express. MongoDB and Mongoose. APIs and Micriservices Projects.API and Microservices:\n\nTimestamp\nhttps://chalk-flame-parade.glitch.me/\nRequest Header Parser\nhttps://veiled-pickle-woodpecker.glitch.me/\nURL Shortener\nhttps://thundering-eminent-sandpaper.glitch.me/\nExercise Tracker\nhttps://painted-elemental-licorice.glitch.me/\nFile Metadata\nhttps://electric-unexpected-yoke.glitch.me/",
+        title: "FCC: APIs and Microservices Certification",
+        description: "Managing Packages with Npm.  Basic Node and Express. MongoDB and Mongoose. APIs and Micriservices Projects.API and Microservices.:\n\nTimestamp\nhttps://chalk-flame-parade.glitch.me/\nRequest Header Parser\nhttps://veiled-pickle-woodpecker.glitch.me/\nURL Shortener\nhttps://thundering-eminent-sandpaper.glitch.me/\nExercise Tracker\nhttps://painted-elemental-licorice.glitch.me/\nFile Metadata\nhttps://electric-unexpected-yoke.glitch.me/",
         taskLink: "https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/",
         projectLink: "",
         isFinished: true,
