@@ -4,7 +4,7 @@ import BottomFooterMinHeight from '../../pages/blog/articles-text/footer-bottom/
 import BottomFooterAbsolute from '../../pages/blog/articles-text/footer-bottom/BottomFooterAbsolute';
 import BottomFooterFixed from '../../pages/blog/articles-text/footer-bottom/BottomFooterFixed';
 
-import LetConstVarArticle from '../../pages/blog/articles-text/let-const-var/LetConstVarArticle';
+import VarLetConstArticle from '../../pages/blog/articles-text/var-let-const/VarLetConstArticle';
 
 import Closures from '../../pages/blog/articles-text/closures/Closures';
 
@@ -57,16 +57,16 @@ export const ARTICLES = [
     },
     {
         id: 3,
-        url: '/let-const-var/',
-        title: 'Var vs Let/Const',
+        url: '/var-let-const/',
+        title: 'var vs let vs const',
         shortDescription: 'Why are there several words to declare a variable? What is the difference between the old "var" and new ones? Let\'s try to find out.',
-        jsx: <LetConstVarArticle />,
+        jsx: <VarLetConstArticle />,
         previewImg: {
-            path: require('../../../assets/images/blog/articles/let-const-var/let-const-var-preview.png')
+            path: require('../../../assets/images/blog/articles/var-let-const/var-let-const-preview.png')
         }
         ,
         initialPageImg: {
-            path: require('../../../assets/images/blog/articles/let-const-var/let-const-var-initial-page.png'),
+            path: require('../../../assets/images/blog/articles/var-let-const/var-let-const-initial-page.png'),
             alt: 'Initial page view'
         }
     },
