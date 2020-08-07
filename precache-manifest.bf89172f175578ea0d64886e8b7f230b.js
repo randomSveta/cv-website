@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7312bfbc0bf554b4d47b0e88ec73dad",
+    "revision": "08972e5bfe1a779cb5ca0ce0cf10d818",
     "url": "/my-website/index.html"
   },
   {
-    "revision": "32c836048c5b453dd000",
+    "revision": "ea78cadcdf02c32c3ddd",
     "url": "/my-website/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "8f89afee9fe392a200d3",
+    "revision": "4f033028356928f963c2",
     "url": "/my-website/static/css/main.a1387d19.chunk.css"
   },
   {
-    "revision": "32c836048c5b453dd000",
-    "url": "/my-website/static/js/2.f1573852.chunk.js"
+    "revision": "ea78cadcdf02c32c3ddd",
+    "url": "/my-website/static/js/2.cdd4c73c.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/my-website/static/js/2.f1573852.chunk.js.LICENSE.txt"
+    "url": "/my-website/static/js/2.cdd4c73c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8f89afee9fe392a200d3",
-    "url": "/my-website/static/js/main.be9bf6e6.chunk.js"
+    "revision": "4f033028356928f963c2",
+    "url": "/my-website/static/js/main.1a13379c.chunk.js"
   },
   {
     "revision": "8a31e1a8153659a682c8",
@@ -46,6 +46,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "24ff07d4625c32c5e17adfe746945499",
     "url": "/my-website/static/media/body-relative.24ff07d4.png"
+  },
+  {
+    "revision": "44b1af559d1313269f0bff6ce42c01ab",
+    "url": "/my-website/static/media/const-change-object.44b1af55.png"
+  },
+  {
+    "revision": "5a430f88c18eec2dca45fa12638fc7be",
+    "url": "/my-website/static/media/const-declaration-wo-initialisation.5a430f88.png"
+  },
+  {
+    "revision": "dff5376a57d910b420f77983c293523c",
+    "url": "/my-website/static/media/const-global-object-property.dff5376a.png"
+  },
+  {
+    "revision": "c54d50b7db4157305b53fde404ec8d0a",
+    "url": "/my-website/static/media/const-reassignment.c54d50b7.png"
+  },
+  {
+    "revision": "904029c709d09e45354269043eef1419",
+    "url": "/my-website/static/media/const-redeclaration.904029c7.png"
   },
   {
     "revision": "8d91a0a3e59a671430834db7be1ea849",
@@ -124,12 +144,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-website/static/media/let-const-hoisting.d7455191.png"
   },
   {
-    "revision": "7aab7f5b165f92d64529e9b4cad6fb48",
-    "url": "/my-website/static/media/let-const-var-initial-page.7aab7f5b.png"
+    "revision": "f18fce3c1a438498b922a06520a33807",
+    "url": "/my-website/static/media/let-global-object-property.f18fce3c.png"
   },
   {
-    "revision": "71142a7ca06cef472ed5d55ed9947394",
-    "url": "/my-website/static/media/let-const-var-preview.71142a7c.png"
+    "revision": "6a93434a163486779d1569151ad410b7",
+    "url": "/my-website/static/media/let-redeclaration.6a93434a.png"
   },
   {
     "revision": "494295a356e876da847b37b8eabb9d25",
@@ -188,8 +208,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-website/static/media/var-block-scope.4b1f088f.png"
   },
   {
+    "revision": "b4455196c3e73d0dd3dfb71623c6167a",
+    "url": "/my-website/static/media/var-global-object-property.b4455196.png"
+  },
+  {
     "revision": "97117d8ff773c362ef2ab081ea7aec07",
     "url": "/my-website/static/media/var-hoisting.97117d8f.png"
+  },
+  {
+    "revision": "7aab7f5b165f92d64529e9b4cad6fb48",
+    "url": "/my-website/static/media/var-let-const-initial-page.7aab7f5b.png"
+  },
+  {
+    "revision": "71142a7ca06cef472ed5d55ed9947394",
+    "url": "/my-website/static/media/var-let-const-preview.71142a7c.png"
+  },
+  {
+    "revision": "4d7666c90806cebcb2deb728fcc382d2",
+    "url": "/my-website/static/media/var-let-declaration-wo-initialisation.4d7666c9.png"
+  },
+  {
+    "revision": "de077a5a0e92df12ac5afdff5b650b9a",
+    "url": "/my-website/static/media/var-let-reassignment.de077a5a.png"
+  },
+  {
+    "revision": "6d0a73534102a2d783473c06ea814d48",
+    "url": "/my-website/static/media/var-redeclaration.6d0a7353.png"
+  },
+  {
+    "revision": "8c2b4cdfb77bb60f75d6e3ce3b97d1f5",
+    "url": "/my-website/static/media/window-global-object.8c2b4cdf.png"
+  },
+  {
+    "revision": "ccc60e24dbe123c01fc1b148dd704dc9",
+    "url": "/my-website/static/media/window-properties.ccc60e24.png"
   },
   {
     "revision": "0d3d04b93442b535f0e85bf999c23acd",
