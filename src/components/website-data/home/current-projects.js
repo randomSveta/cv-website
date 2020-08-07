@@ -56,7 +56,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://github.com/getify/You-Dont-Know-JS/',
         projectLink: '',
-        progress: 36,
+        progress: 55,
         isFinished: false,
     },
     {
@@ -100,7 +100,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/',
         projectLink: '',
-        progress: 16.5,
+        progress: 50,
         isFinished: false
     },
 ]
