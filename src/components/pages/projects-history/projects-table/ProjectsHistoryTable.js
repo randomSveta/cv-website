@@ -15,12 +15,11 @@ export default function ProjectsHistory(props) {
         const projectLinks = project.projectLinks;
         const projectLinksList =
             Array.isArray(projectLinks) && projectLinks.length
-                ?
-                <React.Fragment>
+                ? <React.Fragment>
                     <p className="m-0 p-0"><strong>Solution:</strong></p>
                     <ul className="list-unstyled m-0 p-0">
-                        {projectLinks.map(linkSet => {
-                            return <li>{<a href={linkSet[1]} target="_blank" rel="noopener noreferrer">{linkSet[0]}</a>}</li>
+                        {projectLinks.map((linkSet, index) => {
+                            return <li key={index} ><a href={Object.values(linkSet)[0]} target="_blank" rel="noopener noreferrer">{Object.keys(linkSet)[0]}</a></li>
                         })}
                     </ul>
                 </React.Fragment>
