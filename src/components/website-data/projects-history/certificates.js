@@ -94,5 +94,11 @@ export const CERTIFICATES = [
         title: "APIs and Microservices",
         link: "https://www.freecodecamp.org/certification/randomsveta/apis-and-microservices",
         year: 2020
+    },
+    {
+        id: 16,
+        title: "Quality Assurance",
+        link: "https://www.freecodecamp.org/certification/randomsveta/quality-assurance-v7",
+        year: 2020
     }
 ]

@@ -1,5 +1,5 @@
 import { faGithub, faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons';
-import { faTerminal, faBook, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faTerminal, faBook, faVideo, faCode } from '@fortawesome/free-solid-svg-icons';
 
 export const CURRENT_PROJECTS = [
     {
@@ -12,7 +12,6 @@ export const CURRENT_PROJECTS = [
         projectLink: 'https://randomsveta.github.io/HotelSite/',
         progress: 20,
         isFinished: false,
-        endDate: false
     },
     {
         id: 1,
@@ -24,7 +23,7 @@ export const CURRENT_PROJECTS = [
         projectLink: '',
         progress: 44,
         isFinished: false,
-        endDate: false
+
     },
     {
         id: 3,
@@ -61,7 +60,7 @@ export const CURRENT_PROJECTS = [
     },
     {
         id: 6,
-        title: "JS Closures",
+        title: "Write an article about JS Closures",
         icon: faBook,
         description: 'I am writing an article aboute closures in JS',
         repoLink: '',
@@ -94,13 +93,35 @@ export const CURRENT_PROJECTS = [
     },
     {
         id: 10,
-        title: 'FCC: Quality Assurance Certification',
+        title: 'Free Online Bootcamp from "The Rolling Scopes" community',
+        icon: faCode,
+        description: 'Web-related technologies stack is so broad that it is impossible to enumerate all the topics that have been covered at our events: JavaScript, HTML, CSS, Node, UX, UI, Testing, VR, React ...',
+        repoLink: 'https://github.com/randomSveta/rsschool-cv',
+        taskLink: 'http://rollingscopes.com/',
+        projectLink: 'https://rs.school/js/',
+        progress: 5,
+        isFinished: false
+    },
+    {
+        id: 11,
+        title: 'Scientific Computing with Python Certification',
         icon: faFreeCodeCamp,
-        description: "Using Chai, you can write tests that describe your program's requirements and see if your program meets them.\nAuthentication is the process or action of verifying the identity of a user or process.",
+        description: 'Python for Everybody. Scientific Computing with Python Projects',
         repoLink: '',
-        taskLink: 'https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/',
+        taskLink: 'https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/',
         projectLink: '',
-        progress: 70,
+        progress: 0,
+        isFinished: false
+    },
+    {
+        id: 12,
+        title: 'Add my old Testing articles to my blog',
+        icon: faBook,
+        description: 'Add all articles from WordPress to my website',
+        repoLink: '',
+        taskLink: 'https://randomsveta.wordpress.com/',
+        projectLink: '',
+        progress: 0,
         isFinished: false
     },
 ]
