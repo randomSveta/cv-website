@@ -1,4 +1,4 @@
-import { faLinkedin, faGithub, faFreeCodeCamp, faCodepen, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faFreeCodeCamp, faCodepen, /*faWordpress*/ } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faTerminal } from '@fortawesome/free-solid-svg-icons';
 
 export const SOCIAL_LINKS = [
@@ -39,11 +39,11 @@ export const SOCIAL_LINKS = [
         image: faCode
 
     },
-    {
+    /*{
         id: 6,
         name: "WordPress",
         url: "https://randomsveta.wordpress.com/",
         image: faWordpress
-    }
+    }*/
 
 ];
