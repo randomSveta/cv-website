@@ -11,7 +11,7 @@ export const CURRENT_PROJECTS = [
         taskLink: '',
         projectLink: 'https://randomsveta.github.io/HotelSite/',
         progress: 20,
-        isFinished: false,
+        isFinished: true,
     },
     {
         id: 1,
@@ -22,7 +22,7 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
         progress: 44,
-        isFinished: false,
+        isFinished: true,
 
     },
     {
@@ -34,7 +34,7 @@ export const CURRENT_PROJECTS = [
         taskLink: '',
         projectLink: 'https://randomsveta.github.io/my-website/',
         progress: 70,
-        isFinished: false,
+        isFinished: true,
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://javascript.info/',
         projectLink: '',
         progress: 37,
-        isFinished: false,
+        isFinished: true,
     },
     {
         id: 5,
@@ -56,7 +56,7 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://github.com/getify/You-Dont-Know-JS/',
         projectLink: '',
         progress: 66,
-        isFinished: false,
+        isFinished: true,
     },
     {
         id: 6,
@@ -67,7 +67,7 @@ export const CURRENT_PROJECTS = [
         taskLink: false,
         projectLink: '',
         progress: 2,
-        isFinished: false
+        isFinished: true
     },
     {
         id: 7,
@@ -78,7 +78,7 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://www.codewars.com/dashboard',
         projectLink: '',
         progress: 28,
-        isFinished: false
+        isFinished: true
     },
     {
         id: 9,
@@ -96,10 +96,10 @@ export const CURRENT_PROJECTS = [
         title: 'Free Online Bootcamp from "The Rolling Scopes" community',
         icon: faCode,
         description: 'Web-related technologies stack is so broad that it is impossible to enumerate all the topics that have been covered at our events: JavaScript, HTML, CSS, Node, UX, UI, Testing, VR, React ...',
-        repoLink: 'https://github.com/randomSveta/rsschool-cv',
+        repoLink: '',
         taskLink: 'http://rollingscopes.com/',
         projectLink: 'https://rs.school/js/',
-        progress: 5,
+        progress: 40,
         isFinished: false
     },
     {
@@ -110,7 +110,7 @@ export const CURRENT_PROJECTS = [
         repoLink: '',
         taskLink: 'https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/',
         projectLink: '',
-        progress: 0,
+        progress: 5,
         isFinished: false
     },
     {
@@ -122,6 +122,6 @@ export const CURRENT_PROJECTS = [
         taskLink: 'https://randomsveta.wordpress.com/',
         projectLink: '',
         progress: 0,
-        isFinished: false
+        isFinished: true
     },
 ]

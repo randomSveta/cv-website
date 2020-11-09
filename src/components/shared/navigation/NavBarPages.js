@@ -5,7 +5,7 @@ import { PAGES } from '../../website-data/pages-and-sections/pages';
 
 export default function NavBarPageLinks(props) {
 
-    const navigationItems = PAGES.filter(page => !page.isArticle && !page.isHistory).map(link => {
+    const navigationItems = PAGES.filter(page => !page.isArticle/*  && !page.isHistory */).map(link => {
         return (
             <NavItem key={link.id} className="text-center p-0 ml-2 mr-1 my-1">
                 <NavLink exact activeClassName="navigation-active-item" className="app-link nav-app-link app-link-underscore m-1 p-0 text-decoration-none d-inline-block" to={link.url}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-import { FINISHED_PROJECTS } from '../../../website-data/projects-history/finished-projects';
+import { FINISHED_PROJECTS } from '../../../../website-data/projects-history/finished-projects';
 
 function createDate(string) {
     const date = new Date(string).toDateString();

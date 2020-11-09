@@ -81,5 +81,14 @@ export const FINISHED_PROJECTS = [
         projectLinks: [{ "Metric-Imperial Converter": "https://peach-level-witness.glitch.me/" }, { "Issue Tracker": "https://wakeful-marmalade-court.glitch.me/" }, { "Personal Library": "https://fortune-ambiguous-board.glitch.me/" }, { "Sudoku Solver": "https://fcc-qa-sudoku-solver.randomsveta.repl.co" }, { "American British Translator": "https://fcc-qa-american-british-english-translator.randomsveta.repl.co" }],
         isFinished: true,
         endDate: "2020-09-17"
+    },
+    {
+        id: 9,
+        title: 'The Rolling Scopes School',
+        description: "The Rolling Scopes School Tasks",
+        taskLink: 'https://rollingscopes.com/',
+        projectLinks: [{ "First CV": "https://randomsveta.github.io/rsschool-cv/" }, { "Webdev": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/webdev/" }, { "Calculator": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/calculator/" }, { "Momentum": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/momentum/" }, { "Shelter": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/shelter/index.html" }, { "Virtual Keyboard": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/virtual-keyboard/" },],
+        isFinished: true,
+        endDate: "2021-01-30"
     }
 ]

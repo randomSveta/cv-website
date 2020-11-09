@@ -3,7 +3,7 @@
 @use 'images'
 @use 'animation'
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap')
 
 $height-large: map-get(sizes.$height, "large")
@@ -18,14 +18,14 @@ td
 	white-space: pre-wrap
 	word-wrap: break-word
 
-#root 
+#root
 	font-family: "Raleway", "Arial", sans-serif
 	font-size: map-get(sizes.$font-size, "medium")
 	background-color: colors.$dark
-	
+
 .app-content
 	min-height: calc(#{sizes.$min-height} - #{$height-large})
-	
+
 .app-h2
 	background-color: colors.$black-08
 	height: map-get(sizes.$height,"medium")
@@ -50,6 +50,9 @@ td
 .app-dark-bg
 	background-color: colors.$dark
 
+.app-dark-bg-08
+	background-color: colors.$dark-08
+
 .app-white-bg
 	background-color: colors.$white
 
@@ -61,16 +64,16 @@ td
 
 .app-parallax-bg
 	@extend %images-parallax
-	background-position: top center 
+	background-position: top center
 
 // links
-		
+
 .app-link
 	color: colors.$white
 	&:hover
 		color: colors.$white
 
-.app-link-rotate-animation 
+.app-link-rotate-animation
 	border: none
 
 .app-link-rotate-animation
@@ -79,7 +82,7 @@ td
 
 
 
-.app-link-underscore 
+.app-link-underscore
 	position: relative
 
 .app-link-underscore
@@ -102,7 +105,7 @@ td
 			+animation.transform-scale(scale(1,1))
 
 
-// code 
+// code
 .app-code
 	display: block
 	white-space: pre-wrap
@@ -120,7 +123,7 @@ blockquote
 	0%
 		+animation.transform-rotate(0deg)
 	10%
-		+animation.transform-rotate(30deg)	
+		+animation.transform-rotate(30deg)
 	20%
 		+animation.transform-rotate(60deg)
 	30%
@@ -138,9 +141,9 @@ blockquote
 	90%
 		+animation.transform-rotate(340deg)
 	100%
-		+animation.transform-rotate(360deg)  
+		+animation.transform-rotate(360deg)
 
-	
+
 @keyframes rotate
 	0%
 		+animation.transform-rotate(0deg)

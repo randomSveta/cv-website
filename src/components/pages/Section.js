@@ -6,7 +6,7 @@ export default function Section(props) {
     const sectionId = props.section.name.toLowerCase().split(' ').join('-')
 
     return (
-        <section id={sectionId} className={"m-0 p-0 container mw-100 " + (sectionId === "skills" ? "app-green-bg" : sectionId === "github" ? "app-parallax-bg" : "app-white-bg")
+        <section id={sectionId} className={"m-0 p-0 container mw-100 " + (sectionId === "skills" ? "app-green-bg" : sectionId === "courses" ? "app-black-bg" : "app-white-bg")
         } >
             <Row className={"m-0 p-0 justify-content-md-start align-items-center justify-content-center align-items-center " + (props.page !== "portfolio" ? "app-parallax-bg" : "app-green-bg")}>
                 <Col md="3" xs="8" className="m-0 p-0">

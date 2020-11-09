@@ -9,12 +9,12 @@ import {
     CardImg
 } from 'reactstrap';
 
-export default function GitHubProjectCard(props) {
+export default function CourseProjectCard(props) {
 
     return (
-        <Card className="rounded-0 border border-dark">
-            <CardHeader className="text-center rounded-0 text-white"><b>{props.project.name}</b></CardHeader>
-            {props.project.image ? <a href={props.project.projectLink} target="_blank" rel="noopener noreferrer"><CardImg className="card-image" top src={props.project.image} alt="Project image" /></a> : ""}
+        <Card className="rounded-0">
+            <CardHeader className="text-center rounded-0 text-white"><CardLink className="app-link app-link-underscore" href={props.project.courseLink} target="_blank" rel="noopener noreferrer"><b>{props.project.courseName}</b></CardLink><br />{props.project.projectName}</CardHeader>
+            { props.project.image ? <a href={props.project.projectLink} target="_blank" rel="noopener noreferrer"><CardImg className="card-image rounded-0" top src={props.project.image} alt="Project image" /></a> : ""}
             <CardBody>
                 <CardText>{props.project.description}</CardText>
             </CardBody>
@@ -31,6 +31,6 @@ export default function GitHubProjectCard(props) {
                     <CardLink href={props.project.projectLink} target="_blank" className="app-link app-link-underscore">Deploy</CardLink>
                     : null}
             </CardFooter>
-        </Card>
+        </Card >
     );
 }

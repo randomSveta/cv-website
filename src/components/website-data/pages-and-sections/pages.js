@@ -33,6 +33,16 @@ export const PAGES = [
     },
     {
         id: 2,
+        name: 'Projects History',
+        url: '/projects-history',
+        sections: SECTIONS_PROJECTS_HISTORY,
+        isArticle: false,
+        isHistory: true,
+        jsx: < ProjectsHistory />,
+        exact: true
+    },
+    {
+        id: 3,
         name: 'Blog',
         url: '/blog',
         sections: SECTIONS_BLOG,
@@ -41,16 +51,7 @@ export const PAGES = [
         jsx: <Blog />,
         exact: true
     },
-    {
-        id: 3,
-        name: 'Projects History',
-        url: '/projects-history',
-        sections: SECTIONS_PROJECTS_HISTORY,
-        isArticle: false,
-        isHistory: true,
-        jsx: < ProjectsHistory />,
-        exact: true
-    }
+
 ]
 
 ARTICLES.forEach(article => {

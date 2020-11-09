@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-import { CERTIFICATES } from '../../../website-data/projects-history/certificates';
+import { CERTIFICATES } from '../../../../website-data/projects-history/certificates';
 
 export default function CertificatesTable(props) {
     let i = 0;

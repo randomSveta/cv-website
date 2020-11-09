@@ -4,7 +4,7 @@ import { PAGES } from '../../website-data/pages-and-sections/pages';
 
 export default function NavLinks(props) {
 
-  const footerNavLinks = PAGES.filter(page => !page.isArticle && !page.isHistory).map(link => {
+  const footerNavLinks = PAGES.filter(page => !page.isArticle /* && !page.isHistory */).map(link => {
     return (
       <li key={link.id}>
         <Link to={link.url} className='app-link m-3 app-link-underscore text-decoration-none'>{link.name}</Link>

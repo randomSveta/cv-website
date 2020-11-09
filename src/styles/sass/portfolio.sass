@@ -4,30 +4,23 @@
 
 $height-xlarge: map-get(sizes.$height, "xlarge")
 
-#portfolio 
-	h2 
+#portfolio
+	h2
 		height: map-get(sizes.$height, "small")
-
-// statistics
-.statistica-card
-	height: $height-xlarge
-	width:  $height-xlarge
-	border: 0.5rem solid colors.$green
-	svg, 
-	.statistica-card-points
-		font-size: map-get(sizes.$font-size, "large")
-
 // github
-#github
-	&.app-parallax-bg
-		background-image: linear-gradient(colors.$black-03, colors.$black-03), images.$portfolio-github-projects
-		.card
-			border: none
-			.card-footer,
-			.card-header
+#github, #courses
+	.card
+		border: none
+		.card-footer,
+		.card-header
 				background-color: colors.$dark
 
-
+#courses
+	.card
+		border: none
+		.card-footer,
+		.card-header
+				background-color: colors.$green
 
 
 

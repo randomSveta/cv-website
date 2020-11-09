@@ -5,11 +5,11 @@ import Skills from '../../pages/home/sections/skills/Skills';
 import CurrentProjects from '../../pages/home/sections/current-projects/CurrentProjects';
 
 import CodePenProjects from '../../pages/portfolio/sections/codepen-projects/CodePenProjects';
-import Statistics from '../../pages/portfolio/sections/statistics/Statistics';
 import GitHubProjects from '../../pages/portfolio/sections/github-projects/GitHubProjects';
+import CoursesProjects from '../../pages/portfolio/sections/courses-projects/CoursesProjects';
 
-import ProjectsHistoryTable from '../../pages/projects-history/projects-table/ProjectsHistoryTable';
-import CertificatesTable from '../../pages/projects-history/certificates/CertificatesTable';
+import ProjectsHistoryTable from '../../pages/projects-history/sections/projects-table/ProjectsHistoryTable';
+import CertificatesTable from '../../pages/projects-history/sections/certificates/CertificatesTable';
 
 import Articles from '../../pages/blog/Articles';
 
@@ -37,20 +37,21 @@ export const SECTIONS_HOME = [
 ];
 
 export const SECTIONS_PORTFOLIO = [
+
     {
         id: 0,
-        name: 'Statistics',
-        hashUrl: '#statistics',
-        jsx: <Statistics />
-    },
-    {
-        id: 1,
         name: 'GitHub',
         hashUrl: '#github',
         jsx: <GitHubProjects />
     },
     {
         id: 2,
+        name: 'Courses',
+        hashUrl: '#courses',
+        jsx: <CoursesProjects />
+    },
+    {
+        id: 3,
         name: 'CodePen',
         hashUrl: '#codepen',
         jsx: <CodePenProjects />

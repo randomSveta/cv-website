@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap");
 .app-parallax-bg {
   background-repeat: no-repeat;
@@ -57,6 +57,10 @@ td {
 
 .app-dark-bg {
   background-color: #141b1f;
+}
+
+.app-dark-bg-08 {
+  background-color: rgba(20, 27, 31, 0.8);
 }
 
 .app-white-bg {
