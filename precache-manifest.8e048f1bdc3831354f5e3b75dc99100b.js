@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f74ab3d7dcee76abce448f682e7da79b",
+    "revision": "c52903f7e3d9dbef1ccb8b1f0b51d2ac",
     "url": "/my-website/index.html"
   },
   {
-    "revision": "a8f7513af83203060d44",
+    "revision": "b662796e8375df9c3bb3",
     "url": "/my-website/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "80e531cfa141355d6b03",
-    "url": "/my-website/static/css/main.a1387d19.chunk.css"
+    "revision": "4cecfbc40fc0d2209c10",
+    "url": "/my-website/static/css/main.3bbaabd5.chunk.css"
   },
   {
-    "revision": "a8f7513af83203060d44",
-    "url": "/my-website/static/js/2.fa061df9.chunk.js"
+    "revision": "b662796e8375df9c3bb3",
+    "url": "/my-website/static/js/2.84259ce8.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/my-website/static/js/2.fa061df9.chunk.js.LICENSE.txt"
+    "url": "/my-website/static/js/2.84259ce8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "80e531cfa141355d6b03",
-    "url": "/my-website/static/js/main.8a05cf74.chunk.js"
+    "revision": "4cecfbc40fc0d2209c10",
+    "url": "/my-website/static/js/main.b783472d.chunk.js"
   },
   {
     "revision": "8a31e1a8153659a682c8",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-website/static/media/body-relative.24ff07d4.png"
   },
   {
+    "revision": "594b0ee216cd9e3a93d509eaa94ab094",
+    "url": "/my-website/static/media/calculator.594b0ee2.png"
+  },
+  {
     "revision": "44b1af559d1313269f0bff6ce42c01ab",
     "url": "/my-website/static/media/const-change-object.44b1af55.png"
   },
@@ -70,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8d91a0a3e59a671430834db7be1ea849",
     "url": "/my-website/static/media/current_p_parallax_bw.8d91a0a3.jpg"
+  },
+  {
+    "revision": "822671c8e7f79aa1856246d2aa561ea6",
+    "url": "/my-website/static/media/cv.822671c8.png"
   },
   {
     "revision": "a50146cbb7a5449cebd53c1f6548f64d",
@@ -128,12 +136,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-website/static/media/footer-width-100.9fa07baf.png"
   },
   {
-    "revision": "a5114bb87e5630dce43e664183898f80",
-    "url": "/my-website/static/media/gh-projects-parallax-bw.a5114bb8.jpg"
+    "revision": "22694056d2ab5e194f6aa39c57a9ff57",
+    "url": "/my-website/static/media/founders-and-coders.22694056.png"
   },
   {
     "revision": "f0fb149619f10e6fffa851c8dbd3c82f",
     "url": "/my-website/static/media/hero_image.f0fb1496.jpg"
+  },
+  {
+    "revision": "0a6ecbc1b249f7e639e54a13c174447b",
+    "url": "/my-website/static/media/hotel.0a6ecbc1.png"
+  },
+  {
+    "revision": "19db92bce62915ccfcc1a85c9327cb5e",
+    "url": "/my-website/static/media/keyboard.19db92bc.png"
   },
   {
     "revision": "165997e8f288bb7642468842da9f3efb",
@@ -168,6 +184,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-website/static/media/min-height-100.49fbc65d.png"
   },
   {
+    "revision": "3aec97513d65c0915428267f289a3bfb",
+    "url": "/my-website/static/media/momentum.3aec9751.png"
+  },
+  {
     "revision": "0b1478c3a7bf5383d5e760f9b61e1026",
     "url": "/my-website/static/media/pos-absolute-to-footer.0b1478c3.png"
   },
@@ -186,6 +206,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0fddc26bbed2a321f781c92501a40293",
     "url": "/my-website/static/media/projects_history_parallax_bw.0fddc26b.jpg"
+  },
+  {
+    "revision": "d6aa48ce0f946e56823dbf82f9730842",
+    "url": "/my-website/static/media/shelter.d6aa48ce.png"
   },
   {
     "revision": "d649d53a236d2638a0a665738d310e45",
@@ -234,6 +258,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6d0a73534102a2d783473c06ea814d48",
     "url": "/my-website/static/media/var-redeclaration.6d0a7353.png"
+  },
+  {
+    "revision": "e3894c38d9fd0eb34d1f5082a5df3cdf",
+    "url": "/my-website/static/media/webdev.e3894c38.png"
+  },
+  {
+    "revision": "a5d9daaf40f94f7351a7fb03b0771478",
+    "url": "/my-website/static/media/website.a5d9daaf.png"
   },
   {
     "revision": "8c2b4cdfb77bb60f75d6e3ce3b97d1f5",
