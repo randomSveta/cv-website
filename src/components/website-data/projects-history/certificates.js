@@ -100,5 +100,11 @@ export const CERTIFICATES = [
         title: "Quality Assurance",
         link: "https://www.freecodecamp.org/certification/randomsveta/quality-assurance-v7",
         year: 2020
+    },
+    {
+        id: 17,
+        title: "NODEJS 2020 Q3 (JAVASCRIPT)",
+        link: "https://app.rs.school/certificate/ve7476ua",
+        year: 2020
     }
 ]
