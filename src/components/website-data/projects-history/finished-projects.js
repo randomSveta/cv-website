@@ -84,11 +84,20 @@ export const FINISHED_PROJECTS = [
     },
     {
         id: 9,
-        title: 'The Rolling Scopes School',
-        description: "The Rolling Scopes School Tasks",
+        title: 'The Rolling Scopes School. WEB DEVELOPMENT 2020 Q3 (JAVASCRIPT)',
+        description: "The Rolling Scopes School Web Development Challenges",
         taskLink: 'https://rollingscopes.com/',
         projectLinks: [{ "First CV": "https://randomsveta.github.io/rsschool-cv/" }, { "Webdev": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/webdev/" }, { "Calculator": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/calculator/" }, { "Momentum": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/momentum/" }, { "Shelter": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/shelter/index.html" }, { "Virtual Keyboard": "https://rolling-scopes-school.github.io/randomsveta-JS2020Q3/virtual-keyboard/" },],
         isFinished: true,
         endDate: "2021-01-30"
+    },
+    {
+        id: 10,
+        title: 'The Rolling Scopes School. NODEJS 2020 Q3 (JAVASCRIPT)',
+        description: "The Rolling Scopes School NodeJS challenges",
+        taskLink: 'https://rollingscopes.com/',
+        projectLinks: [{ "Repository:": "https://github.com/randomSveta/node-js-course" }],
+        isFinished: true,
+        endDate: "2020-11-14"
     }
 ]
