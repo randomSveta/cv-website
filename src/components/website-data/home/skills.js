@@ -123,4 +123,12 @@ export const ADDITIONAL_SKILLS = [
     id: 11,
     name: 'Agile',
   },
+  {
+    id: 12,
+    name: 'MJML',
+  },
+  {
+    id: 13,
+    name: 'Handlebars',
+  },
 ];
